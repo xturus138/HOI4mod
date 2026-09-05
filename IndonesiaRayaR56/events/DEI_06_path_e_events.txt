@@ -1,0 +1,125 @@
+add_namespace = dei_path_e
+
+# =====================================================================
+# Event chain Jalur E: Islamis (berbasis gerakan Darul Islam historis,
+# diperbesar jadi jalur menang untuk keperluan alternate-history game).
+# =====================================================================
+
+country_event = {
+	id = dei_path_e.1
+	title = dei_path_e.1.t
+	desc = dei_path_e.1.d
+	picture = GFX_dei_event_path_e
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.1.a # Proklamasikan segera di daerah basis
+		add_war_support = 0.10
+		add_stability = -0.03
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_e.1.b # Konsolidasi dulu, proklamasikan belakangan
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_e.2
+	title = dei_path_e.2.t
+	desc = dei_path_e.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.2.a
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = dei_path_e.3
+	title = dei_path_e.3.t
+	desc = dei_path_e.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.3.a # Penerapan syariat secara penuh & ketat
+		add_stability = 0.05
+		add_political_power = -10
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_e.3.b # Penerapan bertahap, akomodasi keberagaman
+		add_stability = -0.02
+		add_political_power = 15
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_e.4
+	title = dei_path_e.4.t
+	desc = dei_path_e.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.4.a
+		add_ideas = dei_idea_tii_terbentuk
+	}
+}
+
+country_event = {
+	id = dei_path_e.5
+	title = dei_path_e.5.t
+	desc = dei_path_e.5.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.5.a
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = dei_path_e.6
+	title = dei_path_e.6.t
+	desc = dei_path_e.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.6.a # Tumpas faksi sekuler
+		add_war_support = 0.10
+		add_stability = -0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_e.6.b # Rangkul faksi sekuler moderat ke koalisi
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_e.7
+	title = dei_path_e.7.t
+	desc = dei_path_e.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.7.a
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = dei_path_e.8
+	title = dei_path_e.8.t
+	desc = dei_path_e.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_e.8.a
+		add_war_support = 0.10
+	}
+}

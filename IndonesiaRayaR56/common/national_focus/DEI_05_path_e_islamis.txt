@@ -1,0 +1,131 @@
+# =====================================================================
+# JALUR E: ISLAMIS — berbasis gerakan Darul Islam historis
+# (Kartosoewirjo dkk.), di sini diperbesar jadi jalur menang, bukan
+# pemberontakan kecil. Terkunci di belakang
+# has_country_flag = dei_path_e_chosen.
+# =====================================================================
+
+focus_tree = {
+	id = dei_focus_tree
+
+	# --- 1. ROOT: Proklamasikan Negara Islam Indonesia ---
+	focus = {
+		id = dei_focus_e_root
+		icon = GFX_dei_focus_path_e_root
+		x = 16
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.1 hours = 6 }
+		}
+	}
+
+	# --- 2. Bentuk Dewan Ulama ---
+	focus = {
+		id = dei_focus_e_dewan_ulama
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_e_root }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.2 hours = 6 }
+		}
+	}
+
+	# --- 3. Terapkan Syariat Islam ---
+	focus = {
+		id = dei_focus_e_syariat
+		icon = GFX_goal_generic_political_pressure
+		x = 18
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_root }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.3 hours = 6 }
+		}
+	}
+
+	# --- 4. Bentuk Tentara Islam Indonesia (TII) ---
+	focus = {
+		id = dei_focus_e_tii
+		icon = GFX_goal_generic_army_effort
+		x = 16
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_dewan_ulama focus = dei_focus_e_syariat }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.4 hours = 6 }
+		}
+	}
+
+	# --- 5. Jalin Hubungan dengan Dunia Arab ---
+	focus = {
+		id = dei_focus_e_hubungan_arab
+		icon = GFX_goal_generic_scientific_exchange
+		x = 14
+		y = 12
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_e_tii }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.5 hours = 6 }
+		}
+	}
+
+	# --- 6. Hadapi Faksi Sekuler/Nasionalis ---
+	focus = {
+		id = dei_focus_e_konflik_sekuler
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 12
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_tii }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.6 hours = 6 }
+		}
+	}
+
+	# --- 7. Reformasi Pendidikan Berbasis Agama ---
+	focus = {
+		id = dei_focus_e_pendidikan_agama
+		icon = GFX_goal_generic_scientific_exchange
+		x = 16
+		y = 13
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_e_hubungan_arab focus = dei_focus_e_konflik_sekuler }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.7 hours = 6 }
+		}
+	}
+
+	# --- 8. CAPSTONE: Persatuan Islam Nusantara ---
+	focus = {
+		id = dei_focus_e_persatuan_nusantara
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 16
+		y = 14
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_e_pendidikan_agama }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			add_ideas = dei_idea_negara_islam_konsolidasi
+			country_event = { id = dei_path_e.8 hours = 6 }
+		}
+	}
+}

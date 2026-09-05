@@ -1,0 +1,196 @@
+# =====================================================================
+# INDONESIA RAYA: ROAD TO MERDEKA — Batang Fokus Bersama (1936-1945)
+# Tag: DEI (Dutch East Indies / Hindia Belanda)
+#
+# CATATAN ASUMSI (lihat README.md untuk detail lengkap):
+# - Tag DEI diasumsikan sudah ada sebagai tag vanilla/R56 standar.
+#   Kalau di instalasi R56 kamu tag/nama filenya beda, ganti semua
+#   "DEI" di file-file mod ini (cari-ganti) sesuai tag yang benar.
+# - focus_tree id "dei_focus_tree" didefinisikan SEKALI di file ini.
+#   File jalur A-F menambah focus= { } lagi ke id yang sama, JANGAN
+#   dobel definisikan focus_tree = { id = dei_focus_tree ... } di file
+#   lain, cukup tambahkan blok focus baru saja di bawah id yang sama.
+# - Mekanisme pendudukan Jepang SENGAJA disederhanakan: bukan diskrip
+#   sebagai penaklukan otomatis (berisiko tidak valid tanpa uji coba
+#   di game asli), tapi sebagai tekanan/perang biasa yang hasilnya
+#   ditentukan gameplay (perang HOI4 normal). Lihat README bagian
+#   "Keterbatasan yang disengaja".
+# =====================================================================
+
+focus_tree = {
+	id = dei_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = DEI
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+	# --- 1. ROOT ---
+	focus = {
+		id = dei_focus_root
+		icon = GFX_dei_focus_root
+		x = 12
+		y = 0
+		cost = 5
+		available = { always = yes }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.02
+			country_event = { id = dei_trunk.1 hours = 6 }
+		}
+	}
+
+	# --- 2. VOLKSRAAD ---
+	focus = {
+		id = dei_focus_volksraad
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 1
+		cost = 7
+		prerequisite = { focus = dei_focus_root }
+		available = { always = yes }
+		completion_reward = {
+			add_political_power = 40
+			add_ideas = dei_idea_volksraad_reformed
+		}
+	}
+
+	# --- 3. EKONOMI: cabang liberal vs konservatif (mutually exclusive) ---
+	focus = {
+		id = dei_focus_econ_liberal
+		icon = GFX_goal_generic_production
+		x = 8
+		y = 2
+		cost = 7
+		prerequisite = { focus = dei_focus_volksraad }
+		mutually_exclusive = { focus = dei_focus_econ_conservative }
+		available = { always = yes }
+		completion_reward = {
+			add_ideas = dei_idea_liberalized_economy
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = dei_focus_econ_conservative
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 16
+		y = 2
+		cost = 7
+		prerequisite = { focus = dei_focus_volksraad }
+		mutually_exclusive = { focus = dei_focus_econ_liberal }
+		available = { always = yes }
+		completion_reward = {
+			add_ideas = dei_idea_colonial_monopoly
+			add_political_power = 30
+		}
+	}
+
+	# --- 4. PENDIDIKAN PRIBUMI (event pendamping, benih nasionalisme) ---
+	focus = {
+		id = dei_focus_native_education
+		icon = GFX_goal_generic_scientific_exchange
+		x = 12
+		y = 3
+		cost = 8
+		prerequisite = { focus = dei_focus_econ_liberal focus = dei_focus_econ_conservative }
+		available = { always = yes }
+		completion_reward = {
+			country_event = { id = dei_trunk.2 hours = 6 }
+		}
+	}
+
+	# --- 5. SIKAP KE GERAKAN NASIONALIS (pilihan besar via event) ---
+	focus = {
+		id = dei_focus_nationalist_watch
+		icon = GFX_goal_generic_propaganda
+		x = 12
+		y = 4
+		cost = 8
+		prerequisite = { focus = dei_focus_native_education }
+		available = { always = yes }
+		completion_reward = {
+			country_event = { id = dei_trunk.3 hours = 6 }
+		}
+	}
+
+	# --- 6. REFORMASI KNIL ---
+	focus = {
+		id = dei_focus_knil_reform
+		icon = GFX_goal_generic_army_effort
+		x = 8
+		y = 5
+		cost = 10
+		prerequisite = { focus = dei_focus_nationalist_watch }
+		available = { always = yes }
+		completion_reward = {
+			add_tech_bonus = {
+				name = dei_knil_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	# --- 7. RENCANA PERTAHANAN HINDIA ---
+	focus = {
+		id = dei_focus_defense_plan
+		icon = GFX_goal_generic_navy_effort
+		x = 8
+		y = 6
+		cost = 10
+		prerequisite = { focus = dei_focus_knil_reform }
+		available = { always = yes }
+		completion_reward = {
+			add_ideas = dei_idea_home_defense_plan
+		}
+	}
+
+	# --- 8. CARI DUKUNGAN ASING ---
+	focus = {
+		id = dei_focus_foreign_support
+		icon = GFX_goal_generic_scientific_exchange
+		x = 16
+		y = 5
+		cost = 8
+		prerequisite = { focus = dei_focus_nationalist_watch }
+		available = { always = yes }
+		completion_reward = {
+			country_event = { id = dei_trunk.4 hours = 6 }
+		}
+	}
+
+	# --- 9. WASPADA ANCAMAN JEPANG (naratif, bukan pendudukan otomatis) ---
+	focus = {
+		id = dei_focus_japan_threat
+		icon = GFX_goal_generic_major_war
+		x = 12
+		y = 7
+		cost = 10
+		prerequisite = { focus = dei_focus_defense_plan focus = dei_focus_foreign_support }
+		available = { always = yes }
+		completion_reward = {
+			country_event = { id = dei_trunk.5 hours = 6 }
+		}
+	}
+
+	# --- 10. MOMENTUM KEMERDEKAAN (gerbang ke 6 jalur ideologi) ---
+	focus = {
+		id = dei_focus_momentum_kemerdekaan
+		icon = GFX_dei_focus_momentum
+		x = 12
+		y = 8
+		cost = 12
+		prerequisite = { focus = dei_focus_japan_threat }
+		available = { always = yes }
+		completion_reward = {
+			country_event = { id = dei_trunk.6 hours = 6 }
+		}
+	}
+}

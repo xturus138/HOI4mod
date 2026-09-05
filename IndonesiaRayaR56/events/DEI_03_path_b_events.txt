@@ -1,0 +1,136 @@
+add_namespace = dei_path_b
+
+# =====================================================================
+# Event chain Jalur B: Kolonial/Federalis (Belanda tetap berkuasa).
+# =====================================================================
+
+country_event = {
+	id = dei_path_b.1
+	title = dei_path_b.1.t
+	desc = dei_path_b.1.d
+	picture = GFX_dei_event_path_b
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.1.a # Represif keras, tumpas tanpa ampun
+		add_stability = 0.05
+		add_war_support = -0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_b.1.b # Represif terukur, hindari kemarahan internasional
+		add_political_power = 20
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_b.2
+	title = dei_path_b.2.t
+	desc = dei_path_b.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.2.a # Operasi militer besar-besaran
+		add_war_support = 0.05
+		add_stability = -0.03
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_b.2.b # Operasi intelijen & infiltrasi senyap
+		add_political_power = 15
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_b.3
+	title = dei_path_b.3.t
+	desc = dei_path_b.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.3.a # Reformasi luas, beri otonomi nyata
+		add_stability = 0.08
+		add_political_power = -10
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_b.3.b # Reformasi kosmetik saja
+		add_political_power = 15
+		add_stability = -0.02
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_b.4
+	title = dei_path_b.4.t
+	desc = dei_path_b.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.4.a # Banyak negara federal kecil (mudah dikontrol)
+		add_political_power = 20
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_b.4.b # Sedikit negara federal besar (lebih stabil)
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_b.5
+	title = dei_path_b.5.t
+	desc = dei_path_b.5.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.5.a # Uni penuh, kebijakan luar negeri disatukan dengan Belanda
+		add_political_power = 25
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_b.5.b # Uni longgar, otonomi domestik lebih besar
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_b.6
+	title = dei_path_b.6.t
+	desc = dei_path_b.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.6.a
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = dei_path_b.7
+	title = dei_path_b.7.t
+	desc = dei_path_b.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.7.a
+		add_political_power = 30
+	}
+}
+
+country_event = {
+	id = dei_path_b.8
+	title = dei_path_b.8.t
+	desc = dei_path_b.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_b.8.a
+		add_stability = 0.10
+	}
+}

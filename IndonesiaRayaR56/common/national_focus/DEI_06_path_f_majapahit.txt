@@ -1,0 +1,120 @@
+# =====================================================================
+# JALUR F: KEBANGKITAN MAJAPAHIT / NUSANTARA RAYA — KONTEN
+# FANTASI/AHISTORIS EKSPLISIT. Majapahit runtuh abad ke-14, jauh
+# sebelum linimasa 1936-1956; tidak ada versi "realistis" jalur ini.
+# Digerbang GANDA: harus dipilih di dei_trunk.6 DAN toggle
+# dei_ahistoris_enabled aktif (lihat common/decisions/DEI_decisions.txt).
+# =====================================================================
+
+focus_tree = {
+	id = dei_focus_tree
+
+	# --- 1. ROOT: Bangkitkan Semangat Majapahit ---
+	focus = {
+		id = dei_focus_f_root
+		icon = GFX_dei_focus_path_f_root
+		x = 22
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = {
+			has_country_flag = dei_path_f_chosen
+			has_global_flag = dei_ahistoris_enabled
+		}
+		completion_reward = {
+			country_event = { id = dei_path_f.1 hours = 6 }
+		}
+	}
+
+	# --- 2. Cari Pusaka & Simbol Kejayaan Lama (event chain 3 tahap) ---
+	focus = {
+		id = dei_focus_f_pusaka
+		icon = GFX_goal_generic_scientific_exchange
+		x = 20
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_f_root }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.2 hours = 6 }
+		}
+	}
+
+	# --- 3. Bentuk Dewan Adat Nusantara ---
+	focus = {
+		id = dei_focus_f_dewan_adat
+		icon = GFX_goal_generic_political_pressure
+		x = 24
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_f_root }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.5 hours = 6 }
+		}
+	}
+
+	# --- 4. Bangun Angkatan Laut Agung ---
+	focus = {
+		id = dei_focus_f_angkatan_laut
+		icon = GFX_goal_generic_navy_effort
+		x = 20
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_pusaka }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.6 hours = 6 }
+		}
+	}
+
+	# --- 5. Klaim Wilayah "Nusantara Raya" ---
+	focus = {
+		id = dei_focus_f_klaim_nusantara
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 24
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_dewan_adat }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.7 hours = 6 }
+		}
+	}
+
+	# --- 6. Satukan Kerajaan-Kerajaan Nusantara ---
+	focus = {
+		id = dei_focus_f_persatuan_kerajaan
+		icon = GFX_goal_generic_political_pressure
+		x = 22
+		y = 12
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_angkatan_laut focus = dei_focus_f_klaim_nusantara }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.8 hours = 6 }
+		}
+	}
+
+	# --- 7. CAPSTONE: Proklamasikan Kekaisaran Nusantara Baru ---
+	focus = {
+		id = dei_focus_f_kekaisaran_baru
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 13
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_f_persatuan_kerajaan }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			add_ideas = dei_idea_kekaisaran_nusantara
+			country_event = { id = dei_path_f.9 hours = 6 }
+		}
+	}
+}

@@ -1,0 +1,162 @@
+add_namespace = dei_trunk
+
+# =====================================================================
+# Event pendamping batang fokus bersama (1936-1945).
+# Semua "picture =" sengaja DIHILANGKAN (bukan lupa) karena mod ini
+# belum punya aset gfx sendiri — game akan tampilkan event tanpa
+# gambar, tidak error. Tambahkan "picture = GFX_xxx" kalau sudah ada
+# art custom atau sudah pastikan gfx vanilla yang mau dipakai.
+# =====================================================================
+
+# --- 1. Setelah root focus: pembukaan cerita ---
+country_event = {
+	id = dei_trunk.1
+	title = dei_trunk.1.t
+	desc = dei_trunk.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.1.a
+		add_political_power = 10
+	}
+}
+
+# --- 2. Pendidikan pribumi menyemai nasionalisme: pilihan arah ---
+country_event = {
+	id = dei_trunk.2
+	title = dei_trunk.2.t
+	desc = dei_trunk.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.2.a # Dukung penuh, biarkan sekolah pribumi berkembang
+		add_stability = -0.02
+		add_ideas = dei_idea_native_sentiment_high
+		ai_chance = { factor = 40 }
+	}
+	option = {
+		name = dei_trunk.2.b # Batasi kurikulum, awasi ketat
+		add_stability = 0.02
+		add_political_power = 15
+		ai_chance = { factor = 60 }
+	}
+}
+
+# --- 3. Sikap ke gerakan nasionalis: represif vs akomodatif ---
+country_event = {
+	id = dei_trunk.3
+	title = dei_trunk.3.t
+	desc = dei_trunk.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.3.a # Tindak tegas, tangkap tokoh pergerakan
+		set_country_flag = dei_flag_represif
+		add_stability = 0.05
+		add_war_support = -0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_trunk.3.b # Ajak berunding, buka ruang dialog
+		set_country_flag = dei_flag_akomodatif
+		add_stability = -0.03
+		add_war_support = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+# --- 4. Cari dukungan asing ---
+country_event = {
+	id = dei_trunk.4
+	title = dei_trunk.4.t
+	desc = dei_trunk.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.4.a # Dekati Amerika Serikat & Inggris
+		add_political_power = 20
+		ai_chance = { factor = 60 }
+	}
+	option = {
+		name = dei_trunk.4.b # Tetap netral, andalkan diri sendiri
+		add_stability = 0.03
+		ai_chance = { factor = 40 }
+	}
+}
+
+# --- 5. Waspada ancaman Jepang (naratif, tidak memaksa hasil perang) ---
+country_event = {
+	id = dei_trunk.5
+	title = dei_trunk.5.t
+	desc = dei_trunk.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.5.a
+		add_ideas = dei_idea_home_defense_plan
+	}
+}
+
+# --- 6. MOMENTUM KEMERDEKAAN: percabangan ke 6 jalur ideologi ---
+# Ini event terpenting di batang bersama — dipicu juga oleh decision
+# Revolusi Dini lewat efek complete_national_focus pada fokus ini.
+country_event = {
+	id = dei_trunk.6
+	title = dei_trunk.6.t
+	desc = dei_trunk.6.d
+	picture = GFX_dei_event_trunk6
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = dei_jalur_dipilih
+	}
+
+	option = {
+		name = dei_trunk.6.a # Jalur A: Republik Nasionalis-Demokratis
+		set_country_flag = dei_path_a_chosen
+		add_ideas = dei_idea_republik_diproklamasikan
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+	option = {
+		name = dei_trunk.6.b # Jalur B: Kolonial/Federalis (Belanda tetap berkuasa)
+		set_country_flag = dei_path_b_chosen
+	}
+	option = {
+		name = dei_trunk.6.c # Jalur C: Komunis
+		set_country_flag = dei_path_c_chosen
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = dei_trunk.6.d # Jalur D: Otoriter Militeristik/Nasionalis Radikal
+		set_country_flag = dei_path_d_chosen
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = dei_trunk.6.e # Jalur E: Islamis (Negara Islam Indonesia)
+		set_country_flag = dei_path_e_chosen
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = dei_trunk.6.f # Jalur F: Kebangkitan Majapahit (ahistoris)
+		trigger = { has_global_flag = dei_ahistoris_enabled }
+		set_country_flag = dei_path_f_chosen
+	}
+}

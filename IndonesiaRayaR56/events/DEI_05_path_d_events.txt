@@ -1,0 +1,128 @@
+add_namespace = dei_path_d
+
+# =====================================================================
+# Event chain Jalur D: Otoriter Militeristik/Nasionalis Radikal.
+# =====================================================================
+
+country_event = {
+	id = dei_path_d.1
+	title = dei_path_d.1.t
+	desc = dei_path_d.1.d
+	picture = GFX_dei_event_path_d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.1.a # Kudeta cepat & berdarah
+		add_war_support = 0.10
+		add_stability = -0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_d.1.b # Kudeta terencana, minim korban
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_d.2
+	title = dei_path_d.2.t
+	desc = dei_path_d.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.2.a
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = dei_path_d.3
+	title = dei_path_d.3.t
+	desc = dei_path_d.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.3.a # Bubarkan semua partai tanpa kecuali
+		add_stability = 0.05
+		add_war_support = -0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_d.3.b # Sisakan satu partai negara tunggal
+		add_political_power = 20
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_d.4
+	title = dei_path_d.4.t
+	desc = dei_path_d.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.4.a
+		add_ideas = dei_idea_industri_militer_kuat
+	}
+}
+
+country_event = {
+	id = dei_path_d.5
+	title = dei_path_d.5.t
+	desc = dei_path_d.5.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.5.a # Propaganda agresif lewat radio & pers
+		add_war_support = 0.10
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_d.5.b # Propaganda halus lewat pendidikan
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_d.6
+	title = dei_path_d.6.t
+	desc = dei_path_d.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.6.a
+		add_manpower = 8000
+	}
+}
+
+country_event = {
+	id = dei_path_d.7
+	title = dei_path_d.7.t
+	desc = dei_path_d.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.7.a # Klaim penuh, siap konfrontasi
+		add_war_support = 0.10
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_d.7.b # Klaim bertahap, hindari perang dini
+		add_political_power = 25
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_d.8
+	title = dei_path_d.8.t
+	desc = dei_path_d.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_d.8.a
+		add_war_support = 0.10
+	}
+}

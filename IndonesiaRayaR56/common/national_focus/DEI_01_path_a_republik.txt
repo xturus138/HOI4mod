@@ -1,0 +1,163 @@
+# =====================================================================
+# JALUR A: REPUBLIK NASIONALIS-DEMOKRATIS — jalur "historis utama"
+# Menambah focus= { } ke focus_tree id = dei_focus_tree yang sama
+# (didefinisikan di DEI_00_shared_trunk.txt). JANGAN dobel deklarasi
+# focus_tree = { id = ... } di file ini.
+#
+# Semua focus di sini terkunci sampai pemain memilih opsi A pada
+# event dei_trunk.6 (lihat available = { has_country_flag = dei_path_a_chosen }).
+# =====================================================================
+
+focus_tree = {
+	id = dei_focus_tree
+
+	# --- 1. Proklamasi Kemerdekaan ---
+	focus = {
+		id = dei_focus_a_proklamasi
+		icon = GFX_dei_focus_path_a_root
+		x = -8
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.1 hours = 6 }
+		}
+	}
+
+	# --- 2. Bentuk TKR ---
+	focus = {
+		id = dei_focus_a_tkr
+		icon = GFX_goal_generic_army_effort
+		x = -8
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_proklamasi }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.2 hours = 6 }
+		}
+	}
+
+	# --- 3. Cari pengakuan internasional ---
+	focus = {
+		id = dei_focus_a_diplomasi
+		icon = GFX_goal_generic_scientific_exchange
+		x = -10
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_a_tkr }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.3 hours = 6 }
+		}
+	}
+
+	# --- 4. Hadapi Agresi Militer Belanda I ---
+	focus = {
+		id = dei_focus_a_agresi_1
+		icon = GFX_goal_generic_major_war
+		x = -6
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_tkr }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.4 hours = 6 }
+		}
+	}
+
+	# --- 5. Strategi Perang Gerilya ---
+	focus = {
+		id = dei_focus_a_gerilya
+		icon = GFX_goal_generic_army_effort
+		x = -6
+		y = 12
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_a_agresi_1 }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			add_ideas = dei_idea_guerrilla_doctrine
+		}
+	}
+
+	# --- 6. Hadapi Agresi Militer Belanda II ---
+	focus = {
+		id = dei_focus_a_agresi_2
+		icon = GFX_goal_generic_major_war
+		x = -6
+		y = 13
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_gerilya }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.5 hours = 6 }
+		}
+	}
+
+	# --- 7. Perundingan Meja Bundar ---
+	focus = {
+		id = dei_focus_a_kmb
+		icon = GFX_goal_generic_political_pressure
+		x = -8
+		y = 14
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_a_agresi_2 focus = dei_focus_a_diplomasi }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.6 hours = 6 }
+		}
+	}
+
+	# --- 8. Bangun Demokrasi Liberal Parlementer ---
+	focus = {
+		id = dei_focus_a_demokrasi_liberal
+		icon = GFX_goal_generic_political_pressure
+		x = -8
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_kmb }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.7 hours = 6 }
+		}
+	}
+
+	# --- 9. Rebut Papua Barat ---
+	focus = {
+		id = dei_focus_a_irian_barat
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -10
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_demokrasi_liberal }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.8 hours = 6 }
+		}
+	}
+
+	# --- 10. Menuju Demokrasi Terpimpin (capstone) ---
+	focus = {
+		id = dei_focus_a_demokrasi_terpimpin
+		icon = GFX_goal_generic_national_unity
+		x = -6
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_a_demokrasi_liberal }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.9 hours = 6 }
+		}
+	}
+}

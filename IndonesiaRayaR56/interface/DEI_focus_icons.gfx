@@ -1,0 +1,39 @@
+### Custom focus icons for Indonesia Raya: Road to Merdeka.
+### Simple flat placeholder glyphs (see README "Aset gambar v0.7") --
+### swap the .dds files in gfx/interface/goals/ for real art later,
+### the GFX_ names below can stay the same.
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_dei_focus_root"
+		texturefile = "gfx/interface/goals/DEI_root.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_focus_momentum"
+		texturefile = "gfx/interface/goals/DEI_momentum.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_focus_path_a_root"
+		texturefile = "gfx/interface/goals/DEI_path_a_root.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_focus_path_b_root"
+		texturefile = "gfx/interface/goals/DEI_path_b_root.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_focus_path_c_root"
+		texturefile = "gfx/interface/goals/DEI_path_c_root.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_focus_path_d_root"
+		texturefile = "gfx/interface/goals/DEI_path_d_root.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_focus_path_e_root"
+		texturefile = "gfx/interface/goals/DEI_path_e_root.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_focus_path_f_root"
+		texturefile = "gfx/interface/goals/DEI_path_f_root.dds"
+	}
+}

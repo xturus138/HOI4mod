@@ -1,0 +1,448 @@
+l_english:
+ # =====================================================================
+ # CATATAN: semua teks di bawah ini ditulis dalam Bahasa Indonesia,
+ # tapi disimpan di bawah key "l_english:". Ini trik umum modder HOI4
+ # untuk bahasa yang tidak/belum resmi didukung game (Bahasa Indonesia
+ # kemungkinan belum termasuk daftar l_xxx resmi) — dengan menaruhnya
+ # di l_english, teksnya PASTI muncul selama client bahasa game di-set
+ # ke English. Kalau ternyata versi HOI4-mu sudah punya l_indonesian:
+ # resmi, salin isi file ini ke situ. Lihat README.md.
+ # =====================================================================
+
+ #### FOCUS TREE: batang bersama ####
+ dei_focus_root: "Hindia Belanda di Persimpangan Jalan"
+ dei_focus_root_desc: "Tahun 1936. Krisis ekonomi global masih membekas, sementara suara-suara nasionalisme mulai terdengar di Volksraad. Pemerintah kolonial harus memutuskan arah."
+ dei_focus_volksraad: "Perkuat Volksraad"
+ dei_focus_volksraad_desc: "Memberi Volksraad (Dewan Rakyat) lebih banyak wewenang nyata, alih-alih sekadar badan penasihat simbolis."
+ dei_focus_econ_liberal: "Liberalisasi Ekonomi"
+ dei_focus_econ_liberal_desc: "Buka lebih banyak sektor ekonomi Hindia untuk pengusaha pribumi dan investasi asing di luar Belanda."
+ dei_focus_econ_conservative: "Pertahankan Monopoli Kolonial"
+ dei_focus_econ_conservative_desc: "Pertahankan sistem tanam paksa modern dan monopoli dagang demi keuntungan maksimal bagi Belanda."
+ dei_focus_native_education: "Perluasan Pendidikan Pribumi"
+ dei_focus_native_education_desc: "Sekolah-sekolah baru untuk penduduk pribumi — sekaligus, tanpa disadari, menyemai bibit-bibit kesadaran nasional."
+ dei_focus_nationalist_watch: "Sikapi Gerakan Nasionalis"
+ dei_focus_nationalist_watch_desc: "Tokoh-tokoh seperti Mohammad Hoesni Thamrin semakin lantang bersuara di Volksraad. Bagaimana pemerintah harus bersikap?"
+ dei_focus_knil_reform: "Reformasi KNIL"
+ dei_focus_knil_reform_desc: "Modernisasi Koninklijk Nederlandsch-Indisch Leger (KNIL) menghadapi ketidakpastian kawasan Pasifik."
+ dei_focus_defense_plan: "Rencana Pertahanan Hindia"
+ dei_focus_defense_plan_desc: "Menyusun rencana pertahanan menyeluruh untuk kepulauan yang sangat luas ini."
+ dei_focus_foreign_support: "Cari Dukungan Asing"
+ dei_focus_foreign_support_desc: "Mendekati Amerika Serikat dan Inggris untuk dukungan diplomatik dan logistik."
+ dei_focus_japan_threat: "Waspada Ancaman Jepang"
+ dei_focus_japan_threat_desc: "Ekspansi Jepang di Asia semakin nyata. Hindia Belanda, dengan kekayaan minyaknya, jadi incaran utama."
+ dei_focus_momentum_kemerdekaan: "Momentum Kemerdekaan"
+ dei_focus_momentum_kemerdekaan_desc: "Sejarah sampai di titik balik. Arah apa yang akan diambil Nusantara dari sini?"
+
+ #### FOCUS TREE: Jalur A - Republik ####
+ dei_focus_a_proklamasi: "Proklamasi Kemerdekaan"
+ dei_focus_a_proklamasi_desc: "Momen yang ditunggu: menyatakan kemerdekaan penuh dari kekuasaan kolonial."
+ dei_focus_a_tkr: "Bentuk Tentara Keamanan Rakyat"
+ dei_focus_a_tkr_desc: "Republik yang baru diproklamasikan butuh kekuatan bersenjata sendiri."
+ dei_focus_a_diplomasi: "Cari Pengakuan Internasional"
+ dei_focus_a_diplomasi_desc: "Meyakinkan dunia bahwa Republik ini layak diakui sebagai negara berdaulat."
+ dei_focus_a_agresi_1: "Hadapi Agresi Militer Belanda I"
+ dei_focus_a_agresi_1_desc: "Belanda melancarkan operasi militer besar untuk merebut kembali kendali."
+ dei_focus_a_gerilya: "Strategi Perang Gerilya"
+ dei_focus_a_gerilya_desc: "Saat kalah jumlah dan persenjataan, medan dan rakyat jadi senjata utama."
+ dei_focus_a_agresi_2: "Hadapi Agresi Militer Belanda II"
+ dei_focus_a_agresi_2_desc: "Gelombang kedua serangan Belanda, kali ini lebih menentukan."
+ dei_focus_a_kmb: "Perundingan Meja Bundar"
+ dei_focus_a_kmb_desc: "Tekanan internasional memaksa Belanda ke meja perundingan."
+ dei_focus_a_demokrasi_liberal: "Bangun Demokrasi Liberal Parlementer"
+ dei_focus_a_demokrasi_liberal_desc: "Membangun sistem multi-partai dengan pemerintahan parlementer."
+ dei_focus_a_irian_barat: "Rebut Papua Barat"
+ dei_focus_a_irian_barat_desc: "Satu wilayah yang belum kembali ke pangkuan Republik: Papua Barat."
+ dei_focus_a_demokrasi_terpimpin: "Menuju Demokrasi Terpimpin"
+ dei_focus_a_demokrasi_terpimpin_desc: "Ketidakstabilan parlementer mendorong konsolidasi kekuasaan yang lebih terpusat."
+
+ #### FOCUS TREE: Jalur B - Kolonial/Federalis ####
+ dei_focus_b_root: "Padamkan Api Revolusi"
+ dei_focus_b_root_desc: "Pemerintah kolonial memutuskan mempertahankan kekuasaan dengan segala cara."
+ dei_focus_b_tekan_gerilyawan: "Operasi Penumpasan Gerilyawan"
+ dei_focus_b_tekan_gerilyawan_desc: "Kampanye militer menumpas kantong-kantong perlawanan bersenjata."
+ dei_focus_b_reformasi_terbatas: "Reformasi Politik Terbatas"
+ dei_focus_b_reformasi_terbatas_desc: "Memberi sedikit ruang politik untuk meredam ketidakpuasan, tanpa melepas kendali."
+ dei_focus_b_negara_federal: "Bangun Negara-Negara Federal"
+ dei_focus_b_negara_federal_desc: "Membentuk negara-negara bagian federal yang setia pada Belanda."
+ dei_focus_b_uni_belanda: "Uni Belanda-Indonesia"
+ dei_focus_b_uni_belanda_desc: "Mengikat federasi baru ini dalam ikatan formal dengan Kerajaan Belanda."
+ dei_focus_b_ekonomi_terpadu: "Ekonomi Terpadu Hindia-Belanda"
+ dei_focus_b_ekonomi_terpadu_desc: "Menyatukan sistem ekonomi kedua wilayah demi efisiensi (dan keuntungan Belanda)."
+ dei_focus_b_dominion_status: "Raih Status Dominion"
+ dei_focus_b_dominion_status_desc: "Mengejar status setara dominion Persemakmuran Inggris, otonomi luas dalam ikatan kerajaan."
+ dei_focus_b_persemakmuran: "Gabung Persemakmuran Belanda"
+ dei_focus_b_persemakmuran_desc: "Struktur akhir: federasi otonom yang tetap setia pada Mahkota Belanda."
+
+ #### FOCUS TREE: Jalur C - Komunis ####
+ dei_focus_c_root: "Bangun Front Rakyat"
+ dei_focus_c_root_desc: "PKI dan kekuatan kiri lain menyatukan diri dalam Front Rakyat menjelang perebutan kekuasaan."
+ dei_focus_c_land_reform: "Land Reform Radikal"
+ dei_focus_c_land_reform_desc: "Redistribusi tanah besar-besaran dari tuan tanah ke petani penggarap."
+ dei_focus_c_purge_nasionalis: "Singkirkan Faksi Nasionalis Non-Komunis"
+ dei_focus_c_purge_nasionalis_desc: "Kebalikan dari Peristiwa Madiun sejarah asli: kali ini Front Rakyat yang menang."
+ dei_focus_c_tentara_rakyat: "Bentuk Tentara Rakyat"
+ dei_focus_c_tentara_rakyat_desc: "Kekuatan bersenjata baru yang setia pada ideologi rakyat."
+ dei_focus_c_poros_soviet: "Jalin Hubungan dengan Uni Soviet"
+ dei_focus_c_poros_soviet_desc: "Mencari dukungan dan bantuan dari Moskow."
+ dei_focus_c_poros_tiongkok: "Jalin Hubungan dengan Republik Rakyat Tiongkok"
+ dei_focus_c_poros_tiongkok_desc: "Mencari dukungan dan bantuan dari Beijing."
+ dei_focus_c_industrialisasi: "Industrialisasi Sosialis"
+ dei_focus_c_industrialisasi_desc: "Membangun basis industri berat ala negara-negara sosialis."
+ dei_focus_c_ekspor_revolusi: "Ekspor Revolusi ke Asia Tenggara"
+ dei_focus_c_ekspor_revolusi_desc: "Mendukung gerakan-gerakan revolusioner di kawasan sekitar."
+
+ #### FOCUS TREE: Jalur D - Otoriter Militeristik ####
+ dei_focus_d_root: "Kudeta Militer"
+ dei_focus_d_root_desc: "Faksi militer/nasionalis radikal mengambil alih kekuasaan."
+ dei_focus_d_darurat_militer: "Berlakukan Darurat Militer"
+ dei_focus_d_darurat_militer_desc: "Mengonsolidasikan kekuasaan lewat status darurat."
+ dei_focus_d_bubarkan_partai: "Bubarkan Partai-Partai Politik"
+ dei_focus_d_bubarkan_partai_desc: "Menghapus oposisi politik yang terorganisir."
+ dei_focus_d_industri_militer: "Bangun Industri Militer"
+ dei_focus_d_industri_militer_desc: "Mengarahkan ekonomi untuk mendukung kekuatan militer."
+ dei_focus_d_propaganda: "Kampanye Propaganda Nasionalis Radikal"
+ dei_focus_d_propaganda_desc: "Menyebarkan narasi kejayaan bangsa lewat semua kanal media."
+ dei_focus_d_pemuda_militan: "Bentuk Barisan Pemuda Militan"
+ dei_focus_d_pemuda_militan_desc: "Mengorganisir pemuda menjadi kekuatan paramiliter pendukung rezim."
+ dei_focus_d_klaim_wilayah: "Klaim Wilayah Nusantara yang \"Belum Kembali\""
+ dei_focus_d_klaim_wilayah_desc: "Mengklaim wilayah-wilayah di sekitar Nusantara sebagai bagian sah dari bangsa."
+ dei_focus_d_ambisi_regional: "Ambisi Regional"
+ dei_focus_d_ambisi_regional_desc: "Rezim menatap ke luar batas, siap menegakkan klaimnya dengan kekuatan."
+
+ #### FOCUS TREE: Jalur E - Islamis ####
+ dei_focus_e_root: "Proklamasikan Negara Islam Indonesia"
+ dei_focus_e_root_desc: "Berbasis gerakan Darul Islam historis, kali ini tumbuh menjadi kekuatan pemenang."
+ dei_focus_e_dewan_ulama: "Bentuk Dewan Ulama"
+ dei_focus_e_dewan_ulama_desc: "Badan penasihat keagamaan tertinggi negara baru ini."
+ dei_focus_e_syariat: "Terapkan Syariat Islam"
+ dei_focus_e_syariat_desc: "Menjadikan syariat sebagai landasan hukum negara."
+ dei_focus_e_tii: "Bentuk Tentara Islam Indonesia (TII)"
+ dei_focus_e_tii_desc: "Kekuatan bersenjata resmi negara Islam yang baru diproklamasikan."
+ dei_focus_e_hubungan_arab: "Jalin Hubungan dengan Dunia Arab"
+ dei_focus_e_hubungan_arab_desc: "Mencari pengakuan dan dukungan dari negara-negara Timur Tengah."
+ dei_focus_e_konflik_sekuler: "Hadapi Faksi Sekuler/Nasionalis"
+ dei_focus_e_konflik_sekuler_desc: "Menyelesaikan perpecahan dengan kelompok nasionalis sekuler yang tersisa."
+ dei_focus_e_pendidikan_agama: "Reformasi Pendidikan Berbasis Agama"
+ dei_focus_e_pendidikan_agama_desc: "Mengarahkan sistem pendidikan nasional sesuai nilai-nilai keagamaan."
+ dei_focus_e_persatuan_nusantara: "Persatuan Islam Nusantara"
+ dei_focus_e_persatuan_nusantara_desc: "Menyatukan komunitas-komunitas Muslim di kawasan Nusantara di bawah satu payung."
+
+ #### FOCUS TREE: Jalur F - Kebangkitan Majapahit (AHISTORIS) ####
+ dei_focus_f_root: "Bangkitkan Semangat Majapahit"
+ dei_focus_f_root_desc: "[KONTEN AHISTORIS/FANTASI] Sebuah gerakan revivalis mengangkat warisan Kemaharajaan Majapahit sebagai simbol pemersatu — murni alternate-history, bukan klaim sejarah nyata."
+ dei_focus_f_pusaka: "Cari Pusaka & Simbol Kejayaan Lama"
+ dei_focus_f_pusaka_desc: "Ekspedisi mencari peninggalan yang bisa memperkuat legitimasi gerakan."
+ dei_focus_f_dewan_adat: "Bentuk Dewan Adat Nusantara"
+ dei_focus_f_dewan_adat_desc: "Menghimpun tokoh-tokoh adat dari berbagai penjuru kepulauan."
+ dei_focus_f_angkatan_laut: "Bangun Angkatan Laut Agung"
+ dei_focus_f_angkatan_laut_desc: "Menghidupkan kembali tradisi maritim besar ala kejayaan lama."
+ dei_focus_f_klaim_nusantara: "Klaim Wilayah \"Nusantara Raya\""
+ dei_focus_f_klaim_nusantara_desc: "Mengklaim wilayah pengaruh yang jauh melampaui batas Indonesia modern."
+ dei_focus_f_persatuan_kerajaan: "Satukan Kerajaan-Kerajaan Nusantara"
+ dei_focus_f_persatuan_kerajaan_desc: "Merangkul (atau menundukkan) entitas-entitas kecil di sekitar kepulauan."
+ dei_focus_f_kekaisaran_baru: "Proklamasikan Kekaisaran Nusantara Baru"
+ dei_focus_f_kekaisaran_baru_desc: "Puncak dari gerakan revivalis ini: kekaisaran baru yang mengklaim warisan Majapahit."
+
+ #### DECISIONS ####
+ dei_decisions_category: "Indonesia Raya"
+ dei_decision_revolusi_dini: "Revolusi Dini (Percepat Cerita)"
+ dei_decision_revolusi_dini_desc: "[MODE OPSIONAL/AHISTORIS] Tidak sabar menunggu sampai pertengahan game? Aktifkan opsi ini untuk langsung memicu pemberontakan dan melompat ke titik pemilihan arah ideologi negara, tanpa harus memainkan seluruh alur historis kolonial dan pendudukan Jepang."
+ dei_decision_toggle_ahistoris: "Aktifkan Konten Ahistoris"
+ dei_decision_toggle_ahistoris_desc: "Mengizinkan jalur-jalur fantasi/alternate-history ekstrem (seperti Kebangkitan Majapahit) muncul sebagai opsi. Matikan kalau kamu mau pengalaman yang tetap berpijak pada sejarah nyata."
+
+ #### IDEAS / NATIONAL SPIRITS ####
+ dei_idea_volksraad_reformed: "Volksraad Direformasi"
+ dei_idea_liberalized_economy: "Ekonomi Diliberalisasi"
+ dei_idea_colonial_monopoly: "Monopoli Kolonial"
+ dei_idea_native_sentiment_high: "Sentimen Pribumi Menguat"
+ dei_idea_home_defense_plan: "Rencana Pertahanan Dalam Negeri"
+ dei_idea_revolusi_dini_spirit: "Gelora Revolusi Dini"
+ dei_idea_republik_diproklamasikan: "Republik Telah Diproklamasikan"
+ dei_idea_guerrilla_doctrine: "Doktrin Perang Gerilya"
+ dei_idea_liberal_democracy_established: "Demokrasi Liberal Berdiri"
+ dei_idea_guided_democracy: "Demokrasi Terpimpin"
+ dei_idea_persemakmuran_belanda: "Bagian Persemakmuran Belanda"
+ dei_idea_republik_rakyat_indonesia: "Republik Rakyat Indonesia Berdiri"
+ dei_idea_tentara_rakyat_disiplin: "Tentara Rakyat yang Disiplin"
+ dei_idea_rezim_militer_konsolidasi: "Rezim Militer Terkonsolidasi"
+ dei_idea_industri_militer_kuat: "Industri Militer yang Kuat"
+ dei_idea_negara_islam_konsolidasi: "Negara Islam Terkonsolidasi"
+ dei_idea_tii_terbentuk: "Tentara Islam Indonesia Terbentuk"
+ dei_idea_dewan_adat_terbentuk: "Dewan Adat Nusantara Terbentuk"
+ dei_idea_kekaisaran_nusantara: "Kekaisaran Nusantara Baru"
+
+ #### EVENTS: batang bersama ####
+ dei_trunk.1.t: "Hindia Belanda Menyongsong Zaman Baru"
+ dei_trunk.1.d: "Pemerintah kolonial menegaskan kembali otoritasnya atas Nusantara, sembari dunia bersiap menghadapi ketegangan yang meningkat."
+ dei_trunk.1.a: "Lanjutkan"
+
+ dei_trunk.2.t: "Sekolah-Sekolah Baru, Pikiran-Pikiran Baru"
+ dei_trunk.2.d: "Lulusan sekolah pribumi mulai membaca surat kabar, berdiskusi tentang nasib bangsa mereka. Sebagian pejabat khawatir ini akan berujung pada tuntutan yang lebih besar."
+ dei_trunk.2.a: "Biarkan pendidikan berkembang bebas"
+ dei_trunk.2.b: "Batasi kurikulum yang dianggap berbahaya"
+
+ dei_trunk.3.t: "Suara-Suara di Volksraad"
+ dei_trunk.3.d: "Tokoh-tokoh pergerakan semakin lantang menuntut perubahan. Pemerintah harus memilih: menindak atau berdialog."
+ dei_trunk.3.a: "Tindak tegas para tokoh pergerakan"
+ dei_trunk.3.b: "Buka ruang dialog dan negosiasi"
+
+ dei_trunk.4.t: "Mencari Kawan di Tengah Ketegangan Dunia"
+ dei_trunk.4.d: "Dengan bayang-bayang perang di cakrawala, pemerintah Hindia mempertimbangkan hubungan yang lebih erat dengan kekuatan-kekuatan Barat lainnya."
+ dei_trunk.4.a: "Dekati Amerika Serikat dan Inggris"
+ dei_trunk.4.b: "Tetap berdiri sendiri"
+
+ dei_trunk.5.t: "Bayang-Bayang dari Utara"
+ dei_trunk.5.d: "Kekaisaran Jepang memandang kekayaan minyak dan karet Hindia Belanda dengan penuh minat. Persiapan pertahanan menjadi mendesak."
+ dei_trunk.5.a: "Percepat persiapan pertahanan"
+
+ dei_trunk.6.t: "Titik Balik Sejarah"
+ dei_trunk.6.d: "Nusantara berada di persimpangan jalan yang menentukan. Arah mana yang akan dipilih untuk masa depan negeri ini?"
+ dei_trunk.6.a: "Proklamasikan Republik yang demokratis"
+ dei_trunk.6.b: "Pertahankan ikatan dengan Belanda dalam bentuk federasi"
+ dei_trunk.6.c: "Bangun negara rakyat yang komunis"
+ dei_trunk.6.d: "Serahkan kekuasaan pada kekuatan nasionalis radikal"
+ dei_trunk.6.e: "Dirikan negara berlandaskan Islam"
+ dei_trunk.6.f: "Bangkitkan kembali kejayaan Majapahit (ahistoris)"
+
+ #### EVENTS: Revolusi Dini ####
+ dei_revolusi_dini.1.t: "Pemberontakan Meletus Lebih Awal!"
+ dei_revolusi_dini.1.d: "[MODE AHISTORIS] Jauh sebelum sejarah 'seharusnya' mencatatnya, gelombang pemberontakan pecah di berbagai penjuru Hindia. Ini bukan yang terjadi sebenarnya — ini adalah pilihanmu untuk mempercepat jalan cerita."
+ dei_revolusi_dini.1.a: "Manfaatkan momentum ini — lanjutkan ke penentuan arah bangsa"
+
+ dei_revolusi_dini.9.t: "Gerbang Sejarah Alternatif Dibuka"
+ dei_revolusi_dini.9.d: "Kamu telah mengaktifkan konten ahistoris/alternate-history. Jalur-jalur ekstrem seperti Kebangkitan Majapahit kini bisa dipilih di titik percabangan nanti."
+ dei_revolusi_dini.9.a: "Mengerti"
+
+ #### EVENTS: Jalur A - Republik ####
+ dei_path_a.1.t: "Proklamasi Kemerdekaan"
+ dei_path_a.1.d: "Naskah proklamasi telah disiapkan. Bagaimana cara terbaik menyampaikannya ke dunia?"
+ dei_path_a.1.a: "Proklamasikan segera, hadapi risikonya"
+ dei_path_a.1.b: "Siapkan dulu dukungan diplomatik dan logistik"
+
+ dei_path_a.2.t: "Membentuk Tentara Keamanan Rakyat"
+ dei_path_a.2.d: "Republik yang masih muda ini membutuhkan kekuatan militer yang terorganisir."
+ dei_path_a.2.a: "Bangun dari bekas prajurit PETA dan KNIL"
+ dei_path_a.2.b: "Rekrut laskar rakyat secara luas"
+
+ dei_path_a.3.t: "Mencari Pengakuan di Panggung Dunia"
+ dei_path_a.3.d: "Delegasi Republik dikirim untuk meyakinkan negara-negara lain akan legitimasi kemerdekaan ini."
+ dei_path_a.3.a: "Dekati India dan negara-negara Asia yang baru merdeka"
+ dei_path_a.3.b: "Manfaatkan simpati pers internasional"
+
+ dei_path_a.4.t: "Agresi Militer Belanda Pertama"
+ dei_path_a.4.d: "Pasukan Belanda melancarkan operasi militer besar-besaran untuk merebut kembali wilayah strategis."
+ dei_path_a.4.a: "Lawan langsung di garis depan"
+ dei_path_a.4.b: "Mundur teratur, simpan kekuatan"
+
+ dei_path_a.5.t: "Agresi Militer Belanda Kedua"
+ dei_path_a.5.d: "Gelombang serangan kedua jauh lebih menentukan — ibu kota sementara pun terancam."
+ dei_path_a.5.a: "Bertahan habis-habisan"
+ dei_path_a.5.b: "Buka jalur diplomasi darurat lewat PBB"
+
+ dei_path_a.6.t: "Perundingan Meja Bundar"
+ dei_path_a.6.d: "Di bawah tekanan internasional, Belanda akhirnya setuju berunding secara serius mengenai kedaulatan penuh."
+ dei_path_a.6.a: "Terima hasil perundingan — kedaulatan penuh diakui"
+
+ dei_path_a.7.t: "Riuhnya Demokrasi Parlementer"
+ dei_path_a.7.d: "Partai-partai politik tumbuh subur, tapi koalisi pemerintahan silih berganti dengan cepat."
+ dei_path_a.7.a: "Bangun koalisi besar yang stabil"
+ dei_path_a.7.b: "Biarkan pemerintahan minoritas berjalan cepat"
+
+ dei_path_a.8.t: "Sengketa Papua Barat"
+ dei_path_a.8.d: "Belanda masih menahan Papua Barat dari wilayah kedaulatan Republik. Rakyat menuntut penyelesaian."
+ dei_path_a.8.a: "Tempuh jalur konfrontasi militer"
+ dei_path_a.8.b: "Tempuh jalur diplomasi lewat PBB"
+
+ dei_path_a.9.t: "Menuju Demokrasi Terpimpin"
+ dei_path_a.9.d: "Ketidakstabilan politik yang berkepanjangan mendorong konsolidasi kekuasaan yang lebih terpusat di tangan pemimpin nasional."
+ dei_path_a.9.a: "Terima arah baru ini"
+
+ #### EVENTS: Jalur B - Kolonial/Federalis ####
+ dei_path_b.1.t: "Menumpas Api Revolusi"
+ dei_path_b.1.d: "Pemerintah kolonial memutuskan bagaimana cara terbaik memadamkan gerakan kemerdekaan."
+ dei_path_b.1.a: "Represif keras, tumpas tanpa ampun"
+ dei_path_b.1.b: "Represif terukur, hindari kecaman internasional"
+
+ dei_path_b.2.t: "Operasi Penumpasan Gerilyawan"
+ dei_path_b.2.d: "Pasukan kolonial memburu kantong-kantong perlawanan di pedalaman."
+ dei_path_b.2.a: "Operasi militer besar-besaran"
+ dei_path_b.2.b: "Operasi intelijen dan infiltrasi senyap"
+
+ dei_path_b.3.t: "Reformasi Politik Terbatas"
+ dei_path_b.3.d: "Seberapa jauh pemerintah kolonial mau memberi ruang politik?"
+ dei_path_b.3.a: "Reformasi luas, beri otonomi nyata"
+ dei_path_b.3.b: "Reformasi kosmetik saja"
+
+ dei_path_b.4.t: "Membentuk Negara-Negara Federal"
+ dei_path_b.4.d: "Struktur federal baru mulai dibentuk di berbagai wilayah."
+ dei_path_b.4.a: "Banyak negara federal kecil"
+ dei_path_b.4.b: "Sedikit negara federal besar"
+
+ dei_path_b.5.t: "Uni Belanda-Indonesia"
+ dei_path_b.5.d: "Merumuskan bentuk ikatan formal antara federasi baru dan Kerajaan Belanda."
+ dei_path_b.5.a: "Uni penuh, kebijakan luar negeri disatukan"
+ dei_path_b.5.b: "Uni longgar, otonomi domestik lebih besar"
+
+ dei_path_b.6.t: "Ekonomi Terpadu Hindia-Belanda"
+ dei_path_b.6.d: "Sistem ekonomi kedua wilayah mulai disatukan."
+ dei_path_b.6.a: "Lanjutkan"
+
+ dei_path_b.7.t: "Status Dominion Diraih"
+ dei_path_b.7.d: "Federasi ini kini setara dominion dalam Kerajaan Belanda."
+ dei_path_b.7.a: "Lanjutkan"
+
+ dei_path_b.8.t: "Bergabung dengan Persemakmuran Belanda"
+ dei_path_b.8.d: "Struktur akhir federasi otonom yang setia pada Mahkota Belanda kini resmi berdiri."
+ dei_path_b.8.a: "Lanjutkan"
+
+ #### EVENTS: Jalur C - Komunis ####
+ dei_path_c.1.t: "Front Rakyat Terbentuk"
+ dei_path_c.1.d: "Kekuatan-kekuatan kiri bersatu menjelang perebutan kekuasaan yang menentukan."
+ dei_path_c.1.a: "Front Rakyat luas, gandeng semua kekuatan kiri"
+ dei_path_c.1.b: "PKI sebagai poros tunggal, disiplin ketat"
+
+ dei_path_c.2.t: "Land Reform Radikal"
+ dei_path_c.2.d: "Tanah mulai didistribusikan ulang dari tuan tanah ke petani penggarap."
+ dei_path_c.2.a: "Land reform radikal dan cepat"
+ dei_path_c.2.b: "Land reform bertahap"
+
+ dei_path_c.3.t: "Perebutan Pengaruh dengan Faksi Nasionalis"
+ dei_path_c.3.d: "Berbeda dari sejarah aslinya, kali ini Front Rakyat berada di posisi lebih kuat."
+ dei_path_c.3.a: "Tindak keras faksi nasionalis non-komunis"
+ dei_path_c.3.b: "Rangkul faksi moderat ke koalisi"
+
+ dei_path_c.4.t: "Tentara Rakyat Terbentuk"
+ dei_path_c.4.d: "Kekuatan bersenjata baru yang setia pada ideologi rakyat kini berdiri."
+ dei_path_c.4.a: "Lanjutkan"
+
+ dei_path_c.5.t: "Hubungan dengan Moskow"
+ dei_path_c.5.d: "Delegasi dikirim untuk menjalin hubungan erat dengan Uni Soviet."
+ dei_path_c.5.a: "Lanjutkan"
+
+ dei_path_c.6.t: "Hubungan dengan Beijing"
+ dei_path_c.6.d: "Delegasi dikirim untuk menjalin hubungan erat dengan Republik Rakyat Tiongkok."
+ dei_path_c.6.a: "Lanjutkan"
+
+ dei_path_c.7.t: "Industrialisasi Sosialis"
+ dei_path_c.7.d: "Menentukan arah pembangunan basis industri negara sosialis yang baru ini."
+ dei_path_c.7.a: "Prioritaskan industri berat"
+ dei_path_c.7.b: "Seimbangkan dengan kebutuhan rakyat"
+
+ dei_path_c.8.t: "Ekspor Revolusi"
+ dei_path_c.8.d: "Republik Rakyat Indonesia mulai mendukung gerakan-gerakan revolusioner di kawasan sekitarnya."
+ dei_path_c.8.a: "Lanjutkan"
+
+ #### EVENTS: Jalur D - Otoriter Militeristik ####
+ dei_path_d.1.t: "Kudeta Militer"
+ dei_path_d.1.d: "Faksi militer/nasionalis radikal bergerak mengambil alih kekuasaan."
+ dei_path_d.1.a: "Kudeta cepat dan berdarah"
+ dei_path_d.1.b: "Kudeta terencana, minim korban"
+
+ dei_path_d.2.t: "Darurat Militer Diberlakukan"
+ dei_path_d.2.d: "Status darurat memberi rezim baru wewenang penuh."
+ dei_path_d.2.a: "Lanjutkan"
+
+ dei_path_d.3.t: "Partai-Partai Politik Dibubarkan"
+ dei_path_d.3.d: "Rezim baru memutuskan nasib partai-partai politik yang ada."
+ dei_path_d.3.a: "Bubarkan semua partai tanpa kecuali"
+ dei_path_d.3.b: "Sisakan satu partai negara tunggal"
+
+ dei_path_d.4.t: "Industri Militer Dibangun"
+ dei_path_d.4.d: "Ekonomi negara diarahkan untuk mendukung kekuatan militer."
+ dei_path_d.4.a: "Lanjutkan"
+
+ dei_path_d.5.t: "Kampanye Propaganda Nasionalis Radikal"
+ dei_path_d.5.d: "Narasi kejayaan bangsa disebarkan lewat semua kanal media yang ada."
+ dei_path_d.5.a: "Propaganda agresif lewat radio dan pers"
+ dei_path_d.5.b: "Propaganda halus lewat pendidikan"
+
+ dei_path_d.6.t: "Barisan Pemuda Militan Terbentuk"
+ dei_path_d.6.d: "Pemuda diorganisir menjadi kekuatan paramiliter pendukung rezim."
+ dei_path_d.6.a: "Lanjutkan"
+
+ dei_path_d.7.t: "Klaim Wilayah yang \"Belum Kembali\""
+ dei_path_d.7.d: "Rezim menegaskan klaim atas wilayah-wilayah di sekitar Nusantara."
+ dei_path_d.7.a: "Klaim penuh, siap konfrontasi"
+ dei_path_d.7.b: "Klaim bertahap, hindari perang dini"
+
+ dei_path_d.8.t: "Ambisi Regional"
+ dei_path_d.8.d: "Rezim kini menatap ke luar batas negeri, siap menegakkan klaimnya."
+ dei_path_d.8.a: "Lanjutkan"
+
+ #### EVENTS: Jalur E - Islamis ####
+ dei_path_e.1.t: "Proklamasi Negara Islam Indonesia"
+ dei_path_e.1.d: "Gerakan yang berbasis dari perjuangan Darul Islam kini mendekati kemenangan."
+ dei_path_e.1.a: "Proklamasikan segera di daerah basis"
+ dei_path_e.1.b: "Konsolidasi dulu, proklamasikan belakangan"
+
+ dei_path_e.2.t: "Dewan Ulama Terbentuk"
+ dei_path_e.2.d: "Badan penasihat keagamaan tertinggi negara baru ini mulai bekerja."
+ dei_path_e.2.a: "Lanjutkan"
+
+ dei_path_e.3.t: "Penerapan Syariat Islam"
+ dei_path_e.3.d: "Menentukan sejauh mana syariat diterapkan sebagai landasan hukum negara."
+ dei_path_e.3.a: "Penerapan penuh dan ketat"
+ dei_path_e.3.b: "Penerapan bertahap, akomodasi keberagaman"
+
+ dei_path_e.4.t: "Tentara Islam Indonesia Terbentuk"
+ dei_path_e.4.d: "Kekuatan bersenjata resmi negara Islam yang baru diproklamasikan kini berdiri."
+ dei_path_e.4.a: "Lanjutkan"
+
+ dei_path_e.5.t: "Hubungan dengan Dunia Arab"
+ dei_path_e.5.d: "Delegasi dikirim mencari pengakuan dan dukungan dari negara-negara Timur Tengah."
+ dei_path_e.5.a: "Lanjutkan"
+
+ dei_path_e.6.t: "Menghadapi Faksi Sekuler/Nasionalis"
+ dei_path_e.6.d: "Kelompok nasionalis sekuler yang tersisa masih jadi tantangan bagi negara baru ini."
+ dei_path_e.6.a: "Tumpas faksi sekuler"
+ dei_path_e.6.b: "Rangkul faksi sekuler moderat ke koalisi"
+
+ dei_path_e.7.t: "Reformasi Pendidikan Berbasis Agama"
+ dei_path_e.7.d: "Sistem pendidikan nasional diarahkan sesuai nilai-nilai keagamaan."
+ dei_path_e.7.a: "Lanjutkan"
+
+ dei_path_e.8.t: "Persatuan Islam Nusantara"
+ dei_path_e.8.d: "Komunitas-komunitas Muslim di kawasan Nusantara kini bersatu di bawah satu payung."
+ dei_path_e.8.a: "Lanjutkan"
+
+ #### EVENTS: Jalur F - Kebangkitan Majapahit (AHISTORIS) ####
+ dei_path_f.1.t: "Kebangkitan Semangat Majapahit"
+ dei_path_f.1.d: "[AHISTORIS] Sebuah gerakan revivalis mulai mengangkat warisan Majapahit sebagai simbol pemersatu Nusantara."
+ dei_path_f.1.a: "Lanjutkan"
+
+ dei_path_f.2.t: "Ekspedisi Pencarian Pusaka (Tahap 1)"
+ dei_path_f.2.d: "[AHISTORIS] Sebuah ekspedisi dikirim mencari peninggalan yang bisa memperkuat legitimasi gerakan ini."
+ dei_path_f.2.a: "Umumkan penemuan secara luas"
+ dei_path_f.2.b: "Simpan diam-diam, gunakan sebagai legitimasi elit"
+
+ dei_path_f.3.t: "Reaksi Tokoh Nasionalis Lain (Tahap 2)"
+ dei_path_f.3.d: "[AHISTORIS] Tidak semua tokoh pergerakan menerima narasi kebangkitan Majapahit ini dengan mudah."
+ dei_path_f.3.a: "Rangkul tokoh yang skeptis"
+ dei_path_f.3.b: "Abaikan kritik, jalan terus"
+
+ dei_path_f.4.t: "Reaksi Negara Tetangga (Tahap 3)"
+ dei_path_f.4.d: "[AHISTORIS] Malaya dan Filipina mulai mengamati gerakan ini dengan curiga."
+ dei_path_f.4.a: "Tegaskan ini murni simbolis, bukan klaim teritorial"
+ dei_path_f.4.b: "Biarkan ambiguitas — buka jalan klaim di masa depan"
+
+ dei_path_f.5.t: "Dewan Adat Nusantara Terbentuk"
+ dei_path_f.5.d: "[AHISTORIS] Tokoh-tokoh adat dari berbagai penjuru kepulauan kini berhimpun."
+ dei_path_f.5.a: "Lanjutkan"
+
+ dei_path_f.6.t: "Angkatan Laut Agung Dibangun"
+ dei_path_f.6.d: "[AHISTORIS] Tradisi maritim besar ala kejayaan lama mulai dihidupkan kembali."
+ dei_path_f.6.a: "Lanjutkan"
+
+ dei_path_f.7.t: "Klaim Wilayah \"Nusantara Raya\""
+ dei_path_f.7.d: "[AHISTORIS] Klaim wilayah pengaruh diajukan, jauh melampaui batas Indonesia modern."
+ dei_path_f.7.a: "Klaim luas mencakup seluruh bekas pengaruh Majapahit"
+ dei_path_f.7.b: "Klaim terbatas, fokus konsolidasi dulu"
+
+ dei_path_f.8.t: "Menyatukan Kerajaan-Kerajaan Nusantara"
+ dei_path_f.8.d: "[AHISTORIS] Entitas-entitas kecil di sekitar kepulauan mulai dirangkul — atau ditundukkan."
+ dei_path_f.8.a: "Persatuan lewat diplomasi dan pernikahan politik"
+ dei_path_f.8.b: "Persatuan lewat show of force"
+
+ dei_path_f.9.t: "Kekaisaran Nusantara Baru Diproklamasikan"
+ dei_path_f.9.d: "[AHISTORIS] Puncak dari gerakan revivalis ini: sebuah kekaisaran baru yang mengklaim warisan Majapahit resmi berdiri."
+ dei_path_f.9.a: "Lanjutkan"

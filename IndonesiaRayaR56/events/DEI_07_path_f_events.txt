@@ -1,0 +1,158 @@
+add_namespace = dei_path_f
+
+# =====================================================================
+# Event chain Jalur F: Kebangkitan Majapahit / Nusantara Raya (AHISTORIS).
+# Event .2 -> .3 -> .4 adalah rangkaian 3 tahap ("penemuan pusaka" ->
+# "reaksi tokoh nasionalis lain" -> "reaksi negara tetangga") sesuai
+# filosofi event chain berlapis di rencana mod, dipicu berantai lewat
+# efek immediate/option masing-masing, bukan satu event berdiri sendiri.
+# =====================================================================
+
+country_event = {
+	id = dei_path_f.1
+	title = dei_path_f.1.t
+	desc = dei_path_f.1.d
+	picture = GFX_dei_event_path_f
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.1.a
+		add_political_power = 25
+		add_stability = -0.05
+	}
+}
+
+# --- Tahap 1: penemuan/klaim pusaka ---
+country_event = {
+	id = dei_path_f.2
+	title = dei_path_f.2.t
+	desc = dei_path_f.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.2.a # Umumkan penemuan secara luas
+		add_stability = 0.05
+		country_event = { id = dei_path_f.3 hours = 24 }
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_f.2.b # Simpan diam-diam, gunakan sebagai legitimasi elit
+		add_political_power = 20
+		country_event = { id = dei_path_f.3 hours = 24 }
+		ai_chance = { factor = 50 }
+	}
+}
+
+# --- Tahap 2: reaksi tokoh nasionalis lain (pro/kontra narasi Majapahit) ---
+country_event = {
+	id = dei_path_f.3
+	title = dei_path_f.3.t
+	desc = dei_path_f.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.3.a # Rangkul tokoh yang skeptis
+		add_stability = 0.05
+		country_event = { id = dei_path_f.4 hours = 24 }
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_f.3.b # Abaikan kritik, jalan terus
+		add_political_power = 15
+		country_event = { id = dei_path_f.4 hours = 24 }
+		ai_chance = { factor = 50 }
+	}
+}
+
+# --- Tahap 3: reaksi negara tetangga (Malaya, Filipina) ---
+country_event = {
+	id = dei_path_f.4
+	title = dei_path_f.4.t
+	desc = dei_path_f.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.4.a # Tegaskan ini murni simbolis, bukan klaim teritorial
+		add_stability = 0.03
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_f.4.b # Biarkan ambiguitas — buka jalan klaim di masa depan
+		add_political_power = 20
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_f.5
+	title = dei_path_f.5.t
+	desc = dei_path_f.5.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.5.a
+		add_ideas = dei_idea_dewan_adat_terbentuk
+	}
+}
+
+country_event = {
+	id = dei_path_f.6
+	title = dei_path_f.6.t
+	desc = dei_path_f.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.6.a
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = dei_path_f.7
+	title = dei_path_f.7.t
+	desc = dei_path_f.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.7.a # Klaim luas mencakup seluruh bekas pengaruh Majapahit
+		add_war_support = 0.10
+		add_stability = -0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_f.7.b # Klaim terbatas, fokus konsolidasi dulu
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_f.8
+	title = dei_path_f.8.t
+	desc = dei_path_f.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.8.a # Persatuan lewat diplomasi & pernikahan politik
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_f.8.b # Persatuan lewat show of force
+		add_war_support = 0.10
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_f.9
+	title = dei_path_f.9.t
+	desc = dei_path_f.9.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_f.9.a
+		add_stability = 0.10
+		add_war_support = 0.10
+	}
+}

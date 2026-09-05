@@ -1,0 +1,131 @@
+# =====================================================================
+# JALUR B: KOLONIAL/FEDERALIS — Belanda tetap berkuasa, DEI jadi
+# aparatur yang menumpas revolusi & membangun struktur federal di bawah
+# pengaruh Belanda. Menambah focus= { } ke focus_tree id = dei_focus_tree.
+# Terkunci di belakang has_country_flag = dei_path_b_chosen.
+# =====================================================================
+
+focus_tree = {
+	id = dei_focus_tree
+
+	# --- 1. ROOT: Padamkan Api Revolusi ---
+	focus = {
+		id = dei_focus_b_root
+		icon = GFX_dei_focus_path_b_root
+		x = -2
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.1 hours = 6 }
+		}
+	}
+
+	# --- 2. Operasi Penumpasan Gerilyawan ---
+	focus = {
+		id = dei_focus_b_tekan_gerilyawan
+		icon = GFX_goal_generic_army_effort
+		x = -4
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_root }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.2 hours = 6 }
+		}
+	}
+
+	# --- 3. Reformasi Politik Terbatas ---
+	focus = {
+		id = dei_focus_b_reformasi_terbatas
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_b_root }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.3 hours = 6 }
+		}
+	}
+
+	# --- 4. Bangun Negara-Negara Federal ---
+	focus = {
+		id = dei_focus_b_negara_federal
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -2
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_tekan_gerilyawan focus = dei_focus_b_reformasi_terbatas }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.4 hours = 6 }
+		}
+	}
+
+	# --- 5. Uni Belanda-Indonesia ---
+	focus = {
+		id = dei_focus_b_uni_belanda
+		icon = GFX_goal_generic_political_pressure
+		x = -2
+		y = 12
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_negara_federal }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.5 hours = 6 }
+		}
+	}
+
+	# --- 6. Ekonomi Terpadu Hindia-Belanda ---
+	focus = {
+		id = dei_focus_b_ekonomi_terpadu
+		icon = GFX_goal_generic_production
+		x = -4
+		y = 13
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_b_uni_belanda }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.6 hours = 6 }
+		}
+	}
+
+	# --- 7. Raih Status Dominion ---
+	focus = {
+		id = dei_focus_b_dominion_status
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 13
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_uni_belanda }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.7 hours = 6 }
+		}
+	}
+
+	# --- 8. CAPSTONE: Gabung Persemakmuran Belanda ---
+	focus = {
+		id = dei_focus_b_persemakmuran
+		icon = GFX_goal_generic_national_unity
+		x = -2
+		y = 14
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_b_ekonomi_terpadu focus = dei_focus_b_dominion_status }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			add_ideas = dei_idea_persemakmuran_belanda
+			country_event = { id = dei_path_b.8 hours = 6 }
+		}
+	}
+}

@@ -1,0 +1,130 @@
+add_namespace = dei_path_c
+
+# =====================================================================
+# Event chain Jalur C: Komunis (Front Rakyat menang, kebalikan Madiun).
+# =====================================================================
+
+country_event = {
+	id = dei_path_c.1
+	title = dei_path_c.1.t
+	desc = dei_path_c.1.d
+	picture = GFX_dei_event_path_c
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.1.a # Front Rakyat luas, gandeng semua kekuatan kiri
+		add_political_power = 20
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_c.1.b # PKI sebagai poros tunggal, disiplin ketat
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_c.2
+	title = dei_path_c.2.t
+	desc = dei_path_c.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.2.a # Land reform radikal & cepat
+		add_stability = -0.05
+		add_war_support = 0.10
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_c.2.b # Land reform bertahap
+		add_stability = 0.03
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_c.3
+	title = dei_path_c.3.t
+	desc = dei_path_c.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.3.a # Tindak keras faksi nasionalis non-komunis
+		add_war_support = 0.10
+		add_stability = -0.05
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_c.3.b # Rangkul faksi moderat ke koalisi
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_c.4
+	title = dei_path_c.4.t
+	desc = dei_path_c.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.4.a
+		add_ideas = dei_idea_tentara_rakyat_disiplin
+	}
+}
+
+country_event = {
+	id = dei_path_c.5
+	title = dei_path_c.5.t
+	desc = dei_path_c.5.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.5.a
+		add_political_power = 25
+		set_country_flag = dei_flag_poros_soviet
+	}
+}
+
+country_event = {
+	id = dei_path_c.6
+	title = dei_path_c.6.t
+	desc = dei_path_c.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.6.a
+		add_political_power = 25
+		set_country_flag = dei_flag_poros_tiongkok
+	}
+}
+
+country_event = {
+	id = dei_path_c.7
+	title = dei_path_c.7.t
+	desc = dei_path_c.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.7.a # Prioritaskan industri berat
+		add_stability = -0.03
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_path_c.7.b # Seimbangkan dengan kebutuhan rakyat
+		add_stability = 0.05
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = dei_path_c.8
+	title = dei_path_c.8.t
+	desc = dei_path_c.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = dei_path_c.8.a
+		add_war_support = 0.10
+	}
+}

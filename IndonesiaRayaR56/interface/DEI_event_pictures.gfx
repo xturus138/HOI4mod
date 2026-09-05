@@ -1,0 +1,35 @@
+### Custom event pictures for Indonesia Raya: Road to Merdeka.
+### Simple flat placeholder banners (see README "Aset gambar v0.7") --
+### swap the .dds files in gfx/event_pictures/ for real art later,
+### the GFX_ names below can stay the same.
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_dei_event_trunk6"
+		texturefile = "gfx/event_pictures/DEI_event_trunk6.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_path_a"
+		texturefile = "gfx/event_pictures/DEI_event_path_a.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_path_b"
+		texturefile = "gfx/event_pictures/DEI_event_path_b.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_path_c"
+		texturefile = "gfx/event_pictures/DEI_event_path_c.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_path_d"
+		texturefile = "gfx/event_pictures/DEI_event_path_d.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_path_e"
+		texturefile = "gfx/event_pictures/DEI_event_path_e.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_path_f"
+		texturefile = "gfx/event_pictures/DEI_event_path_f.dds"
+	}
+}

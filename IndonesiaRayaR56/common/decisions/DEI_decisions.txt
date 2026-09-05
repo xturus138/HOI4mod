@@ -1,0 +1,68 @@
+# =====================================================================
+# Decision: "Revolusi Dini" — opsi percepat buat pemain tidak sabaran.
+# Selalu tersedia dari hari pertama game (1936), one-time (fire_only_once).
+# Efeknya: melompati sisa batang fokus historis dan langsung membuka
+# titik percabangan 6 jalur ideologi (dei_focus_momentum_kemerdekaan).
+# Ditandai jelas sebagai fitur ahistoris/opsional, lihat teks event-nya.
+# =====================================================================
+
+decisions_category = {
+	id = dei_decisions_category
+	icon = decision_category_political_effects
+	priority = 100
+	allowed = { tag = DEI }
+	visible = { tag = DEI }
+}
+
+decisions = {
+	dei_decisions_category = {
+
+		dei_decision_revolusi_dini = {
+			icon = generic_construct_civilian_factories
+
+			allowed = { tag = DEI }
+			visible = {
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				NOT = { has_country_flag = dei_revolusi_dini_used }
+			}
+			available = { always = yes }
+
+			cost = 0
+			fire_only_once = yes
+			days_re_enable = -1
+
+			complete_effect = {
+				set_country_flag = dei_revolusi_dini_used
+				set_country_flag = dei_revolusi_dini_chosen
+				country_event = { id = dei_revolusi_dini.1 hours = 2 }
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		dei_decision_toggle_ahistoris = {
+			icon = generic_diplomacy
+
+			allowed = { tag = DEI }
+			visible = {
+				NOT = { has_global_flag = dei_ahistoris_enabled }
+			}
+			available = { always = yes }
+
+			cost = 0
+			fire_only_once = yes
+			days_re_enable = -1
+
+			complete_effect = {
+				set_global_flag = dei_ahistoris_enabled
+				country_event = { id = dei_revolusi_dini.9 hours = 1 }
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

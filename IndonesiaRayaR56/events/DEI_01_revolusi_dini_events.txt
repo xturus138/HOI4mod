@@ -1,0 +1,53 @@
+add_namespace = dei_revolusi_dini
+
+# =====================================================================
+# Fitur "Revolusi Dini" — buat pemain yang tidak mau menunggu sampai
+# 1945 untuk mulai perang kemerdekaan/pilih ideologi. Dipicu lewat
+# decision dei_decision_revolusi_dini (common/decisions/DEI_decisions.txt).
+#
+# Ditandai jelas sebagai MODE AHISTORIS/OPSIONAL dalam teks event —
+# bukan klaim bahwa revolusi "seharusnya" pecah tahun 1936.
+# =====================================================================
+
+country_event = {
+	id = dei_revolusi_dini.1
+	title = dei_revolusi_dini.1.t
+	desc = dei_revolusi_dini.1.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		add_ideas = dei_idea_revolusi_dini_spirit
+		add_stability = -0.05
+		add_war_support = 0.10
+
+		# Lompati narasi batang bersama yang belum dimainkan supaya
+		# tetap konsisten (fokus-fokus ini otomatis dianggap selesai).
+		if = { limit = { NOT = { has_completed_focus = dei_focus_volksraad } } complete_national_focus = dei_focus_volksraad }
+		if = { limit = { NOT = { has_completed_focus = dei_focus_econ_liberal } } complete_national_focus = dei_focus_econ_liberal }
+		if = { limit = { NOT = { has_completed_focus = dei_focus_native_education } } complete_national_focus = dei_focus_native_education }
+		if = { limit = { NOT = { has_completed_focus = dei_focus_nationalist_watch } } complete_national_focus = dei_focus_nationalist_watch }
+		if = { limit = { NOT = { has_completed_focus = dei_focus_knil_reform } } complete_national_focus = dei_focus_knil_reform }
+		if = { limit = { NOT = { has_completed_focus = dei_focus_defense_plan } } complete_national_focus = dei_focus_defense_plan }
+		if = { limit = { NOT = { has_completed_focus = dei_focus_foreign_support } } complete_national_focus = dei_focus_foreign_support }
+		if = { limit = { NOT = { has_completed_focus = dei_focus_japan_threat } } complete_national_focus = dei_focus_japan_threat }
+	}
+
+	option = {
+		name = dei_revolusi_dini.1.a # Lanjutkan ke titik percabangan jalur
+		complete_national_focus = dei_focus_momentum_kemerdekaan
+	}
+}
+
+# --- Toggle konten ahistoris (Jalur F Majapahit) diaktifkan ---
+country_event = {
+	id = dei_revolusi_dini.9
+	title = dei_revolusi_dini.9.t
+	desc = dei_revolusi_dini.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_revolusi_dini.9.a
+	}
+}
