@@ -13,6 +13,7 @@ country_event = {
 	id = dei_trunk.1
 	title = dei_trunk.1.t
 	desc = dei_trunk.1.d
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
 
@@ -27,6 +28,7 @@ country_event = {
 	id = dei_trunk.2
 	title = dei_trunk.2.t
 	desc = dei_trunk.2.d
+	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
 
@@ -49,6 +51,7 @@ country_event = {
 	id = dei_trunk.3
 	title = dei_trunk.3.t
 	desc = dei_trunk.3.d
+	picture = GFX_report_event_dutch_soldiers_indonesia
 
 	is_triggered_only = yes
 
@@ -73,6 +76,7 @@ country_event = {
 	id = dei_trunk.4
 	title = dei_trunk.4.t
 	desc = dei_trunk.4.d
+	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
 
@@ -93,6 +97,7 @@ country_event = {
 	id = dei_trunk.5
 	title = dei_trunk.5.t
 	desc = dei_trunk.5.d
+	picture = GFX_report_event_japanese_officers
 
 	is_triggered_only = yes
 

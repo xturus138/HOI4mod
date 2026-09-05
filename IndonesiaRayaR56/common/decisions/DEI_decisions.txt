@@ -1,9 +1,8 @@
 # =====================================================================
-# Decision: "Revolusi Dini" — opsi percepat buat pemain tidak sabaran.
-# Selalu tersedia dari hari pertama game (1936), one-time (fire_only_once).
-# Efeknya: melompati sisa batang fokus historis dan langsung membuka
-# titik percabangan 6 jalur ideologi (dei_focus_momentum_kemerdekaan).
-# Ditandai jelas sebagai fitur ahistoris/opsional, lihat teks event-nya.
+# INDONESIA RAYA (R56 SUBMOD) — Keputusan Nasional & Mekanik Khusus
+# 1. Revolusi Dini (Shortcut 1936)
+# 2. Kedaulatan & Diplomasi Wilayah Nusantara (Papua, Timor, Borneo, Malaya)
+# 3. Tata Kelola Kepulauan & Ekonomi Nasional (Transmigrasi, ORI, Maritim)
 # =====================================================================
 
 decisions_category = {
@@ -12,6 +11,28 @@ decisions_category = {
 	priority = 100
 	allowed = { tag = INS }
 	visible = { tag = INS }
+}
+
+decisions_category = {
+	id = dei_decisions_nusantara
+	icon = generic_propaganda
+	priority = 80
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+decisions_category = {
+	id = dei_decisions_governance
+	icon = generic_civilian_economy
+	priority = 70
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
 }
 
 decisions = {
@@ -39,6 +60,214 @@ decisions = {
 
 			ai_will_do = {
 				factor = 0
+			}
+		}
+	}
+
+	dei_decisions_nusantara = {
+
+		# Integrasi Papua Barat
+		dei_decision_papua_integration = {
+			icon = generic_national_unity
+
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_papua_claimed }
+			}
+			available = {
+				has_political_power > 49
+			}
+
+			cost = 50
+			fire_only_once = yes
+
+			complete_effect = {
+				set_country_flag = dei_papua_claimed
+				add_war_support = 0.05
+				add_stability = 0.02
+				add_state_claim = 669
+				add_state_claim = 1073
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+		}
+
+		# Integrasi Timor Portugis
+		dei_decision_timor_integration = {
+			icon = generic_prepare_civil_war
+
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_timor_claimed }
+			}
+			available = {
+				has_political_power > 39
+			}
+
+			cost = 40
+			fire_only_once = yes
+
+			complete_effect = {
+				set_country_flag = dei_timor_claimed
+				add_state_claim = 721
+				add_political_power = 20
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		# Unifikasi Pulau Borneo (Sarawak & Sabah)
+		dei_decision_borneo_claims = {
+			icon = generic_operation
+
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_borneo_claimed }
+			}
+			available = {
+				has_political_power > 49
+				OR = {
+					has_country_flag = dei_path_c_chosen
+					has_country_flag = dei_path_d_chosen
+					has_country_flag = dei_path_f_chosen
+					has_war = yes
+				}
+			}
+
+			cost = 50
+			fire_only_once = yes
+
+			complete_effect = {
+				set_country_flag = dei_borneo_claimed
+				add_state_claim = 333
+				add_war_support = 0.05
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		# Tuntutan Melayu Raya / Semenanjung Malaya
+		dei_decision_malaya_claims = {
+			icon = generic_more_territorial_claims
+
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_malaya_claimed }
+				OR = {
+					has_country_flag = dei_path_d_chosen
+					has_country_flag = dei_path_f_chosen
+				}
+			}
+			available = {
+				has_political_power > 74
+			}
+
+			cost = 75
+			fire_only_once = yes
+
+			complete_effect = {
+				set_country_flag = dei_malaya_claimed
+				add_state_claim = 336
+				add_war_support = 0.05
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+
+	dei_decisions_governance = {
+
+		# Program Transmigrasi Antarpulau
+		dei_decision_transmigrasi = {
+			icon = generic_civilian_economy
+
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+			}
+			available = {
+				has_political_power > 39
+			}
+
+			cost = 40
+			days_re_enable = 360
+
+			complete_effect = {
+				add_stability = 0.02
+				random_owned_controlled_state = {
+					prioritize = { 672 }
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+
+			ai_will_do = {
+				factor = 5
+			}
+		}
+
+		# Penerbitan Oeang Republik Indonesia (ORI)
+		dei_decision_terbitkan_ori = {
+			icon = generic_political_pressure
+
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_ori_terbit }
+				NOT = { has_country_flag = dei_path_b_chosen }
+			}
+			available = {
+				has_political_power > 49
+				is_puppet = no
+			}
+
+			cost = 50
+			fire_only_once = yes
+
+			complete_effect = {
+				set_country_flag = dei_ori_terbit
+				add_stability = 0.05
+				add_ideas = dei_idea_liberalized_economy
+			}
+
+			ai_will_do = {
+				factor = 15
+			}
+		}
+
+		# Operasi Patroli Keamanan Maritim Selat
+		dei_decision_patroli_maritim = {
+			icon = generic_navy
+
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+			}
+			available = {
+				has_political_power > 29
+			}
+
+			cost = 30
+			days_re_enable = 180
+
+			complete_effect = {
+				navy_experience = 5
+				add_stability = 0.01
+			}
+
+			ai_will_do = {
+				factor = 5
 			}
 		}
 	}

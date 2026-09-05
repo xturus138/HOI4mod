@@ -1,0 +1,186 @@
+add_namespace = dei_flavor
+
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Flavor Events Acak (Non-Focus MTTH)
+# Peristiwa dinamis berkala seputar dinamika sosial, ekonomi, dan politik
+# kepulauan Nusantara selama rentang 1936–1956.
+# =====================================================================
+
+# 1. Suara Pers Bumiputera
+country_event = {
+	id = dei_flavor.1
+	title = dei_flavor.1.t
+	desc = dei_flavor.1.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = INS
+		date > 1936.4.1
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = dei_flavor.1.a # Dukung kebebasan berpendapat
+		add_political_power = 30
+		add_stability = -0.02
+	}
+	option = {
+		name = dei_flavor.1.b # Batasi kritik tajam pers
+		add_political_power = -15
+		add_stability = 0.03
+	}
+}
+
+# 2. Panen Raya Rempah & Komoditas Tropis
+country_event = {
+	id = dei_flavor.2
+	title = dei_flavor.2.t
+	desc = dei_flavor.2.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = INS
+		date > 1936.8.1
+	}
+
+	mean_time_to_happen = {
+		days = 240
+	}
+
+	option = {
+		name = dei_flavor.2.a # Genjot ekspor ke pasar global
+		add_political_power = 40
+		add_stability = -0.01
+	}
+	option = {
+		name = dei_flavor.2.b # Prioritaskan lumbung pangan rakyat
+		add_stability = 0.04
+		add_war_support = 0.02
+	}
+}
+
+# 3. Aksi Mogok Buruh Pelabuhan & Kereta Api
+country_event = {
+	id = dei_flavor.3
+	title = dei_flavor.3.t
+	desc = dei_flavor.3.d
+	picture = GFX_report_event_generic_strike
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = INS
+		NOT = { has_government = communism }
+		date > 1937.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 280
+	}
+
+	option = {
+		name = dei_flavor.3.a # Buka perundingan upah dan jam kerja
+		add_political_power = -25
+		add_stability = 0.04
+	}
+	option = {
+		name = dei_flavor.3.b # Tindak tegas pemogokan demi stabilitas
+		add_political_power = 15
+		add_stability = -0.04
+		add_war_support = 0.02
+	}
+}
+
+# 4. Semarak Pasar Malam Gambir
+country_event = {
+	id = dei_flavor.4
+	title = dei_flavor.4.t
+	desc = dei_flavor.4.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = INS
+		has_war = no
+		date > 1937.6.1
+	}
+
+	mean_time_to_happen = {
+		days = 320
+	}
+
+	option = {
+		name = dei_flavor.4.a # Rayakan ragam budaya kepulauan
+		add_stability = 0.05
+		add_political_power = 20
+	}
+}
+
+# 5. Erupsi Gunung Berapi & Solidaritas Gotong Royong
+country_event = {
+	id = dei_flavor.5
+	title = dei_flavor.5.t
+	desc = dei_flavor.5.d
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = INS
+		date > 1938.2.1
+	}
+
+	mean_time_to_happen = {
+		days = 360
+	}
+
+	option = {
+		name = dei_flavor.5.a # Kerahkan tentara dan relawan evakuasi
+		army_experience = 5
+		add_stability = 0.03
+	}
+	option = {
+		name = dei_flavor.5.b # Kucurkan dana tanggap darurat
+		add_political_power = -20
+		add_stability = 0.05
+	}
+}
+
+# 6. Gema Radio Gelombang Pendek Antar-Pulau
+country_event = {
+	id = dei_flavor.6
+	title = dei_flavor.6.t
+	desc = dei_flavor.6.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	trigger = {
+		tag = INS
+		date > 1938.8.1
+	}
+
+	mean_time_to_happen = {
+		days = 300
+	}
+
+	option = {
+		name = dei_flavor.6.a # Siarkan wawasan kebangsaan ke seluruh pulau
+		add_political_power = 35
+		add_war_support = 0.05
+	}
+}

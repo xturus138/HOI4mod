@@ -13,6 +13,7 @@ country_event = {
 	id = dei_revolusi_dini.1
 	title = dei_revolusi_dini.1.t
 	desc = dei_revolusi_dini.1.d
+	picture = GFX_report_event_generic_riot
 
 	is_triggered_only = yes
 

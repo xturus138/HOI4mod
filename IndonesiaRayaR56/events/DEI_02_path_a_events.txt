@@ -36,6 +36,7 @@ country_event = {
 	id = dei_path_a.2
 	title = dei_path_a.2.t
 	desc = dei_path_a.2.d
+	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
 
@@ -57,6 +58,7 @@ country_event = {
 	id = dei_path_a.3
 	title = dei_path_a.3.t
 	desc = dei_path_a.3.d
+	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
 
@@ -75,6 +77,7 @@ country_event = {
 	id = dei_path_a.4
 	title = dei_path_a.4.t
 	desc = dei_path_a.4.d
+	picture = GFX_report_event_dutch_soldiers_indonesia
 
 	is_triggered_only = yes
 
@@ -95,6 +98,7 @@ country_event = {
 	id = dei_path_a.5
 	title = dei_path_a.5.t
 	desc = dei_path_a.5.d
+	picture = GFX_report_event_generic_battle
 
 	is_triggered_only = yes
 
@@ -114,6 +118,7 @@ country_event = {
 	id = dei_path_a.6
 	title = dei_path_a.6.t
 	desc = dei_path_a.6.d
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
 
@@ -133,6 +138,7 @@ country_event = {
 	id = dei_path_a.7
 	title = dei_path_a.7.t
 	desc = dei_path_a.7.d
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
 
@@ -158,6 +164,7 @@ country_event = {
 	id = dei_path_a.8
 	title = dei_path_a.8.t
 	desc = dei_path_a.8.d
+	picture = GFX_report_event_generic_battle
 
 	is_triggered_only = yes
 
@@ -178,6 +185,7 @@ country_event = {
 	id = dei_path_a.9
 	title = dei_path_a.9.t
 	desc = dei_path_a.9.d
+	picture = GFX_report_event_generic_rally
 
 	is_triggered_only = yes
 
