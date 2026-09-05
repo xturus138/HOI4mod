@@ -2,8 +2,7 @@
 # JALUR F: KEBANGKITAN MAJAPAHIT / NUSANTARA RAYA — KONTEN
 # FANTASI/AHISTORIS EKSPLISIT. Majapahit runtuh abad ke-14, jauh
 # sebelum linimasa 1936-1956; tidak ada versi "realistis" jalur ini.
-# Digerbang GANDA: harus dipilih di dei_trunk.6 DAN toggle
-# dei_ahistoris_enabled aktif (lihat common/decisions/DEI_decisions.txt).
+# Selalu tersedia sebagai opsi di dei_trunk.6, tanpa toggle terpisah.
 # =====================================================================
 
 focus_tree = {
@@ -20,7 +19,6 @@ focus_tree = {
 		prerequisite = { focus = dei_focus_momentum_kemerdekaan }
 		available = {
 			has_country_flag = dei_path_f_chosen
-			has_global_flag = dei_ahistoris_enabled
 		}
 		completion_reward = {
 			country_event = { id = dei_path_f.1 hours = 6 }

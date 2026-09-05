@@ -61,7 +61,7 @@ IndonesiaRayaR56/
       DEI_05_path_e_islamis.txt      # jalur E: Islamis, 8 focus
       DEI_06_path_f_majapahit.txt    # jalur F: Majapahit (ahistoris), 7 focus
     decisions/
-      DEI_decisions.txt              # decision "Revolusi Dini" + toggle ahistoris
+      DEI_decisions.txt              # decision "Revolusi Dini"
     ideas/
       DEI_ideas.txt                  # semua national spirit (19 total)
   events/
@@ -95,7 +95,7 @@ IndonesiaRayaR56/
   - **Jalur C — Komunis** (8 focus, 8 event): Front Rakyat menang (kebalikan Peristiwa Madiun) → land reform radikal → singkirkan faksi nasionalis → Tentara Rakyat → pilihan poros Soviet vs Tiongkok (mutually exclusive) → industrialisasi sosialis → ekspor revolusi.
   - **Jalur D — Otoriter Militeristik** (8 focus, 8 event): kudeta militer → darurat militer → bubarkan partai → industri militer → propaganda radikal → barisan pemuda militan → klaim wilayah Nusantara → ambisi regional.
   - **Jalur E — Islamis** (8 focus, 8 event, berbasis gerakan Darul Islam/Kartosoewirjo yang diperbesar jadi jalur menang): proklamasi Negara Islam Indonesia → dewan ulama & syariat → Tentara Islam Indonesia (TII) → hubungan dunia Arab → hadapi faksi sekuler → persatuan Islam Nusantara.
-  - **Jalur F — Kebangkitan Majapahit (AHISTORIS, digerbang toggle)** (7 focus, 9 event termasuk event chain 3-tahap "pencarian pusaka"): bangkitkan semangat Majapahit → ekspedisi pusaka (3 tahap: penemuan → reaksi tokoh nasionalis lain → reaksi negara tetangga) → dewan adat → angkatan laut agung → klaim "Nusantara Raya" → satukan kerajaan-kerajaan → proklamasikan kekaisaran baru.
+  - **Jalur F — Kebangkitan Majapahit (AHISTORIS, selalu tersedia sebagai opsi — tidak ada toggle terpisah)** (7 focus, 9 event termasuk event chain 3-tahap "pencarian pusaka"): bangkitkan semangat Majapahit → ekspedisi pusaka (3 tahap: penemuan → reaksi tokoh nasionalis lain → reaksi negara tetangga) → dewan adat → angkatan laut agung → klaim "Nusantara Raya" → satukan kerajaan-kerajaan → proklamasikan kekaisaran baru.
 - **Toggle konten ahistoris** (decision terpisah) yang menggerbang jalur Majapahit — pemain yang mau pengalaman historis-murni bisa mematikannya.
 - **Validasi otomatis dijalankan sebelum paket ini dikirim**: brace `{ }` seimbang di semua file, 291 loc key semuanya terpakai & terpenuhi, 58 event id semuanya didefinisikan & dipanggil konsisten, 60 focus id semuanya konsisten (termasuk `prerequisite`, `mutually_exclusive`, `relative_position_id`), 19 idea id semuanya konsisten, tidak ada dua focus yang bertumpuk di koordinat sama.
 

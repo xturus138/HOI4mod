@@ -41,28 +41,5 @@ decisions = {
 				factor = 0
 			}
 		}
-
-		dei_decision_toggle_ahistoris = {
-			icon = generic_diplomacy
-
-			allowed = { tag = DEI }
-			visible = {
-				NOT = { has_global_flag = dei_ahistoris_enabled }
-			}
-			available = { always = yes }
-
-			cost = 0
-			fire_only_once = yes
-			days_re_enable = -1
-
-			complete_effect = {
-				set_global_flag = dei_ahistoris_enabled
-				country_event = { id = dei_revolusi_dini.9 hours = 1 }
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
 	}
 }

@@ -147,8 +147,6 @@ l_english:
  dei_decisions_category: "Indonesia Raya"
  dei_decision_revolusi_dini: "Revolusi Dini (Percepat Cerita)"
  dei_decision_revolusi_dini_desc: "[MODE OPSIONAL/AHISTORIS] Tidak sabar menunggu sampai pertengahan game? Aktifkan opsi ini untuk langsung memicu pemberontakan dan melompat ke titik pemilihan arah ideologi negara, tanpa harus memainkan seluruh alur historis kolonial dan pendudukan Jepang."
- dei_decision_toggle_ahistoris: "Aktifkan Konten Ahistoris"
- dei_decision_toggle_ahistoris_desc: "Mengizinkan jalur-jalur fantasi/alternate-history ekstrem (seperti Kebangkitan Majapahit) muncul sebagai opsi. Matikan kalau kamu mau pengalaman yang tetap berpijak pada sejarah nyata."
 
  #### IDEAS / NATIONAL SPIRITS ####
  dei_idea_volksraad_reformed: "Volksraad Direformasi"
@@ -208,10 +206,6 @@ l_english:
  dei_revolusi_dini.1.t: "Pemberontakan Meletus Lebih Awal!"
  dei_revolusi_dini.1.d: "[MODE AHISTORIS] Jauh sebelum sejarah 'seharusnya' mencatatnya, gelombang pemberontakan pecah di berbagai penjuru Hindia. Ini bukan yang terjadi sebenarnya — ini adalah pilihanmu untuk mempercepat jalan cerita."
  dei_revolusi_dini.1.a: "Manfaatkan momentum ini — lanjutkan ke penentuan arah bangsa"
-
- dei_revolusi_dini.9.t: "Gerbang Sejarah Alternatif Dibuka"
- dei_revolusi_dini.9.d: "Kamu telah mengaktifkan konten ahistoris/alternate-history. Jalur-jalur ekstrem seperti Kebangkitan Majapahit kini bisa dipilih di titik percabangan nanti."
- dei_revolusi_dini.9.a: "Mengerti"
 
  #### EVENTS: Jalur A - Republik ####
  dei_path_a.1.t: "Proklamasi Kemerdekaan"

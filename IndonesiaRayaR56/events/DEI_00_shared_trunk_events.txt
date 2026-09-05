@@ -159,8 +159,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = dei_trunk.6.f # Jalur F: Kebangkitan Majapahit (ahistoris)
-		trigger = { has_global_flag = dei_ahistoris_enabled }
+		name = dei_trunk.6.f # Jalur F: Kebangkitan Majapahit (ahistoris, selalu tersedia)
 		set_country_flag = dei_path_f_chosen
 		set_politics = {
 			ruling_party = majapahit
