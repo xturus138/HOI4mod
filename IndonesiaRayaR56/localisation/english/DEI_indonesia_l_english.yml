@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  # =====================================================================
  # CATATAN: semua teks di bawah ini ditulis dalam Bahasa Indonesia,
  # tapi disimpan di bawah key "l_english:". Ini trik umum modder HOI4
@@ -440,3 +440,20 @@ l_english:
  dei_path_f.9.t: "Kekaisaran Nusantara Baru Diproklamasikan"
  dei_path_f.9.d: "[AHISTORIS] Puncak dari gerakan revivalis ini: sebuah kekaisaran baru yang mengklaim warisan Majapahit resmi berdiri."
  dei_path_f.9.a: "Lanjutkan"
+
+ #### IDEOLOGIES: Ideologi Kustom ####
+ federalist: "Federalis"
+ federalist_noun: "Federalisme"
+ federalist_desc: "Pemerintahan federal yang mempertahankan ikatan erat dengan Belanda dan persemakmuran."
+ federalist_generic: "Uni Federal"
+ federalist_generic_desc: "Negara federal berdaulat terbatas di bawah naungan persemakmuran Belanda."
+ islamist: "Islamis"
+ islamist_noun: "Islamisme"
+ islamist_desc: "Pemerintahan berlandaskan syariat Islam yang dicita-citakan oleh gerakan Negara Islam Indonesia."
+ islamist_generic: "Negara Islam"
+ islamist_generic_desc: "Pemerintahan teokrasi Islam di bawah kepemimpinan dewan ulama."
+ majapahit: "Majapahit"
+ majapahit_noun: "Revivalisme Majapahit"
+ majapahit_desc: "Gerakan pemulihan keagungan imperium kuno Nusantara berlandaskan wawasan kejayaan Majapahit."
+ majapahit_generic: "Kekaisaran Nusantara"
+ majapahit_generic_desc: "Pemerintahan kekaisaran adat dan monarki konfederasi Nusantara."

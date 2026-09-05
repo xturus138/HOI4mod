@@ -1,0 +1,607 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Cabang Industri & Riset (dari Road to 56)
+# Terhubung ke focus_tree id = dei_focus_tree
+# Total 14 focus: sentralisasi industri, infrastruktur, Phillips Radio, Batavia Society.
+# Koordinat X: 26 s.d. 30 (berdampingan di sebelah kanan pohon politik)
+# =====================================================================
+
+focus_tree = {
+	id = dei_focus_tree
+
+### INDUSTRY BRANCH
+
+	focus = {
+		id = INS_industrial_centralisation
+		icon = GFX_goal_generic_construct_civilian
+		ai_will_do = {
+			factor = 20
+		}
+		x = 28
+		y = 0
+		cost = 10 
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 976 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = INS_economy_idea
+				add_idea = INS_economy_idea_three
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_george_hart
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = INS_continue_the_modernisation
+		icon = GFX_goal_generic_civilian_production
+		ai_will_do = {
+			factor = 7
+		}
+		x = -2
+		y = 1
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_industrial_centralisation }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 334 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 673 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = INS_colonial_infrastructure
+		icon = GFX_goal_generic_road
+		ai_will_do = {
+			factor = 3 
+		}
+		x = 0
+		y = 1
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_industrial_centralisation }
+		cost = 10 
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						state = 334
+						state = 673
+						state = 978
+						state = 977
+						state = 974
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = INS_sstw
+			if = { 
+				limit = {  
+					amount_taken_ideas = {
+						amount > 0
+						slots = {
+							industrial_concern
+						}
+					}
+				}
+				add_ideas = INS_sstw
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = INS_restore_the_arms_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		ai_will_do = {
+			factor = 2 
+		}
+		x = 2
+		y = 1
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_industrial_centralisation }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 976 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					has_idea = INS_artilerie_inrichtingen
+				}
+				swap_ideas = {
+					remove_idea = INS_artilerie_inrichtingen
+					add_idea = INS_ai_bandoeng_improved
+				}
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:INS_artillerie_inrichtingen_organization_r56 = {
+					add_mio_funds = 500
+					add_mio_funds_gain_factor = 0.05
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = INS_civilian_works
+		icon = GFX_goal_generic_construct_civ_factory
+		ai_will_do = {
+			factor = 5 
+		}
+		x = -2
+		y = 2
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_continue_the_modernisation }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 974 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = INS_connect_the_islands
+		icon = GFX_dutch_east_indies
+		ai_will_do = {
+			factor = 2 
+		}
+		x = 0
+		y = 2
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_colonial_infrastructure }
+		cost = 10
+
+		available = {
+			OR = {
+				controls_state = 673
+				controls_state = 975
+				controls_state = 667
+				controls_state = 1127
+				controls_state = 1142
+				controls_state = 668
+				controls_state = 738
+				controls_state = 669
+				controls_state = 1137
+			}
+		}
+
+		bypass_if_unavailable = yes
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						state = 975
+						state = 673
+						state = 667
+						state = 1127
+						state = 1142
+						state = 668
+						state = 738
+						state = 669
+						state = 1137
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = INS_earthworks
+		icon = GFX_goal_generic_coal_mining
+		ai_will_do = {
+			factor = 5 
+		}
+		x = 2
+		y = 2
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_restore_the_arms_factories }
+		cost = 10
+
+		available = {
+			OR = {
+				controls_state = 672
+				controls_state = 978
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 4
+				}
+				add_resource = {
+					type = steel
+					amount = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 978 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+
+	focus = {
+		id = INS_the_royal_batavian_society
+		icon = GFX_focus_generic_university_2
+		ai_will_do = {
+			factor = 25
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_earthworks
+		prerequisite = { focus = INS_earthworks focus = INS_connect_the_islands }
+		available = {
+			num_of_factories > 15
+		}
+		cost = 5
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = INS_science_idea
+				add_idea = INS_science_idea_1
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_phillips_radio
+		icon = GFX_goal_philips
+		ai_will_do = {
+			factor = 7
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_civilian_works
+		prerequisite = { focus = INS_civilian_works focus = INS_connect_the_islands }
+		cost = 10 
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 335 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.25
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 2
+				category = electronics 
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_economic_independence
+		icon = GFX_focus_mex_privatisation
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = INS_phillips_radio
+		prerequisite = { focus = INS_phillips_radio }
+		prerequisite = { focus = INS_the_royal_batavian_society }
+
+		cost = 10 
+
+		search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_autonomy_score = {
+				value = 250
+			}
+			remove_ideas = INS_economy_idea_three
+			custom_effect_tooltip = r56_newline
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_buttingha_wichers
+		}
+	}
+
+	focus = {
+		id = INS_invite_foreign_investors
+		icon = GFX_goal_generic_business_bills
+		ai_will_do = {
+			factor = 2
+		}
+		relative_position_id = INS_economic_independence
+		x = 1
+		y = 1
+		prerequisite = { focus = INS_economic_independence }
+		cost = 10 
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				ahead_reduction = 0.5
+				uses = 2
+				category = industry
+				category = construction_tech
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = INS_acf
+			show_ideas_tooltip = INS_gm_java
+			show_ideas_tooltip = INS_toyota
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_royal_scientific_cooperation
+		icon = GFX_goal_tfv_generic_tech_sharing
+		available = {
+			is_subject_of = HOL
+		}
+		ai_will_do = {
+			factor = 5 
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_the_royal_batavian_society
+		mutually_exclusive = { }
+		prerequisite = { focus = INS_phillips_radio }
+		cost = 5
+
+		completion_reward = {
+			add_political_power = 50
+			add_to_tech_sharing_group = netherlands_research
+			HOL = { add_to_tech_sharing_group = netherlands_research }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_scientific_exceptionalism
+		icon = GFX_focus_research
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_economic_independence
+		prerequisite = { focus = INS_economic_independence }
+		cost = 10 
+
+		completion_reward = {
+			add_research_slot = 1
+			remove_ideas = INS_science_idea_1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_koninklijk_paketvaart_maatschappij
+		icon = GFX_focus_generic_merchant_fleet
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = INS_scientific_exceptionalism
+		x = 1
+		y = 1
+		prerequisite = { focus = INS_invite_foreign_investors focus = INS_scientific_exceptionalism }
+		cost = 10 
+
+		completion_reward = {
+			add_ideas = INS_economy_idea_two
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
+	}
+
+	####################################################################################################################################################
+}

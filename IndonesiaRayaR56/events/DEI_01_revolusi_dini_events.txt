@@ -23,6 +23,7 @@ country_event = {
 
 		# Lompati narasi batang bersama yang belum dimainkan supaya
 		# tetap konsisten (fokus-fokus ini otomatis dianggap selesai).
+		if = { limit = { NOT = { has_completed_focus = dei_focus_root } } complete_national_focus = dei_focus_root }
 		if = { limit = { NOT = { has_completed_focus = dei_focus_volksraad } } complete_national_focus = dei_focus_volksraad }
 		if = { limit = { NOT = { has_completed_focus = dei_focus_econ_liberal } } complete_national_focus = dei_focus_econ_liberal }
 		if = { limit = { NOT = { has_completed_focus = dei_focus_native_education } } complete_national_focus = dei_focus_native_education }

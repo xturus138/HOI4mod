@@ -10,8 +10,8 @@ decisions_category = {
 	id = dei_decisions_category
 	icon = decision_category_political_effects
 	priority = 100
-	allowed = { tag = DEI }
-	visible = { tag = DEI }
+	allowed = { tag = INS }
+	visible = { tag = INS }
 }
 
 decisions = {
@@ -20,7 +20,7 @@ decisions = {
 		dei_decision_revolusi_dini = {
 			icon = generic_construct_civilian_factories
 
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			visible = {
 				NOT = { has_country_flag = dei_jalur_dipilih }
 				NOT = { has_country_flag = dei_revolusi_dini_used }

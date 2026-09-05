@@ -125,6 +125,14 @@ country_event = {
 			ruling_party = democratic
 			elections_allowed = yes
 		}
+		add_country_leader_role = {
+			character = INS_sukarno
+			country_leader = {
+				ideology = liberalism
+				expire = "1970.6.6"
+			}
+			promote_leader = yes
+		}
 	}
 	option = {
 		name = dei_trunk.6.b # Jalur B: Kolonial/Federalis (Belanda tetap berkuasa)
@@ -132,6 +140,14 @@ country_event = {
 		set_politics = {
 			ruling_party = federalist
 			elections_allowed = no
+		}
+		add_country_leader_role = {
+			character = INS_hubertus_van_mook
+			country_leader = {
+				ideology = federalist_generic
+				expire = "1965.1.1"
+			}
+			promote_leader = yes
 		}
 	}
 	option = {
@@ -141,6 +157,14 @@ country_event = {
 			ruling_party = communism
 			elections_allowed = no
 		}
+		add_country_leader_role = {
+			character = INS_musso
+			country_leader = {
+				ideology = stalinism
+				expire = "1965.1.1"
+			}
+			promote_leader = yes
+		}
 	}
 	option = {
 		name = dei_trunk.6.d # Jalur D: Otoriter Militeristik/Nasionalis Radikal
@@ -148,6 +172,14 @@ country_event = {
 		set_politics = {
 			ruling_party = fascism
 			elections_allowed = no
+		}
+		add_country_leader_role = {
+			character = INS_soedirman
+			country_leader = {
+				ideology = fascism_ideology
+				expire = "1950.1.29"
+			}
+			promote_leader = yes
 		}
 	}
 	option = {
@@ -157,6 +189,14 @@ country_event = {
 			ruling_party = islamist
 			elections_allowed = no
 		}
+		add_country_leader_role = {
+			character = INS_sekarmaji_kartosuwiryo
+			country_leader = {
+				ideology = islamist_generic
+				expire = "1962.9.5"
+			}
+			promote_leader = yes
+		}
 	}
 	option = {
 		name = dei_trunk.6.f # Jalur F: Kebangkitan Majapahit (ahistoris, selalu tersedia)
@@ -164,6 +204,14 @@ country_event = {
 		set_politics = {
 			ruling_party = majapahit
 			elections_allowed = no
+		}
+		add_country_leader_role = {
+			character = INS_wuryaningrat
+			country_leader = {
+				ideology = majapahit_generic
+				expire = "1965.1.1"
+			}
+			promote_leader = yes
 		}
 	}
 }

@@ -10,7 +10,7 @@ ideas = {
 
 		dei_idea_volksraad_reformed = {
 			picture = generic_political_pressure
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.05
 				political_power_factor = 0.05
@@ -19,16 +19,16 @@ ideas = {
 
 		dei_idea_liberalized_economy = {
 			picture = generic_civilian_economy
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				consumer_goods_factor = -0.03
-				civilian_factory_use = -1
+				production_speed_industrial_complex_factor = 0.10
 			}
 		}
 
 		dei_idea_colonial_monopoly = {
 			picture = generic_civilian_economy
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = -0.03
 				political_power_factor = 0.10
@@ -37,7 +37,7 @@ ideas = {
 
 		dei_idea_native_sentiment_high = {
 			picture = generic_national_unity
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				war_support_factor = 0.05
 				stability_factor = -0.02
@@ -46,7 +46,7 @@ ideas = {
 
 		dei_idea_home_defense_plan = {
 			picture = generic_army_effort
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				defense_factor = 0.05
 				org_loss_when_moving_factor = -0.10
@@ -56,7 +56,7 @@ ideas = {
 		# --- Spirit hasil pilihan Revolusi Dini ---
 		dei_idea_revolusi_dini_spirit = {
 			picture = generic_civil_war_tension
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = -0.10
 				war_support_factor = 0.15
@@ -67,7 +67,7 @@ ideas = {
 		# --- Spirit jalur A: Republik ---
 		dei_idea_republik_diproklamasikan = {
 			picture = generic_national_unity
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				war_support_factor = 0.10
 				recruitable_population_factor = 0.05
@@ -76,16 +76,16 @@ ideas = {
 
 		dei_idea_guerrilla_doctrine = {
 			picture = generic_army_effort
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
-				partisan_effect_recovery_rate_factor = 0.20
+				resistance_decay = 0.10
 				org_loss_when_moving_factor = -0.15
 			}
 		}
 
 		dei_idea_liberal_democracy_established = {
 			picture = generic_political_pressure
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.05
 				political_power_factor = 0.10
@@ -94,7 +94,7 @@ ideas = {
 
 		dei_idea_guided_democracy = {
 			picture = generic_national_unity
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
 				political_power_factor = -0.05
@@ -105,7 +105,7 @@ ideas = {
 		# --- Spirit jalur B: Kolonial/Federalis ---
 		dei_idea_persemakmuran_belanda = {
 			picture = generic_political_pressure
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
 				political_power_factor = 0.05
@@ -115,7 +115,7 @@ ideas = {
 		# --- Spirit jalur C: Komunis ---
 		dei_idea_republik_rakyat_indonesia = {
 			picture = generic_national_unity
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				war_support_factor = 0.10
 				political_power_factor = 0.05
@@ -123,7 +123,7 @@ ideas = {
 		}
 		dei_idea_tentara_rakyat_disiplin = {
 			picture = generic_army_effort
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				army_org_factor = 0.05
 				recruitable_population_factor = 0.05
@@ -133,7 +133,7 @@ ideas = {
 		# --- Spirit jalur D: Otoriter Militeristik ---
 		dei_idea_rezim_militer_konsolidasi = {
 			picture = generic_army_effort
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
 				war_support_factor = 0.10
@@ -141,7 +141,7 @@ ideas = {
 		}
 		dei_idea_industri_militer_kuat = {
 			picture = generic_civilian_economy
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 			}
@@ -150,7 +150,7 @@ ideas = {
 		# --- Spirit jalur E: Islamis ---
 		dei_idea_negara_islam_konsolidasi = {
 			picture = generic_national_unity
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.08
 				war_support_factor = 0.08
@@ -158,7 +158,7 @@ ideas = {
 		}
 		dei_idea_tii_terbentuk = {
 			picture = generic_army_effort
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				army_org_factor = 0.05
 			}
@@ -167,14 +167,14 @@ ideas = {
 		# --- Spirit jalur F: Majapahit (ahistoris) ---
 		dei_idea_dewan_adat_terbentuk = {
 			picture = generic_political_pressure
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.05
 			}
 		}
 		dei_idea_kekaisaran_nusantara = {
 			picture = generic_national_unity
-			allowed = { tag = DEI }
+			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
 				war_support_factor = 0.10
