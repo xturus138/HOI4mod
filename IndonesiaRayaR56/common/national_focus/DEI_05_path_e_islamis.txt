@@ -11,7 +11,7 @@ focus_tree = {
 	# --- 1. ROOT: Proklamasikan Negara Islam Indonesia ---
 	focus = {
 		id = dei_focus_e_root
-		icon = GFX_dei_focus_path_e_root
+		icon = GFX_goal_generic_political_pressure
 		x = 16
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan

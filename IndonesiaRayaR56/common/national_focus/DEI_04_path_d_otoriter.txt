@@ -10,7 +10,7 @@ focus_tree = {
 	# --- 1. ROOT: Kudeta Militer ---
 	focus = {
 		id = dei_focus_d_root
-		icon = GFX_dei_focus_path_d_root
+		icon = GFX_goal_generic_major_war
 		x = 10
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan

@@ -14,7 +14,7 @@ focus_tree = {
 	# --- 1. Proklamasi Kemerdekaan ---
 	focus = {
 		id = dei_focus_a_proklamasi
-		icon = GFX_dei_focus_path_a_root
+		icon = GFX_goal_generic_national_unity
 		x = -8
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan

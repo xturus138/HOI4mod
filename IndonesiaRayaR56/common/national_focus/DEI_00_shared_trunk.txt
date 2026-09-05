@@ -34,7 +34,7 @@ focus_tree = {
 	# --- 1. ROOT ---
 	focus = {
 		id = dei_focus_root
-		icon = GFX_dei_focus_root
+		icon = GFX_goal_generic_political_pressure
 		x = 12
 		y = 0
 		cost = 5
@@ -183,7 +183,7 @@ focus_tree = {
 	# --- 10. MOMENTUM KEMERDEKAAN (gerbang ke 6 jalur ideologi) ---
 	focus = {
 		id = dei_focus_momentum_kemerdekaan
-		icon = GFX_dei_focus_momentum
+		icon = GFX_goal_generic_national_unity
 		x = 12
 		y = 8
 		cost = 12

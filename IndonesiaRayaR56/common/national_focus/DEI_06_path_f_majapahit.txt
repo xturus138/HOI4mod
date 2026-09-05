@@ -11,7 +11,7 @@ focus_tree = {
 	# --- 1. ROOT: Bangkitkan Semangat Majapahit ---
 	focus = {
 		id = dei_focus_f_root
-		icon = GFX_dei_focus_path_f_root
+		icon = GFX_goal_generic_more_territorial_claims
 		x = 22
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan

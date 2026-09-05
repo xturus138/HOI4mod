@@ -22,18 +22,15 @@ Karena mod ini dibuat tanpa akses ke game/file R56 yang sebenarnya, ada beberapa
 5. **Localisation ditaruh di bawah key `l_english:`** meski isinya Bahasa Indonesia — karena `l_indonesian:` kemungkinan belum resmi didukung HOI4. Kalau ternyata versi game kamu sudah mendukungnya, salin isi `DEI_indonesia_l_english.yml` ke file baru di `localisation/indonesian/` dengan key `l_indonesian:`.
 6. **Belum pernah dites di game sungguhan** (dibuat tanpa akses ke HOI4). Kemungkinan ada typo sintaks kecil atau balance kasar (angka modifier belum di-tuning). Playtest pertama kamu sebaiknya fokus: (a) apakah mod bisa aktif tanpa crash bareng R56, (b) apakah semua focus dan event muncul dan bisa diklik/diambil, (c) baru setelah itu nilai-nilai modifier di-balance.
 
-## Aset gambar v0.7 — baca ini dulu sebelum kecewa
+## Aset gambar v0.8 — status per kategori
 
-Saya **tidak punya alat AI image generation** di sesi ini, jadi aset di bawah ini **BUKAN ilustrasi digital buatan tangan/AI** — semuanya digambar programatik pakai Python (PIL) dengan bentuk geometris flat (lingkaran, bintang, garis), lalu dikonversi ke format HOI4 (TGA untuk bendera, DDS untuk ikon/gambar event) pakai ImageMagick. Tujuannya supaya tidak ada lagi yang tampil kotak pink kosong — bukan untuk jadi art final mod ini.
+- **8 bendera** (`gfx/flags/`, `gfx/flags/medium/`, `gfx/flags/small/`, TGA 82x52 / 41x26 / 10x7), semuanya digambar via Gen AI (bukan lagi PIL programatik): `DEI` (default pra-percabangan, Prinsenvlag), `DEI_democratic` (A), `DEI_federalist` (B, ideologi custom), `DEI_communism` (C), `DEI_fascism` (D), `DEI_islamist` (E, ideologi custom), `DEI_majapahit` (F, ideologi custom), `DEI_neutrality` (default sebelum ideologi dipilih). Jalur B/E/F masing-masing punya ideologi & bendera sendiri lewat `common/ideologies/DEI_custom_ideologies.txt` — lihat bagian di bawah.
+- **Ikon focus: DIHAPUS, kembali ke ikon generik vanilla R56 untuk semua 60 focus.** Sempat dibuat 8 ikon custom (siluet flat krem), tapi setelah dibandingkan ke ikon vanilla asli (medali emas berukir dengan bingkai laurel, shading detail) gayanya kelihatan sangat beda/gak menyatu — jadi dihapus. Lihat tabel icon generik yang dipakai di bagian bawah README ini (atau tanya sesi berikutnya untuk daftar lengkapnya). Kalau mau bikin ikon custom lagi ke depannya, **harus mengikuti gaya medali/wreath vanilla**, bukan siluet flat, supaya menyatu.
+- **7 event picture** (`gfx/event_pictures/*.dds`, 456x228), gaya foto arsip hitam-putih 1930-40an (bukan ilustrasi 2D — ini gaya HOI4 event art asli untuk major event): event percabangan (`dei_trunk.6`) dan event pembuka tiap 6 jalur (`dei_path_x.1`). Event pembuka Jalur A pakai **foto asli** Proklamasi Kemerdekaan 17 Agustus 1945, bukan hasil AI. Diwire lewat `interface/DEI_event_pictures.gfx`.
 
-Yang dibuat:
-- **4 set bendera** (`gfx/flags/`, `gfx/flags/medium/`, `gfx/flags/small/`, masing-masing TGA 82x52 / 41x26 / 10x7): `DEI_democratic` (merah-putih + bintang, dipakai Jalur A), `DEI_communism` (merah + bintang kuning, Jalur C), `DEI_fascism` (gelap + lambang sunburst geometris, Jalur D), `DEI_neutrality` (teal + lambang jangkar abstrak, dipakai sebagai flag default DEI **dan** Jalur B/E/F). HOI4 cuma otomatis ganti bendera berdasarkan 4 ideologi dasar (democratic/communism/fascism/neutrality) — karena Jalur B, E, F di skrip tidak mengubah `ruling_party` ke salah satu dari itu, ketiganya **berbagi bendera neutrality yang sama**. Ini keterbatasan mesin game, bukan kelalaian; kalau mau tiap jalur benar-benar unik bendera, perlu bikin ideologi custom (`common/ideologies/`) — pekerjaan lebih besar, saya belum sentuh.
-- **8 ikon focus custom** (`gfx/interface/goals/*.dds`, 128x128, glyph krem transparan): focus root batang bersama (gedung kolonial), Momentum Kemerdekaan (persimpangan), dan root tiap 6 jalur (bintang, perisai, roda gigi, kepalan tangan, bulan-bintang, candi bertingkat). Diwire lewat `interface/DEI_focus_icons.gfx`.
-- **7 event picture** (`gfx/event_pictures/*.dds`, 456x228, banner warna gradasi + glyph): event percabangan besar (`dei_trunk.6`) dan event pembuka tiap 6 jalur (`dei_path_x.1`). Diwire lewat `interface/DEI_event_pictures.gfx`.
+Yang **masih belum ada**: 52 dari 60 focus masih ikon generik vanilla (lihat poin di atas — ini pilihan sadar, bukan kelalaian), 50 dari 57 event masih tanpa gambar sama sekali (cuma event percabangan + pembuka tiap jalur yang punya), tidak ada portrait tokoh formal.
 
-Yang **masih belum ada** setelah v0.7: 52 focus lain masih ikon generik vanilla, event selain 7 di atas masih tanpa gambar, tidak ada portrait tokoh, tidak ada bendera unik per-jalur yang genuinely berbeda untuk B/E/F. Kalau kamu (atau orang lain) punya kemampuan menggambar/AI image generation sendiri, file PNG sumber (sebelum dikonversi) ada polanya di script `assets_src/make_flags.py`, `make_focus_icons.py`, `make_event_pictures.py` yang saya pakai — tinggal ganti hasil generate-nya, nama file & path `GFX_` tidak perlu diubah.
-
-**Belum pernah dirender di game HOI4 sungguhan** — dimensi TGA/DDS di atas saya pakai berdasarkan konvensi umum yang saya ingat (82x52 untuk bendera besar, dst.), bukan hasil ukur langsung dari game. Kalau ada yang gepeng/terpotong pas dites, itu kemungkinan besar cuma soal rasio, bukan file-nya rusak.
+**Belum pernah dirender di game HOI4 sungguhan** — dimensi TGA/DDS di atas dikonfirmasi cocok dengan file asli v0.7 (82x52 bendera besar, 128x128 ikon focus, 456x228 event picture), tapi tampilan gabungan semua elemen ini di UI beneran belum pernah dites.
 
 ## Ideologi custom (Jalur B/E/F) — v0.8, PALING BERISIKO belum dites
 
@@ -76,11 +73,9 @@ IndonesiaRayaR56/
   localisation/english/
     DEI_indonesia_l_english.yml      # 291 loc key, semua sudah dicek konsisten
   interface/
-    DEI_focus_icons.gfx              # wiring 8 ikon focus custom
     DEI_event_pictures.gfx           # wiring 7 event picture custom
   gfx/
-    flags/                           # 4 bendera ideologi x 3 ukuran (TGA)
-    interface/goals/                 # 8 ikon focus custom (DDS)
+    flags/                           # 8 bendera ideologi x 3 ukuran (TGA)
     event_pictures/                  # 7 event picture custom (DDS)
 ```
 
@@ -103,7 +98,7 @@ IndonesiaRayaR56/
 
 Semua 6 jalur sudah ada sebagai fondasi bermain penuh (bukan stub lagi). Yang masih realistis buat versi berikutnya, sesuai rencana awal:
 
-- **v0.7+ — Polish**: lebih banyak flavor event acak per jalur (event non-focus yang muncul random selama game, belum ada di v0.6 ini — semua event saat ini terikat ke focus, `is_triggered_only`), unit & national spirit unik per jalur yang lebih detail (termasuk reuse "TKR Infantry Division" dari mod lamamu), art custom (flag per ideologi — saat ini belum ada file gfx flag sama sekali, jadi bendera masih pakai default DEI apa pun ideologinya, ini keterbatasan yang perlu kamu tahu), portrait tokoh sejarah, ikon focus custom (saat ini masih generik vanilla, lihat poin 4 di atas), playtest kompatibilitas R56 menyeluruh, tuning modifier berdasarkan hasil playtest sungguhan.
+- **v0.8+ — Polish**: lebih banyak flavor event acak per jalur (event non-focus yang muncul random selama game — semua event saat ini terikat ke focus, `is_triggered_only`), unit & national spirit unik per jalur yang lebih detail, portrait tokoh sejarah, ikon focus custom bergaya medali/wreath vanilla (lihat bagian "Aset gambar" di atas), playtest kompatibilitas R56 menyeluruh, tuning modifier berdasarkan hasil playtest sungguhan.
 - **Tokoh sejarah bernama** (van Mook di jalur B, Kartosoewirjo-style figure di jalur E, dll.) belum dimasukkan sebagai `character` HOI4 formal (portrait + leader trait) — event-event saat ini menyebut peran/situasi secara naratif tapi belum mengikat ke sistem country_leader/advisor HOI4. Ini pekerjaan v0.7+.
 
 ## Kalau ada error saat load

@@ -10,7 +10,7 @@ focus_tree = {
 	# --- 1. ROOT: Bangun Front Rakyat ---
 	focus = {
 		id = dei_focus_c_root
-		icon = GFX_dei_focus_path_c_root
+		icon = GFX_goal_generic_propaganda
 		x = 4
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan

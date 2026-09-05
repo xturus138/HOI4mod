@@ -11,7 +11,7 @@ focus_tree = {
 	# --- 1. ROOT: Padamkan Api Revolusi ---
 	focus = {
 		id = dei_focus_b_root
-		icon = GFX_dei_focus_path_b_root
+		icon = GFX_goal_generic_army_effort
 		x = -2
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan
