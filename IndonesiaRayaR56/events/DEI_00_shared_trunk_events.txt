@@ -129,6 +129,10 @@ country_event = {
 	option = {
 		name = dei_trunk.6.b # Jalur B: Kolonial/Federalis (Belanda tetap berkuasa)
 		set_country_flag = dei_path_b_chosen
+		set_politics = {
+			ruling_party = federalist
+			elections_allowed = no
+		}
 	}
 	option = {
 		name = dei_trunk.6.c # Jalur C: Komunis
@@ -150,7 +154,7 @@ country_event = {
 		name = dei_trunk.6.e # Jalur E: Islamis (Negara Islam Indonesia)
 		set_country_flag = dei_path_e_chosen
 		set_politics = {
-			ruling_party = neutrality
+			ruling_party = islamist
 			elections_allowed = no
 		}
 	}
@@ -158,5 +162,9 @@ country_event = {
 		name = dei_trunk.6.f # Jalur F: Kebangkitan Majapahit (ahistoris)
 		trigger = { has_global_flag = dei_ahistoris_enabled }
 		set_country_flag = dei_path_f_chosen
+		set_politics = {
+			ruling_party = majapahit
+			elections_allowed = no
+		}
 	}
 }

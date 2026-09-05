@@ -35,6 +35,17 @@ Yang **masih belum ada** setelah v0.7: 52 focus lain masih ikon generik vanilla,
 
 **Belum pernah dirender di game HOI4 sungguhan** — dimensi TGA/DDS di atas saya pakai berdasarkan konvensi umum yang saya ingat (82x52 untuk bendera besar, dst.), bukan hasil ukur langsung dari game. Kalau ada yang gepeng/terpotong pas dites, itu kemungkinan besar cuma soal rasio, bukan file-nya rusak.
 
+## Ideologi custom (Jalur B/E/F) — v0.8, PALING BERISIKO belum dites
+
+Sejak v0.8, jalur B (Kolonial/Federalis), E (Islamis), F (Majapahit) tidak lagi berbagi flag `neutrality` — masing-masing sekarang punya **ideologi custom sendiri** (`federalist`, `islamist`, `majapahit`) yang didefinisikan di `common/ideologies/DEI_custom_ideologies.txt`, dan event percabangan `dei_trunk.6` di `events/DEI_00_shared_trunk_events.txt` di-update supaya `set_politics = { ruling_party = ... }` mengarah ke ideologi baru ini alih-alih `neutrality`.
+
+Ini secara teknis **bagian HOI4 modding yang paling gampang salah tanpa akses game langsung** — sintaks `common/ideologies/` punya banyak field opsional yang perilakunya baru ketahuan salah di UI politik in-game (bukan di validasi brace/ID biasa). Yang perlu kamu cek pertama kali playtest jalur B/E/F:
+- Apakah negara benar-benar berubah ke ideologi baru (bukan tetap "neutrality" atau malah error) setelah pilih opsi di event `dei_trunk.6`.
+- Apakah flag `DEI_federalist.tga`/`DEI_islamist.tga`/`DEI_majapahit.tga` benar-benar muncul menggantikan flag lama.
+- Apakah menu politik dalam negeri (political view) tetap bisa dibuka tanpa error/crash untuk ketiga ideologi baru ini.
+
+Kalau ada yang aneh di salah satu poin di atas, kemungkinan besar perbaikannya ada di file ideologi ini (field yang kurang/salah), bukan di focus/event.
+
 ## Struktur file
 
 ```
