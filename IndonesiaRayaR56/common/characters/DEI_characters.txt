@@ -2,9 +2,18 @@ characters = {
 	DEI_sudirman = {
 		name = "Soedirman"
 		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_sudirman"
+			}
 			army = {
 				large = "GFX_portrait_INS_sudirman"
 			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { trait_dei_sudirman_leader }
+			expire = "1950.1.29"
+			id = -1
 		}
 		field_marshal = {
 			traits = { trait_dei_sudirman defensive_doctrine offensive_doctrine }
@@ -38,9 +47,18 @@ characters = {
 	DEI_nasution = {
 		name = "Abdul Haris Nasution"
 		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_Abdul_Haris_Nasution"
+			}
 			army = {
 				large = "GFX_portrait_INS_Abdul_Haris_Nasution"
 			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { trait_dei_nasution_leader }
+			expire = "2000.9.5"
+			id = -1
 		}
 		corps_commander = {
 			traits = { trait_dei_nasution commando }
@@ -75,7 +93,7 @@ characters = {
 		name = "Yos Sudarso"
 		portraits = {
 			navy = {
-				large = "GFX_Portrait_Asia_Generic_navy_1"
+				large = "GFX_portrait_INS_yos_sudarso"
 			}
 		}
 		navy_leader = {
@@ -84,6 +102,513 @@ characters = {
 			attack_skill = 3
 			defense_skill = 3
 			maneuvering_skill = 4
+			coordination_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_re_martadinata = {
+		name = "Raden Eddy Martadinata"
+		portraits = {
+			navy = {
+				large = "GFX_portrait_INS_re_martadinata"
+			}
+		}
+		navy_leader = {
+			traits = { superior_tactician spotter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 4
+			legacy_id = -1
+		}
+	}
+
+	DEI_suryadi_suryadarma = {
+		name = "Suryadi Suryadarma"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_suryadi_suryadarma"
+			}
+		}
+		corps_commander = {
+			traits = { brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_halim_perdanakusuma = {
+		name = "Halim Perdanakusuma"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_halim_perdanakusuma"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer trickster }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_moestopo = {
+		name = "Moestopo"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_moestopo"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader urban_assault_specialist }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	DEI_gatot_soebroto = {
+		name = "Gatot Soebroto"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_Gatot_Subroto"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_reckless }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_sultan_hamid_ii = {
+		name = "Sultan Hamid II"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_sultan_hamid_ii"
+			}
+		}
+		country_leader = {
+			ideology = federalist_generic
+			traits = { trait_dei_sultan_hamid }
+			expire = "1978.3.30"
+			id = -1
+		}
+	}
+
+	DEI_hamengkubuwono_ix = {
+		name = "Sri Sultan Hamengkubuwono IX"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_hamengkubuwono_ix"
+			}
+		}
+		country_leader = {
+			ideology = majapahit_generic
+			traits = { trait_dei_hamengkubuwono }
+			expire = "1988.10.2"
+			id = -1
+		}
+	}
+
+	DEI_wahid_hasyim = {
+		name = "K.H. Wahid Hasyim"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_wahid_hasyim"
+			}
+		}
+		country_leader = {
+			ideology = islamist_generic
+			traits = { trait_dei_wahid_hasyim }
+			expire = "1953.4.19"
+			id = -1
+		}
+	}
+
+	DEI_soeharto = {
+		name = "Soeharto"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_soeharto"
+			}
+			army = {
+				large = "GFX_portrait_INS_soeharto"
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { trait_dei_soeharto_leader }
+			expire = "2008.1.27"
+			id = -1
+		}
+		corps_commander = {
+			traits = { infantry_officer skilled_staffer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_maharaja_suryawikrama = {
+		name = "Sri Maharaja Suryawikrama"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_maharaja_suryawikrama"
+			}
+		}
+		country_leader = {
+			ideology = majapahit_generic
+			traits = { trait_dei_maharaja }
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+
+	DEI_tan_malaka = {
+		name = "Tan Malaka"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_tan_malaka"
+			}
+			army = {
+				large = "GFX_portrait_INS_tan_malaka"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { trait_dei_tan_malaka }
+			expire = "1949.2.21"
+			id = -1
+		}
+	}
+
+	DEI_mohammad_hatta = {
+		name = "Mohammad Hatta"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_mohammad_hatta"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { trait_dei_hatta }
+			expire = "1980.3.14"
+			id = -1
+		}
+	}
+
+	DEI_sutan_syahrir = {
+		name = "Sutan Sjahrir"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_sutan_syahrir"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { trait_dei_syahrir }
+			expire = "1966.4.9"
+			id = -1
+		}
+	}
+
+	DEI_mohammad_natsir = {
+		name = "Mohammad Natsir"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_mohammad_natsir"
+			}
+		}
+		country_leader = {
+			ideology = islamist_generic
+			traits = { trait_dei_natsir }
+			expire = "1993.2.6"
+			id = -1
+		}
+	}
+
+	DEI_sukarno = {
+		name = "Sukarno"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_sukarno"
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { trait_dei_sukarno }
+			expire = "1970.6.6"
+			id = -1
+		}
+	}
+
+	DEI_hubertus_van_mook = {
+		name = "Hubertus van Mook"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_hubertus_van_mook"
+			}
+		}
+		country_leader = {
+			ideology = federalist_generic
+			traits = { trait_dei_van_mook }
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+
+	DEI_sukawati = {
+		name = "Tjokorda Gde Raka Sukawati"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_sukawati"
+			}
+		}
+		country_leader = {
+			ideology = federalist_generic
+			traits = { trait_dei_sukawati }
+			expire = "1967.1.1"
+			id = -1
+		}
+	}
+
+	DEI_musso = {
+		name = "Musso"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_musso"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { trait_dei_musso }
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+
+	DEI_amir_sjarifuddin = {
+		name = "Amir Sjarifuddin"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_amir_sjarifuddin"
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { trait_dei_amir_sjarifuddin }
+			expire = "1948.12.19"
+			id = -1
+		}
+	}
+
+	DEI_kartosuwiryo = {
+		name = "Sekarmadji Maridjan Kartosuwiryo"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_kartosuwiryo"
+			}
+		}
+		country_leader = {
+			ideology = islamist_generic
+			traits = { trait_dei_kartosuwiryo }
+			expire = "1962.9.5"
+			id = -1
+		}
+	}
+
+	DEI_wuryaningrat = {
+		name = "K.R.M.T. Wuryaningrat"
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_INS_wuryaningrat"
+			}
+		}
+		country_leader = {
+			ideology = majapahit_generic
+			traits = { trait_dei_wuryaningrat }
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+
+	DEI_ahmad_yani = {
+		name = "Ahmad Yani"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_ahmad_yani"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer trait_dei_ahmad_yani }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	DEI_ngurah_rai = {
+		name = "I Gusti Ngurah Rai"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_ngurah_rai"
+			}
+		}
+		corps_commander = {
+			traits = { commando trait_dei_ngurah_rai }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_tb_simatupang = {
+		name = "T.B. Simatupang"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_tb_simatupang"
+			}
+		}
+		field_marshal = {
+			traits = { brilliant_strategist organisational_leader trait_dei_simatupang }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+
+	DEI_bung_tomo = {
+		name = "Sutomo (Bung Tomo)"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_sutomo"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless urban_assault_specialist trait_dei_bung_tomo }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	DEI_slamet_rijadi = {
+		name = "Ignatius Slamet Rijadi"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_slamet_rijadi"
+			}
+		}
+		corps_commander = {
+			traits = { commando trickster urban_assault_specialist }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	DEI_djatikoesoemo = {
+		name = "G.P.H. Djatikusumo"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_djatikoesoemo"
+			}
+		}
+		corps_commander = {
+			traits = { engineer fortress_buster infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_soengkono = {
+		name = "Soengkono"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_soengkono"
+			}
+		}
+		corps_commander = {
+			traits = { ambusher infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_djamin_ginting = {
+		name = "Djamin Ginting"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_djamin_ginting"
+			}
+		}
+		corps_commander = {
+			traits = { ranger jungle_rat }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_john_lie = {
+		name = "John Lie (Jahja Daniel Dharma)"
+		portraits = {
+			navy = {
+				large = "GFX_portrait_INS_john_lie"
+			}
+		}
+		navy_leader = {
+			traits = { seawolf spotter trait_dei_john_lie }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 5
 			coordination_skill = 3
 			legacy_id = -1
 		}

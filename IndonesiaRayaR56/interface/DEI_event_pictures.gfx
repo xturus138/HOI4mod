@@ -1,12 +1,18 @@
-### Custom event pictures for Indonesia Raya: Road to Merdeka.
-### Simple flat placeholder banners (see README "Aset gambar v0.7") --
-### swap the .dds files in gfx/event_pictures/ for real art later,
-### the GFX_ names below can stay the same.
+### Custom event pictures for Indonesia Raya: Road to Merdeka (R56)
+### Authentic Indonesian Historical Photographs & Archives (456x228)
 
 spriteTypes = {
 	spriteType = {
 		name = "GFX_dei_event_trunk6"
 		texturefile = "gfx/event_pictures/DEI_event_trunk6.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_proklamasi"
+		texturefile = "gfx/event_pictures/DEI_event_proklamasi.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_volksraad"
+		texturefile = "gfx/event_pictures/DEI_event_volksraad.dds"
 	}
 	spriteType = {
 		name = "GFX_dei_event_path_a"
@@ -31,5 +37,97 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_dei_event_path_f"
 		texturefile = "gfx/event_pictures/DEI_event_path_f.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_kaa_bandung"
+		texturefile = "gfx/event_pictures/DEI_event_kaa_bandung.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_dekrit"
+		texturefile = "gfx/event_pictures/DEI_event_dekrit.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_borobudur"
+		texturefile = "gfx/event_pictures/DEI_event_borobudur.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_trowulan"
+		texturefile = "gfx/event_pictures/DEI_event_trowulan.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_pinisi"
+		texturefile = "gfx/event_pictures/DEI_event_pinisi.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_bosscha"
+		texturefile = "gfx/event_pictures/DEI_event_bosscha.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_zeven_provincien"
+		texturefile = "gfx/event_pictures/DEI_event_zeven_provincien.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_tamansiswa"
+		texturefile = "gfx/event_pictures/DEI_event_tamansiswa.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_ombilin"
+		texturefile = "gfx/event_pictures/DEI_event_ombilin.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_karapan_sapi"
+		texturefile = "gfx/event_pictures/DEI_event_karapan_sapi.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_kartosuwiryo"
+		texturefile = "gfx/event_pictures/DEI_event_kartosuwiryo.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_sumpah_pemuda"
+		texturefile = "gfx/event_pictures/DEI_event_sumpah_pemuda.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_kongres_perempuan"
+		texturefile = "gfx/event_pictures/DEI_event_kongres_perempuan.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_kmb"
+		texturefile = "gfx/event_pictures/DEI_event_kmb.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_pertempuran_surabaya"
+		texturefile = "gfx/event_pictures/DEI_event_pertempuran_surabaya.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_ambarawa"
+		texturefile = "gfx/event_pictures/DEI_event_ambarawa.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_adisoetjipto"
+		texturefile = "gfx/event_pictures/DEI_event_adisoetjipto.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_pasteur"
+		texturefile = "gfx/event_pictures/DEI_event_pasteur.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_prambanan"
+		texturefile = "gfx/event_pictures/DEI_event_prambanan.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_tanjung_priok"
+		texturefile = "gfx/event_pictures/DEI_event_tanjung_priok.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_ikada"
+		texturefile = "gfx/event_pictures/DEI_event_ikada.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_linggarjati"
+		texturefile = "gfx/event_pictures/DEI_event_linggarjati.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_event_pancasila"
+		texturefile = "gfx/event_pictures/DEI_event_pancasila.dds"
 	}
 }

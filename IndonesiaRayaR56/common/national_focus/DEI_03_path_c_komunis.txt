@@ -131,7 +131,7 @@ focus_tree = {
 	# --- 9. Pembentukan Komune Tani BTI ---
 	focus = {
 		id = dei_focus_c_komune_tani
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_dei_komune_tani
 		x = 2
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -161,7 +161,7 @@ focus_tree = {
 	# --- 11. Pembentukan Angkatan Kelima ---
 	focus = {
 		id = dei_focus_c_angkatan_kelima
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_dei_angkatan_kelima
 		x = 2
 		y = 16
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -176,7 +176,7 @@ focus_tree = {
 	# --- 12. Gerakan Kebudayaan Proletar Lekra ---
 	focus = {
 		id = dei_focus_c_lekra
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_dei_lekra
 		x = 6
 		y = 16
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -191,7 +191,7 @@ focus_tree = {
 	# --- 13. Pakta Pertahanan Sosialis Asia Tenggara ---
 	focus = {
 		id = dei_focus_c_pakta_asia_merah
-		icon = GFX_goal_generic_dangerous_deal
+		icon = GFX_focus_dei_pakta_asia_merah
 		x = 4
 		y = 17
 		relative_position_id = dei_focus_momentum_kemerdekaan

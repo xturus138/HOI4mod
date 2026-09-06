@@ -1,8 +1,8 @@
 # =====================================================================
 # INDONESIA RAYA (R56 SUBMOD) — Cabang Industri & Riset (dari Road to 56)
 # Terhubung ke focus_tree id = dei_focus_tree
-# Total 14 focus: sentralisasi industri, infrastruktur, Phillips Radio, Batavia Society.
-# Koordinat X: 26 s.d. 30 (berdampingan di sebelah kanan pohon politik)
+# Total 18 focus: sentralisasi industri, infrastruktur, Phillips Radio, Batavia Society, ITB Bandung & Riset Canggih.
+# Koordinat X: 26 s.d. 30, Y: 0 s.d. 8 (berdampingan di sebelah kanan pohon politik)
 # =====================================================================
 
 focus_tree = {
@@ -48,8 +48,14 @@ focus_tree = {
 				remove_idea = INS_economy_idea
 				add_idea = INS_economy_idea_three
 			}
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = INS_george_hart
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = INS_george_hart
+			}
+			else = {
+				add_political_power = 50
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -542,7 +548,7 @@ focus_tree = {
 		id = INS_royal_scientific_cooperation
 		icon = GFX_goal_tfv_generic_tech_sharing
 		available = {
-			is_subject_of = HOL
+			always = yes
 		}
 		ai_will_do = {
 			factor = 5 
@@ -556,8 +562,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 50
-			add_to_tech_sharing_group = netherlands_research
-			HOL = { add_to_tech_sharing_group = netherlands_research }
+			if = {
+				limit = { is_subject_of = HOL }
+				add_to_tech_sharing_group = netherlands_research
+				HOL = { add_to_tech_sharing_group = netherlands_research }
+			}
+			else = {
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 2
+					category = electronics
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -603,5 +620,129 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
 	}
 
+	focus = {
+		id = INS_advanced_telecommunications
+		icon = GFX_focus_dei_radar_nusantara
+		ai_will_do = {
+			factor = 5
+		}
+		x = 26
+		y = 7
+		prerequisite = { focus = INS_scientific_exceptionalism }
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_electronics_bonus
+				bonus = 1.0
+				ahead_reduction = 1.0
+				uses = 2
+				category = electronics
+				category = radar_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_institut_teknologi_bandung
+		icon = GFX_focus_dei_itb_bandung
+		ai_will_do = {
+			factor = 10
+		}
+		x = 27
+		y = 7
+		prerequisite = { focus = INS_scientific_exceptionalism }
+		available = {
+			num_of_factories > 30
+		}
+		cost = 10
+
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = national_research_bonus
+				bonus = 0.5
+				uses = 2
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_pusat_metalurgi_sintesis
+		icon = GFX_focus_dei_kilang_minyak
+		ai_will_do = {
+			factor = 4
+		}
+		x = 29
+		y = 7
+		prerequisite = { focus = INS_invite_foreign_investors }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = excavation_refining_bonus
+				bonus = 1.0
+				ahead_reduction = 1.0
+				uses = 2
+				category = excavation_tech
+				category = synth_resources
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = INS_proyek_riset_atom_dirgantara
+		icon = GFX_focus_dei_fisika_atom
+		ai_will_do = {
+			factor = 5
+		}
+		x = 27
+		y = 8
+		prerequisite = { focus = INS_institut_teknologi_bandung }
+		available = {
+			date > 1941.1.1
+		}
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocketry_bonus
+				bonus = 1.0
+				ahead_reduction = 2.0
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+			add_tech_bonus = {
+				name = nuclear_physics_bonus
+				bonus = 1.0
+				ahead_reduction = 2.0
+				uses = 1
+				category = nuclear
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
 	####################################################################################################################################################
 }
+

@@ -14,7 +14,7 @@ focus_tree = {
 	# --- 1. Proklamasi Kemerdekaan ---
 	focus = {
 		id = dei_focus_a_proklamasi
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_dei_proklamasi
 		x = -8
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -29,7 +29,7 @@ focus_tree = {
 	# --- 2. Bentuk TKR ---
 	focus = {
 		id = dei_focus_a_tkr
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_dei_tkr
 		x = -8
 		y = 10
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -164,7 +164,7 @@ focus_tree = {
 	# --- 11. Konferensi Asia-Afrika Bandung 1955 ---
 	focus = {
 		id = dei_focus_a_kaa_bandung
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_dei_kaa_bandung
 		x = -8
 		y = 17
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -179,7 +179,7 @@ focus_tree = {
 	# --- 12. Operasi Trikora & Pembebasan Irian ---
 	focus = {
 		id = dei_focus_a_trikora
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_focus_dei_trikora
 		x = -10
 		y = 18
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -194,7 +194,7 @@ focus_tree = {
 	# --- 13. Dekrit Presiden 5 Juli 1959 ---
 	focus = {
 		id = dei_focus_a_dekrit_presiden
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_dei_dekrit_presiden
 		x = -6
 		y = 18
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -209,7 +209,7 @@ focus_tree = {
 	# --- 14. Gerakan Konfrontasi Dwikora ---
 	focus = {
 		id = dei_focus_a_dwikora
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_dei_dwikora
 		x = -10
 		y = 19
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -224,7 +224,7 @@ focus_tree = {
 	# --- 15. Pemantapan Falsafah Pancasila ---
 	focus = {
 		id = dei_focus_a_pancasila
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_dei_pancasila
 		x = -6
 		y = 19
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -239,7 +239,7 @@ focus_tree = {
 	# --- 16. Doktrin Kemandirian Trisakti ---
 	focus = {
 		id = dei_focus_a_trisakti
-		icon = GFX_goal_generic_positive_trade_relations
+		icon = GFX_focus_dei_trisakti
 		x = -8
 		y = 20
 		relative_position_id = dei_focus_momentum_kemerdekaan

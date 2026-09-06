@@ -85,7 +85,7 @@ focus_tree = {
 	# --- 6. Bentuk Barisan Pemuda Militan ---
 	focus = {
 		id = dei_focus_d_pemuda_militan
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_dei_bela_negara
 		x = 10
 		y = 12
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -131,7 +131,7 @@ focus_tree = {
 	# --- 9. Dewan Revolusi Militer Tertinggi ---
 	focus = {
 		id = dei_focus_d_dewan_revolusi
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_dei_dewan_revolusi
 		x = 8
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -146,7 +146,7 @@ focus_tree = {
 	# --- 10. Penempatan Perwira di Sektor Strategis ---
 	focus = {
 		id = dei_focus_d_karyawan_abri
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_dei_dwifungsi
 		x = 12
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -161,7 +161,7 @@ focus_tree = {
 	# --- 11. Doktrin Pertahanan Benteng Samudra ---
 	focus = {
 		id = dei_focus_d_benteng_samudra
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_focus_dei_benteng_samudra
 		x = 8
 		y = 16
 		relative_position_id = dei_focus_momentum_kemerdekaan

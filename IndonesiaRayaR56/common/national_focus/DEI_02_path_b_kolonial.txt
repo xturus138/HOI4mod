@@ -132,7 +132,7 @@ focus_tree = {
 	# --- 9. Konferensi BFO & Otonomi Bagian ---
 	focus = {
 		id = dei_focus_b_sidang_bfo
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_dei_sidang_bfo
 		x = -4
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -147,7 +147,7 @@ focus_tree = {
 	# --- 10. Integrasi KNIL & Angkatan Federal ---
 	focus = {
 		id = dei_focus_b_angkatan_federal
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_dei_angkatan_federal
 		x = 0
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -177,7 +177,7 @@ focus_tree = {
 	# --- 12. Modernisasi Perkebunan Deli ---
 	focus = {
 		id = dei_focus_b_perkebunan_deli
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_dei_perkebunan_deli
 		x = 0
 		y = 16
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -192,7 +192,7 @@ focus_tree = {
 	# --- 13. Otonomi Khusus Kerajaan Swapraja ---
 	focus = {
 		id = dei_focus_b_otonomi_kerajaan
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_dei_swapraja
 		x = -2
 		y = 17
 		relative_position_id = dei_focus_momentum_kemerdekaan

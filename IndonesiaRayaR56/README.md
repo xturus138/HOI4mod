@@ -2,15 +2,15 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dibangun terintegrasi di atas **The Road to 56 (R56)**.
 
-**Status Saat Ini:** `v1.4.2 (Authentic Historical Naming, 18 Dynamic Proclamations & Clean Nomenclature)` — 138 Fokus Nasional, 119 Event Interaktif (93 Fokus + 26 Flavor Acak MTTH, 100% bergambar), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 108 Bendera TGA Tersinkronisasi, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik (Bebas Singkatan Artifisial), 14 Varian Alutsista Lintas Domain, 26 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris Ber-Trait Unik, 8 Desainer Industri MIO, dan 1.020 Kunci Lokalisasi Ber-BOM (0 missing keys).
+**Status Saat Ini:** `v1.5.0 (Canonical 1936 Revolutionary Prologue & Seamless Alternate History)` — 130 Fokus Nasional, 118 Event Interaktif (92 Fokus + 26 Flavor Acak MTTH, 100% bergambar), Batang Prolog Krisis 1936 (84 Hari), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 108 Bendera TGA Tersinkronisasi, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik (Bebas Singkatan Artifisial), 14 Varian Alutsista Lintas Domain, 25 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris Ber-Trait Unik, 8 Desainer Industri MIO, dan 1.000 Kunci Lokalisasi Ber-BOM (0 missing keys).
 
 ---
 
-## Ringkasan Fitur v1.4.2
+## Ringkasan Fitur v1.5.0
 
-### 1. Pohon Fokus Hibrida Komprehensif (138 Fokus Nasional)
+### 1. Pohon Fokus Hibrida Komprehensif (130 Fokus Nasional)
 Menggabungkan kebebasan 6 jalur politik submod yang diperdalam hingga era Perang Dingin dengan kedalaman riset militer dan industri khas Road to 56:
-- **Batang Bersama 1936–1945 (11 Fokus, X=7..10):** Dinamika politik pra-kemerdekaan (Volksraad, KNIL, ekonomi, pendidikan pribumi, ancaman Jepang) bermuara pada "Momentum Kemerdekaan".
+- **Batang Prolog Krisis 1936 (3 Fokus, 84 Hari, X=12, Y=0..8):** Mengisahkan retaknya Pax Neerlandica, gelombang pemogokan massal, dan pembangkangan barak KNIL pada Januari–Maret 1936 yang bermuara pada meletusnya *Momentum Revolusi Nasional 1936* (akhir Maret 1936) sebagai alur default tanpa memerlukan decision shortcut.
 - **Jalur A: Republik Nasionalis-Demokratis (16 Fokus, X=0..4):** Proklamasi 17 Agustus 1945, pembentukan TKR, diplomasi PBB, perang gerilya hadapi Agresi Militer Belanda I & II, KMB, demokrasi parlementer, Konferensi Asia-Afrika (KAA) Bandung 1955, Pembebasan Irian Barat (Trikora), Dekrit Presiden 1959, Konfrontasi Dwikora, Falsafah Pancasila, dan Doktrin Trisakti.
 - **Jalur B: Kolonial / Federalis (14 Fokus, X=4..7):** Penumpasan gerilyawan, reformasi federal, Sidang Raya BFO (Bijeenkomst voor Federaal Overleg), Angkatan Bersenjata Federalis KNIL, Pakta Keamanan Maritim ANZAC, Modernisasi Perkebunan Deli, Piagam Otonomi Swapraja & Kraton, dan Jaringan Pelabuhan Bebas Nusantara.
 - **Jalur C: Komunis (14 Fokus, X=8..11):** Kemenangan Front Rakyat, land reform radikal, pembersihan elemen borjuis, pembentukan Tentara Merah Rakyat, Kolektivisasi Komune Tani, Nasionalisasi Total Aset Imperialis Asing, Pembentukan Angkatan Kelima (Buruh & Tani Bersenjata), Mobilisasi Budaya LEKRA, Poros Anti-Imperialis Asia, dan Rencana Pembangunan Semesta Berencana.

@@ -43,4 +43,49 @@ leader_traits = {
 			positioning = 0.15
 		}
 	}
+
+	trait_dei_ahmad_yani = {
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_infantry_attack_factor = 0.10
+			army_morale_factor = 0.10
+		}
+	}
+
+	trait_dei_ngurah_rai = {
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			out_of_supply_factor = -0.20
+			defence = 0.15
+		}
+	}
+
+	trait_dei_simatupang = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			planning_speed = 0.20
+			supply_consumption_factor = -0.10
+		}
+	}
+
+	trait_dei_bung_tomo = {
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 0.20
+			attack = 0.10
+		}
+	}
+
+	trait_dei_john_lie = {
+		type = navy
+		trait_type = personality_trait
+		modifier = {
+			naval_speed_factor = 0.15
+			screen_retreat_speed = 0.20
+		}
+	}
 }

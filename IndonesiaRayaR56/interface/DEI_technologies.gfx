@@ -1,0 +1,222 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_INS_braat_overvalwagen_medium"
+		texturefile = "gfx/interface/technologies/INS_braat_overvalwagen.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/INS_braat_overvalwagen.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_armored_car_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_braat_overvalwagen.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_marmon_herrington_ctls_medium"
+		texturefile = "gfx/interface/technologies/INS_marmon_herrington_ctls.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/INS_marmon_herrington_ctls.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_armored_car_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/INS_marmon_herrington_ctls.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/INS_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_infantry_equipment_0_medium"
+		texturefile = "gfx/interface/technologies/INS_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/INS_infantry_weapons1.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_infantry_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_infantry_weapons1.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/INS_improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_infantry_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/INS_improved_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/INS_advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_infantry_equipment_3_medium"
+		texturefile = "gfx/interface/technologies/INS_advanced_infantry_weapons.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_tech_support_medium"
+		texturefile = "gfx/interface/technologies/INS_tech_support.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_support_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_tech_support.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/INS_motorised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_motorised_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/INS_gw_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_artillery1_medium"
+		texturefile = "gfx/interface/technologies/INS_artillery1.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_artillery_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_artillery1.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/INS_interwar_antiair.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_anti_air_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_interwar_antiair.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/INS_interwar_antitank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_anti_tank_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_interwar_antitank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_gwtank_medium"
+		texturefile = "gfx/interface/technologies/INS_gwtank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/INS_gwtank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/INS_basic_light_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/INS_basic_light_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/INS_improved_light_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/INS_improved_light_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_cw21_demon_medium"
+		texturefile = "gfx/interface/technologies/INS_cw21_demon.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/INS_cw21_demon.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_fighter1_medium"
+		texturefile = "gfx/interface/technologies/INS_fighter1.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_fighter_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_fighter1.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_cv_fighter_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_fighter1.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_fighter2_medium"
+		texturefile = "gfx/interface/technologies/INS_fighter2.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_fighter_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/INS_fighter2.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_cv_fighter_equipment_2_medium"
+		texturefile = "gfx/interface/technologies/INS_fighter2.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/INS_early_bomber.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_b25_mitchell_medium"
+		texturefile = "gfx/interface/technologies/INS_b25_mitchell.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/INS_b25_mitchell.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_tactical_bomber_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/INS_b25_mitchell.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_transport_plane_medium"
+		texturefile = "gfx/interface/technologies/INS_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_transport_plane1_medium"
+		texturefile = "gfx/interface/technologies/INS_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_transport_plane_equipment_medium"
+		texturefile = "gfx/interface/technologies/INS_transport_plane.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_early_destroyer_medium"
+		texturefile = "gfx/interface/technologies/INS_early_destroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_basic_destroyer_medium"
+		texturefile = "gfx/interface/technologies/INS_early_destroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_ship_hull_light_1_medium"
+		texturefile = "gfx/interface/technologies/INS_early_destroyer.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_early_submarine_medium"
+		texturefile = "gfx/interface/technologies/INS_early_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_basic_submarine_medium"
+		texturefile = "gfx/interface/technologies/INS_early_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_ship_hull_submarine_1_medium"
+		texturefile = "gfx/interface/technologies/INS_early_submarine.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_early_light_cruiser_medium"
+		texturefile = "gfx/interface/technologies/INS_early_light_cruiser.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_basic_cruiser_medium"
+		texturefile = "gfx/interface/technologies/INS_early_light_cruiser.dds"
+	}
+	spriteType = {
+		name = "GFX_INS_ship_hull_cruiser_1_medium"
+		texturefile = "gfx/interface/technologies/INS_early_light_cruiser.dds"
+	}
+}

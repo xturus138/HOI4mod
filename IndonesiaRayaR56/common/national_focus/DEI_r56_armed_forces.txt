@@ -34,15 +34,22 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
-			add_corps_commander_role = {
-				character = INS_gustav_adolf_ilgen
-				traits = { air_force_ties }
-				skill = 1
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-				legacy_id = -1
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				add_corps_commander_role = {
+					character = INS_gustav_adolf_ilgen
+					traits = { air_force_ties }
+					skill = 1
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
+			}
+			else = {
+				army_experience = 15
+				add_command_power = 20
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
@@ -81,25 +88,34 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_tooltip = INS_expand_ai_bandung
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_corps_commander_role = {
-				character = INS_gustave_statius_muller
-				skill = 1
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-				legacy_id = -1
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_corps_commander_role = {
+					character = INS_gustave_statius_muller
+					skill = 1
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
+				add_corps_commander_role = {
+					character = INS_pierre_antoine_cox
+					traits = { infantry_leader }
+					skill = 1
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
 			}
-			add_corps_commander_role = {
-				character = INS_pierre_antoine_cox
-				traits = { infantry_leader }
-				skill = 1
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-				legacy_id = -1
+			else = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 750
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
@@ -292,18 +308,15 @@ focus_tree = {
 				remove_idea = INS_army_idea_two
 				add_idea = INS_army_idea_two_1
 			}
+			army_experience = 15
+			add_command_power = 30
 			if = {
 				limit = {
 					is_subject = no
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
-				INS_urip_sumoharjo = { custom_effect_tooltip = unlock_general_tt }
 				INS_didi_kartasasmita = { custom_effect_tooltip = unlock_general_tt }
 				INS_gatot_subroto = { custom_effect_tooltip = unlock_general_tt }
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = available_army_chief
-				show_ideas_tooltip = INS_urip_sumoharjo
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 				custom_effect_tooltip = available_army_chief
@@ -524,24 +537,31 @@ focus_tree = {
 				remove_idea = INS_army_idea_two_3
 				add_idea = INS_army_idea_six
 			}
-			add_corps_commander_role = {
-				character = INS_rudolph_bakkers
-				skill = 1
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-				legacy_id = -1
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				add_corps_commander_role = {
+					character = INS_rudolph_bakkers
+					skill = 1
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
+				add_corps_commander_role = {
+					character = INS_simon_hendrik_spoor
+					traits = { ambusher }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+					legacy_id = -1
+				}
 			}
-			add_corps_commander_role = {
-				character = INS_simon_hendrik_spoor
-				traits = { ambusher }
-				skill = 2
-				attack_skill = 1
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
-				legacy_id = -1
+			else = {
+				army_experience = 25
+				add_command_power = 30
 			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH FOCUS_FILTER_TFV_AUTONOMY }
@@ -614,8 +634,17 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine	
 			}
-			add_opinion_modifier = { target = AST modifier = raaf_assistance }
-			AST = { add_opinion_modifier = { target = ROOT modifier = raaf_assistance } }	
+			if = {
+				limit = {
+					country_exists = AST
+					NOT = { has_war_with = AST }
+				}
+				add_opinion_modifier = { target = AST modifier = raaf_assistance }
+				AST = { add_opinion_modifier = { target = ROOT modifier = raaf_assistance } }
+			}
+			else = {
+				air_experience = 15
+			}	
 		}
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
 	}
@@ -725,13 +754,7 @@ focus_tree = {
 	focus = {
 		id = INS_naval_autonomy
 		icon = GFX_focus_generic_naval_discipline
-		bypass = {
-			NOT = {
-				is_subject_of = HOL
-			}
-		}
 		relative_position_id = INS_koninklijk_nederlands_indisch_leger
-		bypass_if_unavailable = yes
 		ai_will_do = {
 			factor = 2
 		}
@@ -742,18 +765,29 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_MILITARY_EQUIPMENT }
 
 		completion_reward = {
-			navy_experience = 10
-			OVERLORD = { country_event = indonesia.4 }
-			custom_effect_tooltip = if_they_accept_newline_tt
-			effect_tooltip = {
-				create_navy_leader = {
-					name = "Conrad Helfrich"
-					skill = 4
-					attack_skill = 5
-					defense_skill = 2
-					maneuvering_skill = 3
-					coordination_skill = 2
-					traits = { bold navy_career_officer seawolf superior_tactician }
+			navy_experience = 15
+			if = {
+				limit = { is_subject_of = HOL }
+				OVERLORD = { country_event = indonesia.4 }
+				custom_effect_tooltip = if_they_accept_newline_tt
+				effect_tooltip = {
+					create_navy_leader = {
+						name = "Conrad Helfrich"
+						skill = 4
+						attack_skill = 5
+						defense_skill = 2
+						maneuvering_skill = 3
+						coordination_skill = 2
+						traits = { bold navy_career_officer seawolf superior_tactician }
+					}
+				}
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = naval_doctrine
 				}
 			}
 			custom_effect_tooltip = INS_naval_autonomy_ships

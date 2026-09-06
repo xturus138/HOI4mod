@@ -132,7 +132,7 @@ focus_tree = {
 	# --- 9. Lembaga Perbendaharaan Baitul Mal ---
 	focus = {
 		id = dei_focus_e_baitul_mal
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_dei_baitul_mal
 		x = 14
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -147,7 +147,7 @@ focus_tree = {
 	# --- 10. Kodifikasi Peradilan Qanun Syariah ---
 	focus = {
 		id = dei_focus_e_mahkamah_syariah
-		icon = GFX_goal_generic_political_pressure
+		icon = GFX_focus_dei_mahkamah_syariah
 		x = 18
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -162,7 +162,7 @@ focus_tree = {
 	# --- 11. Akademi Perwira Mujahidin TII ---
 	focus = {
 		id = dei_focus_e_akademi_mujahidin
-		icon = GFX_goal_generic_army_doctrines
+		icon = GFX_focus_dei_akademi_mujahidin
 		x = 14
 		y = 16
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -207,7 +207,7 @@ focus_tree = {
 	# --- 14. Proklamasi Khilafah Kepulauan ---
 	focus = {
 		id = dei_focus_e_khilafah_nusantara
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_dei_khilafah_nusantara
 		x = 16
 		y = 18
 		relative_position_id = dei_focus_momentum_kemerdekaan

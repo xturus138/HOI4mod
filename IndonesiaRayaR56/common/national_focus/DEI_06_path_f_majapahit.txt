@@ -119,7 +119,7 @@ focus_tree = {
 	# --- 8. Ikrar Sumpah Palapa Baru ---
 	focus = {
 		id = dei_focus_f_sumpah_palapa_baru
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_dei_sumpah_palapa
 		x = 20
 		y = 14
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -134,7 +134,7 @@ focus_tree = {
 	# --- 9. Restorasi Ibu Kota Wilwatikta di Trowulan ---
 	focus = {
 		id = dei_focus_f_restorasi_trowulan
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_dei_restorasi_trowulan
 		x = 24
 		y = 14
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -149,7 +149,7 @@ focus_tree = {
 	# --- 10. Pasukan Khusus Dharmaputra ---
 	focus = {
 		id = dei_focus_f_dharmaputra
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_dei_dharmaputra
 		x = 20
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -164,7 +164,7 @@ focus_tree = {
 	# --- 11. Pembangunan Armada Jung Perang Raksasa ---
 	focus = {
 		id = dei_focus_f_jung_raksasa
-		icon = GFX_goal_generic_build_navy
+		icon = GFX_focus_dei_jung_raksasa
 		x = 24
 		y = 15
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -194,7 +194,7 @@ focus_tree = {
 	# --- 13. Penobatan Maharaja Diraja Dirgantara ---
 	focus = {
 		id = dei_focus_f_penobatan_maharaja
-		icon = GFX_goal_generic_national_unity
+		icon = GFX_focus_dei_penobatan_maharaja
 		x = 22
 		y = 17
 		relative_position_id = dei_focus_momentum_kemerdekaan

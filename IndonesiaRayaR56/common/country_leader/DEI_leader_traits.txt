@@ -1,0 +1,151 @@
+leader_traits = {
+	# --- JALUR A: REPUBLIK DEMOKRATIS ---
+	trait_dei_sukarno = {
+		random = no
+		war_support_factor = 0.15
+		stability_factor = 0.10
+		political_power_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_hatta = {
+		random = no
+		industrial_capacity_factory = 0.10
+		consumer_goods_factor = -0.05
+		trade_opinion_factor = 0.20
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_syahrir = {
+		random = no
+		research_speed_factor = 0.05
+		political_power_factor = 0.05
+		generate_wargoal_tension = 0.20
+		ai_will_do = { factor = 1 }
+	}
+
+	# --- JALUR B: KOLONIAL / FEDERALIS ---
+	trait_dei_van_mook = {
+		random = no
+		production_speed_buildings_factor = 0.10
+		trade_opinion_factor = 0.25
+		stability_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_sultan_hamid = {
+		random = no
+		army_core_defence_factor = 0.10
+		political_power_factor = 0.10
+		conscription_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_sukawati = {
+		random = no
+		local_resources_factor = 0.15
+		dockyard_speed_factor = 0.15
+		stability_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	# --- JALUR C: KOMUNIS / FRONT RAKYAT ---
+	trait_dei_musso = {
+		random = no
+		industrial_capacity_factory = 0.15
+		conscription_factor = 0.10
+		war_support_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_tan_malaka = {
+		random = no
+		army_core_defence_factor = 0.15
+		army_infantry_attack_factor = 0.10
+		drift_defence_factor = 0.30
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_amir_sjarifuddin = {
+		random = no
+		production_factory_max_efficiency_factor = 0.10
+		stability_factor = 0.10
+		political_power_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+
+	# --- JALUR D: OTORITER MILITERISTIK ---
+	trait_dei_sudirman_leader = {
+		random = no
+		army_morale_factor = 0.20
+		army_org_factor = 0.15
+		war_support_factor = 0.15
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_nasution_leader = {
+		random = no
+		max_command_power = 30
+		planning_speed = 0.20
+		army_org_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_soeharto_leader = {
+		random = no
+		production_speed_infrastructure_factor = 0.15
+		subversive_activites_upkeep = -0.25
+		political_power_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	# --- JALUR E: ISLAMIS / NII ---
+	trait_dei_kartosuwiryo = {
+		random = no
+		army_morale_factor = 0.20
+		war_support_factor = 0.20
+		conscription_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_natsir = {
+		random = no
+		stability_factor = 0.15
+		research_speed_factor = 0.05
+		political_power_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_wahid_hasyim = {
+		random = no
+		conscription_factor = 0.10
+		stability_factor = 0.10
+		trade_opinion_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	# --- JALUR F: KEMAHARAJAAN MAJAPAHIT ---
+	trait_dei_maharaja = {
+		random = no
+		naval_damage_factor = 0.15
+		war_support_factor = 0.15
+		army_org_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_hamengkubuwono = {
+		random = no
+		stability_factor = 0.20
+		industrial_capacity_factory = 0.10
+		political_power_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+
+	trait_dei_wuryaningrat = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.10
+		drift_defence_factor = 0.20
+		ai_will_do = { factor = 1 }
+	}
+}

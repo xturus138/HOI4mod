@@ -1,109 +1,120 @@
 add_namespace = dei_trunk
 
 # =====================================================================
-# Event pendamping batang fokus bersama (1936-1945).
-# Semua "picture =" sengaja DIHILANGKAN (bukan lupa) karena mod ini
-# belum punya aset gfx sendiri — game akan tampilkan event tanpa
-# gambar, tidak error. Tambahkan "picture = GFX_xxx" kalau sudah ada
-# art custom atau sudah pastikan gfx vanilla yang mau dipakai.
+# INDONESIA RAYA: ROAD TO MERDEKA — Event Rangkaian Krisis Prolog 1936
+# Menceritakan eskalasi krisis ekonomi, pemogokan umum, pembangkangan militer
+# dan runtuhnya otoritas kolonial Belanda (Januari - Maret 1936 / 84 Hari)
+# menjelang pecahnya Proklamasi Revolusi Nasional di event dei_trunk.6.
 # =====================================================================
 
-# --- 1. Setelah root focus: pembukaan cerita ---
+# --- 1. Selesai Fokus dei_focus_root: Gelombang Pemogokan Umum 1936 ---
 country_event = {
 	id = dei_trunk.1
 	title = dei_trunk.1.t
 	desc = dei_trunk.1.d
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_dei_event_ikada
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.1.a
+		name = dei_trunk.1.a # Tanggapi dengan pengerahan polisi lapangan
+		set_country_flag = dei_flag_represif_1936
+		add_stability = -0.02
+		add_political_power = -20
+		hidden_effect = {
+			country_event = { id = dei_trunk.3 days = 10 }
+		}
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = dei_trunk.1.b # Janjikan penyelidikan komisi upah Volksraad
+		set_country_flag = dei_flag_kompromi_1936
+		add_stability = 0.02
 		add_political_power = 10
+		hidden_effect = {
+			country_event = { id = dei_trunk.3 days = 10 }
+		}
+		ai_chance = { factor = 50 }
 	}
 }
 
-# --- 2. Pendidikan pribumi menyemai nasionalisme: pilihan arah ---
+# --- 2. Selesai Fokus dei_focus_pembangkangan: Pembangkangan Barak KNIL ---
 country_event = {
 	id = dei_trunk.2
 	title = dei_trunk.2.t
 	desc = dei_trunk.2.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_dei_event_ambarawa
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.2.a # Dukung penuh, biarkan sekolah pribumi berkembang
-		add_stability = -0.02
-		add_ideas = dei_idea_native_sentiment_high
-		ai_chance = { factor = 40 }
+		name = dei_trunk.2.a # Garnisun bumiputera mengabaikan komando dan membuka gudang senjata
+		add_war_support = 0.05
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+		hidden_effect = {
+			country_event = { id = dei_trunk.4 days = 8 }
+		}
+		ai_chance = { factor = 50 }
 	}
 	option = {
-		name = dei_trunk.2.b # Batasi kurikulum, awasi ketat
-		add_stability = 0.02
-		add_political_power = 15
-		ai_chance = { factor = 60 }
+		name = dei_trunk.2.b # Hubungi jaringan pemuda untuk mengamankan amunisi
+		add_war_support = 0.05
+		add_political_power = 20
+		hidden_effect = {
+			country_event = { id = dei_trunk.4 days = 8 }
+		}
+		ai_chance = { factor = 50 }
 	}
 }
 
-# --- 3. Sikap ke gerakan nasionalis: represif vs akomodatif ---
+# --- 3. Krisis Politik Batavia: Represi Menemui Jalan Buntu ---
 country_event = {
 	id = dei_trunk.3
 	title = dei_trunk.3.t
 	desc = dei_trunk.3.d
-	picture = GFX_report_event_dutch_soldiers_indonesia
+	picture = GFX_dei_event_volksraad
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.3.a # Tindak tegas, tangkap tokoh pergerakan
-		set_country_flag = dei_flag_represif
-		add_stability = 0.05
-		add_war_support = -0.05
-		ai_chance = { factor = 50 }
-	}
-	option = {
-		name = dei_trunk.3.b # Ajak berunding, buka ruang dialog
-		set_country_flag = dei_flag_akomodatif
+		name = dei_trunk.3.a # Otoritas kolonial kehilangan wibawa moral
 		add_stability = -0.03
 		add_war_support = 0.05
-		ai_chance = { factor = 50 }
 	}
 }
 
-# --- 4. Cari dukungan asing ---
+# --- 4. Konsolidasi Komite Perjuangan Bawah Tanah ---
 country_event = {
 	id = dei_trunk.4
 	title = dei_trunk.4.t
 	desc = dei_trunk.4.d
-	picture = GFX_report_event_generic_conference
+	picture = GFX_dei_event_linggarjati
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.4.a # Dekati Amerika Serikat & Inggris
-		add_political_power = 20
-		ai_chance = { factor = 60 }
-	}
-	option = {
-		name = dei_trunk.4.b # Tetap netral, andalkan diri sendiri
-		add_stability = 0.03
-		ai_chance = { factor = 40 }
+		name = dei_trunk.4.a # Seluruh elemen rakyat bersatu mempersiapkan proklamasi
+		add_political_power = 30
+		add_war_support = 0.05
+		hidden_effect = {
+			country_event = { id = dei_trunk.5 days = 7 }
+		}
 	}
 }
 
-# --- 5. Waspada ancaman Jepang (naratif, tidak memaksa hasil perang) ---
+# --- 5. Ambang Revolusi: Garis Kolonial Runtuh di Seluruh Jawa ---
 country_event = {
 	id = dei_trunk.5
 	title = dei_trunk.5.t
 	desc = dei_trunk.5.d
-	picture = GFX_report_event_japanese_officers
+	picture = GFX_dei_event_proklamasi
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.5.a
-		add_ideas = dei_idea_home_defense_plan
+		name = dei_trunk.5.a # Saat penentuan telah tiba bagi bangsa Indonesia!
+		add_stability = -0.02
+		add_war_support = 0.10
 	}
 }
 
@@ -130,6 +141,20 @@ country_event = {
 		recruit_character = DEI_nasution
 		recruit_character = DEI_kawilarang
 		recruit_character = DEI_yos_sudarso
+		recruit_character = DEI_re_martadinata
+		recruit_character = DEI_suryadi_suryadarma
+		recruit_character = DEI_halim_perdanakusuma
+		recruit_character = DEI_moestopo
+		recruit_character = DEI_gatot_soebroto
+		recruit_character = DEI_ahmad_yani
+		recruit_character = DEI_ngurah_rai
+		recruit_character = DEI_tb_simatupang
+		recruit_character = DEI_bung_tomo
+		recruit_character = DEI_slamet_rijadi
+		recruit_character = DEI_djatikoesoemo
+		recruit_character = DEI_soengkono
+		recruit_character = DEI_djamin_ginting
+		recruit_character = DEI_john_lie
 	}
 
 	option = {
@@ -142,14 +167,7 @@ country_event = {
 			ruling_party = democratic
 			elections_allowed = yes
 		}
-		add_country_leader_role = {
-			character = INS_sukarno
-			country_leader = {
-				ideology = liberalism
-				expire = "1970.6.6"
-			}
-			promote_leader = yes
-		}
+		country_event = { id = dei_leadership.1 days = 1 }
 		335 = {
 			create_unit = {
 				division_template = "Divisi Infanteri Siliwangi"
@@ -194,14 +212,7 @@ country_event = {
 			ruling_party = federalist
 			elections_allowed = no
 		}
-		add_country_leader_role = {
-			character = INS_hubertus_van_mook
-			country_leader = {
-				ideology = federalist_generic
-				expire = "1965.1.1"
-			}
-			promote_leader = yes
-		}
+		country_event = { id = dei_leadership.2 days = 1 }
 		335 = {
 			create_unit = {
 				division_template = "KNIL Infanterie Divisie"
@@ -241,14 +252,7 @@ country_event = {
 			ruling_party = communism
 			elections_allowed = no
 		}
-		add_country_leader_role = {
-			character = INS_musso
-			country_leader = {
-				ideology = stalinism
-				expire = "1965.1.1"
-			}
-			promote_leader = yes
-		}
+		country_event = { id = dei_leadership.3 days = 1 }
 		335 = {
 			create_unit = {
 				division_template = "Brigade Laskar Rakyat"
@@ -288,14 +292,7 @@ country_event = {
 			ruling_party = fascism
 			elections_allowed = no
 		}
-		add_country_leader_role = {
-			character = INS_soedirman
-			country_leader = {
-				ideology = fascism_ideology
-				expire = "1950.1.29"
-			}
-			promote_leader = yes
-		}
+		country_event = { id = dei_leadership.4 days = 1 }
 		335 = {
 			create_unit = {
 				division_template = "Resimen Pengawal Dewan Revolusi"
@@ -335,14 +332,7 @@ country_event = {
 			ruling_party = islamist
 			elections_allowed = no
 		}
-		add_country_leader_role = {
-			character = INS_sekarmaji_kartosuwiryo
-			country_leader = {
-				ideology = islamist_generic
-				expire = "1962.9.5"
-			}
-			promote_leader = yes
-		}
+		country_event = { id = dei_leadership.5 days = 1 }
 		335 = {
 			create_unit = {
 				division_template = "Resimen Mujahidin TII"
@@ -382,14 +372,7 @@ country_event = {
 			ruling_party = majapahit
 			elections_allowed = no
 		}
-		add_country_leader_role = {
-			character = INS_wuryaningrat
-			country_leader = {
-				ideology = majapahit_generic
-				expire = "1965.1.1"
-			}
-			promote_leader = yes
-		}
+		country_event = { id = dei_leadership.6 days = 1 }
 		335 = {
 			create_unit = {
 				division_template = "Prajurit Utama Bhayangkara"

@@ -30,17 +30,20 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ---
 
-## 2. Struktur Konten v1.4.2 (Authentic Historical Naming & No Fake Acronyms)
+## 2. Struktur Konten v1.0.0 (Canonical Release & Complete Visual Assets)
 
-1. **Pohon Fokus Hibrida (138 Fokus Total):**
-   - **Batang Bersama 1936–1945 (11 Fokus, X=7..10):** `DEI_00_shared_trunk.txt`
+1. **Pohon Fokus Hibrida (134 Fokus Total):**
+   - **Batang Prolog Krisis 1936 (3 Fokus, 84 Hari, X=12, Y=0..8):** `DEI_00_shared_trunk.txt`
+     1. *Retaknya Pax Neerlandica* (28 hari, Jan 1936 — krisis ekonomi & pemogokan umum).
+     2. *Pembangkangan Militer & Rakyat* (28 hari, Feb 1936 — pembangkangan barak KNIL & barisan pemuda).
+     3. *Momentum Revolusi Nasional 1936* (28 hari, Mar 1936 — proklamasi kemerdekaan meletus, membuka 6 jalur).
    - **Jalur A — Republik Demokratis (16 Fokus, X=0..4):** `DEI_01_path_a_republik.txt` (+KAA Bandung, Trikora, Dekrit Presiden, Dwikora, Pancasila, Trisakti)
    - **Jalur B — Kolonial/Federalis (14 Fokus, X=4..7):** `DEI_02_path_b_kolonial.txt` (+Sidang BFO, Angkatan Federal, Pakta ANZAC, Deli, Swapraja, Free Ports)
    - **Jalur C — Komunis (14 Fokus, X=8..11):** `DEI_03_path_c_komunis.txt` (+Komune Tani, Sita Aset Asing, Angkatan Kelima, LEKRA, Pakta Asia Merah, Semesta)
    - **Jalur D — Otoriter Militeristik (14 Fokus, X=12..15):** `DEI_04_path_d_otoriter.txt` (+Dewan Revolusi, Dwifungsi ABRI, Benteng Samudra, Bela Negara, Selat Malaka, Hegemoni Selatan)
    - **Jalur E — Islamis / NII (14 Fokus, X=16..18):** `DEI_05_path_e_islamis.txt` (+Baitul Mal, Mahkamah Syariah, Akademi Mujahidin, Anti-Riba, Liga Muslim, Khilafah Nusantara)
    - **Jalur F — Kemaharajaan Majapahit [Ahistoris] (13 Fokus, X=19..22):** `DEI_06_path_f_majapahit.txt` (+Sumpah Palapa Baru, Restorasi Trowulan, Dharmaputra, Jung Raksasa, Kutaramanawa, Penobatan Maharaja)
-   - **Cabang Industri & Riset R56 (14 Fokus, X=26..30):** `DEI_r56_industry.txt`
+   - **Cabang Industri & Riset Canggih (18 Fokus, X=26..30, Y=0..8):** `DEI_r56_industry.txt` (+ITB Bandung [5th Research Slot], Radar & Telekomunikasi, Metalurgi & Sintesis, Proyek Fisika Atom & Dirgantara)
    - **Cabang Militer AD / AU / AL R56 (28 Fokus, X=33..43):** `DEI_r56_armed_forces.txt`
 
 2. **Karakter Pemimpin & Komandan Legendaris (Trait Unik):**
@@ -50,6 +53,7 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
      - A.H. Nasution (`trait_dei_nasution`: Konseptor Perang Wilayah)
      - Alexander Evert Kawilarang (`trait_dei_kawilarang`: Panglima Pasukan Khusus)
      - Yos Sudarso (`trait_dei_yos_sudarso`: Macan Laut Kepulauan)
+     - 19 potret komandan kustom (156x210) berformat vintage grayish monochrome 1930–1940.
 
 3. **Sistem Divisi, Kapal & Templates OOB (14 Templates Doktrinal + 6 Dedicated Starter Navies):**
    - `common/units/names_divisions/INS_names_divisions.txt`: 11 grup namelist (TNI/Kodam, Laskar Rakyat, KKO Marinir, KNIL, Tentara Merah, TII, Bhayangkara Majapahit, Komando/RPKAD, Kavaleri Lapis Baja, Garnizun Pantai, Dewan Revolusi).
@@ -59,19 +63,23 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
    - `history/units/DEI_air_starter.txt`: Starter Air Wings Lanud Andir & Iswahyudi (60x Fighters, 20x Tactical Bombers).
    - `events/DEI_00_shared_trunk_events.txt`: Event `dei_trunk.6` otomatis men-spawn starter army di pulau Jawa (5-6 divisi bersenjata per ideologi), memuat armada laut spesifik ideologi, skadron udara, dan menyuntikkan 3.000 senapan ke stockpile.
 
-4. **Event Interaktif & Flavor Acak (119 Event Total):**
-   - **93 Event Naratif Fokus:** di `DEI_00` s/d `DEI_07` (14-16 event interaktif per cabang ideologi).
+4. **Event Interaktif & Flavor Acak (124 Event Total):**
+   - **98 Event Naratif Fokus:** di `DEI_00` s/d `DEI_07` (14-16 event interaktif per cabang ideologi + 5 event rangkaian krisis prolog 1936).
    - **26 Flavor Events Acak Berkala (Non-Focus MTTH):** di `events/DEI_flavor_events.txt` mencakup dinamika pers, panen kina/rempah, tambang Ombilin/Bangka, Bosscha, Lembaga Pasteur, Tamansiswa, Kongres Perempuan, debat Sukarno-Natsir, film Terang Boelan, Sumpah Pemuda, mutini De Zeven Provinciën, Borobudur, Karapan Sapi, penyelundupan Selat Malaka, Ratu Adil, Pinisi Dobo, penerbang Adisucipto, Laskar Putri, kilang Brandan.
-   - 100% event memiliki gambar teruji (`picture = GFX_...`).
+   - 100% event memiliki gambar teruji (`picture = GFX_...`) dengan 32 berkas DDS arsip monokrom grayish.
 
-5. **Mega-Proyek Strategis, Pertahanan & Proklamasi Tata Kelola (26 Decisions Total):**
+5. **Aset Grafis Goals & Technologies (100% Grayish Vintage Monokrom):**
+   - **Focus Goals:** 36 berkas DDS (82x82) di `gfx/interface/goals/` dan 36 sprite di `interface/DEI_goals.gfx`.
+   - **Technologies & Equipment:** 24 berkas DDS (120x50) di `gfx/interface/technologies/` dan 55 sprite di `interface/DEI_technologies.gfx` (Bambu Runcing, Hembrug M.95, Pindad SP-1 & SS-1, Meriam TKR, Panser Braat, CTLS, Stuart M3, AMX-13, Cureng, Mustang Cocor Merah, C-47 Seulawah, KRI Gadjah Mada, KRI Tjakra, KRI Irian).
+
+6. **Mega-Proyek Strategis, Pertahanan & Proklamasi Tata Kelola (25 Decisions Total):**
    - **Proklamasi Tata Kelola & Penamaan Negara (18 Decisions):** Kategori `dei_decisions_proclamations` memungkinkan pemain memilih 3 variasi bentuk negara, warna peta RGB, dan partai per ideologi.
    - **Arah Riset & Doktrin Strategis (8 Decisions):** Doktrin Gerilya Wilayah (Sishanrata), Doktrin Gerilya Selat Dangkal, Doktrin Dirgantara Khatulistiwa, Standardisasi Senjata Pindad, Panser Cepat Braat, Dirgantara IPTN, Eksplorasi Minyak Pertamina, Komisioning Armada KRI.
    - **Mega-Proyek Bangunan (6 Decisions):** Pangkalan Ujung Surabaya, Arsenal Bandung, Kilang Minyak Plaju & Balikpapan, Jalan Raya Pos & Rel Trans-Jawa, Benteng Selat Sunda/Malaka, Lanud Iswahyudi & Kalijati.
    - **Mekanik Militer Khusus (4 Decisions):** Sishanrata, Logistik Maritim Pinisi, Dapur Umum & Palang Merah, Pabrik Senjata Darurat Pegunungan.
-   - **Kedaulatan Wilayah (8 Decisions):** Revolusi Dini, Papua Barat, Timor Portugis, Borneo/Sarawak, Melayu Raya, Transmigrasi, ORI, Patroli Maritim.
+   - **Kedaulatan Wilayah (7 Decisions):** Papua Barat, Timor Portugis, Borneo/Sarawak, Melayu Raya, Transmigrasi, ORI, Patroli Maritim.
 
-6. **Industrial Concerns & Military Designers (R56 Integrated GFX):**
+7. **Industrial Concerns & Military Designers (R56 Integrated GFX):**
    - Pabrik Senjata Pindad & AI Bandung (Materiel)
    - Braat Machinefabriek Soerabaja (Tanks/Armor)
    - PT PAL & Droogdok Soerabaja (Naval)
@@ -80,14 +88,14 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
    - Staatsspoorwegen & Bank Indonesia (Industrial/Economy)
    - ITB Bandung (Electronics & Radar)
 
-7. **Sistem Nomenklatur Dinamis & Kustomisasi Ideologi (18 Proklamasi Negara):**
+8. **Sistem Nomenklatur Dinamis & Kustomisasi Ideologi (18 Proklamasi Negara):**
    - 18 Cosmetic Tags & Map Colors (3 opsi penamaan resmi per ideologi via Decisions "Tata Kelola dan Penamaan Resmi Negara").
    - 24 Grup Namelist Kapal dengan prefix spesifik: KRI (Republik), Hr.Ms. (Kolonial), KRI (Otoriter); nama murni tanpa akronim artifisial untuk Komunis, Islamis, dan Majapahit.
    - 6 Dedicated Starter Navy OOBs di Surabaya yang otomatis dimuat sesuai jalur yang dipilih di event `dei_trunk.6`.
    - 11 Grup Namelist Divisi AD (TNI, Laskar, KKO, KNIL, TMRI, TII, Bhayangkara, RPKAD, Panser, Garnizun, Dewan Revolusi).
    - 108 bendera kosmetik TGA tersinkronisasi di folder standar, medium, dan small.
 
-8. **Lokalisasi Alutsista, Doktrin & Identitas Negara (1.020 Kunci):**
+9. **Lokalisasi Alutsista, Doktrin & Identitas Negara (1.217 Kunci):**
    - Varian alutsista: Panser Braat Overvalwagen, Marmon-Herrington CTLS-4TA, Stuart M3A3, KRI Gadjah Mada, KRI Macan Tutul, KRI Nanggala, KRI Dewaruci, CW-21 Demon, B-25 Mitchell Si Djimat, P-51D Mustang Cocor Merah, C-47 Seulawah, dsb. (UTF-8 with BOM, 0 missing keys).
 
 ---
@@ -126,7 +134,8 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 ## 4. Prosedur Verifikasi Cepat
 
 Sebelum menyatakan pekerjaan selesai, jalankan skrip verifikasi otomatis:
-- Cek sintaks, event & fokus: `python "C:\Users\radit\.gemini\antigravity-ide\brain\cab89a6c-9f62-41de-abd4-a13bc7cc8cc0\scratch\final_verification.py"` (138 fokus, 119 event, 0 collision).
-- Cek kunci lokalisasi: `python "C:\Users\radit\.gemini\antigravity-ide\brain\cab89a6c-9f62-41de-abd4-a13bc7cc8cc0\scratch\verify_all_loc.py"` (1.020 keys, 0 missing).
-- Cek aset & gambar: `python "C:\Users\radit\.gemini\antigravity-ide\brain\cab89a6c-9f62-41de-abd4-a13bc7cc8cc0\scratch\comprehensive_asset_audit.py"` (0 missing sprites/flags).
+- Master Audit 8 Dimensi: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\master_audit.py"` (100% Lulus).
+- Cek sintaks, event & fokus: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\final_verification.py"` (134 fokus, 124 event, 0 collision).
+- Cek kunci lokalisasi: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\verify_all_loc.py"` (1.217 keys, 0 missing).
+- Cek aset & gambar: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\comprehensive_asset_audit.py"` (0 missing sprites/flags).
 - Cek UTF-8 BOM: `python -c "assert open(r'c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\localisation\english\DEI_indonesia_l_english.yml', 'rb').read().startswith(b'\xef\xbb\xbf')"`

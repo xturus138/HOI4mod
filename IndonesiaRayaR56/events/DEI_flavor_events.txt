@@ -11,7 +11,7 @@ country_event = {
 	id = dei_flavor.1
 	title = dei_flavor.1.t
 	desc = dei_flavor.1.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_dei_event_volksraad
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -42,7 +42,7 @@ country_event = {
 	id = dei_flavor.2
 	title = dei_flavor.2.t
 	desc = dei_flavor.2.d
-	picture = GFX_report_event_generic_factory
+	picture = GFX_dei_event_pinisi
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -73,7 +73,7 @@ country_event = {
 	id = dei_flavor.3
 	title = dei_flavor.3.t
 	desc = dei_flavor.3.d
-	picture = GFX_report_event_generic_strike
+	picture = GFX_dei_event_tanjung_priok
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -106,7 +106,7 @@ country_event = {
 	id = dei_flavor.4
 	title = dei_flavor.4.t
 	desc = dei_flavor.4.d
-	picture = GFX_report_event_generic_rally
+	picture = GFX_dei_event_ikada
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -133,7 +133,7 @@ country_event = {
 	id = dei_flavor.5
 	title = dei_flavor.5.t
 	desc = dei_flavor.5.d
-	picture = GFX_report_event_generic_ruins
+	picture = GFX_dei_event_prambanan
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -164,7 +164,7 @@ country_event = {
 	id = dei_flavor.6
 	title = dei_flavor.6.t
 	desc = dei_flavor.6.d
-	picture = GFX_report_event_generic_conference
+	picture = GFX_dei_event_kaa_bandung
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -190,7 +190,7 @@ country_event = {
 	id = dei_flavor.7
 	title = dei_flavor.7.t
 	desc = dei_flavor.7.d
-	picture = GFX_report_event_generic_rally
+	picture = GFX_dei_event_ikada
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -216,7 +216,7 @@ country_event = {
 	id = dei_flavor.8
 	title = dei_flavor.8.t
 	desc = dei_flavor.8.d
-	picture = GFX_report_event_generic_factory
+	picture = GFX_dei_event_pasteur
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -246,7 +246,7 @@ country_event = {
 	id = dei_flavor.9
 	title = dei_flavor.9.t
 	desc = dei_flavor.9.d
-	picture = GFX_report_event_generic_factory
+	picture = GFX_dei_event_ombilin
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -272,7 +272,7 @@ country_event = {
 	id = dei_flavor.10
 	title = dei_flavor.10.t
 	desc = dei_flavor.10.d
-	picture = GFX_report_event_generic_factory
+	picture = GFX_dei_event_ombilin
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -301,7 +301,7 @@ country_event = {
 	id = dei_flavor.11
 	title = dei_flavor.11.t
 	desc = dei_flavor.11.d
-	picture = GFX_report_event_generic_research_lab
+	picture = GFX_dei_event_bosscha
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -331,7 +331,7 @@ country_event = {
 	id = dei_flavor.12
 	title = dei_flavor.12.t
 	desc = dei_flavor.12.d
-	picture = GFX_report_event_generic_research_lab
+	picture = GFX_dei_event_pasteur
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -357,7 +357,7 @@ country_event = {
 	id = dei_flavor.13
 	title = dei_flavor.13.t
 	desc = dei_flavor.13.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_dei_event_tamansiswa
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -387,7 +387,7 @@ country_event = {
 	id = dei_flavor.14
 	title = dei_flavor.14.t
 	desc = dei_flavor.14.d
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_dei_event_kongres_perempuan
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -413,7 +413,7 @@ country_event = {
 	id = dei_flavor.15
 	title = dei_flavor.15.t
 	desc = dei_flavor.15.d
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_dei_event_linggarjati
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -444,7 +444,7 @@ country_event = {
 	id = dei_flavor.16
 	title = dei_flavor.16.t
 	desc = dei_flavor.16.d
-	picture = GFX_report_event_generic_rally
+	picture = GFX_dei_event_ikada
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -470,7 +470,7 @@ country_event = {
 	id = dei_flavor.17
 	title = dei_flavor.17.t
 	desc = dei_flavor.17.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_dei_event_sumpah_pemuda
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -496,7 +496,7 @@ country_event = {
 	id = dei_flavor.18
 	title = dei_flavor.18.t
 	desc = dei_flavor.18.d
-	picture = GFX_report_event_merchant_ship_01
+	picture = GFX_dei_event_zeven_provincien
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -525,7 +525,7 @@ country_event = {
 	id = dei_flavor.19
 	title = dei_flavor.19.t
 	desc = dei_flavor.19.d
-	picture = GFX_report_event_generic_ruins
+	picture = GFX_dei_event_borobudur
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -551,7 +551,7 @@ country_event = {
 	id = dei_flavor.20
 	title = dei_flavor.20.t
 	desc = dei_flavor.20.d
-	picture = GFX_report_event_generic_rally
+	picture = GFX_dei_event_karapan_sapi
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -577,7 +577,7 @@ country_event = {
 	id = dei_flavor.21
 	title = dei_flavor.21.t
 	desc = dei_flavor.21.d
-	picture = GFX_report_event_merchant_ship_01
+	picture = GFX_dei_event_tanjung_priok
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -610,7 +610,7 @@ country_event = {
 	id = dei_flavor.22
 	title = dei_flavor.22.t
 	desc = dei_flavor.22.d
-	picture = GFX_report_event_generic_riot
+	picture = GFX_dei_event_kartosuwiryo
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -641,7 +641,7 @@ country_event = {
 	id = dei_flavor.23
 	title = dei_flavor.23.t
 	desc = dei_flavor.23.d
-	picture = GFX_report_event_merchant_ship_01
+	picture = GFX_dei_event_pinisi
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -667,7 +667,7 @@ country_event = {
 	id = dei_flavor.24
 	title = dei_flavor.24.t
 	desc = dei_flavor.24.d
-	picture = GFX_report_event_fighters
+	picture = GFX_dei_event_adisoetjipto
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -693,7 +693,7 @@ country_event = {
 	id = dei_flavor.25
 	title = dei_flavor.25.t
 	desc = dei_flavor.25.d
-	picture = GFX_report_event_generic_communist_militia
+	picture = GFX_dei_event_kongres_perempuan
 
 	is_triggered_only = no
 	fire_only_once = yes
@@ -719,7 +719,7 @@ country_event = {
 	id = dei_flavor.26
 	title = dei_flavor.26.t
 	desc = dei_flavor.26.d
-	picture = GFX_report_event_generic_factory
+	picture = GFX_dei_event_tanjung_priok
 
 	is_triggered_only = no
 	fire_only_once = yes

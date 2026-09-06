@@ -1,0 +1,146 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_focus_dei_akademi_mujahidin"
+		texturefile = "gfx/interface/goals/focus_dei_akademi_mujahidin.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_angkatan_federal"
+		texturefile = "gfx/interface/goals/focus_dei_angkatan_federal.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_angkatan_kelima"
+		texturefile = "gfx/interface/goals/focus_dei_angkatan_kelima.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_baitul_mal"
+		texturefile = "gfx/interface/goals/focus_dei_baitul_mal.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_bela_negara"
+		texturefile = "gfx/interface/goals/focus_dei_bela_negara.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_benteng_samudra"
+		texturefile = "gfx/interface/goals/focus_dei_benteng_samudra.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_dekrit_presiden"
+		texturefile = "gfx/interface/goals/focus_dei_dekrit_presiden.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_dewan_revolusi"
+		texturefile = "gfx/interface/goals/focus_dei_dewan_revolusi.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_dharmaputra"
+		texturefile = "gfx/interface/goals/focus_dei_dharmaputra.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_dwifungsi"
+		texturefile = "gfx/interface/goals/focus_dei_dwifungsi.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_dwikora"
+		texturefile = "gfx/interface/goals/focus_dei_dwikora.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_fisika_atom"
+		texturefile = "gfx/interface/goals/focus_dei_fisika_atom.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_itb_bandung"
+		texturefile = "gfx/interface/goals/focus_dei_itb_bandung.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_jung_raksasa"
+		texturefile = "gfx/interface/goals/focus_dei_jung_raksasa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_kaa_bandung"
+		texturefile = "gfx/interface/goals/focus_dei_kaa_bandung.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_khilafah_nusantara"
+		texturefile = "gfx/interface/goals/focus_dei_khilafah_nusantara.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_kilang_minyak"
+		texturefile = "gfx/interface/goals/focus_dei_kilang_minyak.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_komune_tani"
+		texturefile = "gfx/interface/goals/focus_dei_komune_tani.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_lekra"
+		texturefile = "gfx/interface/goals/focus_dei_lekra.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_mahkamah_syariah"
+		texturefile = "gfx/interface/goals/focus_dei_mahkamah_syariah.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_momentum_kemerdekaan"
+		texturefile = "gfx/interface/goals/focus_dei_momentum_kemerdekaan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_pakta_asia_merah"
+		texturefile = "gfx/interface/goals/focus_dei_pakta_asia_merah.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_pancasila"
+		texturefile = "gfx/interface/goals/focus_dei_pancasila.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_pax_neerlandica"
+		texturefile = "gfx/interface/goals/focus_dei_pax_neerlandica.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_pembangkangan"
+		texturefile = "gfx/interface/goals/focus_dei_pembangkangan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_penobatan_maharaja"
+		texturefile = "gfx/interface/goals/focus_dei_penobatan_maharaja.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_perkebunan_deli"
+		texturefile = "gfx/interface/goals/focus_dei_perkebunan_deli.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_proklamasi"
+		texturefile = "gfx/interface/goals/focus_dei_proklamasi.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_radar_nusantara"
+		texturefile = "gfx/interface/goals/focus_dei_radar_nusantara.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_restorasi_trowulan"
+		texturefile = "gfx/interface/goals/focus_dei_restorasi_trowulan.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_sidang_bfo"
+		texturefile = "gfx/interface/goals/focus_dei_sidang_bfo.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_sumpah_palapa"
+		texturefile = "gfx/interface/goals/focus_dei_sumpah_palapa.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_swapraja"
+		texturefile = "gfx/interface/goals/focus_dei_swapraja.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_tkr"
+		texturefile = "gfx/interface/goals/focus_dei_tkr.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_trikora"
+		texturefile = "gfx/interface/goals/focus_dei_trikora.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_dei_trisakti"
+		texturefile = "gfx/interface/goals/focus_dei_trisakti.dds"
+	}
+}

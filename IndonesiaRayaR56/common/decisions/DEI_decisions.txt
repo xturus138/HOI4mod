@@ -1,17 +1,9 @@
 # =====================================================================
 # INDONESIA RAYA (R56 SUBMOD) — Keputusan Nasional & Mekanik Khusus
-# 1. Revolusi Dini (Shortcut 1936)
-# 2. Kedaulatan & Diplomasi Wilayah Nusantara (Papua, Timor, Borneo, Malaya)
-# 3. Tata Kelola Kepulauan & Ekonomi Nasional (Transmigrasi, ORI, Maritim)
+# 1. Kedaulatan & Diplomasi Wilayah Nusantara (Papua, Timor, Borneo, Malaya)
+# 2. Tata Kelola Kepulauan & Ekonomi Nasional (Transmigrasi, ORI, Maritim)
+# 3. Riset, Doktrin Militer & Mega Proyek Strategis
 # =====================================================================
-
-decisions_category = {
-	id = dei_decisions_category
-	icon = decision_category_political_effects
-	priority = 100
-	allowed = { tag = INS }
-	visible = { tag = INS }
-}
 
 decisions_category = {
 	id = dei_decisions_proclamations
@@ -79,34 +71,6 @@ decisions_category = {
 }
 
 decisions = {
-	dei_decisions_category = {
-
-		dei_decision_revolusi_dini = {
-			icon = generic_construct_civilian_factories
-
-			allowed = { tag = INS }
-			visible = {
-				NOT = { has_country_flag = dei_jalur_dipilih }
-				NOT = { has_country_flag = dei_revolusi_dini_used }
-			}
-			available = { always = yes }
-
-			cost = 0
-			fire_only_once = yes
-			days_re_enable = -1
-
-			complete_effect = {
-				set_country_flag = dei_revolusi_dini_used
-				set_country_flag = dei_revolusi_dini_chosen
-				country_event = { id = dei_revolusi_dini.1 hours = 2 }
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	}
-
 	dei_decisions_nusantara = {
 
 		# Integrasi Papua Barat
