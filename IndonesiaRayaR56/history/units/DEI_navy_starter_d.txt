@@ -1,0 +1,27 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Starter Fleet OOB: Jalur D (Otoriter Militer)
+# Komando Pertahanan Pangkalan Utama Surabaya (Province 13520)
+# =====================================================================
+
+units = {
+	fleet = {
+		name = "Komando Armada Pertahanan Samudra (KAPS)"
+		naval_base = 13520
+		task_force = {
+			name = "Gugus Tempur Mandala Khatulistiwa"
+			location = 13520
+			ship = { name = "KRI Mandala Perkasa" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Dwikora" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Macan Samudra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Serigala Selat" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Rajawali Hitam" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Ronda Samudra" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+		}
+		task_force = {
+			name = "Satuan Selam Siluman Bawah Air"
+			location = 13520
+			ship = { name = "KRI Pasopati Hitam" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Trisula Maut" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+		}
+	}
+}

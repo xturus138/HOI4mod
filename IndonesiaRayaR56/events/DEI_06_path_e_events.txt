@@ -130,3 +130,85 @@ country_event = {
 		add_war_support = 0.10
 	}
 }
+
+# 9. Lembaga Perbendaharaan Baitul Mal
+country_event = {
+	id = dei_path_e.9
+	title = dei_path_e.9.t
+	desc = dei_path_e.9.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = dei_path_e.9.a
+		add_stability = 0.05
+		add_political_power = 40
+	}
+}
+
+# 10. Kodifikasi Peradilan Qanun Syariah
+country_event = {
+	id = dei_path_e.10
+	title = dei_path_e.10.t
+	desc = dei_path_e.10.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = dei_path_e.10.a
+		add_stability = 0.08
+	}
+}
+
+# 11. Akademi Perwira Mujahidin TII
+country_event = {
+	id = dei_path_e.11
+	title = dei_path_e.11.t
+	desc = dei_path_e.11.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = dei_path_e.11.a
+		army_experience = 15
+		add_war_support = 0.05
+	}
+}
+
+# 12. Sistem Perekonomian Bebas Riba
+country_event = {
+	id = dei_path_e.12
+	title = dei_path_e.12.t
+	desc = dei_path_e.12.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = dei_path_e.12.a
+		add_political_power = 30
+		add_stability = 0.04
+	}
+}
+
+# 13. Liga Muslim Kepulauan & Moro
+country_event = {
+	id = dei_path_e.13
+	title = dei_path_e.13.t
+	desc = dei_path_e.13.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = dei_path_e.13.a
+		add_political_power = 40
+	}
+}
+
+# 14. Proklamasi Khilafah Kepulauan
+country_event = {
+	id = dei_path_e.14
+	title = dei_path_e.14.t
+	desc = dei_path_e.14.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = dei_path_e.14.a
+		add_stability = 0.10
+		add_war_support = 0.10
+	}
+}

@@ -133,3 +133,85 @@ country_event = {
 		add_war_support = 0.10
 	}
 }
+
+# 9. Dewan Revolusi Militer Tertinggi
+country_event = {
+	id = dei_path_d.9
+	title = dei_path_d.9.t
+	desc = dei_path_d.9.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = dei_path_d.9.a
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+}
+
+# 10. Penempatan Perwira di Sektor Strategis
+country_event = {
+	id = dei_path_d.10
+	title = dei_path_d.10.t
+	desc = dei_path_d.10.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = dei_path_d.10.a
+		add_stability = 0.05
+	}
+}
+
+# 11. Doktrin Pertahanan Benteng Samudra
+country_event = {
+	id = dei_path_d.11
+	title = dei_path_d.11.t
+	desc = dei_path_d.11.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = dei_path_d.11.a
+		navy_experience = 15
+	}
+}
+
+# 12. Wajib Militer Total Pemuda Nusantara
+country_event = {
+	id = dei_path_d.12
+	title = dei_path_d.12.t
+	desc = dei_path_d.12.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = dei_path_d.12.a
+		add_manpower = 20000
+		add_war_support = 0.05
+	}
+}
+
+# 13. Pengamanan Komando Selat Strategis
+country_event = {
+	id = dei_path_d.13
+	title = dei_path_d.13.t
+	desc = dei_path_d.13.d
+	picture = GFX_report_event_generic_battle
+	is_triggered_only = yes
+	option = {
+		name = dei_path_d.13.a
+		army_experience = 10
+		navy_experience = 10
+	}
+}
+
+# 14. Supremasi Pasukan Khusus Nusantara
+country_event = {
+	id = dei_path_d.14
+	title = dei_path_d.14.t
+	desc = dei_path_d.14.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = dei_path_d.14.a
+		add_stability = 0.08
+		add_war_support = 0.08
+	}
+}

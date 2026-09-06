@@ -1,0 +1,23 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Starter Air Wings OOB
+# Pangkalan Udara Andir & Kalijati (1126) & Iswahyudi (446 / 13520)
+# =====================================================================
+
+air_wings = {
+	1126 = {
+		early_fighter_equipment = {
+			owner = "INS"
+			amount = 40
+		}
+		tactical_bomber_equipment_1 = {
+			owner = "INS"
+			amount = 20
+		}
+	}
+	13520 = {
+		early_fighter_equipment = {
+			owner = "INS"
+			amount = 20
+		}
+	}
+}

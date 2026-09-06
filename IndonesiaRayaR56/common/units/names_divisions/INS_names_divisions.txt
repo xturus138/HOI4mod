@@ -1,0 +1,195 @@
+##### INDONESIA DIVISION NAMES #####
+
+DEI_INF_TNI = {
+	name = "Divisi Kodam & Komando Republik"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "motorized" "mechanized" }
+	fallback_name = "Divisi Infanteri %d"
+	ordered = {
+		1 = { "Divisi I/Siliwangi" }
+		2 = { "Divisi II/Diponegoro" }
+		3 = { "Divisi III/Brawijaya" }
+		4 = { "Divisi IV/Hasanuddin" }
+		5 = { "Divisi V/Pattimura" }
+		6 = { "Divisi VI/Tanjungpura" }
+		7 = { "Divisi I/Bukit Barisan" }
+		8 = { "Divisi II/Sriwijaya" }
+		9 = { "Divisi IX/Udayana" }
+		10 = { "Divisi XII/Tanjungpura" }
+		11 = { "Divisi XIII/Merdeka" }
+		12 = { "Divisi XIV/Pattimura" }
+		13 = { "Divisi XVI/Udayana" }
+		14 = { "Divisi XVII/Cenderawasih" }
+		15 = { "Divisi XVIII/Kasuari" }
+	}
+}
+
+DEI_LASKAR = {
+	name = "Barisan Laskar & Milisi Rakyat"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "militia" }
+	fallback_name = "Resimen Laskar %d"
+	ordered = {
+		1 = { "Resimen Laskar Pelopor" }
+		2 = { "Laskar Hizbullah Priangan" }
+		3 = { "Barisan Banteng Merdeka" }
+		4 = { "Laskar Pemberontak Republik Indonesia (BPRI)" }
+		5 = { "Tentara Pelajar (TP) Iphik" }
+		6 = { "Laskar Rakyat Djakarta Raya (LRDR)" }
+		7 = { "Laskar Hizbullah Surakarta" }
+		8 = { "Laskar Sabilillah Jawa Timur" }
+		9 = { "Laskar Minahasa Berdaulat" }
+		10 = { "Barisan Pemuda Gerilya Maluku" }
+	}
+}
+
+DEI_MARINIR = {
+	name = "Korps Komando Operasi (KKO / Marinir)"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "marine" "infantry" }
+	fallback_name = "Batalyon KKO %d"
+	ordered = {
+		1 = { "Batalyon I KKO Pasmar Surabaya" }
+		2 = { "Batalyon II KKO Pasmar Jakarta" }
+		3 = { "Batalyon III KKO Pasmar Sorong" }
+		4 = { "Resimen Pelopor Marinir Macan" }
+		5 = { "Detasemen Komando Jalasanak" }
+	}
+}
+
+DEI_KNIL_COLONIAL = {
+	name = "Koninklijk Nederlandsch-Indisch Leger (KNIL)"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "cavalry" "motorized" }
+	fallback_name = "KNIL Bataljon %d"
+	ordered = {
+		1 = { "1e KNIL Infanterie Divisie" }
+		2 = { "2e KNIL Infanterie Divisie" }
+		3 = { "KNIL Veldleger Brigade Java" }
+		4 = { "Korps Marechaussee te Voet Atjeh" }
+		5 = { "Stadswacht Soerabaja" }
+		6 = { "Stadswacht Batavia" }
+		7 = { "Stadswacht Bandoeng" }
+		8 = { "Landwacht Preanger" }
+		9 = { "Garnizoensbataljon Amboina" }
+		10 = { "Garnizoensbataljon Menado" }
+	}
+}
+
+DEI_KOMUNIS = {
+	name = "Tentara Rakyat & Barisan Buruh Merah"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "militia" }
+	fallback_name = "Divisi Merah %d"
+	ordered = {
+		1 = { "Divisi Merah Madiun" }
+		2 = { "Brigade Barisan Buruh Kereta Api" }
+		3 = { "Resimen Barisan Tani Indonesia" }
+		4 = { "Divisi Pengawal Merah Semaoen" }
+		5 = { "Laskar Gerilya Proletar Surabaya" }
+	}
+}
+
+DEI_ISLAMIS = {
+	name = "Tentara Islam Indonesia (TII)"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "militia" }
+	fallback_name = "Resimen Mujahidin %d"
+	ordered = {
+		1 = { "Resimen I TII Malangbong" }
+		2 = { "Divisi Mujahidin Siliwangi TII" }
+		3 = { "Batalyon Jundullah Cirebon" }
+		4 = { "Resimen Mujahidin Kahar Muzakkar" }
+		5 = { "Brigade TII Daud Beureueh" }
+	}
+}
+
+DEI_MAJAPAHIT = {
+	name = "Prajurit Keraton & Bhayangkara Majapahit"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "cavalry" }
+	fallback_name = "Pasukan Panji %d"
+	ordered = {
+		1 = { "Prajurit Utama Bhayangkara" }
+		2 = { "Dharmaputra Wilwatikta" }
+		3 = { "Pasukan Jalayanapati Segara" }
+		4 = { "Korps Gada Watu Singhasari" }
+		5 = { "Barisan Panji Surya Majapahit" }
+		6 = { "Prajurit Keraton Surakarta" }
+	}
+}
+
+DEI_KOMANDO = {
+	name = "Resimen Komando & Pasukan Gerilya"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "mountaineer" "special_forces" "infantry" }
+	fallback_name = "Resimen Komando %d"
+	ordered = {
+		1 = { "Resimen Para Komando AD (RPKAD)" }
+		2 = { "Resimen Pelopor Brimob" }
+		3 = { "Batalyon Raider Banteng Raiders" }
+		4 = { "Resimen Gerilya Gunung Salak" }
+		5 = { "Detasemen Pasukan Khusus Cenderawasih" }
+		6 = { "Batalyon Gerilya Merapi" }
+	}
+}
+
+DEI_KAVALERI = {
+	name = "Resimen Kavaleri & Lapis Baja Nusantara"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "light_armor" "medium_armor" "motorized" "mechanized" "cavalry" }
+	fallback_name = "Resimen Kavaleri %d"
+	ordered = {
+		1 = { "Resimen Kavaleri Panser I/Badak" }
+		2 = { "Batalyon Kavaleri II/Turangga Ceta" }
+		3 = { "Resimen Panser Braat Soerabaja" }
+		4 = { "Batalyon Kavaleri IV/Kijang Cakti" }
+		5 = { "Detasemen Lapis Baja Gadjah Mada" }
+	}
+}
+
+DEI_GARNIZUN = {
+	name = "Garnizun Pertahanan Pangkalan & Pantai"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "garrison" }
+	fallback_name = "Garnizun Pertahanan %d"
+	ordered = {
+		1 = { "Stadswacht & Garnizun Batavia" }
+		2 = { "Garnizun Pangkalan AL Surabaya" }
+		3 = { "Garnizun Pertahanan Arsenal Bandung" }
+		4 = { "Garnizun Kilang Minyak Plaju" }
+		5 = { "Garnizun Kilang Minyak Balikpapan" }
+		6 = { "Garnizun Pertahanan Selat Sunda" }
+		7 = { "Garnizun Pertahanan Sabang" }
+	}
+}
+
+DEI_OTORITER = {
+	name = "Resimen Pengawal Dewan Revolusi & Pelopor Bela Negara"
+	for_countries = { INS }
+	can_use = { always = yes }
+	division_types = { "infantry" "motorized" "mechanized" }
+	fallback_name = "Resimen Pengawal %d"
+	ordered = {
+		1 = { "Resimen I Pengawal Dewan Revolusi" }
+		2 = { "Resimen II Pengawal Dewan Revolusi" }
+		3 = { "Brigade Khusus Mandala Perkasa" }
+		4 = { "Resimen Pelopor Bela Negara I" }
+		5 = { "Resimen Pelopor Bela Negara II" }
+		6 = { "Divisi Garda Kehormatan Revolusi" }
+		7 = { "Resimen Tempur Selat Sunda" }
+		8 = { "Resimen Tempur Selat Malaka" }
+		9 = { "Brigade Serbu Khatulistiwa" }
+		10 = { "Detasemen Siaga Puncak Revolusi" }
+	}
+}

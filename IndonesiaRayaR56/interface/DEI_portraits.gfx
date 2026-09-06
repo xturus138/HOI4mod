@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_INS_Abdul_Haris_Nasution"
+		texturefile = "gfx/leaders/INS/r56_portrait_INS_Abdul_Haris_Nasution.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_Urip_Sumoharjo"
+		texturefile = "gfx/leaders/INS/r56_portrait_INS_Urip_Sumoharjo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_Alexander_Evert_Kawilarang"
+		texturefile = "gfx/leaders/INS/r56_portrait_INS_Alexander_Evert_Kawilarang.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_Mas_Pardi"
+		texturefile = "gfx/leaders/INS/r56_portrait_INS_Mas_Pardi.dds"
+	}
+}

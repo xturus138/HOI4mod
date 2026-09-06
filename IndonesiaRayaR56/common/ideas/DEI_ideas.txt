@@ -9,7 +9,7 @@ ideas = {
 	country = {
 
 		dei_idea_volksraad_reformed = {
-			picture = generic_political_pressure
+			picture = generic_political_support
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.05
@@ -18,7 +18,7 @@ ideas = {
 		}
 
 		dei_idea_liberalized_economy = {
-			picture = generic_civilian_economy
+			picture = generic_economic_increase
 			allowed = { tag = INS }
 			modifier = {
 				consumer_goods_factor = -0.03
@@ -27,7 +27,7 @@ ideas = {
 		}
 
 		dei_idea_colonial_monopoly = {
-			picture = generic_civilian_economy
+			picture = generic_economic_increase
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = -0.03
@@ -36,7 +36,7 @@ ideas = {
 		}
 
 		dei_idea_native_sentiment_high = {
-			picture = generic_national_unity
+			picture = generic_pp_unity_bonus
 			allowed = { tag = INS }
 			modifier = {
 				war_support_factor = 0.05
@@ -45,7 +45,7 @@ ideas = {
 		}
 
 		dei_idea_home_defense_plan = {
-			picture = generic_army_effort
+			picture = generic_infantry_bonus
 			allowed = { tag = INS }
 			modifier = {
 				defense_factor = 0.05
@@ -55,7 +55,7 @@ ideas = {
 
 		# --- Spirit hasil pilihan Revolusi Dini ---
 		dei_idea_revolusi_dini_spirit = {
-			picture = generic_civil_war_tension
+			picture = generic_guerilla_warfare
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = -0.10
@@ -66,7 +66,7 @@ ideas = {
 
 		# --- Spirit jalur A: Republik ---
 		dei_idea_republik_diproklamasikan = {
-			picture = generic_national_unity
+			picture = generic_pp_unity_bonus
 			allowed = { tag = INS }
 			modifier = {
 				war_support_factor = 0.10
@@ -75,7 +75,7 @@ ideas = {
 		}
 
 		dei_idea_guerrilla_doctrine = {
-			picture = generic_army_effort
+			picture = generic_infantry_bonus
 			allowed = { tag = INS }
 			modifier = {
 				resistance_decay = 0.10
@@ -84,7 +84,7 @@ ideas = {
 		}
 
 		dei_idea_liberal_democracy_established = {
-			picture = generic_political_pressure
+			picture = generic_political_support
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.05
@@ -93,7 +93,7 @@ ideas = {
 		}
 
 		dei_idea_guided_democracy = {
-			picture = generic_national_unity
+			picture = generic_pp_unity_bonus
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
@@ -104,7 +104,7 @@ ideas = {
 
 		# --- Spirit jalur B: Kolonial/Federalis ---
 		dei_idea_persemakmuran_belanda = {
-			picture = generic_political_pressure
+			picture = generic_political_support
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
@@ -114,7 +114,7 @@ ideas = {
 
 		# --- Spirit jalur C: Komunis ---
 		dei_idea_republik_rakyat_indonesia = {
-			picture = generic_national_unity
+			picture = generic_pp_unity_bonus
 			allowed = { tag = INS }
 			modifier = {
 				war_support_factor = 0.10
@@ -122,7 +122,7 @@ ideas = {
 			}
 		}
 		dei_idea_tentara_rakyat_disiplin = {
-			picture = generic_army_effort
+			picture = generic_infantry_bonus
 			allowed = { tag = INS }
 			modifier = {
 				army_org_factor = 0.05
@@ -132,7 +132,7 @@ ideas = {
 
 		# --- Spirit jalur D: Otoriter Militeristik ---
 		dei_idea_rezim_militer_konsolidasi = {
-			picture = generic_army_effort
+			picture = generic_infantry_bonus
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
@@ -140,7 +140,7 @@ ideas = {
 			}
 		}
 		dei_idea_industri_militer_kuat = {
-			picture = generic_civilian_economy
+			picture = generic_economic_increase
 			allowed = { tag = INS }
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
@@ -149,7 +149,7 @@ ideas = {
 
 		# --- Spirit jalur E: Islamis ---
 		dei_idea_negara_islam_konsolidasi = {
-			picture = generic_national_unity
+			picture = generic_pp_unity_bonus
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.08
@@ -157,7 +157,7 @@ ideas = {
 			}
 		}
 		dei_idea_tii_terbentuk = {
-			picture = generic_army_effort
+			picture = generic_infantry_bonus
 			allowed = { tag = INS }
 			modifier = {
 				army_org_factor = 0.05
@@ -166,20 +166,252 @@ ideas = {
 
 		# --- Spirit jalur F: Majapahit (ahistoris) ---
 		dei_idea_dewan_adat_terbentuk = {
-			picture = generic_political_pressure
+			picture = generic_political_support
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.05
 			}
 		}
 		dei_idea_kekaisaran_nusantara = {
-			picture = generic_national_unity
+			picture = generic_pp_unity_bonus
 			allowed = { tag = INS }
 			modifier = {
 				stability_factor = 0.10
 				war_support_factor = 0.10
 				political_power_factor = 0.10
 			}
+		}
+
+		# --- Military Mechanics & Mega-Project Spirits ---
+		dei_idea_trans_java_corridor = {
+			picture = generic_goods_red_bonus
+			allowed = { tag = INS }
+			modifier = {
+				army_speed_factor = 0.15
+				supply_hub_dropoff_factor = 0.15
+			}
+		}
+
+		dei_idea_sishanrata_active = {
+			picture = generic_manpower_bonus
+			allowed = { tag = INS }
+			modifier = {
+				defense_factor = 0.20
+				resistance_target = 0.30
+				conscription_factor = 0.10
+			}
+		}
+
+		dei_idea_pinisi_logistics = {
+			picture = generic_navy_bonus
+			allowed = { tag = INS }
+			modifier = {
+				out_of_supply_factor = -0.25
+				supply_consumption_factor = -0.15
+				convoy_escort_efficiency = 0.20
+			}
+		}
+
+		dei_idea_dapur_umum = {
+			picture = generic_morale_bonus
+			allowed = { tag = INS }
+			modifier = {
+				attrition = -0.15
+				army_morale_factor = 0.10
+			}
+		}
+
+		# --- Arah Riset & Doktrin Strategis ---
+		dei_idea_doktrin_gerilya_wilayah = {
+			picture = generic_guerilla_warfare
+			allowed = { tag = INS }
+			modifier = {
+				army_core_defence_factor = 0.10
+				out_of_supply_factor = -0.20
+				max_dig_in = 5
+			}
+		}
+
+		dei_idea_doktrin_gerilya_laut = {
+			picture = generic_navy_bonus
+			allowed = { tag = INS }
+			modifier = {
+				naval_torpedo_hit_chance_factor = 0.15
+				naval_torpedo_screen_penetration_factor = 0.10
+				convoy_raiding_efficiency_factor = 0.20
+			}
+		}
+
+		dei_idea_doktrin_dirgantara_taktis = {
+			picture = generic_air_bonus
+			allowed = { tag = INS }
+			modifier = {
+				air_cas_present_factor = 0.15
+				air_mission_efficiency_factor = 0.10
+				air_weather_penalty = -0.25
+			}
+		}
+
+		dei_idea_standardisasi_pindad = {
+			picture = generic_production_bonus
+			allowed = { tag = INS }
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_artillery_attack_factor = 0.05
+			}
+		}
+
+		dei_idea_mekanisasi_braat = {
+			picture = generic_tank_manufacturer_1
+			allowed = { tag = INS }
+			modifier = {
+				motorized_attack_factor = 0.05
+				army_armor_speed_factor = 0.10
+				army_armor_attack_factor = 0.05
+			}
+		}
+
+		dei_idea_kemandirian_iptn = {
+			picture = generic_air_manufacturer_1
+			allowed = { tag = INS }
+			modifier = {
+				air_superiority_detect_factor = 0.10
+			}
+		}
+
+		dei_idea_eksplorasi_minyak = {
+			picture = generic_refining_concern_1
+			allowed = { tag = INS }
+			modifier = {
+				fuel_gain_factor = 0.15
+			}
+		}
+	}
+
+
+	# =====================================================================
+	# INDUSTRIAL CONCERNS & MILITARY DESIGNERS (R56 Integrated GFX)
+	# =====================================================================
+
+	materiel_manufacturer = {
+		designer = yes
+
+		dei_pindad_weapons = {
+			picture = GFX_idea_INS_pindad
+			allowed = { original_tag = INS }
+			research_bonus = {
+				infantry_weapons = 0.15
+				artillery = 0.15
+			}
+			traits = { infantry_equipment_manufacturer }
+		}
+
+		dei_ai_bandung = {
+			picture = GFX_idea_INS_ai_bandung
+			allowed = { original_tag = INS }
+			research_bonus = {
+				infantry_weapons = 0.10
+				support_tech = 0.15
+			}
+			traits = { infantry_equipment_manufacturer }
+		}
+	}
+
+	tank_manufacturer = {
+		designer = yes
+
+		dei_braat_tanks = {
+			picture = GFX_idea_INS_braat
+			allowed = { original_tag = INS }
+			research_bonus = {
+				armor = 0.15
+				motorized_equipment = 0.15
+			}
+			traits = { medium_tank_manufacturer }
+		}
+	}
+
+	naval_manufacturer = {
+		designer = yes
+
+		dei_pal_naval = {
+			picture = GFX_idea_INS_pal
+			allowed = { original_tag = INS }
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+
+		dei_surabaya_dm = {
+			picture = GFX_idea_INS_surabaya_dm
+			allowed = { original_tag = INS }
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+	}
+
+	aircraft_manufacturer = {
+		designer = yes
+
+		dei_iptn_aircraft = {
+			picture = GFX_idea_INS_iptn
+			allowed = { original_tag = INS }
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = { light_aircraft_manufacturer }
+		}
+
+		dei_knilm_aircraft = {
+			picture = GFX_idea_INS_knilm
+			allowed = { original_tag = INS }
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			traits = { light_aircraft_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+		dei_bpm_pertamina = {
+			picture = GFX_idea_INS_shell
+			allowed = { original_tag = INS }
+			research_bonus = {
+				synth_resources = 0.15
+				industry = 0.10
+			}
+			traits = { refinery_concern }
+		}
+
+		dei_staatsspoorwegen = {
+			picture = GFX_idea_INS_sstw
+			allowed = { original_tag = INS }
+			research_bonus = {
+				industry = 0.15
+			}
+			traits = { industrial_concern }
+		}
+
+		dei_bank_indonesia = {
+			picture = GFX_idea_INS_bank_indonesia
+			allowed = { original_tag = INS }
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_factor = 0.05
+			}
+			traits = { industrial_concern }
+		}
+
+		dei_itb_bandung = {
+			picture = GFX_idea_INS_ai_bandung
+			allowed = { original_tag = INS }
+			research_bonus = {
+				electronics = 0.15
+			}
+			traits = { electronics_concern }
 		}
 	}
 }

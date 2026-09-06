@@ -1,0 +1,27 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Starter Fleet OOB: Jalur A (Republik)
+# Pangkalan Armada Ujung Surabaya (Province 13520, East Java)
+# =====================================================================
+
+units = {
+	fleet = {
+		name = "Armada Laut Republik Indonesia (ALRI)"
+		naval_base = 13520
+		task_force = {
+			name = "Flotila Pemukul Selat Republik"
+			location = 13520
+			ship = { name = "KRI Bung Karno" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Macan Tutul" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Harimau" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Singa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Banteng" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Dewaruci" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+		}
+		task_force = {
+			name = "Flotila Kapal Selam Senjata Pusaka"
+			location = 13520
+			ship = { name = "KRI Nanggala" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+			ship = { name = "KRI Cakra" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+		}
+	}
+}

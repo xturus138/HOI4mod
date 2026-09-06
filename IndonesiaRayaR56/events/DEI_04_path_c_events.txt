@@ -135,3 +135,86 @@ country_event = {
 		add_war_support = 0.10
 	}
 }
+
+# 9. Pembentukan Komune Tani BTI
+country_event = {
+	id = dei_path_c.9
+	title = dei_path_c.9.t
+	desc = dei_path_c.9.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = dei_path_c.9.a
+		add_stability = 0.05
+		add_manpower = 10000
+	}
+}
+
+# 10. Nasionalisasi Total Aset Asing
+country_event = {
+	id = dei_path_c.10
+	title = dei_path_c.10.t
+	desc = dei_path_c.10.d
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+	option = {
+		name = dei_path_c.10.a
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+}
+
+# 11. Pembentukan Angkatan Kelima
+country_event = {
+	id = dei_path_c.11
+	title = dei_path_c.11.t
+	desc = dei_path_c.11.d
+	picture = GFX_report_event_generic_communist_militia
+	is_triggered_only = yes
+	option = {
+		name = dei_path_c.11.a
+		add_war_support = 0.08
+		add_manpower = 15000
+	}
+}
+
+# 12. Gerakan Kebudayaan Proletar Lekra
+country_event = {
+	id = dei_path_c.12
+	title = dei_path_c.12.t
+	desc = dei_path_c.12.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = dei_path_c.12.a
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}
+
+# 13. Pakta Pertahanan Sosialis Asia Tenggara
+country_event = {
+	id = dei_path_c.13
+	title = dei_path_c.13.t
+	desc = dei_path_c.13.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = dei_path_c.13.a
+		add_political_power = 40
+	}
+}
+
+# 14. Rencana Pembangunan Semesta Delapan Tahun
+country_event = {
+	id = dei_path_c.14
+	title = dei_path_c.14.t
+	desc = dei_path_c.14.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = dei_path_c.14.a
+		add_stability = 0.08
+		add_political_power = 30
+	}
+}

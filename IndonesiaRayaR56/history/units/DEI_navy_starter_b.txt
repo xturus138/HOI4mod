@@ -1,0 +1,27 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Starter Fleet OOB: Jalur B (Kolonial/Federalis)
+# Marinebasis Soerabaja (Province 13520, Oost-Java)
+# =====================================================================
+
+units = {
+	fleet = {
+		name = "Zeemacht in Nederlandsch-Indië (KM-NI)"
+		naval_base = 13520
+		task_force = {
+			name = "Eskader Slagschepen en Torpedobootjagers"
+			location = 13520
+			ship = { name = "Hr.Ms. Java" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = INS } } }
+			ship = { name = "Hr.Ms. Evertsen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Hr.Ms. Kortenaer" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Hr.Ms. Piet Hein" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Hr.Ms. Banckert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Hr.Ms. Rigel" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+		}
+		task_force = {
+			name = "Onderzeebootdivisie Soerabaja"
+			location = 13520
+			ship = { name = "Hr.Ms. O-19" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+			ship = { name = "Hr.Ms. K-XVIII" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+		}
+	}
+}

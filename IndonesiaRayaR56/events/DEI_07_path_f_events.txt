@@ -164,3 +164,85 @@ country_event = {
 		add_war_support = 0.10
 	}
 }
+
+# 10. Ikrar Sumpah Palapa Baru
+country_event = {
+	id = dei_path_f.10
+	title = dei_path_f.10.t
+	desc = dei_path_f.10.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = dei_path_f.10.a
+		add_war_support = 0.10
+		add_political_power = 30
+	}
+}
+
+# 11. Restorasi Ibu Kota Wilwatikta di Trowulan
+country_event = {
+	id = dei_path_f.11
+	title = dei_path_f.11.t
+	desc = dei_path_f.11.d
+	picture = GFX_report_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = dei_path_f.11.a
+		add_stability = 0.05
+	}
+}
+
+# 12. Pasukan Khusus Dharmaputra
+country_event = {
+	id = dei_path_f.12
+	title = dei_path_f.12.t
+	desc = dei_path_f.12.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = dei_path_f.12.a
+		army_experience = 15
+		add_manpower = 5000
+	}
+}
+
+# 13. Pembangunan Armada Jung Perang Raksasa
+country_event = {
+	id = dei_path_f.13
+	title = dei_path_f.13.t
+	desc = dei_path_f.13.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = dei_path_f.13.a
+		navy_experience = 15
+	}
+}
+
+# 14. Penegakan Kitab Hukum Kutaramanawa
+country_event = {
+	id = dei_path_f.14
+	title = dei_path_f.14.t
+	desc = dei_path_f.14.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = dei_path_f.14.a
+		add_stability = 0.08
+	}
+}
+
+# 15. Penobatan Maharaja Diraja Dirgantara
+country_event = {
+	id = dei_path_f.15
+	title = dei_path_f.15.t
+	desc = dei_path_f.15.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+	option = {
+		name = dei_path_f.15.a
+		add_stability = 0.10
+		add_war_support = 0.10
+		add_political_power = 50
+	}
+}

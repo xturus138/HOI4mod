@@ -141,3 +141,84 @@ country_event = {
 		add_stability = 0.10
 	}
 }
+
+# 9. Konferensi BFO & Otonomi Bagian
+country_event = {
+	id = dei_path_b.9
+	title = dei_path_b.9.t
+	desc = dei_path_b.9.d
+	picture = GFX_report_event_generic_conference
+	is_triggered_only = yes
+	option = {
+		name = dei_path_b.9.a
+		add_stability = 0.05
+		add_political_power = 30
+	}
+}
+
+# 10. Integrasi KNIL & Angkatan Federal
+country_event = {
+	id = dei_path_b.10
+	title = dei_path_b.10.t
+	desc = dei_path_b.10.d
+	picture = GFX_report_event_soldiers_marching
+	is_triggered_only = yes
+	option = {
+		name = dei_path_b.10.a
+		army_experience = 10
+		add_war_support = 0.05
+	}
+}
+
+# 11. Pakta Pertahanan ANZAC-Belanda
+country_event = {
+	id = dei_path_b.11
+	title = dei_path_b.11.t
+	desc = dei_path_b.11.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = dei_path_b.11.a
+		add_political_power = 40
+	}
+}
+
+# 12. Modernisasi Perkebunan Deli
+country_event = {
+	id = dei_path_b.12
+	title = dei_path_b.12.t
+	desc = dei_path_b.12.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = dei_path_b.12.a
+		add_stability = 0.04
+	}
+}
+
+# 13. Otonomi Khusus Kerajaan Swapraja
+country_event = {
+	id = dei_path_b.13
+	title = dei_path_b.13.t
+	desc = dei_path_b.13.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = dei_path_b.13.a
+		add_stability = 0.06
+		add_political_power = 25
+	}
+}
+
+# 14. Pusat Perdagangan Bebas Hindia Timur
+country_event = {
+	id = dei_path_b.14
+	title = dei_path_b.14.t
+	desc = dei_path_b.14.d
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = dei_path_b.14.a
+		add_political_power = 50
+	}
+}

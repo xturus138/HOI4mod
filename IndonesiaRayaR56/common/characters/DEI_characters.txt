@@ -1,0 +1,91 @@
+characters = {
+	DEI_sudirman = {
+		name = "Soedirman"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_sudirman"
+			}
+		}
+		field_marshal = {
+			traits = { trait_dei_sudirman defensive_doctrine offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+
+	DEI_urip_sumoharjo = {
+		name = "Urip Sumohardjo"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_Urip_Sumoharjo"
+			}
+		}
+		field_marshal = {
+			traits = { trait_dei_urip organisational_leader }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+
+	DEI_nasution = {
+		name = "Abdul Haris Nasution"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_Abdul_Haris_Nasution"
+			}
+		}
+		corps_commander = {
+			traits = { trait_dei_nasution commando }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_kawilarang = {
+		name = "Alexander Evert Kawilarang"
+		portraits = {
+			army = {
+				large = "GFX_portrait_INS_Alexander_Evert_Kawilarang"
+			}
+		}
+		corps_commander = {
+			traits = { trait_dei_kawilarang ranger }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	DEI_yos_sudarso = {
+		name = "Yos Sudarso"
+		portraits = {
+			navy = {
+				large = "GFX_Portrait_Asia_Generic_navy_1"
+			}
+		}
+		navy_leader = {
+			traits = { trait_dei_yos_sudarso seawolf }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 3
+			legacy_id = -1
+		}
+	}
+}

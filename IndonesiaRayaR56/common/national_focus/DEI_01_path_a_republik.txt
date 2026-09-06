@@ -29,7 +29,7 @@ focus_tree = {
 	# --- 2. Bentuk TKR ---
 	focus = {
 		id = dei_focus_a_tkr
-		icon = GFX_goal_generic_army_effort
+		icon = GFX_goal_generic_army_doctrines
 		x = -8
 		y = 10
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -74,7 +74,7 @@ focus_tree = {
 	# --- 5. Strategi Perang Gerilya ---
 	focus = {
 		id = dei_focus_a_gerilya
-		icon = GFX_goal_generic_army_effort
+		icon = GFX_goal_generic_army_doctrines
 		x = -6
 		y = 12
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -160,4 +160,95 @@ focus_tree = {
 			country_event = { id = dei_path_a.9 hours = 6 }
 		}
 	}
+
+	# --- 11. Konferensi Asia-Afrika Bandung 1955 ---
+	focus = {
+		id = dei_focus_a_kaa_bandung
+		icon = GFX_goal_generic_national_unity
+		x = -8
+		y = 17
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_demokrasi_terpimpin focus = dei_focus_a_irian_barat }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.10 hours = 6 }
+		}
+	}
+
+	# --- 12. Operasi Trikora & Pembebasan Irian ---
+	focus = {
+		id = dei_focus_a_trikora
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -10
+		y = 18
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_kaa_bandung }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.11 hours = 6 }
+		}
+	}
+
+	# --- 13. Dekrit Presiden 5 Juli 1959 ---
+	focus = {
+		id = dei_focus_a_dekrit_presiden
+		icon = GFX_goal_generic_political_pressure
+		x = -6
+		y = 18
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_kaa_bandung }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.12 hours = 6 }
+		}
+	}
+
+	# --- 14. Gerakan Konfrontasi Dwikora ---
+	focus = {
+		id = dei_focus_a_dwikora
+		icon = GFX_goal_generic_major_war
+		x = -10
+		y = 19
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_trikora }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.13 hours = 6 }
+		}
+	}
+
+	# --- 15. Pemantapan Falsafah Pancasila ---
+	focus = {
+		id = dei_focus_a_pancasila
+		icon = GFX_goal_generic_propaganda
+		x = -6
+		y = 19
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_dekrit_presiden }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.14 hours = 6 }
+		}
+	}
+
+	# --- 16. Doktrin Kemandirian Trisakti ---
+	focus = {
+		id = dei_focus_a_trisakti
+		icon = GFX_goal_generic_positive_trade_relations
+		x = -8
+		y = 20
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_dwikora focus = dei_focus_a_pancasila }
+		available = { has_country_flag = dei_path_a_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_a.15 hours = 6 }
+		}
+	}
+
 }

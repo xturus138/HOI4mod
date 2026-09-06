@@ -58,7 +58,7 @@ focus_tree = {
 	# --- 4. Bangun Angkatan Laut Agung ---
 	focus = {
 		id = dei_focus_f_angkatan_laut
-		icon = GFX_goal_generic_navy_effort
+		icon = GFX_goal_generic_build_navy
 		x = 20
 		y = 11
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -115,4 +115,95 @@ focus_tree = {
 			country_event = { id = dei_path_f.9 hours = 6 }
 		}
 	}
+
+	# --- 8. Ikrar Sumpah Palapa Baru ---
+	focus = {
+		id = dei_focus_f_sumpah_palapa_baru
+		icon = GFX_goal_generic_propaganda
+		x = 20
+		y = 14
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_kekaisaran_baru }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.10 hours = 6 }
+		}
+	}
+
+	# --- 9. Restorasi Ibu Kota Wilwatikta di Trowulan ---
+	focus = {
+		id = dei_focus_f_restorasi_trowulan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 14
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_kekaisaran_baru }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.11 hours = 6 }
+		}
+	}
+
+	# --- 10. Pasukan Khusus Dharmaputra ---
+	focus = {
+		id = dei_focus_f_dharmaputra
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 20
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_sumpah_palapa_baru }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.12 hours = 6 }
+		}
+	}
+
+	# --- 11. Pembangunan Armada Jung Perang Raksasa ---
+	focus = {
+		id = dei_focus_f_jung_raksasa
+		icon = GFX_goal_generic_build_navy
+		x = 24
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_restorasi_trowulan }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.13 hours = 6 }
+		}
+	}
+
+	# --- 12. Penegakan Kitab Hukum Kutaramanawa ---
+	focus = {
+		id = dei_focus_f_kitab_kutaramanawa
+		icon = GFX_goal_generic_political_pressure
+		x = 22
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_dharmaputra focus = dei_focus_f_jung_raksasa }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.14 hours = 6 }
+		}
+	}
+
+	# --- 13. Penobatan Maharaja Diraja Dirgantara ---
+	focus = {
+		id = dei_focus_f_penobatan_maharaja
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 17
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_kitab_kutaramanawa }
+		available = { has_country_flag = dei_path_f_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_f.15 hours = 6 }
+		}
+	}
+
 }

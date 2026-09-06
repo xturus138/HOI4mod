@@ -122,7 +122,7 @@ focus_tree = {
 	# --- 6. REFORMASI KNIL ---
 	focus = {
 		id = dei_focus_knil_reform
-		icon = GFX_goal_generic_army_effort
+		icon = GFX_goal_generic_army_doctrines
 		x = 8
 		y = 5
 		cost = 10
@@ -141,7 +141,7 @@ focus_tree = {
 	# --- 7. RENCANA PERTAHANAN HINDIA ---
 	focus = {
 		id = dei_focus_defense_plan
-		icon = GFX_goal_generic_navy_effort
+		icon = GFX_goal_generic_build_navy
 		x = 8
 		y = 6
 		cost = 10

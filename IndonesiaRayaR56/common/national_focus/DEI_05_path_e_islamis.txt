@@ -56,7 +56,7 @@ focus_tree = {
 	# --- 4. Bentuk Tentara Islam Indonesia (TII) ---
 	focus = {
 		id = dei_focus_e_tii
-		icon = GFX_goal_generic_army_effort
+		icon = GFX_goal_generic_army_doctrines
 		x = 16
 		y = 11
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -128,4 +128,95 @@ focus_tree = {
 			country_event = { id = dei_path_e.8 hours = 6 }
 		}
 	}
+
+	# --- 9. Lembaga Perbendaharaan Baitul Mal ---
+	focus = {
+		id = dei_focus_e_baitul_mal
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_persatuan_nusantara }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.9 hours = 6 }
+		}
+	}
+
+	# --- 10. Kodifikasi Peradilan Qanun Syariah ---
+	focus = {
+		id = dei_focus_e_mahkamah_syariah
+		icon = GFX_goal_generic_political_pressure
+		x = 18
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_persatuan_nusantara }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.10 hours = 6 }
+		}
+	}
+
+	# --- 11. Akademi Perwira Mujahidin TII ---
+	focus = {
+		id = dei_focus_e_akademi_mujahidin
+		icon = GFX_goal_generic_army_doctrines
+		x = 14
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_baitul_mal }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.11 hours = 6 }
+		}
+	}
+
+	# --- 12. Sistem Perekonomian Bebas Riba ---
+	focus = {
+		id = dei_focus_e_hapus_riba
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 18
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_mahkamah_syariah }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.12 hours = 6 }
+		}
+	}
+
+	# --- 13. Liga Muslim Kepulauan & Moro ---
+	focus = {
+		id = dei_focus_e_liga_muslim
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 17
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_akademi_mujahidin focus = dei_focus_e_hapus_riba }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.13 hours = 6 }
+		}
+	}
+
+	# --- 14. Proklamasi Khilafah Kepulauan ---
+	focus = {
+		id = dei_focus_e_khilafah_nusantara
+		icon = GFX_goal_generic_propaganda
+		x = 16
+		y = 18
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_liga_muslim }
+		available = { has_country_flag = dei_path_e_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_e.14 hours = 6 }
+		}
+	}
+
 }

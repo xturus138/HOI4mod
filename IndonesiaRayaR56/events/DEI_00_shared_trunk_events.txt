@@ -120,11 +120,23 @@ country_event = {
 
 	immediate = {
 		set_country_flag = dei_jalur_dipilih
+		load_oob = DEI_templates
+				load_oob = DEI_air_starter
+		add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
+		add_equipment_to_stockpile = { type = artillery_equipment amount = 150 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 200 }
+		recruit_character = DEI_sudirman
+		recruit_character = DEI_urip_sumoharjo
+		recruit_character = DEI_nasution
+		recruit_character = DEI_kawilarang
+		recruit_character = DEI_yos_sudarso
 	}
 
 	option = {
 		name = dei_trunk.6.a # Jalur A: Republik Nasionalis-Demokratis
 		set_country_flag = dei_path_a_chosen
+		set_cosmetic_tag = INS_REPUBLIK_NKRI
+		load_oob = DEI_navy_starter_a
 		add_ideas = dei_idea_republik_diproklamasikan
 		set_politics = {
 			ruling_party = democratic
@@ -138,10 +150,46 @@ country_event = {
 			}
 			promote_leader = yes
 		}
+		335 = {
+			create_unit = {
+				division_template = "Divisi Infanteri Siliwangi"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Divisi Infanteri Siliwangi"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Brigade Laskar Rakyat"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+		}
+		446 = {
+			create_unit = {
+				division_template = "Divisi Infanteri Diponegoro"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Korps Komando Operasi"
+				start_experience_factor = 0.4
+				start_equipment_factor = 0.9
+			}
+			create_unit = {
+				division_template = "Brigade Laskar Rakyat"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+		}
 	}
 	option = {
 		name = dei_trunk.6.b # Jalur B: Kolonial/Federalis (Belanda tetap berkuasa)
 		set_country_flag = dei_path_b_chosen
+		set_cosmetic_tag = INS_KOLONIAL_BFO
+		load_oob = DEI_navy_starter_b
 		set_politics = {
 			ruling_party = federalist
 			elections_allowed = no
@@ -154,10 +202,41 @@ country_event = {
 			}
 			promote_leader = yes
 		}
+		335 = {
+			create_unit = {
+				division_template = "KNIL Infanterie Divisie"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Garnizun Stadswacht & Pantai"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Resimen Kavaleri Lapis Baja"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.7
+			}
+		}
+		446 = {
+			create_unit = {
+				division_template = "KNIL Infanterie Divisie"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Garnizun Stadswacht & Pantai"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.8
+			}
+		}
 	}
 	option = {
 		name = dei_trunk.6.c # Jalur C: Komunis
 		set_country_flag = dei_path_c_chosen
+		set_cosmetic_tag = INS_KOMUNIS_RRI
+		load_oob = DEI_navy_starter_c
 		set_politics = {
 			ruling_party = communism
 			elections_allowed = no
@@ -170,10 +249,41 @@ country_event = {
 			}
 			promote_leader = yes
 		}
+		335 = {
+			create_unit = {
+				division_template = "Brigade Laskar Rakyat"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+			create_unit = {
+				division_template = "Brigade Laskar Rakyat"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+		}
+		446 = {
+			create_unit = {
+				division_template = "Brigade Barisan Buruh Merah"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Brigade Barisan Buruh Merah"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Resimen Komando Angkatan Darat"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+		}
 	}
 	option = {
 		name = dei_trunk.6.d # Jalur D: Otoriter Militeristik/Nasionalis Radikal
 		set_country_flag = dei_path_d_chosen
+		set_cosmetic_tag = INS_OTORITER_NKRI
+		load_oob = DEI_navy_starter_d
 		set_politics = {
 			ruling_party = fascism
 			elections_allowed = no
@@ -186,10 +296,41 @@ country_event = {
 			}
 			promote_leader = yes
 		}
+		335 = {
+			create_unit = {
+				division_template = "Resimen Pengawal Dewan Revolusi"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Barisan Pemuda Bela Negara"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+		}
+		446 = {
+			create_unit = {
+				division_template = "Resimen Pengawal Dewan Revolusi"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Barisan Pemuda Bela Negara"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+			create_unit = {
+				division_template = "Resimen Kavaleri Lapis Baja"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.7
+			}
+		}
 	}
 	option = {
 		name = dei_trunk.6.e # Jalur E: Islamis (Negara Islam Indonesia)
 		set_country_flag = dei_path_e_chosen
+		set_cosmetic_tag = INS_ISLAMIS_NII
+		load_oob = DEI_navy_starter_e
 		set_politics = {
 			ruling_party = islamist
 			elections_allowed = no
@@ -202,10 +343,41 @@ country_event = {
 			}
 			promote_leader = yes
 		}
+		335 = {
+			create_unit = {
+				division_template = "Resimen Mujahidin TII"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Resimen Mujahidin TII"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Brigade Laskar Rakyat"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+		}
+		446 = {
+			create_unit = {
+				division_template = "Resimen Mujahidin TII"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Brigade Laskar Rakyat"
+				start_experience_factor = 0.2
+				start_equipment_factor = 0.9
+			}
+		}
 	}
 	option = {
 		name = dei_trunk.6.f # Jalur F: Kebangkitan Majapahit (ahistoris, selalu tersedia)
 		set_country_flag = dei_path_f_chosen
+		set_cosmetic_tag = INS_MAJAPAHIT_EMPIRE
+		load_oob = DEI_navy_starter_f
 		set_politics = {
 			ruling_party = majapahit
 			elections_allowed = no
@@ -217,6 +389,35 @@ country_event = {
 				expire = "1965.1.1"
 			}
 			promote_leader = yes
+		}
+		335 = {
+			create_unit = {
+				division_template = "Prajurit Utama Bhayangkara"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Resimen Ksatria Dharmaputra"
+				start_experience_factor = 0.4
+				start_equipment_factor = 0.8
+			}
+		}
+		446 = {
+			create_unit = {
+				division_template = "Prajurit Utama Bhayangkara"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Resimen Ksatria Dharmaputra"
+				start_experience_factor = 0.4
+				start_equipment_factor = 0.8
+			}
+			create_unit = {
+				division_template = "Korps Komando Operasi"
+				start_experience_factor = 0.3
+				start_equipment_factor = 0.8
+			}
 		}
 	}
 }

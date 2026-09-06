@@ -1,0 +1,27 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Starter Fleet OOB: Jalur E (Islamis/NII)
+# Pangkalan Bahari Mujahidin Surabaya (Province 13520)
+# =====================================================================
+
+units = {
+	fleet = {
+		name = "Armada Laut Mujahidin Samudra (ALMS)"
+		naval_base = 13520
+		task_force = {
+			name = "Gugus Tempur Benteng Tauhid"
+			location = 13520
+			ship = { name = "Baitul Maqdis" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = INS } } }
+			ship = { name = "Fatahillah" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Pedang Tauhid" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Mujahid Laut" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Panji Hitam" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+			ship = { name = "Baitul Mal" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = INS } } }
+		}
+		task_force = {
+			name = "Gugus Selam Senjata Tauhid"
+			location = 13520
+			ship = { name = "Zulfikar" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+			ship = { name = "Nun Laut" definition = submarine equipment = { submarine_2 = { amount = 1 owner = INS } } }
+		}
+	}
+}

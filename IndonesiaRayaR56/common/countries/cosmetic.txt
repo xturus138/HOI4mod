@@ -1,0 +1,112 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Dynamic Cosmetic Tags & Map Colors
+# 18 Proklamasi Tata Kelola Negara (3 Pilihan per Ideologi)
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# JALUR A: REPUBLIK DEMOKRATIS / NASIONALIS
+# ---------------------------------------------------------------------
+INS_REPUBLIK_NKRI = {
+	color = rgb { 190 30 30 }
+	color_ui = rgb { 225 45 45 }
+}
+
+INS_REPUBLIK_RIS = {
+	color = rgb { 185 45 45 }
+	color_ui = rgb { 220 60 60 }
+}
+
+INS_REPUBLIK_SOSIALIS = {
+	color = rgb { 175 35 65 }
+	color_ui = rgb { 210 50 80 }
+}
+
+# ---------------------------------------------------------------------
+# JALUR B: KOLONIAL / FEDERALIS (HINDIA BELANDA)
+# ---------------------------------------------------------------------
+INS_KOLONIAL_DEI = {
+	color = rgb { 203 138 74 }
+	color_ui = rgb { 255 179 96 }
+}
+
+INS_KOLONIAL_BFO = {
+	color = rgb { 215 150 75 }
+	color_ui = rgb { 245 170 85 }
+}
+
+INS_KOLONIAL_DOMINION = {
+	color = rgb { 190 125 60 }
+	color_ui = rgb { 220 145 70 }
+}
+
+# ---------------------------------------------------------------------
+# JALUR C: KOMUNIS / REVOLUSI PROLETAR
+# ---------------------------------------------------------------------
+INS_KOMUNIS_RRI = {
+	color = rgb { 180 15 15 }
+	color_ui = rgb { 220 20 20 }
+}
+
+INS_KOMUNIS_SOVIET = {
+	color = rgb { 155 10 10 }
+	color_ui = rgb { 195 15 15 }
+}
+
+INS_KOMUNIS_FRONT = {
+	color = rgb { 195 25 25 }
+	color_ui = rgb { 235 35 35 }
+}
+
+# ---------------------------------------------------------------------
+# JALUR D: OTORITER MILITERISTIK / DEWAN REVOLUSI
+# ---------------------------------------------------------------------
+INS_OTORITER_NKRI = {
+	color = rgb { 140 30 30 }
+	color_ui = rgb { 170 40 40 }
+}
+
+INS_OTORITER_JUNTA = {
+	color = rgb { 110 50 40 }
+	color_ui = rgb { 135 60 50 }
+}
+
+INS_OTORITER_RAYA = {
+	color = rgb { 130 20 20 }
+	color_ui = rgb { 160 25 25 }
+}
+
+# ---------------------------------------------------------------------
+# JALUR E: ISLAMIS / NEGARA ISLAM INDONESIA
+# ---------------------------------------------------------------------
+INS_ISLAMIS_NII = {
+	color = rgb { 20 130 60 }
+	color_ui = rgb { 30 160 75 }
+}
+
+INS_ISLAMIS_DAULAH = {
+	color = rgb { 15 115 50 }
+	color_ui = rgb { 25 145 65 }
+}
+
+INS_ISLAMIS_KHILAFAH = {
+	color = rgb { 10 100 40 }
+	color_ui = rgb { 18 130 55 }
+}
+
+# ---------------------------------------------------------------------
+# JALUR F: KEMAHARAJAAN MAJAPAHIT
+# ---------------------------------------------------------------------
+INS_MAJAPAHIT_EMPIRE = {
+	color = rgb { 180 120 20 }
+	color_ui = rgb { 215 145 25 }
+}
+
+INS_MAJAPAHIT_SURYA = {
+	color = rgb { 195 135 15 }
+	color_ui = rgb { 230 160 20 }
+}
+
+INS_MAJAPAHIT_NUSANTARA = {
+	color = rgb { 170 110 10 }
+	color_ui = rgb { 205 135 15 }
+}

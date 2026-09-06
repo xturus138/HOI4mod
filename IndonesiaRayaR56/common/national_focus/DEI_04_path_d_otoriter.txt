@@ -85,7 +85,7 @@ focus_tree = {
 	# --- 6. Bentuk Barisan Pemuda Militan ---
 	focus = {
 		id = dei_focus_d_pemuda_militan
-		icon = GFX_goal_generic_army_effort
+		icon = GFX_goal_generic_army_doctrines
 		x = 10
 		y = 12
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -127,4 +127,95 @@ focus_tree = {
 			country_event = { id = dei_path_d.8 hours = 6 }
 		}
 	}
+
+	# --- 9. Dewan Revolusi Militer Tertinggi ---
+	focus = {
+		id = dei_focus_d_dewan_revolusi
+		icon = GFX_goal_generic_political_pressure
+		x = 8
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_ambisi_regional }
+		available = { has_country_flag = dei_path_d_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_d.9 hours = 6 }
+		}
+	}
+
+	# --- 10. Penempatan Perwira di Sektor Strategis ---
+	focus = {
+		id = dei_focus_d_karyawan_abri
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 12
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_ambisi_regional }
+		available = { has_country_flag = dei_path_d_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_d.10 hours = 6 }
+		}
+	}
+
+	# --- 11. Doktrin Pertahanan Benteng Samudra ---
+	focus = {
+		id = dei_focus_d_benteng_samudra
+		icon = GFX_goal_generic_build_navy
+		x = 8
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_dewan_revolusi }
+		available = { has_country_flag = dei_path_d_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_d.11 hours = 6 }
+		}
+	}
+
+	# --- 12. Wajib Militer Total Pemuda Nusantara ---
+	focus = {
+		id = dei_focus_d_wajib_militer
+		icon = GFX_goal_generic_major_war
+		x = 12
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_karyawan_abri }
+		available = { has_country_flag = dei_path_d_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_d.12 hours = 6 }
+		}
+	}
+
+	# --- 13. Pengamanan Komando Selat Strategis ---
+	focus = {
+		id = dei_focus_d_komando_selat
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 10
+		y = 17
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_benteng_samudra focus = dei_focus_d_wajib_militer }
+		available = { has_country_flag = dei_path_d_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_d.13 hours = 6 }
+		}
+	}
+
+	# --- 14. Supremasi Pasukan Khusus Nusantara ---
+	focus = {
+		id = dei_focus_d_hegemoni_selatan
+		icon = GFX_goal_generic_national_unity
+		x = 10
+		y = 18
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_komando_selat }
+		available = { has_country_flag = dei_path_d_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_d.14 hours = 6 }
+		}
+	}
+
 }

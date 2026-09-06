@@ -14,6 +14,17 @@ decisions_category = {
 }
 
 decisions_category = {
+	id = dei_decisions_proclamations
+	icon = decision_category_political_effects
+	priority = 95
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+decisions_category = {
 	id = dei_decisions_nusantara
 	icon = generic_propaganda
 	priority = 80
@@ -32,6 +43,38 @@ decisions_category = {
 	visible = {
 		tag = INS
 		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+decisions_category = {
+	id = dei_decisions_mega_projects
+	icon = generic_industry
+	priority = 75
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+decisions_category = {
+	id = dei_decisions_defense
+	icon = generic_crisis
+	priority = 85
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+decisions_category = {
+	id = dei_decisions_research_doctrines
+	icon = generic_research
+	priority = 88
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
 	}
 }
 
@@ -270,5 +313,956 @@ decisions = {
 				factor = 5
 			}
 		}
+	}
+
+	# =====================================================================
+	# STRATEGIC MEGA-PROJECTS & REGIONAL BASES
+	# =====================================================================
+	dei_decisions_mega_projects = {
+
+		dei_project_ujung_surabaya = {
+			icon = generic_dockyard
+			allowed = { tag = INS }
+			visible = { controls_state = 446 }
+			available = {
+				controls_state = 446
+				has_political_power > 49
+			}
+			cost = 50
+			fire_only_once = yes
+			complete_effect = {
+				446 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			ai_will_do = { factor = 10 }
+		}
+
+		dei_project_arsenal_bandung = {
+			icon = generic_arms_factory
+			allowed = { tag = INS }
+			visible = { controls_state = 335 }
+			available = {
+				controls_state = 335
+				has_political_power > 49
+			}
+			cost = 50
+			fire_only_once = yes
+			complete_effect = {
+				335 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			ai_will_do = { factor = 10 }
+		}
+
+		dei_project_kilang_minyak = {
+			icon = generic_refinery
+			allowed = { tag = INS }
+			visible = {
+				controls_state = 672
+				controls_state = 334
+			}
+			available = {
+				controls_state = 672
+				controls_state = 334
+				has_political_power > 59
+			}
+			cost = 60
+			fire_only_once = yes
+			complete_effect = {
+				672 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+				334 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			ai_will_do = { factor = 10 }
+		}
+
+		dei_project_grote_postweg = {
+			icon = generic_infrastructure
+			allowed = { tag = INS }
+			visible = { controls_state = 1126 }
+			available = {
+				controls_state = 1126
+				controls_state = 335
+				controls_state = 976
+				controls_state = 446
+				has_political_power > 49
+			}
+			cost = 50
+			fire_only_once = yes
+			complete_effect = {
+				1126 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+				335 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+				976 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+				446 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+				add_ideas = dei_idea_trans_java_corridor
+			}
+			ai_will_do = { factor = 10 }
+		}
+
+		dei_project_benteng_selat = {
+			icon = generic_coastal_fort
+			allowed = { tag = INS }
+			visible = { controls_state = 335 }
+			available = {
+				controls_state = 335
+				controls_state = 909
+				has_political_power > 39
+			}
+			cost = 40
+			fire_only_once = yes
+			complete_effect = {
+				335 = {
+					add_building_construction = { type = coastal_bunker level = 2 instant_build = yes }
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+				}
+				909 = {
+					add_building_construction = { type = coastal_bunker level = 2 instant_build = yes }
+					add_building_construction = { type = anti_air_building level = 1 instant_build = yes }
+				}
+			}
+			ai_will_do = { factor = 10 }
+		}
+
+		dei_project_lanud_iswahyudi = {
+			icon = generic_air
+			allowed = { tag = INS }
+			visible = { controls_state = 446 }
+			available = {
+				controls_state = 446
+				controls_state = 335
+				has_political_power > 39
+			}
+			cost = 40
+			fire_only_once = yes
+			complete_effect = {
+				446 = {
+					add_building_construction = { type = air_base level = 3 instant_build = yes }
+					add_building_construction = { type = radar_station level = 1 instant_build = yes }
+				}
+				335 = {
+					add_building_construction = { type = air_base level = 2 instant_build = yes }
+				}
+			}
+			ai_will_do = { factor = 10 }
+		}
+	}
+
+	# =====================================================================
+	# MILITARY MECHANICS & TOTAL PEOPLE'S DEFENSE (SISHANRATA)
+	# =====================================================================
+	dei_decisions_defense = {
+
+		dei_mechanic_sishanrata = {
+			icon = generic_prepare_civil_war
+			allowed = { tag = INS }
+			visible = { has_war = yes }
+			available = {
+				has_war = yes
+				NOT = { has_idea = dei_idea_sishanrata_active }
+				has_political_power > 49
+			}
+			cost = 50
+			fire_only_once = yes
+			complete_effect = {
+				add_ideas = dei_idea_sishanrata_active
+				add_war_support = 0.10
+				if = {
+					limit = { controls_state = 1126 }
+					create_unit = {
+						division = "name = \"1. Resimen Pelopor Sishanrata\" division_template = \"Brigade Laskar Rakyat\" start_experience_factor = 0.3"
+						owner = INS
+					}
+				}
+				if = {
+					limit = { controls_state = 335 }
+					create_unit = {
+						division = "name = \"2. Resimen Pelopor Sishanrata\" division_template = \"Brigade Laskar Rakyat\" start_experience_factor = 0.3"
+						owner = INS
+					}
+				}
+				if = {
+					limit = { controls_state = 446 }
+					create_unit = {
+						division = "name = \"3. Resimen Pelopor Sishanrata\" division_template = \"Brigade Laskar Rakyat\" start_experience_factor = 0.3"
+						owner = INS
+					}
+				}
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_mechanic_pinisi_logistics = {
+			icon = generic_navy
+			allowed = { tag = INS }
+			visible = { has_war = yes }
+			available = {
+				has_war = yes
+				NOT = { has_idea = dei_idea_pinisi_logistics }
+				has_political_power > 24
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_ideas = dei_idea_pinisi_logistics
+			}
+			ai_will_do = { factor = 15 }
+		}
+
+		dei_mechanic_dapur_umum = {
+			icon = generic_morale_bonus
+			allowed = { tag = INS }
+			visible = { has_war = yes }
+			available = {
+				has_war = yes
+				NOT = { has_idea = dei_idea_dapur_umum }
+				has_political_power > 24
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_ideas = dei_idea_dapur_umum
+			}
+			ai_will_do = { factor = 15 }
+		}
+
+		dei_mechanic_pabrik_gunung = {
+			icon = generic_industry
+			allowed = { tag = INS }
+			visible = { has_war = yes }
+			available = {
+				has_war = yes
+				has_political_power > 24
+			}
+			cost = 25
+			days_re_enable = 90
+			complete_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1200
+				}
+			}
+			ai_will_do = { factor = 15 }
+		}
+	}
+
+	dei_decisions_research_doctrines = {
+
+		dei_decision_doktrin_gerilya_wilayah = {
+			icon = generic_guerilla_warfare
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_idea = dei_idea_doktrin_gerilya_wilayah }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_doctrine_cost_reduction = {
+					name = land_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = land_doctrine
+				}
+				add_ideas = dei_idea_doktrin_gerilya_wilayah
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_decision_doktrin_gerilya_laut = {
+			icon = generic_navy_bonus
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_idea = dei_idea_doktrin_gerilya_laut }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = naval_doctrine
+				}
+				add_ideas = dei_idea_doktrin_gerilya_laut
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_decision_doktrin_dirgantara_taktis = {
+			icon = generic_air_bonus
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_idea = dei_idea_doktrin_dirgantara_taktis }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_doctrine_cost_reduction = {
+					name = air_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = air_doctrine
+				}
+				add_ideas = dei_idea_doktrin_dirgantara_taktis
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_decision_riset_senjata_pindad = {
+			icon = generic_production_bonus
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_idea = dei_idea_standardisasi_pindad }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_tech_bonus = {
+					name = pindad_bonus
+					bonus = 1.0
+					uses = 2
+					category = infantry_weapons
+					category = artillery
+				}
+				add_ideas = dei_idea_standardisasi_pindad
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_decision_riset_mekanisasi_braat = {
+			icon = generic_armor_bonus
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_idea = dei_idea_mekanisasi_braat }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_tech_bonus = {
+					name = braat_bonus
+					bonus = 1.0
+					uses = 2
+					category = armor
+					category = motorized_equipment
+				}
+				add_ideas = dei_idea_mekanisasi_braat
+				if = {
+					limit = { has_dlc = "No Step Back" }
+					create_equipment_variant = {
+						name = "Panser Braat Overvalwagen"
+						type = light_tank_chassis_0
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_auto_cannon
+							turret_type_slot = tank_light_one_man_tank_turret
+							suspension_type_slot = tank_wheeled_suspension
+							armor_type_slot = tank_riveted_armor
+							engine_type_slot = tank_gasoline_engine
+						}
+						upgrades = {
+							tank_engine_upgrade = 3
+							tank_armor_upgrade = 2
+						}
+					}
+					create_equipment_variant = {
+						name = "Marmon-Herrington CTLS-4TA"
+						type = light_tank_chassis_1
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_heavy_machine_gun
+							turret_type_slot = tank_light_two_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+						}
+						upgrades = {
+							tank_engine_upgrade = 2
+							tank_armor_upgrade = 2
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_dlc = "No Step Back" } }
+					create_equipment_variant = {
+						name = "Panser Braat Overvalwagen"
+						type = gw_tank_equipment
+						upgrades = {
+							tank_gun_upgrade = 2
+							tank_engine_upgrade = 3
+							tank_reliability_upgrade = 2
+						}
+					}
+					create_equipment_variant = {
+						name = "Marmon-Herrington CTLS-4TA"
+						type = light_tank_equipment_1
+						upgrades = {
+							tank_gun_upgrade = 1
+							tank_engine_upgrade = 2
+							tank_reliability_upgrade = 2
+						}
+					}
+				}
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_decision_riset_dirgantara_iptn = {
+			icon = generic_air_manufacturer
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_idea = dei_idea_kemandirian_iptn }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_tech_bonus = {
+					name = iptn_bonus
+					bonus = 1.0
+					uses = 2
+					category = air_equipment
+				}
+				add_ideas = dei_idea_kemandirian_iptn
+				if = {
+					limit = { has_dlc = "By Blood Alone" }
+					create_equipment_variant = {
+						name = "CW-21 Demon"
+						type = small_plane_airframe_0
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							engine_type_slot = engine_1_1x
+						}
+						icon = "GFX_HOL_fighter1_medium"
+					}
+					create_equipment_variant = {
+						name = "B-25 Mitchell Si Djimat"
+						type = medium_plane_airframe_1
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = medium_bomb_bay
+							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+							engine_type_slot = engine_1_2x
+						}
+						icon = "GFX_USA_tactical_bomber1_medium"
+					}
+				}
+				if = {
+					limit = { NOT = { has_dlc = "By Blood Alone" } }
+					create_equipment_variant = {
+						name = "CW-21 Demon"
+						type = early_fighter
+						upgrades = {
+							fighter_gun_upgrade = 2
+							fighter_engine_upgrade = 3
+						}
+					}
+					create_equipment_variant = {
+						name = "B-25 Mitchell Si Djimat"
+						type = tactical_bomber_1
+						upgrades = {
+							tac_bomber_bomb_upgrade = 2
+							tac_bomber_range_upgrade = 2
+						}
+					}
+				}
+				load_oob = DEI_air_starter
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_decision_riset_industri_pertamina = {
+			icon = generic_refining_concern
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_idea = dei_idea_eksplorasi_minyak }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				add_tech_bonus = {
+					name = pertamina_bonus
+					bonus = 1.0
+					uses = 2
+					category = industry
+					category = synth_resources
+				}
+				add_ideas = dei_idea_eksplorasi_minyak
+			}
+			ai_will_do = { factor = 20 }
+		}
+
+		dei_decision_commission_armada_kri = {
+			icon = generic_navy_ship
+			allowed = { tag = INS }
+			visible = { tag = INS }
+			available = {
+				has_political_power > 24
+				NOT = { has_country_flag = dei_armada_kri_commissioned }
+			}
+			cost = 25
+			fire_only_once = yes
+			complete_effect = {
+				set_country_flag = dei_armada_kri_commissioned
+				navy_experience = 25
+				load_oob = DEI_navy_starter
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					create_equipment_variant = {
+						name = "KRI Gadjah Mada"
+						type = ship_hull_light_2
+						name_group = INS_DESTROYERS
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_anti_air_slot = ship_anti_air_1
+							fixed_ship_engine_slot = light_ship_engine_2
+							fixed_ship_torpedo_slot = ship_torpedo_1
+							rear_1_custom_slot = ship_depth_charge_1
+						}
+					}
+					create_equipment_variant = {
+						name = "KRI Macan Tutul"
+						type = ship_hull_light_1
+						name_group = INS_DESTROYERS
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_engine_slot = light_ship_engine_1
+							fixed_ship_torpedo_slot = ship_torpedo_1
+						}
+					}
+					create_equipment_variant = {
+						name = "KRI Nanggala"
+						type = ship_hull_submarine_2
+						name_group = INS_SUBMARINES
+						parent_version = 0
+						modules = {
+							fixed_ship_torpedo_slot = ship_torpedo_sub_1
+							fixed_ship_engine_slot = sub_ship_engine_2
+						}
+					}
+					create_equipment_variant = {
+						name = "KRI Dewaruci"
+						type = ship_hull_light_1
+						name_group = INS_LIGHT_AND_ESCORT
+						parent_version = 0
+						modules = {
+							fixed_ship_battery_slot = ship_light_battery_1
+							fixed_ship_engine_slot = light_ship_engine_1
+							rear_1_custom_slot = ship_depth_charge_1
+						}
+					}
+				}
+				if = {
+					limit = { NOT = { has_dlc = "Man the Guns" } }
+					create_equipment_variant = {
+						name = "KRI Gadjah Mada"
+						type = destroyer_2
+						upgrades = {
+							ship_torpedo_upgrade = 2
+							ship_engine_upgrade = 2
+							ship_ASW_upgrade = 2
+						}
+					}
+					create_equipment_variant = {
+						name = "KRI Macan Tutul"
+						type = destroyer_1
+						upgrades = {
+							ship_torpedo_upgrade = 3
+						}
+					}
+					create_equipment_variant = {
+						name = "KRI Nanggala"
+						type = submarine_2
+						upgrades = {
+							sub_torpedo_upgrade = 2
+							sub_engine_upgrade = 2
+						}
+					}
+				}
+			}
+			ai_will_do = { factor = 20 }
+		}
+	}
+}
+
+dei_decisions_proclamations = {
+
+	# --- JALUR A: REPUBLIK DEMOKRATIS ---
+	dei_proclaim_nkri = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_REPUBLIK_NKRI }
+		}
+		visible = {
+			has_country_flag = dei_path_a_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_REPUBLIK_NKRI
+			add_stability = 0.05
+		}
+		ai_will_do = { factor = 10 }
+	}
+
+	dei_proclaim_ris = {
+		icon = generic_civilian_economy
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_REPUBLIK_RIS }
+		}
+		visible = {
+			has_country_flag = dei_path_a_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_REPUBLIK_RIS
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	dei_proclaim_sosialis = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_REPUBLIK_SOSIALIS }
+		}
+		visible = {
+			has_country_flag = dei_path_a_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_REPUBLIK_SOSIALIS
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	# --- JALUR B: KOLONIAL / FEDERALIS ---
+	dei_proclaim_dei = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_KOLONIAL_DEI }
+		}
+		visible = {
+			has_country_flag = dei_path_b_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_KOLONIAL_DEI
+			add_stability = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	dei_proclaim_bfo = {
+		icon = generic_civilian_economy
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_KOLONIAL_BFO }
+		}
+		visible = {
+			has_country_flag = dei_path_b_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_KOLONIAL_BFO
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 10 }
+	}
+
+	dei_proclaim_dominion = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_KOLONIAL_DOMINION }
+		}
+		visible = {
+			has_country_flag = dei_path_b_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_KOLONIAL_DOMINION
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	# --- JALUR C: KOMUNIS ---
+	dei_proclaim_rri = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_KOMUNIS_RRI }
+		}
+		visible = {
+			has_country_flag = dei_path_c_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_KOMUNIS_RRI
+			add_stability = 0.05
+		}
+		ai_will_do = { factor = 10 }
+	}
+
+	dei_proclaim_soviet = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_KOMUNIS_SOVIET }
+		}
+		visible = {
+			has_country_flag = dei_path_c_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_KOMUNIS_SOVIET
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	dei_proclaim_front = {
+		icon = generic_civilian_economy
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_KOMUNIS_FRONT }
+		}
+		visible = {
+			has_country_flag = dei_path_c_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_KOMUNIS_FRONT
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	# --- JALUR D: OTORITER MILITER ---
+	dei_proclaim_otoriter_nkri = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_OTORITER_NKRI }
+		}
+		visible = {
+			has_country_flag = dei_path_d_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_OTORITER_NKRI
+			add_stability = 0.05
+		}
+		ai_will_do = { factor = 10 }
+	}
+
+	dei_proclaim_junta = {
+		icon = generic_industry
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_OTORITER_JUNTA }
+		}
+		visible = {
+			has_country_flag = dei_path_d_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_OTORITER_JUNTA
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	dei_proclaim_raya = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_OTORITER_RAYA }
+		}
+		visible = {
+			has_country_flag = dei_path_d_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_OTORITER_RAYA
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	# --- JALUR E: ISLAMIS / NII ---
+	dei_proclaim_nii = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_ISLAMIS_NII }
+		}
+		visible = {
+			has_country_flag = dei_path_e_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_ISLAMIS_NII
+			add_stability = 0.05
+		}
+		ai_will_do = { factor = 10 }
+	}
+
+	dei_proclaim_daulah = {
+		icon = generic_civilian_economy
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_ISLAMIS_DAULAH }
+		}
+		visible = {
+			has_country_flag = dei_path_e_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_ISLAMIS_DAULAH
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	dei_proclaim_khilafah = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_ISLAMIS_KHILAFAH }
+		}
+		visible = {
+			has_country_flag = dei_path_e_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_ISLAMIS_KHILAFAH
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	# --- JALUR F: KEMAHARAJAAN MAJAPAHIT ---
+	dei_proclaim_majapahit_empire = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_MAJAPAHIT_EMPIRE }
+		}
+		visible = {
+			has_country_flag = dei_path_f_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_MAJAPAHIT_EMPIRE
+			add_stability = 0.05
+		}
+		ai_will_do = { factor = 10 }
+	}
+
+	dei_proclaim_surya = {
+		icon = generic_industry
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_MAJAPAHIT_SURYA }
+		}
+		visible = {
+			has_country_flag = dei_path_f_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_MAJAPAHIT_SURYA
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	dei_proclaim_nusantara = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		available = {
+			NOT = { has_cosmetic_tag = INS_MAJAPAHIT_NUSANTARA }
+		}
+		visible = {
+			has_country_flag = dei_path_f_chosen
+		}
+		cost = 15
+		fire_only_once = no
+		complete_effect = {
+			set_cosmetic_tag = INS_MAJAPAHIT_NUSANTARA
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 0 }
 	}
 }

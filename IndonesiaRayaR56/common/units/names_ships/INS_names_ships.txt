@@ -1,0 +1,302 @@
+##### INDONESIA SHIP NAMES #####
+# Sesuai Tradisi Sejarah Asli Angkatan Laut & Budaya Maritim Nusantara
+
+# =====================================================================
+# JALUR A: REPUBLIK DEMOKRATIS / NASIONALIS (KRI - Kapal Republik Indonesia)
+# Prefix Resmi Sejarah: KRI (Kapal Republik Indonesia, TNI-AL)
+# =====================================================================
+INS_CAPITAL_SHIPS_REPUBLIK = {
+	name = "KRI: Kapal Tempur & Penjelajah Republik"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_heavy ship_hull_cruiser battleship battle_cruiser heavy_cruiser light_cruiser }
+	prefix = "KRI "
+	fallback_name = "KRI Penjelajah %d"
+	unique = {
+		"Bung Karno" "Bung Hatta" "Diponegoro" "Imam Bondjol" "Teuku Umar" "Pattimura" "Sultan Hasanuddin" "Fatahillah" "Ki Hajar Dewantara" "Karel Satsuit Tubun" "Dewi Sartika" "Cut Nyak Dien" "Kartini" "Cipto Mangunkusumo"
+	}
+}
+
+INS_DESTROYERS_REPUBLIK = {
+	name = "KRI: Perusak & Korvet Republik"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	prefix = "KRI "
+	fallback_name = "KRI Perusak %d"
+	unique = {
+		"Yos Sudarso" "Macan Tutul" "Macan Kumbang" "Harimau" "Singa" "Banteng" "Badak" "Kujang" "Surik" "Rencong" "Mandau" "Badik" "Keris" "Golok" "Parang" "Sumpit"
+	}
+}
+
+INS_SUBMARINES_REPUBLIK = {
+	name = "KRI: Kapal Selam Senjata Pusaka"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	prefix = "KRI "
+	fallback_name = "KRI Selam %d"
+	unique = {
+		"Nanggala" "Cakra" "Trisula" "Pasopati" "Hendradjala" "Alugoro" "Nagabanda" "Ardadedali" "Bramasta" "Wijayadanu"
+	}
+}
+
+INS_ESCORT_REPUBLIK = {
+	name = "KRI: Armada Ronda & Angkut Selat"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light convoy }
+	prefix = "KRI "
+	fallback_name = "KRI Patroli %d"
+	unique = {
+		"Dewaruci" "Teluk Bone" "Teluk Amboina" "Teluk Semangka" "Teluk Ratai" "Mentawai" "Karimata" "Sambu" "Kalaotoa"
+	}
+}
+
+# =====================================================================
+# JALUR B: KOLONIAL / FEDERALIS (Hr.Ms. - Harer Majesteits Schip)
+# Prefix Resmi Sejarah: Hr.Ms. (Koninklijke Marine Nederlandsch-Indië)
+# =====================================================================
+INS_CAPITAL_SHIPS_KOLONIAL = {
+	name = "Hr.Ms.: Slagschepen en Kruisers van de Oost"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_heavy ship_hull_cruiser battleship battle_cruiser heavy_cruiser light_cruiser }
+	prefix = "Hr.Ms. "
+	fallback_name = "Hr.Ms. Kruiser %d"
+	unique = {
+		"De Zeven Provinciën" "Java" "De Ruyter" "Tromp" "Van Kinsbergen" "Soerabaja" "Sumatra" "Jacob van Heemskerck" "Gelderland" "Hertog Hendrik"
+	}
+}
+
+INS_DESTROYERS_KOLONIAL = {
+	name = "Hr.Ms.: Torpedobootjagers Nederlandsch-Indië"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	prefix = "Hr.Ms. "
+	fallback_name = "Hr.Ms. Jager %d"
+	unique = {
+		"Evertsen" "Kortenaer" "Piet Hein" "Banckert" "Van Nes" "Witte de With" "Van Galen" "Tjerk Hiddes" "Isaac Sweers" "Gerard Callenburgh"
+	}
+}
+
+INS_SUBMARINES_KOLONIAL = {
+	name = "Hr.Ms.: Onderzeeboten Indische Oceaan"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	prefix = "Hr.Ms. "
+	fallback_name = "Hr.Ms. Onderzeeboot %d"
+	unique = {
+		"O-19" "O-20" "K-XVIII" "K-XVII" "K-XIV" "K-XV" "K-XIII" "K-XII" "K-XI" "O-16"
+	}
+}
+
+INS_ESCORT_KOLONIAL = {
+	name = "Hr.Ms.: Mijnenvegers en Escorteurs"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light convoy }
+	prefix = "Hr.Ms. "
+	fallback_name = "Hr.Ms. Patrouille %d"
+	unique = {
+		"Rigel" "Eland Dubois" "Jan van Amstel" "Pieter de Bitter" "Abraham Crijnssen" "Willem van der Zaan"
+	}
+}
+
+# =====================================================================
+# JALUR C: KOMUNIS / REVOLUSI PROLETAR
+# Nama Sejati Proletariat (Tanpa singkatan akronim artifisial, seperti tradisi Soviet)
+# =====================================================================
+INS_CAPITAL_SHIPS_KOMUNIS = {
+	name = "Kapal Tempur Proletar & Front Merah"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_heavy ship_hull_cruiser battleship battle_cruiser heavy_cruiser light_cruiser }
+	fallback_name = "Penjelajah Proletar %d"
+	unique = {
+		"Proletar" "Karl Marx" "Vladimir Lenin" "Musso" "Semaoen" "Alimin" "Tan Malaka" "Darmawidjaja" "Bintang Merah" "Komunard Nusantara" "Internasionale"
+	}
+}
+
+INS_DESTROYERS_KOMUNIS = {
+	name = "Perusak & Korvet Martir Revolusi"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	fallback_name = "Perusak Martir %d"
+	unique = {
+		"Martir Madiun" "Pemberontak Silo" "Barisan Buruh" "Petani Merah" "Banteng Merah" "Obor Revolusi" "Pemuda Rakyat" "Palukarit" "Kronstadt Melayu" "Pelopor Sosialis"
+	}
+}
+
+INS_SUBMARINES_KOMUNIS = {
+	name = "Kapal Selam Hiu Merah"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	fallback_name = "Kapal Selam Merah %d"
+	unique = {
+		"Hiu Merah" "Belut Selat" "Siluman Samudra" "Baja Proletar" "Bawah Air Merah" "Arus Bawah" "Torpedo Merah"
+	}
+}
+
+INS_ESCORT_KOMUNIS = {
+	name = "Ronda & Logistik Rakyat"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light convoy }
+	fallback_name = "Patroli Rakyat %d"
+	unique = {
+		"Angkut Buruh" "Pengawal Pelabuhan" "Logistik Rakyat" "Pandu Merah" "Bahari Komun"
+	}
+}
+
+# =====================================================================
+# JALUR D: OTORITER MILITERISTIK (KRI - Kapal Perang Republik Indonesia)
+# Standar Militer Indonesia (TNI-AL / Markas Besar ABRI)
+# =====================================================================
+INS_CAPITAL_SHIPS_OTORITER = {
+	name = "KRI: Kapal Tempur Komando Dewan Revolusi"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_heavy ship_hull_cruiser battleship battle_cruiser heavy_cruiser light_cruiser }
+	prefix = "KRI "
+	fallback_name = "KRI Tempur %d"
+	unique = {
+		"Mandala Perkasa" "Dwikora" "Trikora" "Gadjah Mada Perkasa" "Benteng Samudra" "Panglima Sudirman" "Bayonet Khatulistiwa" "Nusantara Perkasa"
+	}
+}
+
+INS_DESTROYERS_OTORITER = {
+	name = "KRI: Perusak & Pemburu Bela Negara"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	prefix = "KRI "
+	fallback_name = "KRI Pemburu %d"
+	unique = {
+		"Macan Samudra" "Rajawali Hitam" "Serigala Selat" "Elang Laut" "Bravo Perkasa" "Kujang Sakti" "Mandau Baja" "Badik Berdarah"
+	}
+}
+
+INS_SUBMARINES_OTORITER = {
+	name = "KRI: Kapal Selam Pasukan Khusus Bawah Air"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	prefix = "KRI "
+	fallback_name = "KRI Selam Siluman %d"
+	unique = {
+		"Hantu Laut" "Pasopati Revolusi" "Nanggala Perkasa" "Trisula Hitam" "Cakra Maut" "Alugoro Waja"
+	}
+}
+
+INS_ESCORT_OTORITER = {
+	name = "KRI: Pengawal Garis Depan Samudra"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light convoy }
+	prefix = "KRI "
+	fallback_name = "KRI Ronda %d"
+	unique = {
+		"Kawal Perbatasan" "Benteng Selat" "Patroli Siaga" "Ronda Samudra" "Bela Samudra"
+	}
+}
+
+# =====================================================================
+# JALUR E: ISLAMIS / NII
+# Nama Sejarah Tokoh Islam & Jihad Samudra (Tanpa singkatan artifisial)
+# =====================================================================
+INS_CAPITAL_SHIPS_ISLAMIS = {
+	name = "Kapal Tempur Mujahidin & Benteng Tauhid"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_heavy ship_hull_cruiser battleship battle_cruiser heavy_cruiser light_cruiser }
+	fallback_name = "Penjelajah Tauhid %d"
+	unique = {
+		"Baitul Maqdis" "Fatahillah" "Sultan Agung" "Iskandar Muda" "Sultan Babullah" "Thariq bin Ziyad" "Khalid bin Walid" "Salahuddin Al-Ayyubi"
+	}
+}
+
+INS_DESTROYERS_ISLAMIS = {
+	name = "Perusak & Korvet Pedang Tauhid"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	fallback_name = "Perusak Mujahidin %d"
+	unique = {
+		"Pedang Tauhid" "Mujahid Laut" "Syuhada Badar" "Laskar Sabilillah" "Hizbullah Bahari" "Fisabilillah" "Panji Hitam" "Kudeta Laut"
+	}
+}
+
+INS_SUBMARINES_ISLAMIS = {
+	name = "Kapal Selam Panah & Pusaka Islam"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	fallback_name = "Kapal Selam Tauhid %d"
+	unique = {
+		"Zulfikar" "Nun Laut" "Siluman Selat" "Panah Tauhid" "Al-Bahri" "Selam Syahid"
+	}
+}
+
+INS_ESCORT_ISLAMIS = {
+	name = "Ronda Syariat & Angkut Baitul Mal"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light convoy }
+	fallback_name = "Ronda Syariat %d"
+	unique = {
+		"Baitul Mal" "Pengawal Hijrah" "Patroli Syariat" "Kafilah Laut" "Ansar Bahari"
+	}
+}
+
+# =====================================================================
+# JALUR F: KEMAHARAJAAN MAJAPAHIT
+# Nama Agung Sejarah Nusantara (Tanpa akronim artifisial, megah & berwibawa)
+# =====================================================================
+INS_CAPITAL_SHIPS_MAJAPAHIT = {
+	name = "Armada Jung Tempur Segara Wilwatikta"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_heavy ship_hull_cruiser battleship battle_cruiser heavy_cruiser light_cruiser }
+	fallback_name = "Jung Tempur %d"
+	unique = {
+		"Hayam Wuruk" "Tribhuwana Tunggadewi" "Arya Damar" "Senapati Nala" "Brajanatha" "Kertanegara" "Raden Wijaya" "Surya Wilwatikta"
+	}
+}
+
+INS_DESTROYERS_MAJAPAHIT = {
+	name = "Armada Pasukan & Warastra Jalayanapati"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+	fallback_name = "Warastra Laut %d"
+	unique = {
+		"Jung Pasukan Nala" "Warastra Laut" "Cundamani" "Panji Segara" "Gada Watu" "Singhasari" "Jalayanapati I" "Jalayanapati II"
+	}
+}
+
+INS_SUBMARINES_MAJAPAHIT = {
+	name = "Armada Kapal Pusaka Siluman Segara"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	fallback_name = "Pusaka Selam %d"
+	unique = {
+		"Naga Segara" "Naga Baruna" "Antaboga Laut" "Pasopati Segara" "Siluman Wilwatikta" "Jala Sutra"
+	}
+}
+
+INS_ESCORT_MAJAPAHIT = {
+	name = "Armada Jung Layar & Niaga Upacara"
+	for_countries = { INS }
+	type = ship
+	ship_types = { ship_hull_light convoy }
+	fallback_name = "Jung Niaga %d"
+	unique = {
+		"Jung Pengawal Upacara" "Jung Niaga Tuban" "Jung Gresik" "Jung Jepara" "Layar Segara Wilwatikta"
+	}
+}

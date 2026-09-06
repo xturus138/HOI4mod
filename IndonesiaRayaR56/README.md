@@ -2,113 +2,165 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dibangun terintegrasi di atas **The Road to 56 (R56)**.
 
-**Status Saat Ini:** `v1.0 (Hybrid R56 Integration)` — 102 Fokus Nasional, 61 Event Interaktif (100% bergambar), 8 Keputusan Regional & Tata Kelola, 19 National Spirits, 6 Tokoh Pemimpin R56, dan Lokalisasi Bahasa Inggris dengan preservasi istilah historis Indonesia.
+**Status Saat Ini:** `v1.4.2 (Authentic Historical Naming, 18 Dynamic Proclamations & Clean Nomenclature)` — 138 Fokus Nasional, 119 Event Interaktif (93 Fokus + 26 Flavor Acak MTTH, 100% bergambar), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 108 Bendera TGA Tersinkronisasi, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik (Bebas Singkatan Artifisial), 14 Varian Alutsista Lintas Domain, 26 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris Ber-Trait Unik, 8 Desainer Industri MIO, dan 1.020 Kunci Lokalisasi Ber-BOM (0 missing keys).
 
 ---
 
-## Ringkasan Fitur v1.0
+## Ringkasan Fitur v1.4.2
 
-### 1. Pohon Fokus Hibrida (102 Fokus Nasional)
-Menggabungkan kebebasan 6 jalur politik submod dengan kedalaman riset militer dan industri khas Road to 56 tanpa tumpang tindih koordinat:
+### 1. Pohon Fokus Hibrida Komprehensif (138 Fokus Nasional)
+Menggabungkan kebebasan 6 jalur politik submod yang diperdalam hingga era Perang Dingin dengan kedalaman riset militer dan industri khas Road to 56:
 - **Batang Bersama 1936–1945 (11 Fokus, X=7..10):** Dinamika politik pra-kemerdekaan (Volksraad, KNIL, ekonomi, pendidikan pribumi, ancaman Jepang) bermuara pada "Momentum Kemerdekaan".
-- **Jalur A: Republik Nasionalis-Demokratis (10 Fokus, X=0..3):** Proklamasi 17 Agustus 1945, pembentukan TKR, diplomasi PBB, perang gerilya hadapi Agresi Militer Belanda I & II, KMB, demokrasi parlementer, pembebasan Irian Barat, dan Demokrasi Terpimpin.
-- **Jalur B: Kolonial / Federalis (8 Fokus, X=4..7):** Penumpasan gerilyawan, reformasi terbatas, pembentukan negara-negara federal (NIT, Pasundan), Uni Belanda-Indonesia, status dominion, dan Persemakmuran Belanda.
-- **Jalur C: Komunis (8 Fokus, X=8..11):** Kemenangan Front Rakyat (kebalikan Peristiwa Madiun), land reform radikal, pembersihan elemen borjuis, pembentukan Tentara Rakyat, poros Soviet vs Tiongkok, industrialisasi sosialis, ekspor revolusi.
-- **Jalur D: Otoriter Militeristik (8 Fokus, X=12..15):** Kudeta dewan militer, darurat militer, pembubaran partai, ekonomi perang, doktrin laskar pemuda militan, klaim Nusantara Raya, hegemoni laut selatan.
-- **Jalur E: Islamis / Negara Islam Indonesia (8 Fokus, X=16..18):** Proklamasi NII (Darul Islam / Kartosoewirjo), Dewan Ulama, hukum syariat, pembentukan Tentara Islam Indonesia (TII), diplomasi dunia Arab, persatuan Islam Nusantara.
-- **Jalur F: Kemaharajaan Majapahit [Ahistoris] (7 Fokus, X=19..20):** Kebangkitan semangat Majapahit, pencarian pusaka pusaka keramat, Dewan Adat Nusantara, armada laut agung, integrasi keraton & kesultanan, proklamasi Kekaisaran Baru Nusantara.
+- **Jalur A: Republik Nasionalis-Demokratis (16 Fokus, X=0..4):** Proklamasi 17 Agustus 1945, pembentukan TKR, diplomasi PBB, perang gerilya hadapi Agresi Militer Belanda I & II, KMB, demokrasi parlementer, Konferensi Asia-Afrika (KAA) Bandung 1955, Pembebasan Irian Barat (Trikora), Dekrit Presiden 1959, Konfrontasi Dwikora, Falsafah Pancasila, dan Doktrin Trisakti.
+- **Jalur B: Kolonial / Federalis (14 Fokus, X=4..7):** Penumpasan gerilyawan, reformasi federal, Sidang Raya BFO (Bijeenkomst voor Federaal Overleg), Angkatan Bersenjata Federalis KNIL, Pakta Keamanan Maritim ANZAC, Modernisasi Perkebunan Deli, Piagam Otonomi Swapraja & Kraton, dan Jaringan Pelabuhan Bebas Nusantara.
+- **Jalur C: Komunis (14 Fokus, X=8..11):** Kemenangan Front Rakyat, land reform radikal, pembersihan elemen borjuis, pembentukan Tentara Merah Rakyat, Kolektivisasi Komune Tani, Nasionalisasi Total Aset Imperialis Asing, Pembentukan Angkatan Kelima (Buruh & Tani Bersenjata), Mobilisasi Budaya LEKRA, Poros Anti-Imperialis Asia, dan Rencana Pembangunan Semesta Berencana.
+- **Jalur D: Otoriter Militeristik (14 Fokus, X=12..15):** Kudeta militer, darurat perang, pembubaran parlemen partai, Dewan Revolusi Militer Tertinggi, Doktrin Dwifungsi ABRI, Benteng Samudra Nusantara (bunker selat & radar), Wajib Militer Bela Negara Menyeluruh, Komando Strategis Selat Malaka, dan Hegemoni Militer Samudra Hindia.
+- **Jalur E: Islamis / Negara Islam Indonesia (14 Fokus, X=16..18):** Proklamasi NII (Darul Islam / Kartosoewirjo), Dewan Ulama, Tentara Islam Indonesia (TII), Pendirian Baitul Mal Pusat, Mahkamah Syariah Tertinggi (Kodifikasi Qanun), Akademi Militer Mujahidin, Sistem Keuangan Muamalah Anti-Riba, Liga Perjuangan Muslim Sedunia, dan Khilafah Islamiyah Nusantara.
+- **Jalur F: Kemaharajaan Majapahit [Ahistoris] (13 Fokus, X=19..22):** Kebangkitan semangat Majapahit, pencarian pusaka keramat, Dewan Adat Nusantara, Pemenuhan Sumpah Palapa Baru, Restorasi Ibu Kota Suci Trowulan, Pembentukan Resimen Ksatria Dharmaputra, Armada Jung Raksasa Berpelindung, Kodifikasi Hukum Kutaramanawa Dharmasastra, dan Penobatan Maharaja Nusantara Raya (Surya Majapahit).
 - **Cabang Industri & Riset R56 (14 Fokus, X=26..30):** Industrialisasi Batavia, Institut Teknologi Bandung (slot riset ke-5), eksplorasi minyak BPM di Plaju/Balikpapan, perkebunan karet Sumatra, industri kimia & semen.
 - **Cabang Militer AD / AU / AL R56 (28 Fokus, X=33..43):**
   - *Angkatan Darat (KNIL / TNI):* Doktrin infanteri tropis KNIL, artileri medan Bandung, motorisasi kavaleri, modernisasi persenjataan.
   - *Penerbangan Militer (Militaire Luchtvaart):* Pangkalan udara Andir & Kalijati, doktrin pertahanan udara kepulauan, lisensi pesawat tempur & pembom taktis.
   - *Angkatan Laut (Marine):* Pangkalan armada Ujung Surabaya, flotila kapal selam perairan dangkal, doktrin pengawalan konvoi selat, kapal perusak ringan.
 
-### 2. Event Interaktif & Visual Penuh (61 Event, 100% Bergambar)
-- **55 Event Berpilihan Fokus:** Mengiringi setiap fokus penting dengan konsekuensi politik, stabilitas, dan hubungan internasional.
-- **6 Flavor Event Acak Berkala (Non-Focus MTTH):**
-  1. `dei_flavor.1`: Suara Pers Bumiputera (*Medan Prijaji* & *Bintang Timoer*).
-  2. `dei_flavor.2`: Panen Raya Komoditas Tropis (karet, teh, kina).
-  3. `dei_flavor.3`: Mogok Buruh Pelabuhan & Kereta Api.
-  4. `dei_flavor.4`: Semarak Pasar Malam Gambir.
-  5. `dei_flavor.5`: Erupsi Gunung Berapi & Solidaritas Gotong Royong.
-  6. `dei_flavor.6`: Gema Radio Gelombang Pendek Antar-Pulau.
-- **Visualisasi Gambar Event:** 7 DDS custom arsip historis + 54 sprite terpadu HOI4/R56 (0 event tanpa gambar).
+### 2. 18 Proklamasi Tata Kelola & Penamaan Resmi Negara (3 Opsi per Ideologi)
+Pemain memiliki kendali penuh atas identitas, bentuk negara, warna peta, dan nama partai resmi melalui keputusan kategori **`Tata Kelola & Penamaan Resmi Negara`** (`dei_decisions_proclamations`):
 
-### 3. Sistem Keputusan Spesifik (Decisions)
-- **Revolusi Dini:** Keputusan awal 1936 untuk langsung melompat ke percabangan ideologi tanpa menunggu 1945.
-- **Kedaulatan Wilayah Nusantara:** Integrasi Papua Barat (state 669 & 1073), Timor Portugis (state 721), Unifikasi Pulau Borneo/Sarawak (state 333), dan Tuntutan Melayu Raya (state 336).
-- **Tata Kelola Kepulauan & Ekonomi:** Program Transmigrasi antarpulau, Penerbitan Oeang Republik Indonesia (ORI), dan Operasi Patroli Maritim kepulauan.
+| Cabang Ideologi | Opsi 1 (Default / Utama) | Opsi 2 (Federal / Alternatif) | Opsi 3 (Radikal / Luas) |
+|---|---|---|---|
+| **A. Republik** | **Negara Kesatuan Republik Indonesia** (*PNI*) | **Republik Indonesia Serikat** (*RIS-Koalisi*) | **Republik Sosialis Demokratis Indonesia** (*PSI*) |
+| **B. Kolonial** | **Hindia Belanda** (*Gouvernement*) | **Uni Negara-Negara Indonesia** (*BFO*) | **Persemakmuran Mahkota Hindia** (*Kroonraad*) |
+| **C. Komunis** | **Republik Rakyat Indonesia** (*PKI*) | **Uni Soviet Indonesia** (*Komintern-PKI*) | **Front Demokrasi Rakyat Nusantara** (*FDR*) |
+| **D. Otoriter** | **NKRI Revolusioner** (*Dewan Revolusi*) | **Komando MB Revolusi Militer** (*Junta ABRI*) | **Imperium Militer Indonesia Raya** (*Bela Negara*) |
+| **E. Islamis** | **Negara Islam Indonesia** (*Majelis Syuro*) | **Daulah Islamiyah Nusantara** (*Diwan Imam*) | **Khilafah Islamiyah Nusantara** (*Baitul Mal & Syuro*) |
+| **F. Majapahit** | **Kemaharajaan Majapahit** (*Kraton Wilwatikta*) | **Imperium Surya Wilwatikta** (*Surya Kencana*) | **Maha-Imperium Nusantara Raya** (*Bhayangkara Raya*) |
 
-### 4. Integrasi Tokoh Pemimpin Historis R56
-Tiap jalur ideologi pada event `dei_trunk.6` otomatis mengangkat karakter pemimpin ber-portrait resmi dari database karakter R56 (`history/countries/INS - Indonesia.txt`):
-- **Republik Demokratis:** Sukarno (`INS_sukarno`)
-- **Kolonial / Federalis:** Hubertus van Mook (`INS_hubertus_van_mook`)
-- **Komunis:** Musso (`INS_musso`)
-- **Otoriter Militeristik:** Jenderal Soedirman (`INS_soedirman`)
-- **Negara Islam Indonesia:** S.M. Kartosoewirjo (`INS_sekarmaji_kartosuwiryo`)
-- **Majapahit Revival:** K.P.H. Soerjodiningrat / Wuryaningrat (`INS_wuryaningrat`)
+- **Warna Peta Dinamis (`common/countries/cosmetic.txt`):** 18 cosmetic tags memiliki kode warna RGB khas untuk membedakan identitas negara di peta dunia secara visual.
+- **Sinkronisasi Bendera:** 108 bendera TGA tersinkronisasi di folder `standard`, `medium`, dan `small`.
 
-### 5. Lokalisasi Bahasa Inggris Berpreservasi
-- Seluruh teks narasi event, opsi respon, deskripsi fokus, dan decisions disajikan dalam Bahasa Inggris standar HOI4.
-- Istilah orisinal historis, militer, institusi, dan kultural Indonesia tetap dipertahankan (*Volksraad*, *KNIL*, *TKR*, *TII*, *Proklamasi*, *Merdeka*, *KMB*, *ORI*, *Majapahit*, *Pusaka*, *Dewan Adat*, *Ulama*, *Syariat*, *Negara Islam Indonesia*, *Front Rakyat*, *Gotong Royong*, *Pancasila*, dsb.).
-- Format pengkodean: **UTF-8 with BOM** (`\xef\xbb\xbf`), wajib untuk engine Clausewitz.
+### 3. Nomenklatur Militer Bersih & Penghapusan Akronim Artifisial
+Menghapus seluruh singkatan artifisial seperti `JPS`, `KMN`, `KNI`, dan `KPR`. Standardisasi alutsista laut kini mengikuti kaidah sejarah dan tradisi militer autentik:
+- **Republik & Otoriter (TNI-AL):** Menggunakan prefix resmi historis **`KRI `** (*KRI Bung Karno, KRI Diponegoro, KRI Macan Tutul, KRI Nanggala, KRI Dewaruci*).
+- **Kolonial (KM-NI):** Menggunakan prefix resmi historis **`Hr.Ms. `** (*Hr.Ms. De Zeven Provinciën, Hr.Ms. Java, Hr.Ms. Evertsen, Hr.Ms. O-19*).
+- **Majapahit:** Tanpa akronim artifisial (seperti standar IJN di HOI4). Kapal langsung menyandang nama agung klasik: *Hayam Wuruk, Senapati Nala, Tribhuwana Tunggadewi, Gadjah Mada, Warastra Laut, Naga Baruna, Antaboga Laut*.
+- **Islamis / NII:** Tanpa akronim artifisial. Kapal langsung menyandang nama pejuang & pusaka Islam: *Baitul Maqdis, Fatahillah, Sultan Agung, Iskandar Muda, Pedang Tauhid, Zulfikar*.
+- **Komunis:** Tanpa akronim artifisial. Kapal menyandang nama tokoh revolusioner: *Proletar, Karl Marx, Vladimir Lenin, Musso, Bintang Merah, Martir Madiun, Hiu Merah*.
+
+### 4. Dedicated Starter Fleet OOBs per Ideologi
+Saat pemain memilih ideologi pada event `dei_trunk.6`, armada laut starter di Pangkalan Armada Ujung Surabaya (Provinsi 13520) langsung dimuat sesuai cabang:
+- `DEI_navy_starter_a.txt` -> *Armada Laut Republik Indonesia (ALRI)*
+- `DEI_navy_starter_b.txt` -> *Zeemacht in Nederlandsch-Indië (KM-NI)*
+- `DEI_navy_starter_c.txt` -> *Armada Laut Rakyat Proletar (ALRP)*
+- `DEI_navy_starter_d.txt` -> *Komando Armada Pertahanan Samudra (KAPS)*
+- `DEI_navy_starter_e.txt` -> *Armada Laut Mujahidin Samudra (ALMS)*
+- `DEI_navy_starter_f.txt` -> *Armada Jung Segara Wilwatikta*
+
+### 5. Sistem Divisi, Namelist & Alutsista Historis (14 Templates & 11 Namelists)
+- **14 Division Templates Doktrinal (`history/units/DEI_templates.txt`):**
+  1. *Divisi Infanteri Siliwangi* (Republik)
+  2. *Divisi Infanteri Diponegoro* (Republik)
+  3. *Resimen Komando Angkatan Darat (RPKAD)* (Republik)
+  4. *Korps Komando Operasi (KKO Marinir)* (Republik)
+  5. *Resimen Kavaleri Lapis Baja* (Republik/Kolonial)
+  6. *Brigade Laskar Rakyat & Tentara Pelajar* (Republik/Komunis/Islamis)
+  7. *Resimen Mujahidin TII / Hizbullah* (Islamis)
+  8. *Brigade Barisan Buruh Merah* (Komunis)
+  9. *KNIL Infanterie Divisie* (Kolonial)
+  10. *Garnizun Stadswacht & Pertahanan Pantai* (Kolonial/Republik)
+  11. *Prajurit Utama Bhayangkara* (Majapahit)
+  12. *Resimen Ksatria Dharmaputra* (Majapahit)
+  13. *Resimen Pengawal Dewan Revolusi* (Otoriter)
+  14. *Barisan Pemuda Bela Negara* (Otoriter)
+- **11 Grup Namelist Divisi Darat (`common/units/names_divisions/INS_names_divisions.txt`):**
+  - `DEI_INF_TNI`, `DEI_LASKAR`, `DEI_MARINIR`, `DEI_KNIL_COLONIAL`, `DEI_KOMUNIS`, `DEI_ISLAMIS`, `DEI_MAJAPAHIT`, `DEI_KOMANDO`, `DEI_KAVALERI`, `DEI_GARNIZUN`, `DEI_OTORITER`.
+
+### 6. Event Interaktif & Visual Penuh (119 Event, 100% Bergambar)
+- **93 Event Berpilihan Fokus:** Mengiringi setiap fokus penting dengan konsekuensi politik, stabilitas, dan hubungan internasional (14-16 event per cabang ideologi).
+- **26 Flavor Event Acak Berkala (Non-Focus MTTH):**
+  - Pers bumiputera, panen komoditas, tambang batubara Ombilin & timah Bangka, Observatorium Bosscha, Institut Pasteur Bandung, Tamansiswa Ki Hadjar Dewantara, Kongres Perempuan Indonesia, perdebatan Sukarno-Natsir, bioskop Terang Boelan, Kongres Pemuda 1928, pemberontakan De Zeven Provinciën, pemugaran Borobudur, Karapan Sapi Madura, penyelundupan senjata Selat Malaka, ramalan Ratu Adil, armada Pinisi Dobo, penerbangan Adisucipto, Laskar Putri Surakarta, dan kilang Pangkalan Brandan.
+- **Visualisasi Gambar Event:** 100% event memiliki sprite bergambar valid terintegrasi (0 missing sprites).
+
+### 7. Riset & Doktrin Militer Strategis (26 Decisions Total)
+- **Keputusan Proklamasi Tata Kelola Negara (18 Decisions Baru):** Pemilihan nama resmi negara, bentuk negara, dan partai.
+- **Arah Riset & Doktrin Strategis (8 Decisions):** Doktrin Gerilya Wilayah (Sishanrata), Doktrin Gerilya Selat Dangkal, Doktrin Dirgantara Khatulistiwa, Standardisasi Senjata Pindad, Panser Cepat Braat, Dirgantara IPTN, Eksplorasi Minyak Pertamina, Komisioning Armada KRI.
+- **Mega-Proyek Infrastruktur & Pertahanan (6 Decisions):** Pangkalan Ujung Surabaya, Arsenal Bandung, Kilang Minyak Plaju & Balikpapan, Jalan Raya Pos & Rel Trans-Jawa, Benteng Selat Sunda/Malaka, Lanud Iswahyudi & Kalijati.
+- **Mekanik Militer Khusus (4 Decisions):** Sishanrata, Logistik Maritim Pinisi, Dapur Umum & Palang Merah, Pabrik Senjata Darurat Pegunungan.
+- **Kedaulatan Wilayah (8 Decisions):** Revolusi Dini, Papua Barat, Timor Portugis, Borneo/Sarawak, Melayu Raya, Transmigrasi, ORI, Patroli Maritim.
 
 ---
 
-## Struktur File Mod
+## Struktur Berkas Mod
 
 ```
 IndonesiaRayaR56/
-├── descriptor.mod
 ├── common/
-│   ├── national_focus/
-│   │   ├── DEI_00_shared_trunk.txt        # Batang bersama 1936-1945 (11 fokus)
-│   │   ├── DEI_01_path_a_republik.txt     # Jalur Republik (10 fokus)
-│   │   ├── DEI_02_path_b_kolonial.txt     # Jalur Kolonial/Federal (8 fokus)
-│   │   ├── DEI_03_path_c_komunis.txt      # Jalur Komunis (8 fokus)
-│   │   ├── DEI_04_path_d_otoriter.txt     # Jalur Otoriter Militer (8 fokus)
-│   │   ├── DEI_05_path_e_islamis.txt      # Jalur Islamis NII (8 fokus)
-│   │   ├── DEI_06_path_f_majapahit.txt    # Jalur Majapahit Revival (7 fokus)
-│   │   ├── DEI_r56_industry.txt           # Integrasi Industri R56 (14 fokus)
-│   │   └── DEI_r56_armed_forces.txt       # Integrasi AD/AU/AL R56 (28 fokus)
+│   ├── characters/
+│   │   └── DEI_characters.txt          # Komandan legendaris (Sudirman, Urip, Nasution, Kawilarang, Yos Sudarso)
+│   ├── countries/
+│   │   └── cosmetic.txt                # 18 Cosmetic Tags & warna peta RGB dinamis
 │   ├── decisions/
-│   │   ├── categories/
-│   │   │   └── DEI_decision_categories.txt
-│   │   └── DEI_decisions.txt              # 8 Keputusan regional & tata kelola
+│   │   └── DEI_decisions.txt           # 26 keputusan (Proklamasi Negara, Mega-Proyek, Sishanrata, Alutsista)
 │   ├── ideas/
-│   │   └── DEI_ideas.txt                  # 19 National Spirits
-│   └── ideologies/
-│       └── DEI_custom_ideologies.txt      # Ideologi federalist, islamist, majapahit
+│   │   └── DEI_ideas.txt               # 41 gagasan nasional & spirit ideologi
+│   ├── ideologies/
+│   │   └── DEI_custom_ideologies.txt   # Definisi ideologi custom (federalist, islamist, majapahit)
+│   ├── national_focus/
+│   │   ├── DEI_00_shared_trunk.txt     # Batang bersama pra-kemerdekaan 1936-1945 (11 fokus)
+│   │   ├── DEI_01_path_a_republik.txt  # Jalur A: Republik Nasionalis-Demokratis (16 fokus)
+│   │   ├── DEI_02_path_b_kolonial.txt  # Jalur B: Kolonial / Federalis BFO (14 fokus)
+│   │   ├── DEI_03_path_c_komunis.txt   # Jalur C: Komunis Front Rakyat (14 fokus)
+│   │   ├── DEI_04_path_d_otoriter.txt  # Jalur D: Otoriter Militeristik ABRI (14 fokus)
+│   │   ├── DEI_05_path_e_islamis.txt   # Jalur E: Islamis / NII Kartosoewirjo (14 fokus)
+│   │   ├── DEI_06_path_f_majapahit.txt # Jalur F: Kemaharajaan Majapahit (13 fokus)
+│   │   ├── DEI_r56_industry.txt        # Cabang industri & riset R56 (14 fokus)
+│   │   └── DEI_r56_armed_forces.txt    # Cabang militer AD/AU/AL R56 (28 fokus)
+│   ├── unit_leader/
+│   │   └── DEI_traits.txt              # Trait unik jenderal & laksamana
+│   └── units/
+│       ├── names_divisions/
+│       │   └── INS_names_divisions.txt # 11 grup namelist divisi darat
+│       └── names_ships/
+│           └── INS_names_ships.txt     # 24 grup namelist kapal (prefix autentik KRI & Hr.Ms.)
 ├── events/
-│   ├── DEI_00_shared_trunk_events.txt     # Event batang bersama + percabangan pemimpin
-│   ├── DEI_01_revolusi_dini_events.txt    # Event revolusi dini
-│   ├── DEI_02_path_a_events.txt           # Event jalur Republik (Agresi, KMB, Irian)
-│   ├── DEI_03_path_b_events.txt           # Event jalur Kolonial
-│   ├── DEI_04_path_c_events.txt           # Event jalur Komunis
-│   ├── DEI_05_path_d_events.txt           # Event jalur Otoriter
-│   ├── DEI_06_path_e_events.txt           # Event jalur Islamis
-│   ├── DEI_07_path_f_events.txt           # Event jalur Majapahit
-│   └── DEI_flavor_events.txt              # 6 Flavor event acak berkala (MTTH)
-├── interface/
-│   └── DEI_event_pictures.gfx             # Wiring sprite event custom
+│   ├── DEI_00_shared_trunk_events.txt  # Event awal & pemicu proklamasi ideologi dei_trunk.6
+│   ├── DEI_01_path_a_events.txt        # Event Jalur A (Republik)
+│   ├── DEI_02_path_b_events.txt        # Event Jalur B (Kolonial)
+│   ├── DEI_03_path_c_events.txt        # Event Jalur C (Komunis)
+│   ├── DEI_04_path_d_events.txt        # Event Jalur D (Otoriter)
+│   ├── DEI_05_path_e_events.txt        # Event Jalur E (Islamis)
+│   ├── DEI_06_path_f_events.txt        # Event Jalur F (Majapahit)
+│   └── DEI_flavor_events.txt           # 26 event flavor berkala (non-focus MTTH)
 ├── gfx/
-│   ├── flags/                             # Bendera INS & DEI (Standar, Medium, Small)
-│   └── event_pictures/                    # Event pictures arsip historis DDS
-└── localisation/english/
-    └── DEI_indonesia_l_english.yml        # 396 Kunci lokalisasi (UTF-8 with BOM)
+│   ├── event_pictures/                 # Sprite gambar event
+│   └── flags/                          # Bendera TGA (108 file: standard, medium, small)
+├── history/
+│   └── units/
+│       ├── DEI_templates.txt           # 14 templat divisi doktrinal
+│       ├── DEI_air_starter.txt         # Skadron udara awal Lanud Andir & Iswahyudi
+│       ├── DEI_navy_starter_a.txt      # Starter fleet Surabaya: ALRI (Republik)
+│       ├── DEI_navy_starter_b.txt      # Starter fleet Surabaya: KM-NI (Kolonial)
+│       ├── DEI_navy_starter_c.txt      # Starter fleet Surabaya: ALRP (Komunis)
+│       ├── DEI_navy_starter_d.txt      # Starter fleet Surabaya: KAPS (Otoriter)
+│       ├── DEI_navy_starter_e.txt      # Starter fleet Surabaya: ALMS (Islamis)
+│       └── DEI_navy_starter_f.txt      # Starter fleet Surabaya: Jung Segara (Majapahit)
+├── interface/                          # Berkas GFX descriptor
+└── localisation/
+    └── english/
+        └── DEI_indonesia_l_english.yml # 1.020 entri teks lokalisasi (UTF-8 with BOM)
 ```
 
 ---
 
-## Petunjuk Instalasi Manual
+## Prosedur Verifikasi Integritas
 
-> [!NOTE]
-> Proyek saat ini berada di folder repositori lokal. Jika ingin memasang ke game HOI4:
+Submod dilengkapi skrip audit otomatis yang dapat dijalankan melalui terminal:
+- `python scratch/final_verification.py` -> Memastikan 138 fokus, 119 event, koordinat utuh, kurung kurawal seimbang, dan UTF-8 BOM aktif.
+- `python scratch/verify_all_loc.py` -> Memastikan seluruh 1.020 kunci lokalisasi terdefinisi lengkap (0 missing).
+- `python scratch/comprehensive_asset_audit.py` -> Memastikan 0 missing sprites, 0 missing portraits, dan 0 missing flags.
 
-1. Pastikan Steam Hearts of Iron IV dan mod workshop **The Road to 56** sudah terpasang.
-2. Salin folder `IndonesiaRayaR56/` ke:
-   `C:\Users\<User>\Documents\Paradox Interactive\Hearts of Iron IV\mod\IndonesiaRayaR56`
-3. Salin file `IndonesiaRayaR56.mod` ke:
-   `C:\Users\<User>\Documents\Paradox Interactive\Hearts of Iron IV\mod\IndonesiaRayaR56.mod`
-4. Di HOI4 Playset Launcher, aktifkan **The Road to 56** dan **Indonesia Raya: Road to Merdeka**.
-5. Jalankan game dan pilih negara **Dutch East Indies** (Tag engine: `INS`).
+---
+
+## Aturan Pengembangan & Kebijakan Workspace
+1. **Aturan Deploy ("JANGAN PASANG DULU"):** Berkas mod tidak disalin ke folder instalasi game Steam sampai pengguna memberikan perintah eksplisit.
+2. **Aturan Bahasa:** Narasi event, deskripsi fokus, dan keputusan ditulis dalam Bahasa Inggris, dengan mempertahankan istilah historis asli Indonesia (*Volksraad, KNIL, TKR, TII, Proklamasi, Merdeka, KMB, ORI, Majapahit, Sishanrata, Pancasila*, dll).
+3. **Format Pengkodean:** Berkas `DEI_indonesia_l_english.yml` wajib menggunakan **UTF-8 with BOM (`\xef\xbb\xbf`)**.

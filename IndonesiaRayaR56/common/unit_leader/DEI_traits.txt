@@ -1,0 +1,46 @@
+leader_traits = {
+	trait_dei_sudirman = {
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			defence = 0.15
+			org_loss_when_moving = -0.15
+		}
+	}
+
+	trait_dei_urip = {
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			planning_speed = 0.20
+			max_dig_in = 5
+		}
+	}
+
+	trait_dei_nasution = {
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			recon_factor = 0.25
+			movement_speed = 0.10
+		}
+	}
+
+	trait_dei_kawilarang = {
+		type = land
+		trait_type = personality_trait
+		modifier = {
+			special_forces_attack_factor = 0.15
+			movement_speed = 0.10
+		}
+	}
+
+	trait_dei_yos_sudarso = {
+		type = navy
+		trait_type = personality_trait
+		modifier = {
+			naval_torpedo_hit_chance_factor = 0.15
+			positioning = 0.15
+		}
+	}
+}

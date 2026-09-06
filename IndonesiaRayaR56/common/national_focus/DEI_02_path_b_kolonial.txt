@@ -11,7 +11,7 @@ focus_tree = {
 	# --- 1. ROOT: Padamkan Api Revolusi ---
 	focus = {
 		id = dei_focus_b_root
-		icon = GFX_goal_generic_army_effort
+		icon = GFX_goal_generic_army_doctrines
 		x = -2
 		y = 9
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -26,7 +26,7 @@ focus_tree = {
 	# --- 2. Operasi Penumpasan Gerilyawan ---
 	focus = {
 		id = dei_focus_b_tekan_gerilyawan
-		icon = GFX_goal_generic_army_effort
+		icon = GFX_goal_generic_army_doctrines
 		x = -4
 		y = 10
 		relative_position_id = dei_focus_momentum_kemerdekaan
@@ -128,4 +128,95 @@ focus_tree = {
 			country_event = { id = dei_path_b.8 hours = 6 }
 		}
 	}
+
+	# --- 9. Konferensi BFO & Otonomi Bagian ---
+	focus = {
+		id = dei_focus_b_sidang_bfo
+		icon = GFX_goal_generic_national_unity
+		x = -4
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_persemakmuran }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.9 hours = 6 }
+		}
+	}
+
+	# --- 10. Integrasi KNIL & Angkatan Federal ---
+	focus = {
+		id = dei_focus_b_angkatan_federal
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 15
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_persemakmuran }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.10 hours = 6 }
+		}
+	}
+
+	# --- 11. Pakta Pertahanan ANZAC-Belanda ---
+	focus = {
+		id = dei_focus_b_pakta_anzac
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -4
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_sidang_bfo }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.11 hours = 6 }
+		}
+	}
+
+	# --- 12. Modernisasi Perkebunan Deli ---
+	focus = {
+		id = dei_focus_b_perkebunan_deli
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 0
+		y = 16
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_angkatan_federal }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.12 hours = 6 }
+		}
+	}
+
+	# --- 13. Otonomi Khusus Kerajaan Swapraja ---
+	focus = {
+		id = dei_focus_b_otonomi_kerajaan
+		icon = GFX_goal_generic_neutrality_focus
+		x = -2
+		y = 17
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_pakta_anzac focus = dei_focus_b_perkebunan_deli }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.13 hours = 6 }
+		}
+	}
+
+	# --- 14. Pusat Perdagangan Bebas Hindia Timur ---
+	focus = {
+		id = dei_focus_b_pelabuhan_bebas
+		icon = GFX_goal_generic_positive_trade_relations
+		x = -2
+		y = 18
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_otonomi_kerajaan }
+		available = { has_country_flag = dei_path_b_chosen }
+		completion_reward = {
+			country_event = { id = dei_path_b.14 hours = 6 }
+		}
+	}
+
 }
