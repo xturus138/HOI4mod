@@ -2,13 +2,13 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dibangun terintegrasi di atas **The Road to 56 (R56)**.
 
-**Status Saat Ini:** `v1.5.0 (Canonical 1936 Revolutionary Prologue & Seamless Alternate History)` — 130 Fokus Nasional, 118 Event Interaktif (92 Fokus + 26 Flavor Acak MTTH, 100% bergambar), Batang Prolog Krisis 1936 (84 Hari), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 108 Bendera TGA Tersinkronisasi, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik (Bebas Singkatan Artifisial), 14 Varian Alutsista Lintas Domain, 25 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris Ber-Trait Unik, 8 Desainer Industri MIO, dan 1.000 Kunci Lokalisasi Ber-BOM (0 missing keys).
+**Status Saat Ini:** `v1.0.0 (Canonical Release & Complete Visual Assets)` — 134 Fokus Nasional, 124 Event Interaktif (98 Fokus + 26 Flavor Acak MTTH, 100% bergambar kustom), Batang Prolog Krisis 1936 (84 Hari), 36 Focus Goals Kustom (82x82 DDS), 24 Technologies & Equipment (120x50 DDS, 55 interface sprites), 19 Potret Komandan (156x210 DDS), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 108 Bendera TGA Tersinkronisasi, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik (Bebas Singkatan Artifisial), 14 Varian Alutsista Lintas Domain, 25 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris Ber-Trait Unik, 8 Desainer Industri MIO, dan 1.217 Kunci Lokalisasi Ber-BOM (0 missing keys).
 
 ---
 
-## Ringkasan Fitur v1.5.0
+## Ringkasan Fitur v1.0.0
 
-### 1. Pohon Fokus Hibrida Komprehensif (130 Fokus Nasional)
+### 1. Pohon Fokus Hibrida Komprehensif (134 Fokus Nasional)
 Menggabungkan kebebasan 6 jalur politik submod yang diperdalam hingga era Perang Dingin dengan kedalaman riset militer dan industri khas Road to 56:
 - **Batang Prolog Krisis 1936 (3 Fokus, 84 Hari, X=12, Y=0..8):** Mengisahkan retaknya Pax Neerlandica, gelombang pemogokan massal, dan pembangkangan barak KNIL pada Januari–Maret 1936 yang bermuara pada meletusnya *Momentum Revolusi Nasional 1936* (akhir Maret 1936) sebagai alur default tanpa memerlukan decision shortcut.
 - **Jalur A: Republik Nasionalis-Demokratis (16 Fokus, X=0..4):** Proklamasi 17 Agustus 1945, pembentukan TKR, diplomasi PBB, perang gerilya hadapi Agresi Militer Belanda I & II, KMB, demokrasi parlementer, Konferensi Asia-Afrika (KAA) Bandung 1955, Pembebasan Irian Barat (Trikora), Dekrit Presiden 1959, Konfrontasi Dwikora, Falsafah Pancasila, dan Doktrin Trisakti.
@@ -146,7 +146,7 @@ IndonesiaRayaR56/
 ├── interface/                          # Berkas GFX descriptor
 └── localisation/
     └── english/
-        └── DEI_indonesia_l_english.yml # 1.020 entri teks lokalisasi (UTF-8 with BOM)
+        └── DEI_indonesia_l_english.yml # 1.217 entri teks lokalisasi (UTF-8 with BOM)
 ```
 
 ---
@@ -154,9 +154,11 @@ IndonesiaRayaR56/
 ## Prosedur Verifikasi Integritas
 
 Submod dilengkapi skrip audit otomatis yang dapat dijalankan melalui terminal:
-- `python scratch/final_verification.py` -> Memastikan 138 fokus, 119 event, koordinat utuh, kurung kurawal seimbang, dan UTF-8 BOM aktif.
-- `python scratch/verify_all_loc.py` -> Memastikan seluruh 1.020 kunci lokalisasi terdefinisi lengkap (0 missing).
+- `python scratch/final_verification.py` -> Memastikan 134 fokus, 124 event, koordinat utuh, kurung kurawal seimbang, dan UTF-8 BOM aktif.
+- `python scratch/verify_all_loc.py` -> Memastikan seluruh 1.217 kunci lokalisasi terdefinisi lengkap (0 missing).
 - `python scratch/comprehensive_asset_audit.py` -> Memastikan 0 missing sprites, 0 missing portraits, dan 0 missing flags.
+- `python scratch/master_audit.py` -> Master audit 8 dimensi submod (100% Lulus).
+
 
 ---
 
