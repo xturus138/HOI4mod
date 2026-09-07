@@ -108,17 +108,15 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
    - Dilengkapi trigger pencegah `available = { NOT = { has_country_flag = dei_jalur_dipilih } }`.
    - Mengambil salah satu cabang menetapkan country flag `dei_jalur_dipilih` dan `dei_path_<x>_chosen`, yang secara dinamis melipat/menyembunyikan (`allow_branch`) 5 cabang ideologi lainnya agar tampilan UX pohon fokus bersih.
 
-2. **Arsitektur Override Total Kompatibilitas Road to 56:**
-   - **Keputusan:** `common/decisions/INS.txt` dioverride berkas kosong untuk menonaktifkan 63 keputusan usang bawaan R56 yang bentrok dengan submod.
-   - **Event Kolonial:** `events/indonesia.txt` dan `events/TAOG_Indonesia.txt` dioverride berkas kosong untuk membungkam event lawas R56 (seperti `indonesia.100` "Removing Colonialist Influence" dari Belanda).
+2. **Arsitektur Kompatibilitas Aman Road to 56 (Crash-Proof Override):**
+   - **Event Kolonial R56:** Berkas `events/indonesia.txt` dipertahankan lengkap dari R56 agar pemanggilan event sistem (seperti `indonesia.105` pada setup negara) tidak rusak, namun pemicu event `indonesia.100` ("Removing Colonialist Influence") dimatikan permanen via `trigger = { always = no }`.
+   - **Pencegahan Berkas Kosong Dangling:** Dilarang menimpa `common/decisions/INS.txt`, `events/TAOG_Indonesia.txt`, atau `common/ai_strategy_plans/` dengan berkas kosong karena script internal R56 (on_actions, AI strategy, missions) mengandalkan definisi tersebut; menghapusnya menyebabkan NULL pointer dereference (`EXCEPTION_ACCESS_VIOLATION C0000005`).
    - **Penamaan Kota Otomatis:** Perubahan nama Batavia -> Jakarta, Buitenzorg -> Bogor, Telukbetung -> Bandar Lampung, Hollandia -> Jayapura, Fort Victoria -> Ambon disematkan langsung di Fokus 3 (`dei_focus_momentum_kemerdekaan`), `dei_trunk.7`, dan keputusan proklamasi NKRI.
-   - **Bookmark Gathering Storm:** `common/bookmarks/the_gathering_storm.txt` dioverride menampilkan 3 fokus prolog krisis 1936 submod.
-   - **AI Strategy Plans:** `common/ai_strategy_plans/` mengarahkan AI Indonesia ke pohon fokus submod.
 
-3. **Audit Bebas Error (`error.log` Clean):**
-   - Perbaikan trait komandan: `army_soft_attack_factor` diganti `army_infantry_attack_factor = 0.10` di `common/unit_leader/DEI_traits.txt`.
-   - Perbaikan event riset: `add_research_slot_speed_factor` diganti `add_tech_bonus` di `events/DEI_flavor_events.txt`.
-   - Konversi 156 bendera TGA ke format standar 32bpp RGBA tanpa RLE untuk menghilangkan peringatan bit-depth Clausewitz.
+3. **Stabilitas Tekstur Grafis & Aset:**
+   - **Format Bendera TGA:** Gunakan format standar uncompressed 24bpp asli atau 32bpp top-left (descriptor 0x28). DILARANG menggunakan konversi PIL TGA otomatis yang menulis descriptor 0x08 (bottom-left) karena menyebabkan access violation pada DirectX device reset (`RestoreDeviceObjects`).
+   - Perbaikan trait komandan: `army_infantry_attack_factor = 0.10`, `army_speed_factor = 0.10`, `naval_retreat_speed = 0.20` di `common/unit_leader/DEI_traits.txt`.
+   - Perbaikan event riset: `add_tech_bonus` di `events/DEI_flavor_events.txt`.
    - Banner World News Proklamasi 1936 (`DEI_news_event_1936_revolution.dds`) menggunakan foto Bung Karno membacakan teks Proklamasi Kemerdekaan.
 
 ---

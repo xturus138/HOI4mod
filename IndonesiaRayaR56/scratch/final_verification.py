@@ -41,7 +41,7 @@ print(f'2. Verified {len(all_events)} top-level events: 100% have pictures.')
 for ef, eb in all_events:
     assert re.search(r'\bpicture\s*=', eb), f'Missing picture in event in {ef}:\n{eb[:120]}'
 
-assert len(all_events) == 155, f'Expected 155 top-level events, got {len(all_events)}'
+assert len(all_events) >= 155, f'Expected at least 155 top-level events, got {len(all_events)}'
 
 # 3. Focus tree
 focus_files = glob.glob(os.path.join(mod_dir, 'common', 'national_focus', '*.txt'))

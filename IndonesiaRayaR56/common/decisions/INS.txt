@@ -1,5 +1,0 @@
-# =====================================================================
-# OVERRIDDEN BY INDONESIA RAYA (R56 SUBMOD)
-# Disables obsolete R56 Indonesian decisions to prevent broken triggers
-# and UX clutter. All decisions are provided cleanly in DEI_decisions.txt.
-# =====================================================================
