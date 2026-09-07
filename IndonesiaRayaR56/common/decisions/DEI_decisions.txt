@@ -73,13 +73,13 @@ dei_decisions_nusantara = {
 				add_war_support = 0.05
 				672 = {
 					create_unit = {
-						division_template = "Resimen Pelopor Rakyat"
+						division_template = "Brigade Laskar Rakyat"
 						start_experience_factor = 0.3
 					}
 				}
 				974 = {
 					create_unit = {
-						division_template = "Resimen Pelopor Rakyat"
+						division_template = "Brigade Laskar Rakyat"
 						start_experience_factor = 0.3
 					}
 				}
@@ -109,7 +109,7 @@ dei_decisions_nusantara = {
 				add_war_support = 0.05
 				334 = {
 					create_unit = {
-						division_template = "Resimen Pelopor Rakyat"
+						division_template = "Brigade Laskar Rakyat"
 						start_experience_factor = 0.3
 					}
 				}
@@ -142,7 +142,7 @@ dei_decisions_nusantara = {
 				add_war_support = 0.05
 				673 = {
 					create_unit = {
-						division_template = "Divisi Marinir KKO"
+						division_template = "Korps Komando Operasi"
 						start_experience_factor = 0.4
 					}
 				}

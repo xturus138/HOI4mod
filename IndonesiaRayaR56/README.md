@@ -2,7 +2,19 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dibangun terintegrasi di atas **The Road to 56 (R56)**.
 
-**Status Saat Ini:** `v1.0.2 (Ideology/Party Consistency & Exploit Fixes)` — 139 Fokus Nasional, 155 Event Interaktif, 6 Jalur Ideologi Mutual Exclusive dengan `ruling_party`/pemimpin/nama partai kini konsisten per jalur, 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi, kini dengan cooldown anti-exploit), 18 Cosmetic Tags & Warna Peta Dinamis, 14 Division Templates Doktrinal, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 8 Desainer Industri MIO (sprite lengkap, 0 gambar hilang), dan 1.385 Kunci Lokalisasi Ber-BOM (0 missing keys, 0 errors). Lulus 100% pada seluruh 4 script audit otomatis (`final_verification.py`, `verify_all_loc.py`, `master_audit.py`, `comprehensive_asset_audit.py`).
+**Status Saat Ini:** `v1.0.3 (UX Readability & Broken Template Fixes)` — 139 Fokus Nasional (deskripsi kini ringkas 1 kalimat, muat penuh di kotak UI vanilla), 155 Event Interaktif, 6 Jalur Ideologi Mutual Exclusive dengan `ruling_party`/pemimpin/nama partai kini konsisten per jalur, 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi, kini dengan cooldown anti-exploit), 18 Cosmetic Tags & Warna Peta Dinamis, 14 Division Templates Doktrinal (semua referensi nama template tervalidasi, 0 dangling), 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 8 Desainer Industri MIO (sprite lengkap, 0 gambar hilang), dan 1.385 Kunci Lokalisasi Ber-BOM (0 missing keys, 0 errors). Lulus 100% pada seluruh 4 script audit otomatis (`final_verification.py`, `verify_all_loc.py`, `master_audit.py`, `comprehensive_asset_audit.py`).
+
+---
+
+## Catatan Rilis v1.0.3 (Perbaikan Keterbacaan UI & Template Rusak)
+
+1. **Deskripsi Focus Terpotong di UI (Bug Kritis):**
+   - Kotak deskripsi focus vanilla HOI4 dibatasi `maxHeight = 70px` (font `hoi_18mbs`, ~1-2 kalimat) dan TIDAK di-override oleh R56 maupun submod ini — sementara 93 dari 94 deskripsi focus kita rata-rata 296 karakter (paragraf naratif panjang), menyebabkan teks terpotong/tumpang-tindih dengan tombol "Effect" seperti dilaporkan pengguna.
+   - Diperbaiki: seluruh 94 deskripsi focus ditulis ulang menjadi 1 kalimat ringkas (92–132 karakter), mempertahankan nama tokoh/peristiwa historis inti, mengikuti gaya deskripsi R56 asli.
+
+2. **Divisi Starter Hilang Model 3D (Bug Kritis, "kotak +X" di peta):**
+   - 3 unit starter di `history/units/DEI_templates.txt` (Resimen Garnisun Batavia, Resimen Pelopor Yogyakarta, Resimen Marinir KKO Surabaya) dan 4 pemanggilan di `DEI_decisions.txt` (keputusan liberasi wilayah) memakai nama `division_template` yang TIDAK PERNAH terdaftar di manapun (`"Divisi Garnisun Pantai"`, `"Resimen Pelopor Rakyat"`, `"Divisi Marinir KKO"` — typo/nama lama dari draft sebelumnya), membuat game gagal me-render model 3D unit tersebut dan menampilkan placeholder "aset hilang" di peta.
+   - Diperbaiki: dipetakan ke nama template asli yang benar (`Garnizun Stadswacht & Pantai`, `Brigade Laskar Rakyat`, `Korps Komando Operasi`).
 
 ---
 

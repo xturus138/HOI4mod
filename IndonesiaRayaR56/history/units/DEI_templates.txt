@@ -315,7 +315,7 @@ units = {
 	division = {
 		name = "Resimen Garnisun Batavia"
 		location = 7381
-		division_template = "Divisi Garnisun Pantai"
+		division_template = "Garnizun Stadswacht & Pantai"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -333,13 +333,13 @@ units = {
 	division = {
 		name = "Resimen Pelopor Yogyakarta"
 		location = 10135
-		division_template = "Resimen Pelopor Rakyat"
+		division_template = "Brigade Laskar Rakyat"
 		start_experience_factor = 0.4
 	}
 	division = {
 		name = "Resimen Marinir KKO Surabaya"
 		location = 13520
-		division_template = "Divisi Marinir KKO"
+		division_template = "Korps Komando Operasi"
 		start_experience_factor = 0.4
 	}
 	division = {

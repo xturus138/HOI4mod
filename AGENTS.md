@@ -101,7 +101,18 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ---
 
-## 3. Catatan Pembaruan v1.0.2 (Ideology/Party Consistency & Exploit Fixes)
+## 3. Catatan Pembaruan v1.0.3 (UX Readability & Broken Template Fixes)
+
+> **PENTING untuk agen berikutnya — batas kotak deskripsi focus:** Vanilla HOI4's `nationalfocusview.gui` (`instantTextboxType name="desc"`) membatasi kotak deskripsi focus ke `maxWidth = 485, maxHeight = 70` px dengan font `hoi_18mbs` — R56 TIDAK meng-override ini (R56 cuma punya `r56_nationalfocusview.gfx`, bukan `.gui`), dan submod ini juga tidak punya `.gui` custom. **Deskripsi focus (`dei_focus_*_desc`) WAJIB 1 kalimat ringkas (target <150 karakter)** — paragraf naratif panjang akan terpotong/tumpang-tindih dengan tombol Effect di UI, persis seperti dilaporkan pengguna di v1.0.2→v1.0.3. Kalau perlu narasi lebih panjang, taruh di `desc` event terkait (kotak event jauh lebih besar & bisa scroll), bukan di desc focus.
+
+> **PENTING untuk agen berikutnya — validasi `division_template`:** SELALU cross-check nama string `division_template = "..."` di `history/units/*.txt` DAN `common/decisions/*.txt` terhadap nama `name = "..."` yang benar-benar terdefinisi di `history/units/DEI_templates.txt` (14 nama resmi, lihat daftar di bagian 2 di atas). Nama yang tidak cocok (typo/nama draft lama) membuat game gagal resolve regiment/model 3D unit tsb dan menampilkan placeholder "aset hilang" (kotak merah-hitam bertanda X) di peta 3D — bug nyata yang ditemukan di v1.0.3 pada 3 starter division + 4 pemanggilan decision liberasi wilayah (nama salah: "Divisi Garnisun Pantai", "Resimen Pelopor Rakyat", "Divisi Marinir KKO" — tidak satupun dari ketiganya pernah terdefinisi).
+
+1. **94 deskripsi focus dipersingkat** dari rata-rata 296 karakter (paragraf panjang, banyak yang >350 karakter) menjadi 1 kalimat ringkas 92-132 karakter, agar muat penuh di kotak `maxHeight=70px` vanilla. Isi historis/nama tokoh inti dipertahankan.
+2. **3 dangling `division_template` reference diperbaiki** di `history/units/DEI_templates.txt` (starter OOB Batavia/Yogyakarta/Surabaya) dan 4 lagi di `common/decisions/DEI_decisions.txt` (decision liberasi wilayah) — dipetakan ke nama template asli yang benar.
+
+---
+
+## 3b. Catatan Pembaruan v1.0.2 (Ideology/Party Consistency & Exploit Fixes)
 
 > **PENTING untuk agen berikutnya:** Sebelum v1.0.2, tepat 3 dari 6 jalur ideologi (B/Kolonial, D/Otoriter, E/Islamis) memiliki `ruling_party` di root focus yang **tidak cocok** dengan grup ideologi tokoh yang direkrut/dipromosikan sebagai `country_leader` di event `dei_leadership.N`. Root cause: R56 mendefinisikan ulang grup ideologi vanilla (`common/ideologies/00_ideologies.txt` milik R56 — BUKAN vanilla HOI4) sehingga `conservatism`/`liberalism`/`socialism` masuk grup `democratic`, `stalinism` masuk `communism`, `fascism_ideology`/`islamism` masuk `fascism`, dan `despotism`/`oligarchism` masuk `neutrality`. **WAJIB selalu cross-check `country_leader.ideology` setiap karakter di `DEI_characters.txt` terhadap tabel grup R56 ini sebelum mengubah/menambah `set_politics.ruling_party` di focus manapun** — jangan asumsikan dari nama vanilla HOI4, R56 sudah me-remap total.
 
@@ -115,7 +126,7 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ---
 
-## 3a. Catatan Pembaruan v1.0.1 (R56 Full Compatibility, UX Polish & Zero-Error Clean)
+## 3c. Catatan Pembaruan v1.0.1 (R56 Full Compatibility, UX Polish & Zero-Error Clean)
 
 1. **Penguncian Mutual Exclusivity 6 Jalur Politik:**
    - Semua akar cabang ideologi (A, B, C, D, E, F) di `common/national_focus/DEI_indonesia_focus_tree.txt` kini memiliki cross `mutually_exclusive = { ... }` satu sama lain.

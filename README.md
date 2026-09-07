@@ -2,13 +2,17 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dirancang terintegrasi penuh di atas **The Road to 56 (R56)**.
 
-- **Status Versi:** `v1.0.2 (Ideology/Party Consistency & Exploit Fixes)` — sudah di-deploy ke folder mod HOI4 untuk playtest.
+- **Status Versi:** `v1.0.3 (UX Readability & Broken Template Fixes)` — sudah di-deploy ke folder mod HOI4 untuk playtest.
 - **Folder Mod Utama:** [IndonesiaRayaR56/](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/)
 - **Dokumentasi Lengkap:** [IndonesiaRayaR56/README.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/README.md)
 - **Instruksi Agent & Memori Kerja:** [AGENTS.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/AGENTS.md)
 - **Berkas Launcher HOI4:** [IndonesiaRayaR56.mod](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56.mod)
 
 ---
+
+## Catatan Rilis v1.0.3 (Perbaikan Keterbacaan UI & Template Rusak)
+1. **Deskripsi Focus Terpotong:** Kotak deskripsi focus vanilla dibatasi ~70px tinggi; 93/94 deskripsi kami rata-rata 296 karakter menyebabkan teks terpotong/tumpang-tindih tombol Effect. Seluruh 94 deskripsi ditulis ulang jadi 1 kalimat ringkas.
+2. **Divisi Starter Hilang Model 3D:** 3 unit starter + 4 pemanggilan decision liberasi memakai nama `division_template` yang tidak pernah terdaftar, membuat game menampilkan placeholder "aset hilang" (kotak merah-hitam) di peta. Diperbaiki ke nama template asli.
 
 ## Catatan Rilis v1.0.2 (Perbaikan Ideologi, Partai & Exploit)
 1. **Perbaikan Ketidakcocokan Ideologi/Partai/Pemimpin:** Jalur B (Kolonial), D (Otoriter), E (Islamis) sebelumnya men-set `ruling_party` ke grup yang tidak cocok dengan ideologi tokoh pemimpinnya (mis. Jalur D `neutrality` padahal pemimpinnya `fascism_ideology`), menyebabkan UI partai menampilkan nama salah (termasuk "NSB" yang bocor dari fallback partai fasis Belanda). Diperbaiki: B→`democratic`, D→`fascism`, E→`neutrality`, semua kini punya `set_party_name` sendiri.
