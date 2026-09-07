@@ -1,0 +1,3830 @@
+# =====================================================================
+# INDONESIA RAYA: ROAD TO MERDEKA — Master National Focus Tree
+# Tag: INS (Indonesia / Hindia Belanda)
+# Total: 134 focuses (Shared Prologue, Paths A-F, Industry, Armed Forces)
+# =====================================================================
+
+focus_tree = {
+	id = dei_focus_tree
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = INS
+		}
+	}
+
+	default = no
+	reset_on_civilwar = no
+
+
+
+	# =====================================================================
+	# PROLOGUE: Revolusi Nasional 1936
+	# =====================================================================
+
+focus = {
+		id = dei_focus_root
+		icon = GFX_focus_dei_pax_neerlandica
+		x = 28
+		y = 0
+		cost = 4
+		available = { always = yes }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			add_war_support = 0.05
+			add_manpower = 5000
+			country_event = { id = dei_trunk.1 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_pembangkangan
+		icon = GFX_focus_dei_pembangkangan
+		x = 28
+		y = 1
+		cost = 4
+		prerequisite = { focus = dei_focus_root }
+		available = { always = yes }
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = -0.05
+			army_experience = 15
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+			country_event = { id = dei_trunk.2 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_momentum_kemerdekaan
+		icon = GFX_focus_dei_momentum_kemerdekaan
+		x = 28
+		y = 2
+		cost = 4
+		prerequisite = { focus = dei_focus_pembangkangan }
+		available = { always = yes }
+		completion_reward = {
+						if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			add_ideas = dei_idea_revolusi_dini_spirit
+			retire_country_leader = yes
+			set_cosmetic_tag = INS_REPUBLIK_NKRI
+			recruit_character = DEI_sukarno
+			promote_character = DEI_sukarno
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 60.0
+				neutrality = 20.0
+				communism = 10.0
+				fascism = 10.0
+			}
+			set_party_name = {
+				ideology = democratic
+				name = INS_PNI_party
+				long_name = INS_PNI_party_long
+			}
+			set_capital = { state = 1126 }
+			set_province_name = { id = 7381 name = "Jakarta" }
+			set_province_name = { id = 10103 name = "Bogor" }
+			set_province_name = { id = 4361 name = "Bandar Lampung" }
+			set_province_name = { id = 12371 name = "Jayapura" }
+			set_province_name = { id = 1574 name = "Ambon" }
+				# Outer Islands under colonial garrison / loyalist control
+				672 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				1135 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				974 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				1128 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				909 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				334 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				977 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				978 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				673 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				975 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				668 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				738 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				1142 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				667 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				669 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				1137 = { set_state_owner_to = HOL set_state_controller_to = HOL }
+				# INS Bastion: Java & Bali
+				1126 = { set_state_owner_to = INS set_state_controller_to = INS }
+				335 = { set_state_owner_to = INS set_state_controller_to = INS }
+				976 = { set_state_owner_to = INS set_state_controller_to = INS }
+				1143 = { set_state_owner_to = INS set_state_controller_to = INS }
+				446 = { set_state_owner_to = INS set_state_controller_to = INS }
+				1127 = { set_state_owner_to = INS set_state_controller_to = INS }
+				# Core territory of Indonesia across all 22 states
+				every_state = {
+					limit = {
+						OR = {
+							state = 1126 state = 335 state = 976 state = 1143 state = 446 state = 1127
+							state = 672 state = 1135 state = 974 state = 1128 state = 909
+							state = 334 state = 977 state = 978
+							state = 673 state = 975
+							state = 668 state = 738 state = 1142 state = 667
+							state = 669 state = 1137
+						}
+					}
+					add_core_of = INS
+				}
+			load_oob = DEI_templates
+			load_oob = DEI_air_starter
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 3000 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 150 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 200 }
+			recruit_character = DEI_urip_sumoharjo
+			recruit_character = DEI_nasution
+			recruit_character = DEI_kawilarang
+			recruit_character = DEI_yos_sudarso
+			recruit_character = DEI_re_martadinata
+			recruit_character = DEI_suryadi_suryadarma
+			recruit_character = DEI_halim_perdanakusuma
+			recruit_character = DEI_moestopo
+			recruit_character = DEI_gatot_soebroto
+			recruit_character = DEI_ahmad_yani
+			recruit_character = DEI_ngurah_rai
+			recruit_character = DEI_soeharto
+			recruit_character = DEI_tb_simatupang
+			recruit_character = DEI_bung_tomo
+			recruit_character = DEI_slamet_rijadi
+			recruit_character = DEI_djatikoesoemo
+			recruit_character = DEI_soengkono
+			recruit_character = DEI_djamin_ginting
+			recruit_character = DEI_john_lie
+			news_event = { id = dei_trunk.6 hours = 6 }
+			declare_war_on = {
+				target = HOL
+				type = take_core_state
+			}
+			country_event = { id = dei_trunk.7 hours = 2 }
+		}
+	}
+
+
+	# =====================================================================
+	# UNIVERSAL BRANCH: Pembebasan Kepulauan Luar & Traktat Kedaulatan
+	# Terbuka untuk seluruh 6 ideologi setelah Proklamasi 1936
+	# =====================================================================
+
+	focus = {
+		id = dei_focus_liberate_sumatra
+		icon = GFX_focus_dei_perkebunan_deli
+		x = -1
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 5
+		prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = { always = yes }
+		bypass = {
+			controls_state = 672
+			controls_state = 334
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 15
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+			add_offsite_building = { type = arms_factory level = 1 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+		}
+	}
+
+	focus = {
+		id = dei_focus_liberate_borneo
+		icon = GFX_focus_dei_kilang_minyak
+		x = 1
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 5
+		prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = { always = yes }
+		bypass = {
+			controls_state = 673
+			controls_state = 975
+		}
+		completion_reward = {
+			add_political_power = 60
+			navy_experience = 15
+			add_equipment_to_stockpile = { type = convoy amount = 40 }
+			add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+
+	focus = {
+		id = dei_focus_liberate_timur_raya
+		icon = GFX_focus_dei_benteng_samudra
+		x = 0
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 5
+		prerequisite = { focus = dei_focus_liberate_sumatra }
+		prerequisite = { focus = dei_focus_liberate_borneo }
+		available = { always = yes }
+		bypass = {
+			controls_state = 669
+			controls_state = 667
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			navy_experience = 20
+			add_offsite_building = { type = dockyard level = 1 }
+			add_doctrine_cost_reduction = { name = naval_doc_bonus cost_reduction = 0.5 uses = 1 category = naval_doctrine }
+			add_equipment_to_stockpile = { type = convoy amount = 30 }
+		}
+	}
+
+	focus = {
+		id = dei_focus_liberate_papua
+		icon = GFX_focus_dei_trikora
+		x = 0
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 5
+		prerequisite = { focus = dei_focus_liberate_timur_raya }
+		available = { always = yes }
+		bypass = {
+			controls_state = 671
+		}
+		completion_reward = {
+			add_war_support = 0.10
+			add_stability = 0.05
+			add_political_power = 50
+			army_experience = 10
+			air_experience = 10
+			671 = { add_core_of = INS }
+		}
+	}
+
+	focus = {
+		id = dei_focus_traktat_kedaulatan
+		icon = GFX_focus_dei_sidang_bfo
+		x = 0
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 5
+		prerequisite = { focus = dei_focus_liberate_papua }
+		available = {
+			OR = {
+				NOT = { has_war_with = HOL }
+				AND = {
+					controls_state = 1126
+					controls_state = 335
+					controls_state = 672
+				}
+			}
+		}
+		bypass = {
+			NOT = { has_war_with = HOL }
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.15
+			add_war_support = 0.10
+			country_event = { id = dei_trunk.8 days = 1 }
+		}
+	}
+
+
+
+	# =====================================================================
+	# PATH A: Republik Nasionalis-Demokratis
+	# =====================================================================
+
+focus = {
+		id = dei_focus_a_proklamasi
+		icon = GFX_focus_dei_proklamasi
+		x = -20
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		allow_branch = {
+			OR = {
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				has_country_flag = dei_path_a_chosen
+			}
+		}
+				mutually_exclusive = {
+			focus = dei_focus_b_root
+			focus = dei_focus_c_root
+			focus = dei_focus_d_root
+			focus = dei_focus_e_root
+			focus = dei_focus_f_root
+		}
+prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = {
+			NOT = { has_country_flag = dei_jalur_dipilih }
+		}
+		completion_reward = {
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_a_chosen
+			if = {
+				limit = { is_subject = yes }
+				end_puppet = ROOT
+			}
+			set_cosmetic_tag = INS_REPUBLIK_NKRI
+			add_political_power = 75
+			add_stability = 0.05
+			add_war_support = 0.05
+			country_event = { id = dei_leadership.1 days = 1 }
+			country_event = { id = dei_path_a.1 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_tkr
+		icon = GFX_focus_dei_tkr
+		x = -20
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_proklamasi }
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 15000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			add_ideas = dei_idea_republik_diproklamasikan
+			country_event = { id = dei_path_a.2 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_diplomasi
+		icon = GFX_goal_generic_scientific_exchange
+		x = -22
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_a_tkr }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			ENG = { add_opinion_modifier = { target = ROOT modifier = medium_positive } }
+			USA = { add_opinion_modifier = { target = ROOT modifier = medium_positive } }
+			RAJ = { add_opinion_modifier = { target = ROOT modifier = large_positive } }
+			country_event = { id = dei_path_a.3 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_agresi_1
+		icon = GFX_goal_generic_major_war
+		x = -18
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_tkr }
+		bypass = {
+			NOT = { has_war_with = HOL }
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			country_event = { id = dei_path_a.4 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_gerilya
+		icon = GFX_goal_generic_army_doctrines
+		x = -18
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_a_agresi_1 }
+		bypass = {
+			NOT = { has_war_with = HOL }
+		}
+		completion_reward = {
+			add_ideas = dei_idea_guerrilla_doctrine
+			army_experience = 20
+			add_doctrine_cost_reduction = { name = land_doc_bonus cost_reduction = 0.5 uses = 2 category = land_doctrine }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_agresi_2
+		icon = GFX_goal_generic_major_war
+		x = -18
+		y = 5
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_gerilya }
+		bypass = {
+			NOT = { has_war_with = HOL }
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			add_stability = 0.05
+			add_manpower = 20000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			country_event = { id = dei_path_a.5 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_kmb
+		icon = GFX_goal_generic_political_pressure
+		x = -20
+		y = 6
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_a_agresi_2 focus = dei_focus_a_diplomasi }
+		bypass = {
+			NOT = { has_war_with = HOL }
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.15
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			country_event = { id = dei_path_a.6 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_demokrasi_liberal
+		icon = GFX_goal_generic_political_pressure
+		x = -20
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_kmb }
+		completion_reward = {
+			add_ideas = dei_idea_liberal_democracy_established
+			add_political_power = 80
+			add_stability = 0.10
+			country_event = { id = dei_path_a.7 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_irian_barat
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -22
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_demokrasi_liberal }
+		bypass = {
+			controls_state = 671
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 15
+			navy_experience = 15
+			671 = { add_claim_by = INS }
+			country_event = { id = dei_path_a.8 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_demokrasi_terpimpin
+		icon = GFX_goal_generic_national_unity
+		x = -18
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_a_demokrasi_liberal }
+		completion_reward = {
+			add_ideas = dei_idea_guided_democracy
+			add_political_power = 100
+			add_stability = 0.05
+			country_event = { id = dei_path_a.9 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_kaa_bandung
+		icon = GFX_focus_dei_kaa_bandung
+		x = -20
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_demokrasi_terpimpin focus = dei_focus_a_irian_barat }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.10
+			add_tech_bonus = { name = electronic_bonus bonus = 1.0 uses = 1 category = electronics }
+			country_event = { id = dei_path_a.10 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_trikora
+		icon = GFX_focus_dei_trikora
+		x = -22
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_kaa_bandung }
+		bypass = {
+			controls_state = 671
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+			country_event = { id = dei_path_a.11 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_dekrit_presiden
+		icon = GFX_focus_dei_dekrit_presiden
+		x = -18
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_kaa_bandung }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.15
+			add_war_support = 0.10
+			country_event = { id = dei_path_a.12 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_dwikora
+		icon = GFX_focus_dei_dwikora
+		x = -22
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_trikora }
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 30
+			air_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+			country_event = { id = dei_path_a.13 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_pancasila
+		icon = GFX_focus_dei_pancasila
+		x = -18
+		y = 11
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_dekrit_presiden }
+		completion_reward = {
+			add_ideas = dei_idea_pancasila_abadi
+			add_stability = 0.15
+			add_political_power = 100
+			country_event = { id = dei_path_a.14 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_a_trisakti
+		icon = GFX_focus_dei_trisakti
+		x = -20
+		y = 12
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_a_dwikora focus = dei_focus_a_pancasila }
+		completion_reward = {
+			add_ideas = dei_idea_doktrin_trisakti
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			country_event = { id = dei_path_a.15 hours = 6 }
+		}
+	}
+
+
+	# =====================================================================
+	# PATH B: Kolonial / Federalis
+	# =====================================================================
+
+focus = {
+		id = dei_focus_b_root
+		icon = GFX_goal_generic_army_doctrines
+		x = -12
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		allow_branch = {
+			OR = {
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				has_country_flag = dei_path_b_chosen
+			}
+		}
+				mutually_exclusive = {
+			focus = dei_focus_a_proklamasi
+			focus = dei_focus_c_root
+			focus = dei_focus_d_root
+			focus = dei_focus_e_root
+			focus = dei_focus_f_root
+		}
+prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = {
+			NOT = { has_country_flag = dei_jalur_dipilih }
+		}
+		completion_reward = {
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_b_chosen
+			if = {
+				limit = { is_subject = yes }
+				end_puppet = ROOT
+			}
+			set_cosmetic_tag = INS_KOLONIAL_BFO
+			add_ideas = dei_idea_colonial_monopoly
+			add_political_power = 60
+			add_stability = 0.05
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 55.0
+				democratic = 25.0
+				fascism = 10.0
+				communism = 10.0
+			}
+			recruit_character = DEI_hubertus_van_mook
+			promote_character = DEI_hubertus_van_mook
+			country_event = { id = dei_leadership.2 days = 1 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_tekan_gerilyawan
+		icon = GFX_goal_generic_army_doctrines
+		x = -14
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_root }
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.10
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+			country_event = { id = dei_path_b.2 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_reformasi_terbatas
+		icon = GFX_goal_generic_political_pressure
+		x = -10
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_b_root }
+		completion_reward = {
+			add_ideas = dei_idea_volksraad_reformed
+			add_political_power = 80
+			add_stability = 0.10
+			country_event = { id = dei_path_b.3 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_negara_federal
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -12
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_tekan_gerilyawan focus = dei_focus_b_reformasi_terbatas }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.10
+			random_owned_controlled_state = {
+				prioritize = { 669 334 335 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			country_event = { id = dei_path_b.4 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_uni_belanda
+		icon = GFX_goal_generic_political_pressure
+		x = -12
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_negara_federal }
+		completion_reward = {
+			add_political_power = 100
+			add_tech_bonus = { name = hol_ind_coop bonus = 1.0 uses = 2 category = industry }
+			country_event = { id = dei_path_b.5 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_ekonomi_terpadu
+		icon = GFX_goal_generic_production
+		x = -14
+		y = 5
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_b_uni_belanda }
+		completion_reward = {
+			add_ideas = dei_idea_liberalized_economy
+			random_owned_controlled_state = {
+				prioritize = { 1126 446 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			country_event = { id = dei_path_b.6 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_dominion_status
+		icon = GFX_goal_generic_scientific_exchange
+		x = -10
+		y = 5
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_uni_belanda }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.15
+			country_event = { id = dei_path_b.7 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_persemakmuran
+		icon = GFX_goal_generic_national_unity
+		x = -12
+		y = 6
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_b_ekonomi_terpadu focus = dei_focus_b_dominion_status }
+		completion_reward = {
+			add_ideas = dei_idea_persemakmuran_belanda
+			add_political_power = 100
+			add_stability = 0.10
+			country_event = { id = dei_path_b.8 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_sidang_bfo
+		icon = GFX_focus_dei_sidang_bfo
+		x = -14
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_persemakmuran }
+		completion_reward = {
+			add_political_power = 80
+			add_stability = 0.10
+			random_owned_controlled_state = {
+				prioritize = { 669 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			country_event = { id = dei_path_b.9 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_angkatan_federal
+		icon = GFX_focus_dei_angkatan_federal
+		x = -10
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_persemakmuran }
+		completion_reward = {
+			army_experience = 25
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+			add_doctrine_cost_reduction = { name = land_doc_bonus cost_reduction = 0.5 uses = 1 category = land_doctrine }
+			country_event = { id = dei_path_b.10 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_pakta_anzac
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -14
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_sidang_bfo }
+		completion_reward = {
+			navy_experience = 25
+			add_ideas = dei_idea_pakta_anzac_spirit
+			country_event = { id = dei_path_b.11 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_perkebunan_deli
+		icon = GFX_focus_dei_perkebunan_deli
+		x = -10
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_angkatan_federal }
+		completion_reward = {
+			334 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			add_resource = { type = rubber amount = 20 state = 334 }
+			country_event = { id = dei_path_b.12 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_otonomi_kerajaan
+		icon = GFX_focus_dei_swapraja
+		x = -12
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_pakta_anzac focus = dei_focus_b_perkebunan_deli }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.15
+			country_event = { id = dei_path_b.13 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_b_pelabuhan_bebas
+		icon = GFX_goal_generic_positive_trade_relations
+		x = -12
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_b_otonomi_kerajaan }
+		completion_reward = {
+			navy_experience = 20
+			1126 = { add_building_construction = { type = naval_base level = 2 instant_build = yes } }
+			446 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_equipment_to_stockpile = { type = convoy amount = 50 }
+			country_event = { id = dei_path_b.14 hours = 6 }
+		}
+	}
+
+
+	# =====================================================================
+	# PATH C: Komunis (Front Rakyat)
+	# =====================================================================
+
+focus = {
+		id = dei_focus_c_root
+		icon = GFX_goal_generic_propaganda
+		x = -4
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		allow_branch = {
+			OR = {
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				has_country_flag = dei_path_c_chosen
+			}
+		}
+				mutually_exclusive = {
+			focus = dei_focus_a_proklamasi
+			focus = dei_focus_b_root
+			focus = dei_focus_d_root
+			focus = dei_focus_e_root
+			focus = dei_focus_f_root
+		}
+prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = {
+			NOT = { has_country_flag = dei_jalur_dipilih }
+		}
+		completion_reward = {
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_c_chosen
+			if = {
+				limit = { is_subject = yes }
+				end_puppet = ROOT
+			}
+			set_cosmetic_tag = INS_KOMUNIS_RRI
+			add_ideas = dei_idea_republik_rakyat_indonesia
+			add_political_power = 75
+			add_stability = 0.05
+			add_war_support = 0.05
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			set_popularities = {
+				communism = 60.0
+				democratic = 20.0
+				neutrality = 10.0
+				fascism = 10.0
+			}
+			recruit_character = DEI_musso
+			promote_character = DEI_musso
+			country_event = { id = dei_leadership.3 days = 1 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_land_reform
+		icon = GFX_goal_generic_production
+		x = -6
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_root }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.15
+			add_manpower = 25000
+			country_event = { id = dei_path_c.2 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_purge_nasionalis
+		icon = GFX_goal_generic_army_doctrines
+		x = -2
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_root }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			country_event = { id = dei_path_c.3 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_tentara_rakyat
+		icon = GFX_goal_generic_army_doctrines
+		x = -4
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_land_reform focus = dei_focus_c_purge_nasionalis }
+		completion_reward = {
+			add_ideas = dei_idea_tentara_rakyat_disiplin
+			army_experience = 25
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			country_event = { id = dei_path_c.4 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_poros_soviet
+		icon = GFX_goal_generic_scientific_exchange
+		x = -6
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_c_tentara_rakyat }
+		mutually_exclusive = { focus = dei_focus_c_poros_tiongkok }
+		completion_reward = {
+			add_tech_bonus = { name = soviet_tech_aid bonus = 1.0 uses = 2 category = armor }
+			add_offsite_building = { type = arms_factory level = 2 }
+			country_event = { id = dei_path_c.5 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_poros_tiongkok
+		icon = GFX_goal_generic_scientific_exchange
+		x = -2
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_c_tentara_rakyat }
+		mutually_exclusive = { focus = dei_focus_c_poros_soviet }
+		completion_reward = {
+			add_manpower = 20000
+			add_ideas = dei_idea_doktrin_gerilya_wilayah
+			country_event = { id = dei_path_c.6 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_industrialisasi
+		icon = GFX_goal_generic_production
+		x = -4
+		y = 5
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_poros_soviet focus = dei_focus_c_poros_tiongkok }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 335 446 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			country_event = { id = dei_path_c.7 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_ekspor_revolusi
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -4
+		y = 6
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_c_industrialisasi }
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 80
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+			country_event = { id = dei_path_c.8 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_komune_tani
+		icon = GFX_focus_dei_komune_tani
+		x = -6
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_ekspor_revolusi }
+		completion_reward = {
+			add_manpower = 15000
+			random_owned_controlled_state = {
+				prioritize = { 335 446 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			country_event = { id = dei_path_c.9 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_sita_aset_asing
+		icon = GFX_goal_generic_propaganda
+		x = -2
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_ekspor_revolusi }
+		completion_reward = {
+			add_political_power = 100
+			random_owned_controlled_state = {
+				prioritize = { 672 673 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			country_event = { id = dei_path_c.10 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_angkatan_kelima
+		icon = GFX_focus_dei_angkatan_kelima
+		x = -6
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_komune_tani }
+		completion_reward = {
+			add_manpower = 40000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2500 }
+			army_experience = 20
+			country_event = { id = dei_path_c.11 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_lekra
+		icon = GFX_focus_dei_lekra
+		x = -2
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_sita_aset_asing }
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_political_power = 60
+			country_event = { id = dei_path_c.12 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_pakta_asia_merah
+		icon = GFX_focus_dei_pakta_asia_merah
+		x = -4
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_angkatan_kelima focus = dei_focus_c_lekra }
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 100
+			army_experience = 20
+			country_event = { id = dei_path_c.13 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_c_pembangunan_semesta
+		icon = GFX_goal_generic_production
+		x = -4
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_c_pakta_asia_merah }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 1126 335 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			add_tech_bonus = { name = industry_bonus bonus = 1.0 uses = 2 category = industry }
+			country_event = { id = dei_path_c.14 hours = 6 }
+		}
+	}
+
+
+	# =====================================================================
+	# PATH D: Otoriter Militeristik
+	# =====================================================================
+
+focus = {
+		id = dei_focus_d_root
+		icon = GFX_goal_generic_major_war
+		x = 4
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		allow_branch = {
+			OR = {
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				has_country_flag = dei_path_d_chosen
+			}
+		}
+				mutually_exclusive = {
+			focus = dei_focus_a_proklamasi
+			focus = dei_focus_b_root
+			focus = dei_focus_c_root
+			focus = dei_focus_e_root
+			focus = dei_focus_f_root
+		}
+prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = {
+			NOT = { has_country_flag = dei_jalur_dipilih }
+		}
+		completion_reward = {
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_d_chosen
+			if = {
+				limit = { is_subject = yes }
+				end_puppet = ROOT
+			}
+			set_cosmetic_tag = INS_OTORITER_NKRI
+			add_ideas = dei_idea_rezim_militer_konsolidasi
+			add_political_power = 60
+			add_war_support = 0.10
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 65.0
+				fascism = 15.0
+				democratic = 10.0
+				communism = 10.0
+			}
+			recruit_character = DEI_sudirman
+			promote_character = DEI_sudirman
+			country_event = { id = dei_leadership.4 days = 1 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_darurat_militer
+		icon = GFX_goal_generic_political_pressure
+		x = 2
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_d_root }
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.10
+			army_experience = 20
+			country_event = { id = dei_path_d.2 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_bubarkan_partai
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_d_root }
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.10
+			country_event = { id = dei_path_d.3 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_industri_militer
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_darurat_militer }
+		completion_reward = {
+			add_ideas = dei_idea_industri_militer_kuat
+			random_owned_controlled_state = {
+				prioritize = { 335 446 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			country_event = { id = dei_path_d.4 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_propaganda
+		icon = GFX_goal_generic_propaganda
+		x = 6
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_d_bubarkan_partai }
+		completion_reward = {
+			add_war_support = 0.15
+			add_manpower = 15000
+			country_event = { id = dei_path_d.5 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_pemuda_militan
+		icon = GFX_focus_dei_bela_negara
+		x = 4
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_d_industri_militer focus = dei_focus_d_propaganda }
+		completion_reward = {
+			add_manpower = 30000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+			army_experience = 20
+			country_event = { id = dei_path_d.6 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_klaim_wilayah
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 4
+		y = 5
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_pemuda_militan }
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 20
+			MAL = { every_owned_state = { add_claim_by = INS } }
+			country_event = { id = dei_path_d.7 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_ambisi_regional
+		icon = GFX_goal_generic_major_war
+		x = 4
+		y = 6
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_d_klaim_wilayah }
+		completion_reward = {
+			navy_experience = 30
+			air_experience = 30
+			add_equipment_to_stockpile = { type = convoy amount = 50 }
+			country_event = { id = dei_path_d.8 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_dewan_revolusi
+		icon = GFX_focus_dei_dewan_revolusi
+		x = 2
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_ambisi_regional }
+		completion_reward = {
+			add_political_power = 100
+			army_experience = 25
+			add_stability = 0.10
+			country_event = { id = dei_path_d.9 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_karyawan_abri
+		icon = GFX_focus_dei_dwifungsi
+		x = 6
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_ambisi_regional }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 335 446 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			add_political_power = 80
+			country_event = { id = dei_path_d.10 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_benteng_samudra
+		icon = GFX_focus_dei_benteng_samudra
+		x = 2
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_dewan_revolusi }
+		completion_reward = {
+			1126 = {
+				add_building_construction = { type = coastal_bunker level = 2 instant_build = yes }
+				add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+			}
+			446 = {
+				add_building_construction = { type = coastal_bunker level = 2 instant_build = yes }
+				add_building_construction = { type = anti_air_building level = 2 instant_build = yes }
+			}
+			navy_experience = 20
+			country_event = { id = dei_path_d.11 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_wajib_militer
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_karyawan_abri }
+		completion_reward = {
+			add_ideas = dei_idea_sishanrata_active
+			add_manpower = 35000
+			army_experience = 25
+			country_event = { id = dei_path_d.12 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_komando_selat
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 4
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_benteng_samudra focus = dei_focus_d_wajib_militer }
+		completion_reward = {
+			334 = {
+				add_building_construction = { type = air_base level = 2 instant_build = yes }
+				add_building_construction = { type = naval_base level = 2 instant_build = yes }
+			}
+			navy_experience = 25
+			air_experience = 25
+			country_event = { id = dei_path_d.13 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_d_hegemoni_selatan
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_d_komando_selat }
+		completion_reward = {
+			navy_experience = 35
+			air_experience = 35
+			add_tech_bonus = { name = naval_doc bonus = 1.0 uses = 2 category = naval_doctrine }
+			add_tech_bonus = { name = air_doc bonus = 1.0 uses = 2 category = air_doctrine }
+			country_event = { id = dei_path_d.14 hours = 6 }
+		}
+	}
+
+
+	# =====================================================================
+	# PATH E: Islamis (Negara Islam Indonesia)
+	# =====================================================================
+
+focus = {
+		id = dei_focus_e_root
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		allow_branch = {
+			OR = {
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				has_country_flag = dei_path_e_chosen
+			}
+		}
+				mutually_exclusive = {
+			focus = dei_focus_a_proklamasi
+			focus = dei_focus_b_root
+			focus = dei_focus_c_root
+			focus = dei_focus_d_root
+			focus = dei_focus_f_root
+		}
+prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = {
+			NOT = { has_country_flag = dei_jalur_dipilih }
+		}
+		completion_reward = {
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_e_chosen
+			if = {
+				limit = { is_subject = yes }
+				end_puppet = ROOT
+			}
+			set_cosmetic_tag = INS_ISLAMIS_NII
+			add_ideas = dei_idea_negara_islam_konsolidasi
+			add_political_power = 60
+			add_stability = 0.05
+			add_war_support = 0.10
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_popularities = {
+				fascism = 60.0
+				neutrality = 20.0
+				democratic = 10.0
+				communism = 10.0
+			}
+			recruit_character = DEI_kartosuwiryo
+			promote_character = DEI_kartosuwiryo
+			country_event = { id = dei_leadership.5 days = 1 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_dewan_ulama
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_e_root }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			country_event = { id = dei_path_e.2 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_syariat
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_root }
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.05
+			country_event = { id = dei_path_e.3 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_tii
+		icon = GFX_goal_generic_army_doctrines
+		x = 12
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_dewan_ulama focus = dei_focus_e_syariat }
+		completion_reward = {
+			add_ideas = dei_idea_tii_terbentuk
+			army_experience = 25
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1500 }
+			country_event = { id = dei_path_e.4 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_hubungan_arab
+		icon = GFX_goal_generic_scientific_exchange
+		x = 10
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_e_tii }
+		completion_reward = {
+			add_political_power = 80
+			add_resource = { type = oil amount = 16 state = 672 }
+			country_event = { id = dei_path_e.5 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_konflik_sekuler
+		icon = GFX_goal_generic_major_war
+		x = 14
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_tii }
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 80
+			country_event = { id = dei_path_e.6 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_pendidikan_agama
+		icon = GFX_goal_generic_scientific_exchange
+		x = 12
+		y = 5
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_e_hubungan_arab focus = dei_focus_e_konflik_sekuler }
+		completion_reward = {
+			add_tech_bonus = { name = literacy_bonus bonus = 1.0 uses = 2 category = electronics }
+			add_manpower = 15000
+			country_event = { id = dei_path_e.7 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_persatuan_nusantara
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 12
+		y = 6
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_e_pendidikan_agama }
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 100
+			army_experience = 20
+			country_event = { id = dei_path_e.8 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_baitul_mal
+		icon = GFX_focus_dei_baitul_mal
+		x = 10
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_persatuan_nusantara }
+		completion_reward = {
+			add_political_power = 80
+			random_owned_controlled_state = {
+				prioritize = { 335 446 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+			country_event = { id = dei_path_e.9 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_mahkamah_syariah
+		icon = GFX_focus_dei_mahkamah_syariah
+		x = 14
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_persatuan_nusantara }
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 80
+			country_event = { id = dei_path_e.10 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_akademi_mujahidin
+		icon = GFX_focus_dei_akademi_mujahidin
+		x = 10
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_baitul_mal }
+		completion_reward = {
+			army_experience = 30
+			add_doctrine_cost_reduction = { name = land_doc_bonus cost_reduction = 0.5 uses = 2 category = land_doctrine }
+			add_manpower = 20000
+			country_event = { id = dei_path_e.11 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_hapus_riba
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 14
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_mahkamah_syariah }
+		completion_reward = {
+			add_ideas = dei_idea_dapur_umum
+			add_stability = 0.10
+			add_political_power = 75
+			country_event = { id = dei_path_e.12 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_liga_muslim
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_akademi_mujahidin focus = dei_focus_e_hapus_riba }
+		completion_reward = {
+			add_war_support = 0.15
+			add_political_power = 100
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+			country_event = { id = dei_path_e.13 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_e_khilafah_nusantara
+		icon = GFX_focus_dei_khilafah_nusantara
+		x = 12
+		y = 10
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_e_liga_muslim }
+		completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.15
+			add_political_power = 120
+			army_experience = 30
+			country_event = { id = dei_path_e.14 hours = 6 }
+		}
+	}
+
+
+	# =====================================================================
+	# PATH F: Kemaharajaan Majapahit
+	# =====================================================================
+
+focus = {
+		id = dei_focus_f_root
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 20
+		y = 1
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		allow_branch = {
+			OR = {
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				has_country_flag = dei_path_f_chosen
+			}
+		}
+				mutually_exclusive = {
+			focus = dei_focus_a_proklamasi
+			focus = dei_focus_b_root
+			focus = dei_focus_c_root
+			focus = dei_focus_d_root
+			focus = dei_focus_e_root
+		}
+prerequisite = { focus = dei_focus_momentum_kemerdekaan }
+		available = {
+			NOT = { has_country_flag = dei_jalur_dipilih }
+		}
+		completion_reward = {
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_f_chosen
+			if = {
+				limit = { is_subject = yes }
+				end_puppet = ROOT
+			}
+			set_cosmetic_tag = INS_MAJAPAHIT_EMPIRE
+			add_ideas = dei_idea_dewan_adat_terbentuk
+			add_political_power = 60
+			add_stability = 0.05
+			add_war_support = 0.05
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 70.0
+				fascism = 10.0
+				democratic = 10.0
+				communism = 10.0
+			}
+			recruit_character = DEI_maharaja_suryawikrama
+			promote_character = DEI_maharaja_suryawikrama
+			country_event = { id = dei_leadership.6 days = 1 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_pusaka
+		icon = GFX_goal_generic_scientific_exchange
+		x = 18
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_f_root }
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 80
+			country_event = { id = dei_path_f.2 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_dewan_adat
+		icon = GFX_goal_generic_political_pressure
+		x = 22
+		y = 2
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 8
+		prerequisite = { focus = dei_focus_f_root }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.15
+			country_event = { id = dei_path_f.5 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_angkatan_laut
+		icon = GFX_goal_generic_build_navy
+		x = 18
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_pusaka }
+		completion_reward = {
+			navy_experience = 30
+			add_offsite_building = { type = dockyard level = 2 }
+			add_equipment_to_stockpile = { type = convoy amount = 50 }
+			country_event = { id = dei_path_f.6 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_klaim_nusantara
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 22
+		y = 3
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_dewan_adat }
+		completion_reward = {
+			add_war_support = 0.15
+			army_experience = 20
+			MAL = { every_owned_state = { add_claim_by = INS } }
+			PHI = { every_owned_state = { add_claim_by = INS } }
+			country_event = { id = dei_path_f.7 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_persatuan_kerajaan
+		icon = GFX_goal_generic_political_pressure
+		x = 20
+		y = 4
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_angkatan_laut focus = dei_focus_f_klaim_nusantara }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.10
+			add_manpower = 20000
+			country_event = { id = dei_path_f.8 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_kekaisaran_baru
+		icon = GFX_goal_generic_national_unity
+		x = 20
+		y = 5
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 12
+		prerequisite = { focus = dei_focus_f_persatuan_kerajaan }
+		completion_reward = {
+			add_ideas = dei_idea_kekaisaran_nusantara
+			add_political_power = 120
+			add_stability = 0.15
+			add_war_support = 0.15
+			country_event = { id = dei_path_f.9 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_sumpah_palapa_baru
+		icon = GFX_focus_dei_sumpah_palapa
+		x = 18
+		y = 6
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_kekaisaran_baru }
+		completion_reward = {
+			add_war_support = 0.20
+			army_experience = 25
+			navy_experience = 25
+			country_event = { id = dei_path_f.10 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_restorasi_trowulan
+		icon = GFX_focus_dei_restorasi_trowulan
+		x = 22
+		y = 6
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_kekaisaran_baru }
+		completion_reward = {
+			446 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			add_stability = 0.10
+			country_event = { id = dei_path_f.11 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_dharmaputra
+		icon = GFX_focus_dei_dharmaputra
+		x = 18
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_sumpah_palapa_baru }
+		completion_reward = {
+			army_experience = 30
+			add_ideas = dei_idea_sishanrata_active
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 2000 }
+			country_event = { id = dei_path_f.12 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_jung_raksasa
+		icon = GFX_focus_dei_jung_raksasa
+		x = 22
+		y = 7
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_restorasi_trowulan }
+		completion_reward = {
+			navy_experience = 35
+			add_ideas = dei_idea_doktrin_gerilya_laut
+			446 = { add_building_construction = { type = dockyard level = 2 instant_build = yes } }
+			country_event = { id = dei_path_f.13 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_kitab_kutaramanawa
+		icon = GFX_goal_generic_political_pressure
+		x = 20
+		y = 8
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_dharmaputra focus = dei_focus_f_jung_raksasa }
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 100
+			country_event = { id = dei_path_f.14 hours = 6 }
+		}
+	}
+
+focus = {
+		id = dei_focus_f_penobatan_maharaja
+		icon = GFX_focus_dei_penobatan_maharaja
+		x = 20
+		y = 9
+		relative_position_id = dei_focus_momentum_kemerdekaan
+		cost = 10
+		prerequisite = { focus = dei_focus_f_kitab_kutaramanawa }
+		completion_reward = {
+			add_stability = 0.20
+			add_war_support = 0.15
+			add_political_power = 150
+			army_experience = 25
+			navy_experience = 25
+			country_event = { id = dei_path_f.15 hours = 6 }
+		}
+	}
+
+
+	# =====================================================================
+	# CABANG INDUSTRI & RISET ROAD TO 56
+	# =====================================================================
+
+focus = {
+		id = INS_industrial_centralisation
+		icon = GFX_goal_generic_construct_civilian
+		ai_will_do = {
+			factor = 20
+		}
+		x = 56
+		y = 0
+		cost = 10 
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 976 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = construction_tech
+				category = industry
+			}
+			swap_ideas = {
+				remove_idea = INS_economy_idea
+				add_idea = INS_economy_idea_three
+			}
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = INS_george_hart
+			}
+			else = {
+				add_political_power = 50
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_continue_the_modernisation
+		icon = GFX_goal_generic_civilian_production
+		ai_will_do = {
+			factor = 7
+		}
+		x = -2
+		y = 1
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_industrial_centralisation }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 334 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 673 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_colonial_infrastructure
+		icon = GFX_goal_generic_road
+		ai_will_do = {
+			factor = 3 
+		}
+		x = 0
+		y = 1
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_industrial_centralisation }
+		cost = 10 
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						state = 334
+						state = 673
+						state = 978
+						state = 977
+						state = 974
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = INS_sstw
+			if = { 
+				limit = {  
+					amount_taken_ideas = {
+						amount > 0
+						slots = {
+							industrial_concern
+						}
+					}
+				}
+				add_ideas = INS_sstw
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_restore_the_arms_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		ai_will_do = {
+			factor = 2 
+		}
+		x = 2
+		y = 1
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_industrial_centralisation }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 976 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					has_idea = INS_artilerie_inrichtingen
+				}
+				swap_ideas = {
+					remove_idea = INS_artilerie_inrichtingen
+					add_idea = INS_ai_bandoeng_improved
+				}
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				mio:INS_artillerie_inrichtingen_organization_r56 = {
+					add_mio_funds = 500
+					add_mio_funds_gain_factor = 0.05
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_civilian_works
+		icon = GFX_goal_generic_construct_civ_factory
+		ai_will_do = {
+			factor = 5 
+		}
+		x = -2
+		y = 2
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_continue_the_modernisation }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 974 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_connect_the_islands
+		icon = GFX_dutch_east_indies
+		ai_will_do = {
+			factor = 2 
+		}
+		x = 0
+		y = 2
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_colonial_infrastructure }
+		cost = 10
+
+		available = {
+			OR = {
+				controls_state = 673
+				controls_state = 975
+				controls_state = 667
+				controls_state = 1127
+				controls_state = 1142
+				controls_state = 668
+				controls_state = 738
+				controls_state = 669
+				controls_state = 1137
+			}
+		}
+
+		bypass_if_unavailable = yes
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						state = 975
+						state = 673
+						state = 667
+						state = 1127
+						state = 1142
+						state = 668
+						state = 738
+						state = 669
+						state = 1137
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_earthworks
+		icon = GFX_goal_generic_coal_mining
+		ai_will_do = {
+			factor = 5 
+		}
+		x = 2
+		y = 2
+		relative_position_id = INS_industrial_centralisation
+		prerequisite = { focus = INS_restore_the_arms_factories }
+		cost = 10
+
+		available = {
+			OR = {
+				controls_state = 672
+				controls_state = 978
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 4
+				}
+				add_resource = {
+					type = steel
+					amount = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 978 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_the_royal_batavian_society
+		icon = GFX_focus_generic_university_2
+		ai_will_do = {
+			factor = 25
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_earthworks
+		prerequisite = { focus = INS_earthworks focus = INS_connect_the_islands }
+		available = {
+			num_of_factories > 15
+		}
+		cost = 5
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = INS_science_idea
+				add_idea = INS_science_idea_1
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_phillips_radio
+		icon = GFX_goal_philips
+		ai_will_do = {
+			factor = 7
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_civilian_works
+		prerequisite = { focus = INS_civilian_works focus = INS_connect_the_islands }
+		cost = 10 
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 335 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.25
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1
+				uses = 2
+				category = electronics 
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_economic_independence
+		icon = GFX_focus_mex_privatisation
+
+		ai_will_do = {
+			factor = 20
+		}
+
+		x = 1
+		y = 1
+		relative_position_id = INS_phillips_radio
+		prerequisite = { focus = INS_phillips_radio }
+		prerequisite = { focus = INS_the_royal_batavian_society }
+
+		cost = 10 
+
+		search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_autonomy_score = {
+				value = 250
+			}
+			remove_ideas = INS_economy_idea_three
+			custom_effect_tooltip = r56_newline
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = INS_buttingha_wichers
+		}
+	}
+
+focus = {
+		id = INS_invite_foreign_investors
+		icon = GFX_goal_generic_business_bills
+		ai_will_do = {
+			factor = 2
+		}
+		relative_position_id = INS_economic_independence
+		x = 1
+		y = 1
+		prerequisite = { focus = INS_economic_independence }
+		cost = 10 
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				ahead_reduction = 0.5
+				uses = 2
+				category = industry
+				category = construction_tech
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = INS_acf
+			show_ideas_tooltip = INS_gm_java
+			show_ideas_tooltip = INS_toyota
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_royal_scientific_cooperation
+		icon = GFX_goal_tfv_generic_tech_sharing
+		available = {
+			NOT = { has_country_flag = dei_jalur_dipilih }
+		}
+		ai_will_do = {
+			factor = 5 
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_the_royal_batavian_society
+		mutually_exclusive = { }
+		prerequisite = { focus = INS_phillips_radio }
+		cost = 5
+
+		completion_reward = {
+			add_political_power = 50
+			if = {
+				limit = { is_subject_of = HOL }
+				add_to_tech_sharing_group = netherlands_research
+				HOL = { add_to_tech_sharing_group = netherlands_research }
+			}
+			else = {
+				add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 1.0
+					uses = 2
+					category = electronics
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_scientific_exceptionalism
+		icon = GFX_focus_research
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_economic_independence
+		prerequisite = { focus = INS_economic_independence }
+		cost = 10 
+
+		completion_reward = {
+			add_research_slot = 1
+			remove_ideas = INS_science_idea_1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_koninklijk_paketvaart_maatschappij
+		icon = GFX_focus_generic_merchant_fleet
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = INS_scientific_exceptionalism
+		x = 1
+		y = 1
+		prerequisite = { focus = INS_invite_foreign_investors focus = INS_scientific_exceptionalism }
+		cost = 10 
+
+		completion_reward = {
+			add_ideas = INS_economy_idea_two
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 100
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MILITARY_EQUIPMENT }
+	}
+
+focus = {
+		id = INS_advanced_telecommunications
+		icon = GFX_focus_dei_radar_nusantara
+		ai_will_do = {
+			factor = 5
+		}
+		x = 54
+		y = 7
+		prerequisite = { focus = INS_scientific_exceptionalism }
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_electronics_bonus
+				bonus = 1.0
+				ahead_reduction = 1.0
+				uses = 2
+				category = electronics
+				category = radar_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_institut_teknologi_bandung
+		icon = GFX_focus_dei_itb_bandung
+		ai_will_do = {
+			factor = 10
+		}
+		x = 56
+		y = 7
+		prerequisite = { focus = INS_scientific_exceptionalism }
+		available = {
+			num_of_factories > 30
+		}
+		cost = 10
+
+		completion_reward = {
+			add_research_slot = 1
+			add_tech_bonus = {
+				name = national_research_bonus
+				bonus = 0.5
+				uses = 2
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_pusat_metalurgi_sintesis
+		icon = GFX_focus_dei_kilang_minyak
+		ai_will_do = {
+			factor = 4
+		}
+		x = 58
+		y = 7
+		prerequisite = { focus = INS_invite_foreign_investors }
+		cost = 10
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 672 }
+				limit = {
+					free_building_slots = {
+						building = synthetic_refinery
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = excavation_refining_bonus
+				bonus = 1.0
+				ahead_reduction = 1.0
+				uses = 2
+				category = excavation_tech
+				category = synth_resources
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_proyek_riset_atom_dirgantara
+		icon = GFX_focus_dei_fisika_atom
+		ai_will_do = {
+			factor = 5
+		}
+		x = 56
+		y = 8
+		prerequisite = { focus = INS_institut_teknologi_bandung }
+		available = {
+			date > 1941.1.1
+		}
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocketry_bonus
+				bonus = 1.0
+				ahead_reduction = 2.0
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+			add_tech_bonus = {
+				name = nuclear_physics_bonus
+				bonus = 1.0
+				ahead_reduction = 2.0
+				uses = 1
+				category = nuclear
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+
+	# =====================================================================
+	# CABANG MILITER AD / AU / AL ROAD TO 56
+	# =====================================================================
+
+focus = {
+		id = INS_koninklijk_nederlands_indisch_leger
+		icon = GFX_goal_INS_army
+		ai_will_do = {
+			factor = 10 
+		}
+		x = 64
+		y = 0
+		available = {
+
+		}
+		cost = 5 
+
+		completion_reward = {
+			army_experience = 10
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				add_corps_commander_role = {
+					character = INS_gustav_adolf_ilgen
+					traits = { air_force_ties }
+					skill = 1
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
+			}
+			else = {
+				army_experience = 15
+				add_command_power = 20
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_modernize_the_military
+		icon = GFX_goal_iron_people
+		ai_will_do = {
+			factor = 3
+		}
+		relative_position_id = INS_koninklijk_nederlands_indisch_leger
+		x = -1
+		y = 1
+		prerequisite = { focus = INS_koninklijk_nederlands_indisch_leger }
+		available = {
+
+		}
+		cost = 10
+
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = infantry_equipment
+				bonus = 1
+				uses = 2
+				category = infantry_tech
+			}
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = INS_expand_ai_bandung
+
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				custom_effect_tooltip = generic_skip_one_line_tt
+				add_corps_commander_role = {
+					character = INS_gustave_statius_muller
+					skill = 1
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
+				add_corps_commander_role = {
+					character = INS_pierre_antoine_cox
+					traits = { infantry_leader }
+					skill = 1
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
+			}
+			else = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 750
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
+	}
+
+focus = {
+		id = INS_braat_overvalwagen
+		prerequisite = { focus = INS_modernize_the_military }
+		icon = GFX_goal_generic_armored_car_offensive
+		x = -1
+		y = 1
+		relative_position_id = INS_modernize_the_military
+		cost = 5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				add_tech_bonus = {
+					name = INS_braat_overvalwagen
+					bonus = 3
+					uses = 1
+					category = armored_cars_tech
+				}
+			}
+			add_tech_bonus = {
+				name = INS_improve_coordination_capabilities
+				bonus = 1
+				uses = 2
+				technology = tech_recon
+				technology = tech_recon2
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_form_the_home_guard
+		icon = GFX_goal_generic_army
+		ai_will_do = {
+			factor = 3
+		}
+		relative_position_id = INS_koninklijk_nederlands_indisch_leger
+		x = 1
+		y = 1
+		prerequisite = { focus = INS_koninklijk_nederlands_indisch_leger }
+		available = {
+
+		}
+		cost = 5
+
+		completion_reward = {
+			army_experience = 10
+			add_war_support = 0.05
+			hidden_effect = {
+				division_template = {
+					name = "Oost-Indie Landstorm"
+					priority = 2
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 335 }
+				hidden_effect = {
+					create_unit = { 
+						division = "name = \"1. Oost-Indie Landstorm\" division_template = \"Oost-Indie Landstorm\" start_experience_factor = 0.15 start_equipment_factor = 0.85" 
+						owner = ROOT
+						count = 1
+					}
+				}
+				custom_effect_tooltip = INS_spawn_landstorm_division
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
+	}
+
+focus = {
+		id = INS_interventionism
+		icon = GFX_goal_AFG_international_mujahideen
+		ai_will_do = {
+			factor = 2
+		}
+		relative_position_id = INS_form_the_home_guard
+		prerequisite = { focus = INS_form_the_home_guard focus = INS_raaf_assistance } 
+		x = 1
+		y = 1
+		cost = 10
+
+		completion_reward = {
+			add_war_support = 0.05
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = INS_volunteers_idea
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+	}
+
+focus = {
+		id = INS_ambonese_auxilaries
+		icon = GFX_goal_infantry_offensive
+		ai_will_do = {
+			factor = 5
+		}
+		x = 0
+		y = 2
+		relative_position_id = INS_koninklijk_nederlands_indisch_leger
+		prerequisite = { focus = INS_modernize_the_military }
+		prerequisite = { focus = INS_form_the_home_guard }
+		cost = 10
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = INS_army_idea
+				add_idea = INS_army_idea_two
+			}
+			hidden_effect = {
+				division_template = {
+					name = "Irreguliere Divisie"
+					priority = 0
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 0 y = 2 }
+
+						irregular_infantry = { x = 1 y = 0 }
+						irregular_infantry = { x = 1 y = 1 }
+						irregular_infantry = { x = 1 y = 2 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 668
+				}
+				random_owned_controlled_state = {
+					prioritize = { 668 }
+					hidden_effect = {
+						create_unit = { 
+							division = "name = \"1. Irreguliere Divisie\" division_template = \"Irreguliere Divisie\" start_experience_factor = 0.15 start_equipment_factor = 0.85" 
+							owner = ROOT
+							count = 1
+							prioritize_location = 1574
+						}
+						create_unit = { 
+							division = "name = \"2. Irreguliere Divisie\" division_template = \"Irreguliere Divisie\" start_experience_factor = 0.15 start_equipment_factor = 0.85" 
+							owner = ROOT
+							count = 1
+							prioritize_location = 1574
+						}
+					}
+					custom_effect_tooltip = INS_spawn_irregular_division
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MILITARY_EQUIPMENT }
+	}
+
+focus = {
+		id = INS_expand_the_officers_corps
+		icon = GFX_goal_generic_officers
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_ambonese_auxilaries
+		prerequisite = { focus = INS_ambonese_auxilaries }
+		cost = 10
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = INS_army_idea_two
+				add_idea = INS_army_idea_two_1
+			}
+			army_experience = 15
+			add_command_power = 30
+			if = {
+				limit = {
+					is_subject = no
+				}
+				custom_effect_tooltip = generic_skip_one_line_tt
+				INS_didi_kartasasmita = { custom_effect_tooltip = unlock_general_tt }
+				INS_gatot_subroto = { custom_effect_tooltip = unlock_general_tt }
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = available_army_chief
+				show_ideas_tooltip = INS_didi_kartasasmita
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
+	}
+
+focus = {
+		id = INS_city_fortifications
+		icon = GFX_goal_generic_defend_hudgehog
+		ai_will_do = {
+			factor = 4
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_ambonese_auxilaries
+		prerequisite = { focus = INS_ambonese_auxilaries }
+		available = {
+			OR = {
+				controls_state = 1126
+				controls_state = 446
+				controls_state = 672
+			}
+		}
+		bypass_if_unavailable = yes
+		cost = 5
+
+		completion_reward = {
+			1126 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 7381
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 7381
+						instant_build = yes
+					}
+				}
+			}
+			446 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 13520
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 13520
+						instant_build = yes
+					}
+				}
+			}
+			672 = {
+				if = {
+					limit = { 
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 12268
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 12268
+						instant_build = yes
+					}
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_non_discriminatory_conscription
+		icon = GFX_focus_generic_military_mission
+		ai_will_do = {
+			factor = 5 
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_city_fortifications
+		prerequisite = { focus = INS_city_fortifications }
+		prerequisite = { focus = INS_expand_the_officers_corps }
+		cost = 10 
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = INS_army_idea_two_1
+				add_idea = INS_army_idea_two_2
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = INS_urip_sumoharjo
+			show_ideas_tooltip = INS_didi_kartasasmita
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			INS_gatot_subroto = { custom_effect_tooltip = unlock_general_tt }
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+	}
+
+focus = {
+		id = INS_guerilla_tactics
+		icon = GFX_goal_assymetric_doctrine
+		ai_will_do = {
+			factor = 2
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_non_discriminatory_conscription
+		mutually_exclusive = { focus = INS_preemptive_defense }
+		prerequisite = { focus = INS_non_discriminatory_conscription }
+		cost = 5
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = INS_army_idea_two_2
+				add_idea = INS_army_idea_two_3
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_r56_guerilla_warfare
+				category = cat_mass_assault
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+	}
+
+focus = {
+		id = INS_preemptive_defense
+		icon = GFX_focus_generic_coastal_fort
+		ai_will_do = {
+			factor = 3
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_non_discriminatory_conscription
+		mutually_exclusive = { focus = INS_guerilla_tactics }
+		prerequisite = { focus = INS_non_discriminatory_conscription}
+		cost = 5
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = INS_army_idea_two_2
+				add_idea = INS_army_idea_two_3
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_superior_firepower
+				category = cat_mobile_warfare
+				category = cat_grand_battle_plan
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER }
+	}
+
+focus = {
+		id = INS_reform_the_knil
+		icon = GFX_focus_chi_army_reform
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 2
+				has_defensive_war = yes
+			} 
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_guerilla_tactics
+		prerequisite = { focus = INS_guerilla_tactics focus = INS_preemptive_defense}
+		cost = 10 
+
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
+		select_effect = {
+			add_timed_idea = {
+				idea = INS_reforming_the_army
+				days = 70
+			}
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = AFG_constitution_question_start_tt
+			effect_tooltip = {
+				add_timed_idea = {
+					idea = INS_reforming_the_army
+					days = 70
+				}
+			}
+			custom_effect_tooltip = AFG_constitution_question_end_tt
+			army_experience = 25
+			swap_ideas = {
+				remove_idea = INS_army_idea_two_3
+				add_idea = INS_army_idea_six
+			}
+			if = {
+				limit = { has_country_flag = dei_path_b_chosen }
+				add_corps_commander_role = {
+					character = INS_rudolph_bakkers
+					skill = 1
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = -1
+				}
+				add_corps_commander_role = {
+					character = INS_simon_hendrik_spoor
+					traits = { ambusher }
+					skill = 2
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+					legacy_id = -1
+				}
+			}
+			else = {
+				army_experience = 25
+				add_command_power = 30
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH FOCUS_FILTER_TFV_AUTONOMY }
+	}
+
+focus = {
+		id = INS_the_test_flight_service
+		icon = GFX_focus_SOV_flying_clubs
+		ai_will_do = {
+			factor = 2
+		}
+		x = 3
+		y = 0
+		cost = 5
+		relative_position_id = INS_koninklijk_nederlands_indisch_leger
+
+		completion_reward = {
+			air_experience = 10
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine	
+			}
+		}
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_raaf_assistance
+		icon = GFX_goal_AST_coa_air_force
+		ai_will_do = {
+			factor = 2
+		}
+		x = 0
+		y = 1
+		relative_position_id = INS_the_test_flight_service
+		prerequisite = { focus = INS_the_test_flight_service }
+		available = { 
+			country_exists = AST
+			NOT = {
+				has_war_with = AST
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					country_exists = AST
+				}
+				has_war_with = AST
+			}
+		}
+		cost = 10 
+
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.75
+				uses = 1
+				category = light_air
+			}
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine	
+			}
+			if = {
+				limit = {
+					country_exists = AST
+					NOT = { has_war_with = AST }
+				}
+				add_opinion_modifier = { target = AST modifier = raaf_assistance }
+				AST = { add_opinion_modifier = { target = ROOT modifier = raaf_assistance } }
+			}
+			else = {
+				air_experience = 15
+			}	
+		}
+		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_knil_integration
+		icon = GFX_focus_generic_tank_air_support
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 10
+				has_completed_focus = INS_koninklijk_nederlands_indisch_leger
+			} 
+		}
+		x = 0
+		y = 2
+		relative_position_id = INS_raaf_assistance
+		prerequisite = { focus = INS_raaf_assistance}
+		cost = 10 
+
+		completion_reward = {
+			army_experience = 5
+			air_experience = 10
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			every_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						state = 672
+						state = 974
+						state = 334
+						state = 978
+					}
+					free_building_slots = {
+						building = air_base
+						size > 0 
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = INS_expand_andir_workshop
+		}
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_indonesian_fighter_schools
+		icon = GFX_goal_generic_CAS
+		ai_will_do = {
+			factor = 2
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_raaf_assistance
+		prerequisite = { focus = INS_raaf_assistance }
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_AIR_XP }
+
+		completion_reward = {
+			air_experience = 10
+			add_ideas = INS_ace_idea
+		}
+	}
+
+focus = {
+		id = INS_the_flying_dutchmen
+		icon = GFX_focus_generic_paratrooper
+		ai_will_do = {
+			factor = 1
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_knil_integration
+		prerequisite = { focus = INS_knil_integration }
+		cost = 10
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				ahead_reduction = 1
+				uses = 2
+				category = para_tech
+				category = transport_plane_tech
+			}
+			hidden_effect = {
+				set_country_flag = cite_an_airborne_unit_flag
+			}
+			unlock_decision_tooltip = { decision = cite_an_airborne_unit show_effect_tooltip = yes }			
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_naval_autonomy
+		icon = GFX_focus_generic_naval_discipline
+		relative_position_id = INS_koninklijk_nederlands_indisch_leger
+		ai_will_do = {
+			factor = 2
+		}
+		x = 6
+		y = 0
+		cost = 5
+
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_MILITARY_EQUIPMENT }
+
+		completion_reward = {
+			navy_experience = 15
+			if = {
+				limit = { is_subject_of = HOL }
+				OVERLORD = { country_event = indonesia.4 }
+				custom_effect_tooltip = if_they_accept_newline_tt
+				effect_tooltip = {
+					create_navy_leader = {
+						name = "Conrad Helfrich"
+						skill = 4
+						attack_skill = 5
+						defense_skill = 2
+						maneuvering_skill = 3
+						coordination_skill = 2
+						traits = { bold navy_career_officer seawolf superior_tactician }
+					}
+				}
+			}
+			else = {
+				add_doctrine_cost_reduction = {
+					name = naval_doc_bonus
+					cost_reduction = 0.5
+					uses = 2
+					category = naval_doctrine
+				}
+			}
+			custom_effect_tooltip = INS_naval_autonomy_ships
+		}
+	}
+
+focus = {
+		id = INS_java_shipyards
+		icon = GFX_goal_generic_expand_the_naval_industry
+		ai_will_do = {
+			factor = 5
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_naval_autonomy
+		prerequisite = { focus = INS_naval_autonomy }
+		cost = 10
+
+		completion_reward = {
+			navy_experience = 10
+			random_owned_controlled_state = {
+				prioritize = { 446 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			unlock_decision_tooltip = INS_expand_surabaya_dm
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_coastal_entrenchment
+		icon = GFX_focus_generic_coastal_fort
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_naval_autonomy
+		prerequisite = { focus = INS_naval_autonomy }
+		cost = 10
+
+		completion_reward = {
+			978 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 7381
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 7381
+						instant_build = yes
+					}
+				}
+			}
+			334 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 13520
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 2
+						province = 13520
+						instant_build = yes
+					}
+				}
+			}
+			add_ideas = INS_coastal_entrenchment_idea
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+focus = {
+		id = INS_naval_warfare
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		ai_will_do = {
+			factor = 2
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_coastal_entrenchment
+		prerequisite = { focus = INS_java_shipyards focus = INS_coastal_entrenchment }
+		cost = 10 
+
+		completion_reward = {
+			navy_experience = 10
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+			add_tech_bonus = {
+				name = naval_gunnery_tech
+				bonus = 0.75
+				ahead_reduction = 0.5
+				uses = 1
+				category = naval_gunnery_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_increase_convoy_production
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		ai_will_do = {
+			factor = 2
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_java_shipyards
+		prerequisite = { focus = INS_java_shipyards }
+		cost = 10 
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 35
+				producer = ROOT
+			}
+			random_owned_controlled_state = {
+				prioritize = { 1126 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = INS_gouvernmentsmarine
+			if = {
+				limit = {
+					is_subject = no
+				}
+				show_ideas_tooltip = INS_pelni
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_british_ship_designs
+		icon = GFX_goal_ENG_coa_navy
+		ai_will_do = {
+			factor = 5
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_naval_warfare
+		prerequisite = { focus = INS_naval_warfare }
+		cost = 10
+
+		completion_reward = {
+			navy_experience = 10
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 0.75
+				ahead_reduction = 0.25
+				uses = 2
+				category = naval_equipment
+			}
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_KNIL_marines
+		icon = GFX_focus_eng_special_air_service
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_naval_warfare
+		prerequisite = { focus = INS_naval_warfare }
+		cost = 10 
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1
+				uses = 1
+				category = marine_tech
+			}
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				category = r56_special_forces_training_tech 
+			}			
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_air_by_sea
+		icon = GFX_goal_generic_air_naval_bomber
+		ai_will_do = {
+			factor = 2
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_knil_integration
+		prerequisite = { focus = INS_knil_integration focus = INS_british_ship_designs }	
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			navy_experience = 5
+			air_experience = 15
+			if = {
+				limit = { has_dlc = "By Blood Alone" }
+				add_tech_bonus = {
+					name = torpedo_equipment
+					bonus = 0.5
+					uses = 2
+					ahead_reduction = 0.25
+					category = torpedo_equipment
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = INS_air_by_sea
+					bonus = 1
+					uses = 1
+					category = naval_bomber
+				}
+			}
+		}
+	}
+
+focus = {
+		id = INS_joint_wargames
+		icon = GFX_focus_SMB_blue_water_fleet
+		ai_will_do = {
+			factor = 15
+				modifier = {
+				factor = 10
+				JAP = {
+					has_completed_focus = JAP_nanshin_ron
+				}
+			} 
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_KNIL_marines
+		prerequisite = { focus = INS_KNIL_marines }
+		prerequisite = { focus = INS_british_ship_designs }
+		cost = 10
+
+		completion_reward = {
+			navy_experience = 10
+			add_doctrine_cost_reduction = {
+				name = naval_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+			news_event = { id = indonesia.7 }
+		}
+		search_filters = { FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_convoy_protection
+		icon = GFX_focus_generic_destroyer
+		ai_will_do = {
+			factor = 2
+		}
+		x = -1
+		y = 1
+		relative_position_id = INS_joint_wargames
+		mutually_exclusive = { focus = INS_ship_a_day_tactics }
+		prerequisite = { focus = INS_joint_wargames }
+		cost = 10 
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1
+				uses = 1
+				ahead_reduction = 0.25
+				category = dd_tech
+			}
+			add_ideas = AFG_protecting_our_convoys_idea
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+focus = {
+		id = INS_ship_a_day_tactics
+		icon = GFX_goal_generic_navy_submarine
+		ai_will_do = {
+			factor = 3
+		}
+		x = 1
+		y = 1
+		relative_position_id = INS_joint_wargames
+		mutually_exclusive = { focus = INS_convoy_protection }
+		prerequisite = { focus = INS_joint_wargames }
+		cost = 10 
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+			add_ideas = AFG_under_the_radar_idea
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+}

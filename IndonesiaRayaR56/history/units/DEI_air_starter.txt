@@ -14,7 +14,7 @@ air_wings = {
 			amount = 20
 		}
 	}
-	13520 = {
+	446 = {
 		early_fighter_equipment = {
 			owner = "INS"
 			amount = 20

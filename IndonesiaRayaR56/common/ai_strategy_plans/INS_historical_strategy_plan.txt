@@ -1,0 +1,29 @@
+#####-----> INS: Indonesia Raya Vanilla Historical Plan <><> <><> <><> <><> <><>
+
+INS_historical_strategy_plan = {
+	name = "INS: Indonesia Raya Plan"
+	desc = "Overrides vanilla strategy plan."
+
+	allowed = {
+		original_tag = INS
+	}
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		dei_focus_root
+		dei_focus_pembangkangan
+		dei_focus_momentum_kemerdekaan
+		dei_focus_liberate_sumatra
+		dei_focus_liberate_borneo
+		dei_focus_liberate_timur_raya
+		dei_focus_liberate_papua
+		dei_focus_traktat_kedaulatan
+	}
+}

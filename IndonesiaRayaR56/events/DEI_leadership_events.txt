@@ -20,14 +20,7 @@ country_event = {
 	option = {
 		name = dei_leadership.1.a
 		recruit_character = DEI_sukarno
-		add_country_leader_role = {
-			character = DEI_sukarno
-			country_leader = {
-				ideology = liberalism
-				expire = "1970.6.6"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_sukarno
 		add_political_power = 50
 		add_stability = 0.05
 	}
@@ -35,14 +28,7 @@ country_event = {
 	option = {
 		name = dei_leadership.1.b
 		recruit_character = DEI_mohammad_hatta
-		add_country_leader_role = {
-			character = DEI_mohammad_hatta
-			country_leader = {
-				ideology = liberalism
-				expire = "1980.3.14"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_mohammad_hatta
 		add_political_power = 30
 		add_stability = 0.10
 	}
@@ -50,14 +36,7 @@ country_event = {
 	option = {
 		name = dei_leadership.1.c
 		recruit_character = DEI_sutan_syahrir
-		add_country_leader_role = {
-			character = DEI_sutan_syahrir
-			country_leader = {
-				ideology = socialism
-				expire = "1966.4.9"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_sutan_syahrir
 		add_political_power = 30
 		add_tech_bonus = {
 			name = dei_syahrir_diplomacy_bonus
@@ -82,14 +61,7 @@ country_event = {
 	option = {
 		name = dei_leadership.2.a
 		recruit_character = DEI_sultan_hamid_ii
-		add_country_leader_role = {
-			character = DEI_sultan_hamid_ii
-			country_leader = {
-				ideology = federalist_generic
-				expire = "1978.3.30"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_sultan_hamid_ii
 		add_political_power = 50
 		add_command_power = 20
 	}
@@ -97,14 +69,7 @@ country_event = {
 	option = {
 		name = dei_leadership.2.b
 		recruit_character = DEI_hubertus_van_mook
-		add_country_leader_role = {
-			character = DEI_hubertus_van_mook
-			country_leader = {
-				ideology = federalist_generic
-				expire = "1965.1.1"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_hubertus_van_mook
 		add_political_power = 30
 		add_stability = 0.05
 	}
@@ -112,14 +77,7 @@ country_event = {
 	option = {
 		name = dei_leadership.2.c
 		recruit_character = DEI_sukawati
-		add_country_leader_role = {
-			character = DEI_sukawati
-			country_leader = {
-				ideology = federalist_generic
-				expire = "1967.1.1"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_sukawati
 		add_political_power = 30
 		add_stability = 0.05
 	}
@@ -139,14 +97,7 @@ country_event = {
 	option = {
 		name = dei_leadership.3.a
 		recruit_character = DEI_musso
-		add_country_leader_role = {
-			character = DEI_musso
-			country_leader = {
-				ideology = stalinism
-				expire = "1965.1.1"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_musso
 		add_political_power = 50
 		add_war_support = 0.05
 	}
@@ -154,14 +105,7 @@ country_event = {
 	option = {
 		name = dei_leadership.3.b
 		recruit_character = DEI_tan_malaka
-		add_country_leader_role = {
-			character = DEI_tan_malaka
-			country_leader = {
-				ideology = stalinism
-				expire = "1949.2.21"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_tan_malaka
 		add_political_power = 30
 		add_stability = 0.05
 		add_command_power = 20
@@ -170,14 +114,7 @@ country_event = {
 	option = {
 		name = dei_leadership.3.c
 		recruit_character = DEI_amir_sjarifuddin
-		add_country_leader_role = {
-			character = DEI_amir_sjarifuddin
-			country_leader = {
-				ideology = stalinism
-				expire = "1948.12.19"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_amir_sjarifuddin
 		add_political_power = 30
 		add_stability = 0.10
 	}
@@ -197,14 +134,7 @@ country_event = {
 	option = {
 		name = dei_leadership.4.a
 		recruit_character = DEI_sudirman
-		add_country_leader_role = {
-			character = DEI_sudirman
-			country_leader = {
-				ideology = fascism_ideology
-				expire = "1950.1.29"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_sudirman
 		add_political_power = 50
 		add_war_support = 0.10
 	}
@@ -212,14 +142,7 @@ country_event = {
 	option = {
 		name = dei_leadership.4.b
 		recruit_character = DEI_nasution
-		add_country_leader_role = {
-			character = DEI_nasution
-			country_leader = {
-				ideology = fascism_ideology
-				expire = "2000.9.5"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_nasution
 		add_political_power = 30
 		add_command_power = 30
 	}
@@ -227,14 +150,7 @@ country_event = {
 	option = {
 		name = dei_leadership.4.c
 		recruit_character = DEI_soeharto
-		add_country_leader_role = {
-			character = DEI_soeharto
-			country_leader = {
-				ideology = fascism_ideology
-				expire = "2008.1.27"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_soeharto
 		add_political_power = 30
 		add_stability = 0.10
 	}
@@ -254,14 +170,7 @@ country_event = {
 	option = {
 		name = dei_leadership.5.a
 		recruit_character = DEI_kartosuwiryo
-		add_country_leader_role = {
-			character = DEI_kartosuwiryo
-			country_leader = {
-				ideology = islamist_generic
-				expire = "1962.9.5"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_kartosuwiryo
 		add_political_power = 50
 		add_war_support = 0.10
 	}
@@ -269,14 +178,7 @@ country_event = {
 	option = {
 		name = dei_leadership.5.b
 		recruit_character = DEI_mohammad_natsir
-		add_country_leader_role = {
-			character = DEI_mohammad_natsir
-			country_leader = {
-				ideology = islamist_generic
-				expire = "1993.2.6"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_mohammad_natsir
 		add_political_power = 30
 		add_stability = 0.10
 	}
@@ -284,14 +186,7 @@ country_event = {
 	option = {
 		name = dei_leadership.5.c
 		recruit_character = DEI_wahid_hasyim
-		add_country_leader_role = {
-			character = DEI_wahid_hasyim
-			country_leader = {
-				ideology = islamist_generic
-				expire = "1953.4.19"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_wahid_hasyim
 		add_political_power = 30
 		add_stability = 0.10
 	}
@@ -311,14 +206,7 @@ country_event = {
 	option = {
 		name = dei_leadership.6.a
 		recruit_character = DEI_maharaja_suryawikrama
-		add_country_leader_role = {
-			character = DEI_maharaja_suryawikrama
-			country_leader = {
-				ideology = majapahit_generic
-				expire = "1965.1.1"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_maharaja_suryawikrama
 		add_political_power = 50
 		add_war_support = 0.05
 	}
@@ -326,14 +214,7 @@ country_event = {
 	option = {
 		name = dei_leadership.6.b
 		recruit_character = DEI_hamengkubuwono_ix
-		add_country_leader_role = {
-			character = DEI_hamengkubuwono_ix
-			country_leader = {
-				ideology = majapahit_generic
-				expire = "1988.10.2"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_hamengkubuwono_ix
 		add_political_power = 30
 		add_stability = 0.10
 	}
@@ -341,14 +222,7 @@ country_event = {
 	option = {
 		name = dei_leadership.6.c
 		recruit_character = DEI_wuryaningrat
-		add_country_leader_role = {
-			character = DEI_wuryaningrat
-			country_leader = {
-				ideology = majapahit_generic
-				expire = "1965.1.1"
-			}
-			promote_leader = yes
-		}
+		promote_character = DEI_wuryaningrat
 		add_political_power = 30
 		add_stability = 0.10
 	}

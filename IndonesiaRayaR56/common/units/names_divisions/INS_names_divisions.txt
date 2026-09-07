@@ -130,7 +130,7 @@ DEI_KOMANDO = {
 	name = "Resimen Komando & Pasukan Gerilya"
 	for_countries = { INS }
 	can_use = { always = yes }
-	division_types = { "mountaineer" "special_forces" "infantry" }
+	division_types = { "infantry" "mountaineers" "paratrooper" }
 	fallback_name = "Resimen Komando %d"
 	ordered = {
 		1 = { "Resimen Para Komando AD (RPKAD)" }

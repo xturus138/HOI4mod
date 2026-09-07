@@ -1,0 +1,13 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) - Developer Debugging Tools Category
+# Pinned to the top of Decisions tab (priority = 1000)
+# =====================================================================
+
+dei_decisions_debug_tools = {
+	icon = generic_research
+	priority = 1000
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+	}
+}

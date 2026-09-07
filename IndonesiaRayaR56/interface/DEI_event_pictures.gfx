@@ -3,6 +3,30 @@
 
 spriteTypes = {
 	spriteType = {
+		name = "GFX_dei_news_event_strike"
+		texturefile = "gfx/event_pictures/DEI_news_event_strike.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_news_event_mutiny"
+		texturefile = "gfx/event_pictures/DEI_news_event_mutiny.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_news_event_crisis"
+		texturefile = "gfx/event_pictures/DEI_news_event_crisis.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_news_event_underground"
+		texturefile = "gfx/event_pictures/DEI_news_event_underground.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_news_event_threshold"
+		texturefile = "gfx/event_pictures/DEI_news_event_threshold.dds"
+	}
+	spriteType = {
+		name = "GFX_dei_news_event_1936_revolution"
+		texturefile = "gfx/event_pictures/DEI_news_event_1936_revolution.dds"
+	}
+	spriteType = {
 		name = "GFX_dei_event_trunk6"
 		texturefile = "gfx/event_pictures/DEI_event_trunk6.dds"
 	}

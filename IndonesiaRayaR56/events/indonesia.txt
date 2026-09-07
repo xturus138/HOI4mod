@@ -1,0 +1,7 @@
+add_namespace = indonesia
+
+# =====================================================================
+# OVERRIDDEN BY INDONESIA RAYA: ROAD TO MERDEKA (R56 SUBMOD)
+# Neutralizes old R56 vanilla Indonesia events (e.g. indonesia.100)
+# All events are handled cleanly by DEI_* custom event chains.
+# =====================================================================

@@ -175,7 +175,9 @@ dec_file = os.path.join(mod_dir, 'common', 'decisions', 'DEI_decisions.txt')
 with open(dec_file, 'r', encoding='utf-8') as f:
     dtxt = f.read()
 
-categories = re.findall(r'decisions_category\s*=\s*\{([^}]+)\}', dtxt)
+cat_file = os.path.join(mod_dir, 'common', 'decisions', 'categories', 'DEI_decision_categories.txt')
+cat_txt = open(cat_file, 'r', encoding='utf-8').read() if os.path.exists(cat_file) else ''
+categories = re.findall(r'(dei_decisions_[a-zA-Z0-9_]+)\s*=\s*\{', cat_txt)
 decisions = re.findall(r'(dei_decision_[a-zA-Z0-9_]+)\s*=\s*\{', dtxt)
 print(f"      Kategori keputusan: {len(categories)}, Total Keputusan: {len(decisions)}")
 missing_d_loc = []

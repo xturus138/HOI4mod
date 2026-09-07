@@ -32,19 +32,20 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ## 2. Struktur Konten v1.0.0 (Canonical Release & Complete Visual Assets)
 
-1. **Pohon Fokus Hibrida (134 Fokus Total):**
-   - **Batang Prolog Krisis 1936 (3 Fokus, 84 Hari, X=12, Y=0..8):** `DEI_00_shared_trunk.txt`
-     1. *Retaknya Pax Neerlandica* (28 hari, Jan 1936 — krisis ekonomi & pemogokan umum).
-     2. *Pembangkangan Militer & Rakyat* (28 hari, Feb 1936 — pembangkangan barak KNIL & barisan pemuda).
-     3. *Momentum Revolusi Nasional 1936* (28 hari, Mar 1936 — proklamasi kemerdekaan meletus, membuka 6 jalur).
-   - **Jalur A — Republik Demokratis (16 Fokus, X=0..4):** `DEI_01_path_a_republik.txt` (+KAA Bandung, Trikora, Dekrit Presiden, Dwikora, Pancasila, Trisakti)
-   - **Jalur B — Kolonial/Federalis (14 Fokus, X=4..7):** `DEI_02_path_b_kolonial.txt` (+Sidang BFO, Angkatan Federal, Pakta ANZAC, Deli, Swapraja, Free Ports)
-   - **Jalur C — Komunis (14 Fokus, X=8..11):** `DEI_03_path_c_komunis.txt` (+Komune Tani, Sita Aset Asing, Angkatan Kelima, LEKRA, Pakta Asia Merah, Semesta)
-   - **Jalur D — Otoriter Militeristik (14 Fokus, X=12..15):** `DEI_04_path_d_otoriter.txt` (+Dewan Revolusi, Dwifungsi ABRI, Benteng Samudra, Bela Negara, Selat Malaka, Hegemoni Selatan)
-   - **Jalur E — Islamis / NII (14 Fokus, X=16..18):** `DEI_05_path_e_islamis.txt` (+Baitul Mal, Mahkamah Syariah, Akademi Mujahidin, Anti-Riba, Liga Muslim, Khilafah Nusantara)
-   - **Jalur F — Kemaharajaan Majapahit [Ahistoris] (13 Fokus, X=19..22):** `DEI_06_path_f_majapahit.txt` (+Sumpah Palapa Baru, Restorasi Trowulan, Dharmaputra, Jung Raksasa, Kutaramanawa, Penobatan Maharaja)
-   - **Cabang Industri & Riset Canggih (18 Fokus, X=26..30, Y=0..8):** `DEI_r56_industry.txt` (+ITB Bandung [5th Research Slot], Radar & Telekomunikasi, Metalurgi & Sintesis, Proyek Fisika Atom & Dirgantara)
-   - **Cabang Militer AD / AU / AL R56 (28 Fokus, X=33..43):** `DEI_r56_armed_forces.txt`
+1. **Pohon Fokus Hibrida Terpadu (134 Fokus Total dalam 1 Master File):**
+   - Disatukan dalam `common/national_focus/DEI_indonesia_focus_tree.txt` (mencegah bug Clausewitz yang mengabaikan deklarasi focus_tree duplikat di file terpisah).
+   - **Batang Prolog Krisis 1936 (3 Fokus, 84 Hari, X=12, Y=0..8):**
+     1. *Fracture of the Pax Neerlandica* (28 hari, Jan 1936 — krisis ekonomi & pemogokan umum).
+     2. *Military and Popular Defiance* (28 hari, Feb 1936 — pembangkangan barak KNIL & barisan pemuda).
+     3. *Momentum of the 1936 National Revolution* (28 hari, Mar 1936 — proklamasi kemerdekaan meletus, membuka 6 jalur).
+   - **Jalur A — Republik Demokratis (16 Fokus, X=0..4):** (+KAA Bandung, Trikora, Dekrit Presiden, Dwikora, Pancasila, Trisakti)
+   - **Jalur B — Kolonial/Federalis (14 Fokus, X=4..7):** (+Sidang BFO, Angkatan Federal, Pakta ANZAC, Deli, Swapraja, Free Ports)
+   - **Jalur C — Komunis (14 Fokus, X=8..11):** (+Komune Tani, Sita Aset Asing, Angkatan Kelima, LEKRA, Pakta Asia Merah, Semesta)
+   - **Jalur D — Otoriter Militeristik (14 Fokus, X=12..15):** (+Dewan Revolusi, Dwifungsi ABRI, Benteng Samudra, Bela Negara, Selat Malaka, Hegemoni Selatan)
+   - **Jalur E — Islamis / NII (14 Fokus, X=16..18):** (+Baitul Mal, Mahkamah Syariah, Akademi Mujahidin, Anti-Riba, Liga Muslim, Khilafah Nusantara)
+   - **Jalur F — Kemaharajaan Majapahit [Ahistoris] (13 Fokus, X=19..22):** (+Sumpah Palapa Baru, Restorasi Trowulan, Dharmaputra, Jung Raksasa, Kutaramanawa, Penobatan Maharaja)
+   - **Cabang Industri & Riset Canggih (18 Fokus, X=26..30, Y=0..8):** (+ITB Bandung [5th Research Slot], Radar & Telekomunikasi, Metalurgi & Sintesis, Proyek Fisika Atom & Dirgantara)
+   - **Cabang Militer AD / AU / AL R56 (28 Fokus, X=33..43):** (+Standardisasi Alutsista, Doktrin Wilayah Sishanrata, Pangkalan Udara, Armada Kepulauan)
 
 2. **Karakter Pemimpin & Komandan Legendaris (Trait Unik):**
    - Di `common/characters/DEI_characters.txt` & `common/unit_leader/DEI_traits.txt`:
@@ -100,7 +101,29 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ---
 
-## 3. Aturan Preferensi Wajib Pengguna (User Preferences)
+## 3. Catatan Pembaruan v1.0.1 (R56 Full Compatibility, UX Polish & Zero-Error Clean)
+
+1. **Penguncian Mutual Exclusivity 6 Jalur Politik:**
+   - Semua akar cabang ideologi (A, B, C, D, E, F) di `common/national_focus/DEI_indonesia_focus_tree.txt` kini memiliki cross `mutually_exclusive = { ... }` satu sama lain.
+   - Dilengkapi trigger pencegah `available = { NOT = { has_country_flag = dei_jalur_dipilih } }`.
+   - Mengambil salah satu cabang menetapkan country flag `dei_jalur_dipilih` dan `dei_path_<x>_chosen`, yang secara dinamis melipat/menyembunyikan (`allow_branch`) 5 cabang ideologi lainnya agar tampilan UX pohon fokus bersih.
+
+2. **Arsitektur Override Total Kompatibilitas Road to 56:**
+   - **Keputusan:** `common/decisions/INS.txt` dioverride berkas kosong untuk menonaktifkan 63 keputusan usang bawaan R56 yang bentrok dengan submod.
+   - **Event Kolonial:** `events/indonesia.txt` dan `events/TAOG_Indonesia.txt` dioverride berkas kosong untuk membungkam event lawas R56 (seperti `indonesia.100` "Removing Colonialist Influence" dari Belanda).
+   - **Penamaan Kota Otomatis:** Perubahan nama Batavia -> Jakarta, Buitenzorg -> Bogor, Telukbetung -> Bandar Lampung, Hollandia -> Jayapura, Fort Victoria -> Ambon disematkan langsung di Fokus 3 (`dei_focus_momentum_kemerdekaan`), `dei_trunk.7`, dan keputusan proklamasi NKRI.
+   - **Bookmark Gathering Storm:** `common/bookmarks/the_gathering_storm.txt` dioverride menampilkan 3 fokus prolog krisis 1936 submod.
+   - **AI Strategy Plans:** `common/ai_strategy_plans/` mengarahkan AI Indonesia ke pohon fokus submod.
+
+3. **Audit Bebas Error (`error.log` Clean):**
+   - Perbaikan trait komandan: `army_soft_attack_factor` diganti `army_infantry_attack_factor = 0.10` di `common/unit_leader/DEI_traits.txt`.
+   - Perbaikan event riset: `add_research_slot_speed_factor` diganti `add_tech_bonus` di `events/DEI_flavor_events.txt`.
+   - Konversi 156 bendera TGA ke format standar 32bpp RGBA tanpa RLE untuk menghilangkan peringatan bit-depth Clausewitz.
+   - Banner World News Proklamasi 1936 (`DEI_news_event_1936_revolution.dds`) menggunakan foto Bung Karno membacakan teks Proklamasi Kemerdekaan.
+
+---
+
+## 4. Aturan Preferensi Wajib Pengguna (User Preferences)
 
 > [!IMPORTANT]
 > Agen baru HARUS mematuhi semua aturan berikut tanpa kompromi:
@@ -131,7 +154,7 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ---
 
-## 4. Prosedur Verifikasi Cepat
+## 5. Prosedur Verifikasi Cepat
 
 Sebelum menyatakan pekerjaan selesai, jalankan skrip verifikasi otomatis:
 - Master Audit 8 Dimensi: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\master_audit.py"` (100% Lulus).

@@ -21,7 +21,7 @@ print(f'Total submod localisation keys: {len(loc_keys)}')
 missing_loc = []
 
 # 2. Check all custom focuses
-focus_files = glob.glob(os.path.join(mod_dir, 'common', 'national_focus', 'DEI_0*.txt'))
+focus_files = glob.glob(os.path.join(mod_dir, 'common', 'national_focus', 'DEI_*.txt'))
 for ff in focus_files:
     with open(ff, 'r', encoding='utf-8') as f:
         content = f.read()

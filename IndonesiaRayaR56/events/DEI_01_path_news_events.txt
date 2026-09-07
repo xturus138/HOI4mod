@@ -1,0 +1,570 @@
+﻿add_namespace = dei_news
+add_namespace = dei_news_a
+add_namespace = dei_news_b
+add_namespace = dei_news_c
+add_namespace = dei_news_d
+add_namespace = dei_news_e
+add_namespace = dei_news_f
+
+# =====================================================================
+# INDONESIA RAYA: ROAD TO MERDEKA — Path News Event Chains
+# 24 News Events (4 per path A-F)
+# =====================================================================
+
+# =====================================================================
+# PATH A: Republik Nasionalis-Demokratis
+# =====================================================================
+
+# dei_news_a.1: Proklamasi Bergema ke Penjuru Nusantara
+news_event = {
+	id = dei_news_a.1
+	title = dei_news_a.1.t
+	desc = dei_news_a.1.d
+	picture = GFX_dei_event_proklamasi
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_a_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_a.1.a
+		hidden_effect = {
+			news_event = { id = dei_news_a.2 days = 14 }
+		}
+	}
+}
+
+# dei_news_a.2: Sidang KNIP: Fondasi Pemerintahan Pertama
+news_event = {
+	id = dei_news_a.2
+	title = dei_news_a.2.t
+	desc = dei_news_a.2.d
+	picture = GFX_dei_event_ikada
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_a_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_a.2.a
+		hidden_effect = {
+			news_event = { id = dei_news_a.3 days = 14 }
+		}
+	}
+}
+
+# dei_news_a.3: Perjanjian Linggarjati: Harapan & Perdebatan
+news_event = {
+	id = dei_news_a.3
+	title = dei_news_a.3.t
+	desc = dei_news_a.3.d
+	picture = GFX_dei_event_linggarjati
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_a_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_a.3.a
+		hidden_effect = {
+			news_event = { id = dei_news_a.4 days = 14 }
+		}
+	}
+}
+
+# dei_news_a.4: Pancasila: Lima Sila Fondasi Bangsa
+news_event = {
+	id = dei_news_a.4
+	title = dei_news_a.4.t
+	desc = dei_news_a.4.d
+	picture = GFX_dei_event_pancasila
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_a_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_a.4.a
+	}
+}
+
+# =====================================================================
+# PATH B: Kolonial / Federalis
+# =====================================================================
+
+# dei_news_b.1: Van Mook Tiba di Batavia
+news_event = {
+	id = dei_news_b.1
+	title = dei_news_b.1.t
+	desc = dei_news_b.1.d
+	picture = GFX_dei_event_path_b
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_b_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_b.1.a
+		hidden_effect = {
+			news_event = { id = dei_news_b.2 days = 14 }
+		}
+	}
+}
+
+# dei_news_b.2: Volksraad Dibubarkan, Sidang BFO Digelar
+news_event = {
+	id = dei_news_b.2
+	title = dei_news_b.2.t
+	desc = dei_news_b.2.d
+	picture = GFX_dei_event_volksraad
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_b_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_b.2.a
+		hidden_effect = {
+			news_event = { id = dei_news_b.3 days = 14 }
+		}
+	}
+}
+
+# dei_news_b.3: Perjanjian Uni: Bendera Dua Bangsa Berdampingan
+news_event = {
+	id = dei_news_b.3
+	title = dei_news_b.3.t
+	desc = dei_news_b.3.d
+	picture = GFX_dei_event_kmb
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_b_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_b.3.a
+		hidden_effect = {
+			news_event = { id = dei_news_b.4 days = 14 }
+		}
+	}
+}
+
+# dei_news_b.4: Modal Eropa Mengalir Kembali
+news_event = {
+	id = dei_news_b.4
+	title = dei_news_b.4.t
+	desc = dei_news_b.4.d
+	picture = GFX_dei_event_tanjung_priok
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_b_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_b.4.a
+	}
+}
+
+# =====================================================================
+# PATH C: Komunis (Front Rakyat)
+# =====================================================================
+
+# dei_news_c.1: Musso Kembali: Angin Timur dari Moskow
+news_event = {
+	id = dei_news_c.1
+	title = dei_news_c.1.t
+	desc = dei_news_c.1.d
+	picture = GFX_dei_event_path_c
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_c_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_c.1.a
+		hidden_effect = {
+			news_event = { id = dei_news_c.2 days = 14 }
+		}
+	}
+}
+
+# dei_news_c.2: Reforma Agraria: Tanah untuk Rakyat Tani
+news_event = {
+	id = dei_news_c.2
+	title = dei_news_c.2.t
+	desc = dei_news_c.2.d
+	picture = GFX_dei_event_ombilin
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_c_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_c.2.a
+		hidden_effect = {
+			news_event = { id = dei_news_c.3 days = 14 }
+		}
+	}
+}
+
+# dei_news_c.3: Pemogokan Buruh Pelabuhan: Tanjung Priok Lumpuh
+news_event = {
+	id = dei_news_c.3
+	title = dei_news_c.3.t
+	desc = dei_news_c.3.d
+	picture = GFX_dei_event_tanjung_priok
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_c_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_c.3.a
+		hidden_effect = {
+			news_event = { id = dei_news_c.4 days = 14 }
+		}
+	}
+}
+
+# dei_news_c.4: Kongres Pemuda Revolusioner Nusantara
+news_event = {
+	id = dei_news_c.4
+	title = dei_news_c.4.t
+	desc = dei_news_c.4.d
+	picture = GFX_dei_event_sumpah_pemuda
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_c_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_c.4.a
+	}
+}
+
+# =====================================================================
+# PATH D: Otoriter Militeristik
+# =====================================================================
+
+# dei_news_d.1: Darurat Militer: Jam Malam di Seluruh Jawa
+news_event = {
+	id = dei_news_d.1
+	title = dei_news_d.1.t
+	desc = dei_news_d.1.d
+	picture = GFX_dei_event_path_d
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_d_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_d.1.a
+		hidden_effect = {
+			news_event = { id = dei_news_d.2 days = 14 }
+		}
+	}
+}
+
+# dei_news_d.2: Pertempuran Ambarawa: Soedirman Memimpin Langsung
+news_event = {
+	id = dei_news_d.2
+	title = dei_news_d.2.t
+	desc = dei_news_d.2.d
+	picture = GFX_dei_event_ambarawa
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_d_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_d.2.a
+		hidden_effect = {
+			news_event = { id = dei_news_d.3 days = 14 }
+		}
+	}
+}
+
+# dei_news_d.3: Pidato Api Bung Tomo: Radio Pemberontakan
+news_event = {
+	id = dei_news_d.3
+	title = dei_news_d.3.t
+	desc = dei_news_d.3.d
+	picture = GFX_dei_event_pertempuran_surabaya
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_d_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_d.3.a
+		hidden_effect = {
+			news_event = { id = dei_news_d.4 days = 14 }
+		}
+	}
+}
+
+# dei_news_d.4: Angkatan Udara Republik: Adisoetjipto Mengudara
+news_event = {
+	id = dei_news_d.4
+	title = dei_news_d.4.t
+	desc = dei_news_d.4.d
+	picture = GFX_dei_event_adisoetjipto
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_d_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_d.4.a
+	}
+}
+
+# =====================================================================
+# PATH E: Islamis (Negara Islam Indonesia)
+# =====================================================================
+
+# dei_news_e.1: Proklamasi Negara Islam Indonesia
+news_event = {
+	id = dei_news_e.1
+	title = dei_news_e.1.t
+	desc = dei_news_e.1.d
+	picture = GFX_dei_event_path_e
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_e_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_e.1.a
+		hidden_effect = {
+			news_event = { id = dei_news_e.2 days = 14 }
+		}
+	}
+}
+
+# dei_news_e.2: Majelis Syuro: Dewan Ulama Tertinggi Nusantara
+news_event = {
+	id = dei_news_e.2
+	title = dei_news_e.2.t
+	desc = dei_news_e.2.d
+	picture = GFX_dei_event_kartosuwiryo
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_e_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_e.2.a
+		hidden_effect = {
+			news_event = { id = dei_news_e.3 days = 14 }
+		}
+	}
+}
+
+# dei_news_e.3: Dakwah ke Sulawesi & Maluku
+news_event = {
+	id = dei_news_e.3
+	title = dei_news_e.3.t
+	desc = dei_news_e.3.d
+	picture = GFX_dei_event_kongres_perempuan
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_e_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_e.3.a
+		hidden_effect = {
+			news_event = { id = dei_news_e.4 days = 14 }
+		}
+	}
+}
+
+# dei_news_e.4: Liga Muslim Asia: Kairo Mengakui NII
+news_event = {
+	id = dei_news_e.4
+	title = dei_news_e.4.t
+	desc = dei_news_e.4.d
+	picture = GFX_dei_event_sumpah_pemuda
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_e_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_e.4.a
+	}
+}
+
+# =====================================================================
+# PATH F: Kemaharajaan Majapahit
+# =====================================================================
+
+# dei_news_f.1: Penobatan Maharaja: Upacara Agung di Trowulan
+news_event = {
+	id = dei_news_f.1
+	title = dei_news_f.1.t
+	desc = dei_news_f.1.d
+	picture = GFX_dei_event_path_f
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_f_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_f.1.a
+		hidden_effect = {
+			news_event = { id = dei_news_f.2 days = 14 }
+		}
+	}
+}
+
+# dei_news_f.2: Restorasi Trowulan: Warisan Leluhur Dibangkitkan
+news_event = {
+	id = dei_news_f.2
+	title = dei_news_f.2.t
+	desc = dei_news_f.2.d
+	picture = GFX_dei_event_trowulan
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_f_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_f.2.a
+		hidden_effect = {
+			news_event = { id = dei_news_f.3 days = 14 }
+		}
+	}
+}
+
+# dei_news_f.3: Borobudur: Simbol Kebangkitan Nusantara
+news_event = {
+	id = dei_news_f.3
+	title = dei_news_f.3.t
+	desc = dei_news_f.3.d
+	picture = GFX_dei_event_borobudur
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_f_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_f.3.a
+		hidden_effect = {
+			news_event = { id = dei_news_f.4 days = 14 }
+		}
+	}
+}
+
+# dei_news_f.4: Armada Jung Raksasa Berlayar
+news_event = {
+	id = dei_news_f.4
+	title = dei_news_f.4.t
+	desc = dei_news_f.4.d
+	picture = GFX_dei_event_pinisi
+
+	trigger = {
+		tag = INS
+		has_country_flag = dei_path_f_chosen
+	}
+
+	is_triggered_only = yes
+	major = no
+
+	option = {
+		name = dei_news_f.4.a
+	}
+}

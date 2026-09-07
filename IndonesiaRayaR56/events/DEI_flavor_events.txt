@@ -317,7 +317,12 @@ country_event = {
 
 	option = {
 		name = dei_flavor.11.a
-		add_research_slot_speed_factor = 0.05
+		add_tech_bonus = {
+			name = dei_bosscha_astronomy_bonus
+			bonus = 1.0
+			uses = 1
+			category = electronics
+		}
 		add_political_power = -20
 	}
 	option = {

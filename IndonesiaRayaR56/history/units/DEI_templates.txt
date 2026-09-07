@@ -306,3 +306,46 @@ division_template = {
 	}
 }
 
+
+# =====================================================================
+# STARTER DIVISIONS OOB: JAVA REVOLUTIONARY BASTION
+# Placed precisely across Java: Batavia, Bandung, Semarang, Yogya, Surabaya, Malang
+# =====================================================================
+units = {
+	division = {
+		name = "Resimen Garnisun Batavia"
+		location = 7381
+		division_template = "Divisi Garnisun Pantai"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1. Divisi Siliwangi"
+		location = 7421
+		division_template = "Divisi Infanteri Siliwangi"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "2. Divisi Diponegoro"
+		location = 13522
+		division_template = "Divisi Infanteri Diponegoro"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Resimen Pelopor Yogyakarta"
+		location = 10135
+		division_template = "Resimen Pelopor Rakyat"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Resimen Marinir KKO Surabaya"
+		location = 13520
+		division_template = "Divisi Marinir KKO"
+		start_experience_factor = 0.4
+	}
+	division = {
+		name = "Resimen Komando Darat Malang"
+		location = 10479
+		division_template = "Resimen Komando Angkatan Darat"
+		start_experience_factor = 0.5
+	}
+}

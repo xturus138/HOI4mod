@@ -1,23 +1,21 @@
 add_namespace = dei_trunk
 
 # =====================================================================
-# INDONESIA RAYA: ROAD TO MERDEKA — Event Rangkaian Krisis Prolog 1936
-# Menceritakan eskalasi krisis ekonomi, pemogokan umum, pembangkangan militer
-# dan runtuhnya otoritas kolonial Belanda (Januari - Maret 1936 / 84 Hari)
-# menjelang pecahnya Proklamasi Revolusi Nasional di event dei_trunk.6.
+# INDONESIA RAYA: ROAD TO MERDEKA — 1936 Prologue Crisis Events
+# Formatted as news_events so photo is on top, headline below, and text evenly laid out.
 # =====================================================================
 
-# --- 1. Selesai Fokus dei_focus_root: Gelombang Pemogokan Umum 1936 ---
+# --- 1. Fracture of the Pax Neerlandica ---
 country_event = {
 	id = dei_trunk.1
 	title = dei_trunk.1.t
 	desc = dei_trunk.1.d
-	picture = GFX_dei_event_ikada
+	picture = GFX_dei_event_tanjung_priok
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.1.a # Tanggapi dengan pengerahan polisi lapangan
+		name = dei_trunk.1.a
 		set_country_flag = dei_flag_represif_1936
 		add_stability = -0.02
 		add_political_power = -20
@@ -27,7 +25,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 	}
 	option = {
-		name = dei_trunk.1.b # Janjikan penyelidikan komisi upah Volksraad
+		name = dei_trunk.1.b
 		set_country_flag = dei_flag_kompromi_1936
 		add_stability = 0.02
 		add_political_power = 10
@@ -38,17 +36,17 @@ country_event = {
 	}
 }
 
-# --- 2. Selesai Fokus dei_focus_pembangkangan: Pembangkangan Barak KNIL ---
+# --- 2. Military and Popular Defiance ---
 country_event = {
 	id = dei_trunk.2
 	title = dei_trunk.2.t
 	desc = dei_trunk.2.d
-	picture = GFX_dei_event_ambarawa
+	picture = GFX_dei_event_zeven_provincien
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.2.a # Garnisun bumiputera mengabaikan komando dan membuka gudang senjata
+		name = dei_trunk.2.a
 		add_war_support = 0.05
 		add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
 		hidden_effect = {
@@ -57,7 +55,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 	}
 	option = {
-		name = dei_trunk.2.b # Hubungi jaringan pemuda untuk mengamankan amunisi
+		name = dei_trunk.2.b
 		add_war_support = 0.05
 		add_political_power = 20
 		hidden_effect = {
@@ -67,7 +65,7 @@ country_event = {
 	}
 }
 
-# --- 3. Krisis Politik Batavia: Represi Menemui Jalan Buntu ---
+# --- 3. Political Crisis in Batavia ---
 country_event = {
 	id = dei_trunk.3
 	title = dei_trunk.3.t
@@ -77,23 +75,23 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.3.a # Otoritas kolonial kehilangan wibawa moral
+		name = dei_trunk.3.a
 		add_stability = -0.03
 		add_war_support = 0.05
 	}
 }
 
-# --- 4. Konsolidasi Komite Perjuangan Bawah Tanah ---
+# --- 4. Consolidation of the Underground Resistance ---
 country_event = {
 	id = dei_trunk.4
 	title = dei_trunk.4.t
 	desc = dei_trunk.4.d
-	picture = GFX_dei_event_linggarjati
+	picture = GFX_dei_event_tamansiswa
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.4.a # Seluruh elemen rakyat bersatu mempersiapkan proklamasi
+		name = dei_trunk.4.a
 		add_political_power = 30
 		add_war_support = 0.05
 		hidden_effect = {
@@ -102,305 +100,232 @@ country_event = {
 	}
 }
 
-# --- 5. Ambang Revolusi: Garis Kolonial Runtuh di Seluruh Jawa ---
+# --- 5. The Brink of Revolution ---
 country_event = {
 	id = dei_trunk.5
 	title = dei_trunk.5.t
 	desc = dei_trunk.5.d
-	picture = GFX_dei_event_proklamasi
+	picture = GFX_dei_event_sumpah_pemuda
 
 	is_triggered_only = yes
 
 	option = {
-		name = dei_trunk.5.a # Saat penentuan telah tiba bagi bangsa Indonesia!
+		name = dei_trunk.5.a
 		add_stability = -0.02
 		add_war_support = 0.10
 	}
 }
 
-# --- 6. MOMENTUM KEMERDEKAAN: percabangan ke 6 jalur ideologi ---
-# Ini event terpenting di batang bersama — dipicu juga oleh decision
-# Revolusi Dini lewat efek complete_national_focus pada fokus ini.
-country_event = {
+# --- 6. MOMENTUM OF THE 1936 NATIONAL REVOLUTION ---
+# News event seen by Indonesia and the world in the classic newspaper window.
+# Pure narrative proclamation — player chooses their path directly from the focus tree.
+news_event = {
 	id = dei_trunk.6
 	title = dei_trunk.6.t
 	desc = dei_trunk.6.d
-	picture = GFX_dei_event_trunk6
+	picture = GFX_dei_news_event_1936_revolution
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		set_global_flag = dei_revolution_1936_happened
+	}
+
+	option = {
+		name = dei_trunk.6.a
+		trigger = { tag = INS }
+		add_stability = 0.05
+		add_war_support = 0.10
+	}
+
+	option = {
+		name = dei_trunk.6.world
+		trigger = { NOT = { tag = INS } }
+	}
+}
+
+# --- 7. WAR OF INDEPENDENCE ---
+country_event = {
+	id = dei_trunk.7
+	title = dei_trunk.7.t
+	desc = dei_trunk.7.d
+	picture = GFX_dei_event_pertempuran_surabaya
 
 	is_triggered_only = yes
 
-	immediate = {
-		set_country_flag = dei_jalur_dipilih
-		load_oob = DEI_templates
-				load_oob = DEI_air_starter
-		add_equipment_to_stockpile = { type = infantry_equipment amount = 3000 }
-		add_equipment_to_stockpile = { type = artillery_equipment amount = 150 }
-		add_equipment_to_stockpile = { type = support_equipment amount = 200 }
-		recruit_character = DEI_sudirman
-		recruit_character = DEI_urip_sumoharjo
-		recruit_character = DEI_nasution
-		recruit_character = DEI_kawilarang
-		recruit_character = DEI_yos_sudarso
-		recruit_character = DEI_re_martadinata
-		recruit_character = DEI_suryadi_suryadarma
-		recruit_character = DEI_halim_perdanakusuma
-		recruit_character = DEI_moestopo
-		recruit_character = DEI_gatot_soebroto
-		recruit_character = DEI_ahmad_yani
-		recruit_character = DEI_ngurah_rai
-		recruit_character = DEI_tb_simatupang
-		recruit_character = DEI_bung_tomo
-		recruit_character = DEI_slamet_rijadi
-		recruit_character = DEI_djatikoesoemo
-		recruit_character = DEI_soengkono
-		recruit_character = DEI_djamin_ginting
-		recruit_character = DEI_john_lie
-	}
-
 	option = {
-		name = dei_trunk.6.a # Jalur A: Republik Nasionalis-Demokratis
-		set_country_flag = dei_path_a_chosen
-		set_cosmetic_tag = INS_REPUBLIK_NKRI
-		load_oob = DEI_navy_starter_a
-		add_ideas = dei_idea_republik_diproklamasikan
-		set_politics = {
-			ruling_party = democratic
-			elections_allowed = yes
-		}
-		country_event = { id = dei_leadership.1 days = 1 }
-		335 = {
-			create_unit = {
-				division_template = "Divisi Infanteri Siliwangi"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
+		name = dei_trunk.7.a
+		add_war_support = 0.10
+		add_stability = 0.05
+		if = {
+			limit = {
+				NOT = { has_cosmetic_tag = INS_REPUBLIK_NKRI }
+				NOT = { has_country_flag = dei_jalur_dipilih }
 			}
-			create_unit = {
-				division_template = "Divisi Infanteri Siliwangi"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
+			retire_country_leader = yes
+			set_cosmetic_tag = INS_REPUBLIK_NKRI
+			recruit_character = DEI_sukarno
+			promote_character = DEI_sukarno
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
 			}
-			create_unit = {
-				division_template = "Brigade Laskar Rakyat"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
+			set_popularities = {
+				democratic = 60.0
+				neutrality = 20.0
+				communism = 10.0
+				fascism = 10.0
 			}
-		}
-		446 = {
-			create_unit = {
-				division_template = "Divisi Infanteri Diponegoro"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
+			set_party_name = {
+				ideology = democratic
+				name = INS_PNI_party
+				long_name = INS_PNI_party_long
 			}
-			create_unit = {
-				division_template = "Korps Komando Operasi"
-				start_experience_factor = 0.4
-				start_equipment_factor = 0.9
-			}
-			create_unit = {
-				division_template = "Brigade Laskar Rakyat"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
-			}
-		}
-	}
-	option = {
-		name = dei_trunk.6.b # Jalur B: Kolonial/Federalis (Belanda tetap berkuasa)
-		set_country_flag = dei_path_b_chosen
-		set_cosmetic_tag = INS_KOLONIAL_BFO
-		load_oob = DEI_navy_starter_b
-		set_politics = {
-			ruling_party = federalist
-			elections_allowed = no
-		}
-		country_event = { id = dei_leadership.2 days = 1 }
-		335 = {
-			create_unit = {
-				division_template = "KNIL Infanterie Divisie"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Garnizun Stadswacht & Pantai"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Resimen Kavaleri Lapis Baja"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.7
-			}
-		}
-		446 = {
-			create_unit = {
-				division_template = "KNIL Infanterie Divisie"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Garnizun Stadswacht & Pantai"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.8
-			}
-		}
-	}
-	option = {
-		name = dei_trunk.6.c # Jalur C: Komunis
-		set_country_flag = dei_path_c_chosen
-		set_cosmetic_tag = INS_KOMUNIS_RRI
-		load_oob = DEI_navy_starter_c
-		set_politics = {
-			ruling_party = communism
-			elections_allowed = no
-		}
-		country_event = { id = dei_leadership.3 days = 1 }
-		335 = {
-			create_unit = {
-				division_template = "Brigade Laskar Rakyat"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
-			}
-			create_unit = {
-				division_template = "Brigade Laskar Rakyat"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
-			}
-		}
-		446 = {
-			create_unit = {
-				division_template = "Brigade Barisan Buruh Merah"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Brigade Barisan Buruh Merah"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Resimen Komando Angkatan Darat"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-		}
-	}
-	option = {
-		name = dei_trunk.6.d # Jalur D: Otoriter Militeristik/Nasionalis Radikal
-		set_country_flag = dei_path_d_chosen
-		set_cosmetic_tag = INS_OTORITER_NKRI
-		load_oob = DEI_navy_starter_d
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
-		}
-		country_event = { id = dei_leadership.4 days = 1 }
-		335 = {
-			create_unit = {
-				division_template = "Resimen Pengawal Dewan Revolusi"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Barisan Pemuda Bela Negara"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
-			}
-		}
-		446 = {
-			create_unit = {
-				division_template = "Resimen Pengawal Dewan Revolusi"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Barisan Pemuda Bela Negara"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
-			}
-			create_unit = {
-				division_template = "Resimen Kavaleri Lapis Baja"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.7
-			}
-		}
-	}
-	option = {
-		name = dei_trunk.6.e # Jalur E: Islamis (Negara Islam Indonesia)
-		set_country_flag = dei_path_e_chosen
-		set_cosmetic_tag = INS_ISLAMIS_NII
-		load_oob = DEI_navy_starter_e
-		set_politics = {
-			ruling_party = islamist
-			elections_allowed = no
-		}
-		country_event = { id = dei_leadership.5 days = 1 }
-		335 = {
-			create_unit = {
-				division_template = "Resimen Mujahidin TII"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Resimen Mujahidin TII"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Brigade Laskar Rakyat"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
-			}
-		}
-		446 = {
-			create_unit = {
-				division_template = "Resimen Mujahidin TII"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Brigade Laskar Rakyat"
-				start_experience_factor = 0.2
-				start_equipment_factor = 0.9
-			}
-		}
-	}
-	option = {
-		name = dei_trunk.6.f # Jalur F: Kebangkitan Majapahit (ahistoris, selalu tersedia)
-		set_country_flag = dei_path_f_chosen
-		set_cosmetic_tag = INS_MAJAPAHIT_EMPIRE
-		load_oob = DEI_navy_starter_f
-		set_politics = {
-			ruling_party = majapahit
-			elections_allowed = no
-		}
-		country_event = { id = dei_leadership.6 days = 1 }
-		335 = {
-			create_unit = {
-				division_template = "Prajurit Utama Bhayangkara"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Resimen Ksatria Dharmaputra"
-				start_experience_factor = 0.4
-				start_equipment_factor = 0.8
-			}
-		}
-		446 = {
-			create_unit = {
-				division_template = "Prajurit Utama Bhayangkara"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Resimen Ksatria Dharmaputra"
-				start_experience_factor = 0.4
-				start_equipment_factor = 0.8
-			}
-			create_unit = {
-				division_template = "Korps Komando Operasi"
-				start_experience_factor = 0.3
-				start_equipment_factor = 0.8
-			}
+			set_capital = { state = 1126 }
+			set_province_name = { id = 7381 name = "Jakarta" }
+			set_province_name = { id = 10103 name = "Bogor" }
+			set_province_name = { id = 4361 name = "Bandar Lampung" }
+			set_province_name = { id = 12371 name = "Jayapura" }
+			set_province_name = { id = 1574 name = "Ambon" }
 		}
 	}
 }
+
+# --- 8. THE HAGUE ACCORD / KONFERENSI MEJA BUNDAR (KMB) ---
+country_event = {
+	id = dei_trunk.8
+	title = dei_trunk.8.t
+	desc = dei_trunk.8.d
+	picture = GFX_dei_event_kmb
+
+	trigger = {
+		tag = INS
+		has_war_with = HOL
+		controls_state = 1126 # Batavia
+		controls_state = 335  # West Java
+		controls_state = 446  # East Java
+		controls_state = 672  # South Sumatra
+		controls_state = 334  # North Sumatra
+		controls_state = 673  # West Borneo
+		controls_state = 669  # Celebes
+		NOT = { has_country_flag = dei_kmb_peace_signed }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		set_country_flag = dei_kmb_peace_signed
+	}
+
+	option = {
+		name = dei_trunk.8.a
+		if = {
+			limit = { has_war_with = HOL }
+			white_peace = HOL
+			HOL = { white_peace = ROOT }
+		}
+		every_state = {
+			limit = {
+				is_core_of = INS
+				is_owned_by = HOL
+			}
+			set_state_owner_to = INS
+			set_state_controller_to = INS
+		}
+		671 = {
+			add_core_of = INS
+			set_state_owner_to = INS
+			set_state_controller_to = INS
+		}
+		add_stability = 0.15
+		add_war_support = 0.10
+		add_political_power = 120
+		news_event = { id = dei_trunk.9 hours = 6 }
+	}
+}
+
+# --- 9. WORLD NEWS: INDONESIA ACHIEVES FULL INDEPENDENCE ---
+news_event = {
+	id = dei_trunk.9
+	title = dei_trunk.9.t
+	desc = dei_trunk.9.d
+	picture = GFX_dei_news_event_1936_revolution
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = dei_trunk.9.a
+		trigger = { tag = INS }
+	}
+
+	option = {
+		name = dei_trunk.9.b
+		trigger = { NOT = { tag = INS } }
+	}
+}
+
+# --- 10. REVOLUSI DI TANAH ANDALAS ---
+country_event = {
+	id = dei_trunk.10
+	title = dei_trunk.10.t
+	desc = dei_trunk.10.d
+	picture = GFX_dei_event_ombilin
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.10.a
+		add_war_support = 0.02
+	}
+}
+
+# --- 11. OPERASI RIMBA KALIMANTAN ---
+country_event = {
+	id = dei_trunk.11
+	title = dei_trunk.11.t
+	desc = dei_trunk.11.d
+	picture = GFX_dei_event_ambarawa
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.11.a
+		add_war_support = 0.02
+	}
+}
+
+# --- 12. GELOMBANG SAMUDRA TIMUR RAYA ---
+country_event = {
+	id = dei_trunk.12
+	title = dei_trunk.12.t
+	desc = dei_trunk.12.d
+	picture = GFX_dei_event_pinisi
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.12.a
+		add_war_support = 0.02
+	}
+}
+
+# --- 13. FAJAR MERAH PUTIH DI TANAH PAPUA ---
+country_event = {
+	id = dei_trunk.13
+	title = dei_trunk.13.t
+	desc = dei_trunk.13.d
+	picture = GFX_dei_event_ikada
+
+	is_triggered_only = yes
+
+	option = {
+		name = dei_trunk.13.a
+		add_stability = 0.02
+	}
+}
+
+

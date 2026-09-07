@@ -4,124 +4,124 @@
  # =====================================================================
 
  #### FOCUS TREE: Shared Trunk - Prolog Revolusi 1936 ####
- dei_focus_root: "Retaknya Pax Neerlandica"
- dei_focus_root_desc: "The devastating toll of the Great Depression has shattered the export economy of the East Indies. Mass layoffs and wage cuts among railroad and harbor workers ignite an explosive wave of general strikes across Java."
- dei_focus_pembangkangan: "Pembangkangan Militer & Rakyat"
- dei_focus_pembangkangan_desc: "The mutinous spirit of the cruiser De Zeven Provinciën echoes into native KNIL garrisons in Cimahi and Magelang. Soldiers refuse orders to fire upon striking workers, distributing rifles and ammunition to underground youth leagues."
- dei_focus_momentum_kemerdekaan: "Momentum Revolusi Nasional 1936"
- dei_focus_momentum_kemerdekaan_desc: "With colonial communications paralyzed, garrisons in revolt, and the red-and-white flag raised over public squares, the hour of national destiny has arrived. What ideological banner shall guide the revolution?"
+ dei_focus_root: "Fracture of the Pax Neerlandica"
+ dei_focus_root_desc: "The catastrophic shockwaves of the 1929 Great Depression have shattered the export monopolies of the Dutch East Indies. With rubber, sugar, and tin prices plummeting on world markets, colonial estates and harbors slash indigenous wages to starvation levels. What began as peaceful petitions has boiled over into a coordinated archipelagic strike wave, paralyzing the Tanjung Priok docks and Staatsspoorwegen rail corridors."
+ dei_focus_pembangkangan: "Military and Popular Defiance"
+ dei_focus_pembangkangan_desc: "The legendary mutiny aboard HNLMS De Zeven Provincien in 1933 shattered the myth of indigenous colonial submission. Today, that defiance spreads like wildfire through native KNIL garrisons at Cimahi and Magelang. Soldiers refuse direct orders from Dutch officers to fire upon striking civilians, opening armories to distribute rifles, carbines, and ammunition crates to underground youth networks."
+ dei_focus_momentum_kemerdekaan: "Momentum of the 1936 National Revolution"
+ dei_focus_momentum_kemerdekaan_desc: "Colonial authority has collapsed across Java and Sumatra in the face of mass civil disobedience and armed barracks mutinies. From clandestine broadcasting stations, revolutionary vanguards proclaim the birth of a sovereign Nusantara. The decisive question now confronts the nation: under whose political leadership and ideological banner shall the revolution march?"
 
  #### FOCUS TREE: Path A - Republic ####
- dei_focus_a_proklamasi: "Proklamasi Kemerdekaan"
- dei_focus_a_proklamasi_desc: "The long-awaited moment has arrived: declaring complete sovereignty and independence from colonial rule."
+ dei_focus_a_proklamasi: "Proclamation of Independence"
+ dei_focus_a_proklamasi_desc: "On the front porch of Pegangsaan Timur 56 in Jakarta, Sukarno and Mohammad Hatta read the solemn declaration of national sovereignty to the assembled youth and labor commanders. The red-and-white Sang Saka Merah-Putih is raised against the tropical sky, inaugurating a free, independent, and democratic Republic of Indonesia."
  dei_focus_a_tkr: "Form the Tentara Keamanan Rakyat"
- dei_focus_a_tkr_desc: "A newly proclaimed republic requires its own regular armed forces to defend the soil against returning imperialists."
+ dei_focus_a_tkr_desc: "A revolutionary declaration without armed defense invites immediate imperialist reconquest. By decree of the provisional government, we amalgamate former PETA officers, Heiho veterans, and youthful laskar guerillas into the Tentara Keamanan Rakyat (TKR), laying the professional institutional cornerstone of our national armed forces."
  dei_focus_a_diplomasi: "Seek International Recognition"
- dei_focus_a_diplomasi_desc: "Appealing to the United Nations and newly independent Asian nations to acknowledge the Republic as a sovereign state."
- dei_focus_a_agresi_1: "Confront Agresi Militer Belanda I"
- dei_focus_a_agresi_1_desc: "Dutch forces launch major military offensives to seize economic centers and restore colonial dominance."
+ dei_focus_a_diplomasi_desc: "While our soldiers bleed on the barricades, our diplomats must wage relentless diplomatic struggle on the global stage. Under the brilliant statesmanship of Prime Minister Sutan Sjahrir and Vice President Hatta, we send diplomatic envoys to New Delhi, Washington, and Lake Success to compel the newly formed United Nations to recognize Indonesian independence."
+ dei_focus_a_agresi_1: "Confront First Dutch Military Aggression"
+ dei_focus_a_agresi_1_desc: "Refusing to accept the loss of their colonial jewel, Dutch armed forces violate ceasefires and launch Operatie Product—a massive mechanized assault aimed at capturing our major agricultural plantations, oilfields, and deepwater harbors. Our forces must hold key choke points, blow bridges, and exact a brutal price for every kilometer of advance."
  dei_focus_a_gerilya: "Guerrilla Warfare Doctrine"
- dei_focus_a_gerilya_desc: "Outnumbered and outgunned in open warfare, our mountains, jungles, and steadfast people become our greatest shield."
- dei_focus_a_agresi_2: "Confront Agresi Militer Belanda II"
- dei_focus_a_agresi_2_desc: "The second wave of Dutch assaults falls directly upon our republican capital. The struggle enters its existential phase."
- dei_focus_a_kmb: "Perundingan Meja Bundar (KMB)"
- dei_focus_a_kmb_desc: "Mounting international outrage and fierce local resistance compel the Dutch to the conference table in The Hague."
+ dei_focus_a_gerilya_desc: "Outmatched in conventional armor and air superiority, the Republic shifts to total territorial resistance. Under General Soedirman's strategic doctrine of Perang Semesta, every mountain ridge, rural desa, and jungle trail becomes a deadly ambush zone, sustained by underground civilian supply kitchens and unyielding popular morale."
+ dei_focus_a_agresi_2: "Confront Second Dutch Military Aggression"
+ dei_focus_a_agresi_2_desc: "In a desperate bid to decapitate the Republic, Dutch paratroopers drop directly onto Yogyakarta airfield, capturing President Sukarno and his inner cabinet. But their triumph is hollow: Emergency Government of the Republic of Indonesia (PDRI) immediately activates in the rugged Sumatran highlands, while General Soedirman directs island-wide guerrilla strikes from his jungle litter."
+ dei_focus_a_kmb: "The Round Table Conference (KMB)"
+ dei_focus_a_kmb_desc: "Exhausted by years of relentless guerrilla attrition, facing American threats of Marshall Plan aid termination, and utterly bankrupt, the Dutch government capitulates to international arbitration. In the historic Knights' Hall at The Hague, the Round Table Conference (KMB) concludes with the unconditional transfer of archipelagic sovereignty to the Indonesian people."
  dei_focus_a_parlementer: "Consolidate Parliamentary Democracy"
  dei_focus_a_parlementer_desc: "Establishing a multi-party parliamentary system to unite the diverse political factions of the young Republic."
  dei_focus_a_demokrasi_liberal: "Establish Parliamentary Democracy"
- dei_focus_a_demokrasi_liberal_desc: "Instituting a multi-party parliamentary system under a constitutional democracy."
+ dei_focus_a_demokrasi_liberal_desc: "With the foreign invader finally driven from our shores, the Republic embraces a vibrant multi-party constitutional democracy. Power shifts to a representative parliament where secular nationalists, modern Muslims, and social democrats contest policy through free elections, robust debate, and civil liberty."
  dei_focus_a_irian_barat: "Liberate West Irian"
- dei_focus_a_irian_barat_desc: "The territorial integrity of the Republic remains incomplete until West Irian is returned to the homeland."
+ dei_focus_a_irian_barat_desc: "The lingering Dutch colonial occupation of West Irian remains an open wound in the side of the Republic. Sukarno launches a relentless political, economic, and military campaign, proclaiming that Indonesian national revolution can never be declared complete so long as a single inch of our sacred soil remains under European colonial flags."
  dei_focus_a_demokrasi_terpimpin: "Towards Demokrasi Terpimpin"
- dei_focus_a_demokrasi_terpimpin_desc: "Chronic cabinet instability and regional revolts push Sukarno to restore the 1945 Constitution and centralize executive authority."
+ dei_focus_a_demokrasi_terpimpin_desc: "Weary of chronic parliamentary turnover, party factionalism, and regional secessionist unrest, Sukarno resolves that Western liberal democracy is unsuited to the communal soul of Indonesia. He advocates for Demokrasi Terpimpin—a centralized, deliberative presidential democracy guided by revolutionary national solidarity."
 
  #### FOCUS TREE: Path B - Colonial / Federalist ####
  dei_focus_b_root: "Quell the Revolutionary Flames"
- dei_focus_b_root_desc: "The colonial administration resolves to maintain Dutch authority across the East Indies at any cost."
+ dei_focus_b_root_desc: "Viewing radical republicanism as a path to chaos, Lieutenant Governor-General Hubertus van Mook and federalist Indonesian leaders resolve to pacify the archipelago through orderly constitutional development, establishing a modern decentralized commonwealth that protects commerce and regional autonomy."
  dei_focus_b_tekan_gerilyawan: "Suppress Insurgent Guerrillas"
- dei_focus_b_tekan_gerilyawan_desc: "Deploying KNIL military sweeps and intelligence operations to dismantle armed rebel strongholds."
+ dei_focus_b_tekan_gerilyawan_desc: "Armed extremist militias and radical youth gangs threaten public safety and archipelagic economic recovery. The federal administration deploys professional KNIL constabulary and intelligence detachments to secure vital transport corridors, dismantle rebel encampments, and restore civilian rule of law."
  dei_focus_b_reformasi_terbatas: "Limited Political Reforms"
- dei_focus_b_reformasi_terbatas_desc: "Granting controlled concessions within the Volksraad framework to pacify moderate nationalist discontent without ceding control."
+ dei_focus_b_reformasi_terbatas_desc: "To win over moderate Indonesian intellectuals and civil servants, the colonial administration enacts progressive constitutional reforms within the Volksraad, transferring key ministerial portfolios to indigenous leaders and establishing transparent civil service meritocracies."
  dei_focus_b_negara_federal: "Establish Federal States"
- dei_focus_b_negara_federal_desc: "Creating autonomous states such as Negara Indonesia Timur and Pasundan to decentralize power and counter republican hegemony."
+ dei_focus_b_negara_federal_desc: "Recognizing the immense ethnic, cultural, and geographic diversity of the archipelago, the federal government establishes autonomous states—including Negara Indonesia Timur, Pasundan, and Madura—granting local communities complete self-determination and preventing Central Javanese political hegemony."
  dei_focus_b_uni_belanda: "The Netherlands-Indonesia Union"
- dei_focus_b_uni_belanda_desc: "Forging a constitutional union under the House of Orange-Nassau, linking the metropole and the archipelago."
+ dei_focus_b_uni_belanda_desc: "A formal Union Treaty establishes a permanent constitutional partnership between the Kingdom of the Netherlands and the United States of Indonesia under the shared crown of Queen Wilhelmina, guaranteeing mutual economic development, joint diplomatic representation, and naval security."
  dei_focus_b_ekonomi_terpadu: "Integrated East Indies Economy"
- dei_focus_b_ekonomi_terpadu_desc: "Consolidating maritime trade and corporate links between the Netherlands and the colonial administration."
+ dei_focus_b_ekonomi_terpadu_desc: "By re-establishing international confidence, protecting private enterprise, and securing favorable trade treaties with European banking syndicates, we channel vast foreign capital into our archipelagic mines, rubber estates, and transport networks, making Indonesia the wealthiest commercial crossroads of Asia."
  dei_focus_b_dominion_status: "Achieve Dominion Status"
- dei_focus_b_dominion_status_desc: "Attaining broad internal self-governance modeled after the British Dominions while retaining crown sovereignty."
+ dei_focus_b_dominion_status_desc: "Following the illustrious constitutional model of Canada and Australia, the United States of Indonesia transitions into a fully self-governing Dominion. All internal and external legislative authority rests firmly with our federal parliament, bound to the Netherlands only by fraternal allegiance to the Crown."
  dei_focus_b_persemakmuran: "Join the Dutch Commonwealth"
- dei_focus_b_persemakmuran_desc: "Finalizing an enduring commonwealth of equal partner realms spanning Europe, the Caribbean, and Asia."
+ dei_focus_b_persemakmuran_desc: "The Netherlands-Indonesian Union evolves into a modern trans-oceanic Commonwealth of sovereign nations. By pooling technological innovation, industrial expertise, and military defense across Europe and Asia, our confederation stands as a towering pillar of stability and democratic prosperity."
 
  #### FOCUS TREE: Path C - Communist ####
  dei_focus_c_root: "Consolidate the Front Rakyat"
- dei_focus_c_root_desc: "The PKI and socialist left unite under the Front Rakyat to spearhead the revolutionary transition."
+ dei_focus_c_root_desc: "The bankruptcy of bourgeois nationalism and feudal servitude is laid bare before the working masses. Uniting the PKI, militant trade unions, and radical peasant leagues under the revolutionary Front Rakyat, the working class seizes executive power to establish the People's Republic of Indonesia (Republik Rakyat Indonesia)."
  dei_focus_c_land_reform: "Radical Land Reform"
- dei_focus_c_land_reform_desc: "Confiscating colonial plantations and feudal estates, redistributing the soil directly to impoverished tenant farmers."
+ dei_focus_c_land_reform_desc: "Centuries of feudal bondage and Dutch plantation slavery are ended with the stroke of a pen. Under the banner of 'Land to the Tiller', revolutionary agrarian tribunals expropriate vast rubber estates and absentee landlord holdings, redistributing fertile plots directly to millions of impoverished sharecroppers."
  dei_focus_c_purge_nasionalis: "Purge Bourgeois Factions"
- dei_focus_c_purge_nasionalis_desc: "Neutralizing aristocratic landlords, colonial collaborators, and right-wing elements that threaten the socialist vanguard."
+ dei_focus_c_purge_nasionalis_desc: "To protect the socialist revolution from internal betrayal, revolutionary defense tribunals eliminate reactionary feudal aristocrats, colonial compradors, and bourgeois reformists who conspire with Western intelligence agencies to sabotage the people's state."
  dei_focus_c_tentara_rakyat: "Form the Tentara Rakyat"
- dei_focus_c_tentara_rakyat_desc: "Forging disciplined revolutionary armed forces rooted in class solidarity and political commissar oversight."
+ dei_focus_c_tentara_rakyat_desc: "Imperialist armies serve the oppressor classes; our army must be the sword of the proletariat. We forge the Tentara Rakyat Indonesia, an army grounded in Marxist-Leninist political education, dual command under military and political commissars, and iron devotion to working-class liberation."
  dei_focus_c_poros_soviet: "Align with the Soviet Union"
- dei_focus_c_poros_soviet_desc: "Securing heavy industrial machinery, technical expertise, and security guarantees from Moscow."
+ dei_focus_c_poros_soviet_desc: "Secretary-General Musso establishes direct fraternal ties with Moscow. In exchange for strategic rubber, tin, and oil supplies, the Soviet Union dispatches heavy industrial machine tooling, modern armor prototypes, and military advisory delegations to modernize our revolutionary state."
  dei_focus_c_poros_tiongkok: "Align with Revolutionary China"
- dei_focus_c_poros_tiongkok_desc: "Embracing Maoist agrarian doctrine and building a fraternal anti-imperialist front across East Asia."
+ dei_focus_c_poros_tiongkok_desc: "Embracing fraternal solidarity with revolutionary Asian socialism, we forge an unbreakable alliance with Communist China. Incorporating Maoist protracted people's war doctrines and rural mass mobilization, our revolutionary apparatus becomes invincible to imperialist amphibious invasion."
  dei_focus_c_industrialisasi: "Socialist Industrialization"
- dei_focus_c_industrialisasi_desc: "Nationalizing natural resources and state utilities to construct a self-sufficient industrial economy."
+ dei_focus_c_industrialisasi_desc: "A socialist nation must manufacture its own steel, chemicals, and armaments. We nationalize all heavy industry and enact aggressive state industrialization plans, erecting blast furnaces, power stations, and state tractor factories in the urban corridors of Java."
  dei_focus_c_ekspor_revolusi: "Export the Revolution to Southeast Asia"
- dei_focus_c_ekspor_revolusi_desc: "Providing arms and sanctuary to communist insurgents fighting across Southeast Asia."
+ dei_focus_c_ekspor_revolusi_desc: "The liberation of Indonesia is merely the opening salvo of the Asian socialist revolution. We establish training camps and weapon pipelines to arm fraternal communist insurgencies across Malaya, Indochina, the Philippines, and the British Borneo colonies, igniting the red dawn of Southeast Asia."
 
  #### FOCUS TREE: Path D - Authoritarian Militaristic ####
  dei_focus_d_root: "Military Council Takeover"
- dei_focus_d_root_desc: "Frustrated by political infighting and perceived civilian weakness, senior military officers seize executive control."
+ dei_focus_d_root_desc: "Disgusted by parliamentary corruption, party factionalism, and civilian hesitation in the face of national crisis, the General Staff of the Armed Forces stages a swift, bloodless coup. Under the leadership of General Soedirman, the Supreme Revolutionary Military Council takes executive command to impose martial order and forge an invincible nation."
  dei_focus_d_darurat_militer: "Proclaim Martial Law"
- dei_focus_d_darurat_militer_desc: "Suspending ordinary constitutional law to impose iron military discipline across all islands."
+ dei_focus_d_darurat_militer_desc: "To purify the nation of subversive agitation and restore absolute civic obedience, the Military Council proclaims an island-wide State of Siege (Staat van Beleg). Civil tribunals are replaced by military courts, curfews are enforced across all major urban centers, and treason is met with instant execution."
  dei_focus_d_bubarkan_partai: "Dissolve Political Parties"
- dei_focus_d_bubarkan_partai_desc: "Abolishing factional parties in favor of a single corporatist front dedicated to state authority."
+ dei_focus_d_bubarkan_partai_desc: "Divisive political parties are the cancer of the republic, squandering national strength for partisan gain. All political parties and sectarian unions are dissolved by military decree, replaced by a single regimented corporatist front: the National Solidarity Movement (Gerakan Solidaritas Nasional)."
  dei_focus_d_industri_militer: "Mobilize the War Economy"
- dei_focus_d_industri_militer_desc: "Subordinating all private manufacturing, mining, and agriculture to state rearmament priorities."
+ dei_focus_d_industri_militer_desc: "A nation that cannot forge its own rifles, artillery, and munitions is destined to be a vassal. We subordinate all private foundries, shipyards, and chemical plants to the Armed Forces Materiel Directorate, establishing state armories capable of continuous mass rearmament."
  dei_focus_d_propaganda: "Radical Nationalist Indoctrination"
- dei_focus_d_propaganda_desc: "Instilling martial virtues, duty, and unquestioning national loyalty into the minds of every citizen."
+ dei_focus_d_propaganda_desc: "Every school, radio transmitter, and newspaper is placed under the direct censorship of the Armed Forces Psychological Warfare Directorate, instilling Spartan discipline, militant patriotism, and unquestioned obedience to the Supreme Command in the minds of the entire populace."
  dei_focus_d_pemuda_militan: "Form the Barisan Pemuda Militan"
- dei_focus_d_pemuda_militan_desc: "Organizing millions of patriotic youths into regimented auxiliary formations ready for total defense."
+ dei_focus_d_pemuda_militan_desc: "The youth of Indonesia are the blood and sinew of the warrior state. We organize millions of teenage boys and girls into regimented youth defense battalions—the Barisan Pemuda Militan—training them in rifle marksmanship, physical endurance, and ideological zeal."
  dei_focus_d_klaim_wilayah: "Enforce Nusantara Raya Claims"
- dei_focus_d_klaim_wilayah_desc: "The borders drawn by European colonizers are illegitimate. Nusantara claims its historic sphere of dominance."
+ dei_focus_d_klaim_wilayah_desc: "The colonial boundaries drawn by British and Dutch imperialists across the Malay world are historical insults to archipelagic destiny. We declare the Greater Nusantara doctrine, proclaiming our sovereign rights over Malaya, Northern Borneo, Timor, and Papua."
  dei_focus_d_ambisi_regional: "Regional Power Projection"
- dei_focus_d_ambisi_regional_desc: "Building a powerful blue-water fleet to dominate the vital maritime straits connecting the Indian and Pacific Oceans."
+ dei_focus_d_ambisi_regional_desc: "To command respect across the Indian and Pacific Oceans, Indonesia must possess an overwhelming naval and air strike capability. We commence the construction of long-range heavy cruiser flotillas, naval air stations, and heavy bomber squadrons to project decisive military dominance across Southeast Asia."
 
  #### FOCUS TREE: Path E - Islamist (Negara Islam Indonesia) ####
  dei_focus_e_root: "Proclaim the Negara Islam Indonesia"
- dei_focus_e_root_desc: "Kartosoewirjo's Darul Islam movement declares an Islamic state, repudiating both secular nationalism and colonial compromise."
+ dei_focus_e_root_desc: "Rejecting both secular compromises with the infidel colonialist and godless Marxist materialism, Sekarmadji Maridjan Kartosoewirjo proclaims the Negara Islam Indonesia (NII) in the West Java highlands. Under the divine banner of the Quran and the Sunnah, the Islamic state rises to unite all believers."
  dei_focus_e_dewan_ulama: "Establish the Dewan Ulama"
- dei_focus_e_dewan_ulama_desc: "Forming a supreme consultative council of leading Ulama to guide constitutional and executive policy."
+ dei_focus_e_dewan_ulama_desc: "Human legislation is subordinate to divine revelation. We establish the supreme Majelis Syuro and Dewan Ulama, assembling the most venerable Islamic scholars, jurists, and clerics from across the archipelago to oversee state policy, ensure moral righteousness, and guide the national executive."
  dei_focus_e_syariat: "Codify Sharia Law"
- dei_focus_e_syariat_desc: "Constitutionalizing Islamic jurisprudence as the supreme law of the land."
+ dei_focus_e_syariat_desc: "The colonial legal codes imposed by Dutch imperialists are abolished. We enshrine the sacred Sharia (*Hukum Syariat*) as the supreme, immutable constitution of the land, establishing divine justice, protecting the sanctity of the family, and eradicating moral corruption."
  dei_focus_e_tii: "Consolidate the Tentara Islam Indonesia (TII)"
- dei_focus_e_tii_desc: "Transforming regional mujahidin militias into a unified, religiously devoted national army."
+ dei_focus_e_tii_desc: "We consolidate regional mujahidin battalions, Hizbullah volunteer leagues, and Sabilillah vanguards into the unified Tentara Islam Indonesia (TII). Bound by solemn oaths of martyrdom (*Syahid*) and equipped with captured armaments, our holy warriors are ready to defend the faith against all enemies."
  dei_focus_e_hubungan_arab: "Fraternal Ties with the Arab World"
- dei_focus_e_hubungan_arab_desc: "Establishing diplomatic and scholarly missions to Egypt, Saudi Arabia, and the emerging post-colonial Islamic world."
+ dei_focus_e_hubungan_arab_desc: "Reaching out across the Indian Ocean to the sacred centers of Islam, we dispatch diplomatic and theological missions to Cairo, Riyadh, and Damascus. Forging iron bonds of pan-Islamic brotherhood, we secure diplomatic recognition, commercial treaties, and religious support from the wider Arab world."
  dei_focus_e_konflik_sekuler: "Confront Secular and Marxist Elements"
- dei_focus_e_konflik_sekuler_desc: "Overcoming resistance from secular nationalists and communist factions to solidify Islamic governance."
+ dei_focus_e_konflik_sekuler_desc: "Secular nationalists and godless Marxists who refuse to submit to divine law threaten the internal unity of the Islamic community (*Ummah*). With unyielding resolve, our religious security police dismantle underground secular cells and purge subversive ideologies from public life."
  dei_focus_e_pendidikan_agama: "Pesantren Educational Reform"
- dei_focus_e_pendidikan_agama_desc: "Placing traditional Islamic boarding schools and madrasas at the center of national literacy and civil training."
+ dei_focus_e_pendidikan_agama_desc: "The historic Pesantren and Madrasah networks of Java, Sumatra, and Aceh become the vibrant intellectual foundation of our state. Revamping curricula to combine classical Islamic sciences with modern engineering, agriculture, and military tactics, we educate a generation of pious and capable citizens."
  dei_focus_e_persatuan_nusantara: "Pan-Islamic Unity of Nusantara"
- dei_focus_e_persatuan_nusantara_desc: "Uniting Muslim communities and traditional sultanates across the Malay archipelago under a common religious banner."
+ dei_focus_e_persatuan_nusantara_desc: "Islam was the historic unifier of the Malay world centuries before European caravels breached our waters. We reach out to Islamic sultanates, ulemas, and communities across Malaya, Patani, Sulu, and Mindanao, forging an archipelagic Islamic commonwealth of faith and mutual defense."
 
  #### FOCUS TREE: Path F - Majapahit Revival (Ahistorical) ####
  dei_focus_f_root: "Reawaken the Spirit of Majapahit"
- dei_focus_f_root_desc: "[AHISTORICAL] A revivalist movement invokes the ancient glory of the Majapahit Empire as a unifying imperial banner."
+ dei_focus_f_root_desc: "Centuries before European colonial flags were stitched, the glorious empire of Majapahit unified Nusantara under the banner of Wilwatikta. Rejecting both Western political models and foreign ideologies, traditional aristocrats, scholars, and customary elders revive the sacred imperial throne to lead Indonesia into a glorious new era."
  dei_focus_f_pusaka: "Expedition for the Sacred Pusaka"
- dei_focus_f_pusaka_desc: "Dispatching antiquarians and scholars to unearth ancient royal regalia and rediscover lost state rituals."
+ dei_focus_f_pusaka_desc: "To awaken the ancestral blessings of the land, imperial antiquarians and spiritual scholars mount grand archaeological expeditions across Java, Bali, and Sumatra to recover lost royal regalia (*Pusaka*), ancient Kris daggers, sacred court charters, and the legendary Golden Seal of Raden Wijaya."
  dei_focus_f_dewan_adat: "Form the Dewan Adat Nusantara"
- dei_focus_f_dewan_adat_desc: "Convening customary kings, sultans, and clan elders from every island into a grand imperial consultative assembly."
+ dei_focus_f_dewan_adat_desc: "We convene the grand Dewan Adat Nusantara, assembling customary kings, Rajas, Datuks, and tribal chiefs from every island. Reviving ancient participatory royal governance, the customary council ensures that regional traditions (*Hukum Adat*) are venerated as sacred imperial law."
  dei_focus_f_angkatan_laut: "Rebuild the Imperial Grand Fleet"
- dei_focus_f_angkatan_laut_desc: "Reviving the ancient maritime supremacy that once swept piracy and rival kingdoms from the equatorial seas."
+ dei_focus_f_angkatan_laut_desc: "Majapahit was born of the ocean waves and built on uncontested maritime dominance. We commission vast modern dockyards to revive our imperial maritime lineage, constructing modern destroyers, coastal gunboats, and armored cruisers to reassert unchallenged command over our equatorial seas."
  dei_focus_f_klaim_nusantara: "Proclaim Nusantara Raya Claims"
- dei_focus_f_klaim_nusantara_desc: "Reaffirming the ancient Sumpah Palapa oath: claiming all lands from the Kra Isthmus to the shores of Papua."
+ dei_focus_f_klaim_nusantara_desc: "In accordance with the sacred writings of the Nagarakretagama, the legitimate boundaries of Majapahit encompass the entirety of the Malay archipelago, the Kra Isthmus, and the Philippine seas. We proclaim our hereditary suzerainty over all lands once paying tribute to the throne of Wilwatikta."
  dei_focus_f_persatuan_kerajaan: "Integrate the Royal Principalities"
- dei_focus_f_persatuan_kerajaan_desc: "Uniting the historic kratons and sultanates of Java, Sumatra, Bali, and Sulawesi under imperial suzerainty."
+ dei_focus_f_persatuan_kerajaan_desc: "The historic Sultanates of Java, Sumatra, Banjarmasin, Gowa, and Ternate are formally welcomed into the imperial federation. Preserving their palaces and royal privileges, their traditional regents swear eternal oaths of fealty to the golden throne of the Maharaja."
  dei_focus_f_kekaisaran_baru: "Coronation of the New Empire"
- dei_focus_f_kekaisaran_baru_desc: "The culmination of imperial restoration: declare a sovereign empire carrying forward the mantle of Majapahit."
+ dei_focus_f_kekaisaran_baru_desc: "Amidst the resonant fanfares of ancestral gamelan and the solemn chanting of court priests, the modern Empire of Nusantara is officially inaugurated. Blending ancient imperial grandeur with modern administrative technology, our reborn empire commands the awe of the world."
 
  #### DECISIONS: Nusantara & Governance ####
  dei_decisions_category: "Indonesia Raya"
@@ -129,7 +129,7 @@
  dei_decision_revolusi_dini: "Revolusi Dini (Fast-Track Revolution)"
  dei_decision_revolusi_dini_desc: "[OPTIONAL / AHISTORICAL] Unwilling to wait until mid-game? Activate this decision to spark an immediate uprising and jump directly to ideological alignment, bypassing years of colonial preparation."
 
- dei_decisions_nusantara: "Kedaulatan & Diplomasi Wilayah Nusantara"
+ dei_decisions_nusantara: "Nusantara Sovereignty & Territorial Diplomacy"
  dei_decisions_nusantara_desc: "Strategic maneuvers and diplomatic campaigns to enforce territorial integrity across the greater archipelago."
  dei_decision_papua_integration: "Demand Sovereignty over West Papua"
  dei_decision_papua_integration_desc: "Asserting that Western New Guinea is an indivisible part of the sovereign nation, repudiating continuing Dutch colonial control."
@@ -140,7 +140,7 @@
  dei_decision_malaya_claims: "Melayu Raya & Straits of Malacca Claims"
  dei_decision_malaya_claims_desc: "Reviving the pan-archipelagic vision of Greater Malaya, claiming the Malay Peninsula and Singapore."
 
- dei_decisions_governance: "Tata Kelola Kepulauan & Ekonomi Nasional"
+ dei_decisions_governance: "Archipelagic Governance & National Economy"
  dei_decisions_governance_desc: "Internal development, inter-island resettlement, and monetary sovereignty across the islands."
  dei_decision_transmigrasi: "Inter-Island Transmigrasi Program"
  dei_decision_transmigrasi_desc: "Relocating surplus agricultural labor from densely populated Java to Sumatra and Borneo to expand cultivation and industry."
@@ -157,7 +157,7 @@
  dei_idea_home_defense_plan: "Archipelago Defense Plan"
  dei_idea_revolusi_dini_spirit: "Zeal of the Revolusi Dini"
  dei_idea_republik_diproklamasikan: "Republic Proclaimed"
- dei_idea_guerrilla_doctrine: "Doctrine of Perang Gerilya"
+ dei_idea_guerrilla_doctrine: "Doctrine of Regional Guerrilla Warfare"
  dei_idea_liberal_democracy_established: "Parliamentary Democracy"
  dei_idea_guided_democracy: "Demokrasi Terpimpin"
  dei_idea_persemakmuran_belanda: "Member of the Dutch Commonwealth"
@@ -171,39 +171,43 @@
  dei_idea_kekaisaran_nusantara: "Reborn Empire of Nusantara"
 
  #### EVENTS: Shared Trunk - Prolog Revolusi 1936 ####
- dei_trunk.1.t: "Gelombang Pemogokan Umum 1936"
- dei_trunk.1.d: "Spurred by catastrophic economic ruin, dockers at Tanjung Priok and Tanjung Perak join railway workers in an unprecedented coordinated strike. The colonial apparatus is paralyzed as defiant crowds flood the public squares."
+ dei_trunk.1.t: "The 1936 General Strike Wave"
+ dei_trunk.1.d: "Crippled by economic collapse, dockers at Tanjung Priok and Tanjung Perak join railway crews in a sweeping general strike. Defiant crowds fill public squares from Batavia to Surabaya, bringing colonial commerce to a dead halt."
  dei_trunk.1.a: "Deploy field constabulary and police batons"
  dei_trunk.1.b: "Offer a Volksraad wage commission inquiry"
 
- dei_trunk.2.t: "Pembangkangan di Barak KNIL"
- dei_trunk.2.d: "Indigenous soldiers in Cimahi and Magelang refuse orders to suppress the strikes. Officers are detained, armories breached, and thousands of rifles distributed to underground youth militias."
+ dei_trunk.2.t: "Mutiny in the KNIL Barracks"
+ dei_trunk.2.d: "Native KNIL garrisons at Cimahi and Magelang break ranks, refusing orders to fire upon striking workers. Seizing armories, soldiers distribute rifles to youth militias, transforming civil protest into armed uprising."
  dei_trunk.2.a: "Distribute armaments to the fledgling Laskar Rakyat"
  dei_trunk.2.b: "Coordinate with youth leagues to secure ammunition depots"
 
- dei_trunk.3.t: "Krisis Politik Batavia"
- dei_trunk.3.d: "Repressive decrees issued by the Governor-General in Batavia are ignored by the populace. The colonial civil service dissolves as indigenous staff walk out in open solidarity with the movement."
+ dei_trunk.3.t: "Political Crisis in Batavia"
+ dei_trunk.3.d: "Colonial governance in Batavia collapses into disarray as civil servants stage mass walkouts. Inside the Volksraad, Indonesian delegates abandon the assembly en masse, declaring Dutch colonial authority null and void."
  dei_trunk.3.a: "The moral authority of the colonial state has collapsed"
 
- dei_trunk.4.t: "Konsolidasi Komite Perjuangan Bawah Tanah"
- dei_trunk.4.d: "Patriotic leaders, veteran dissidents, and labor organizers convene secretly across Java and Sumatra, unifying disparate militias and youth leagues under a single revolutionary command."
+ dei_trunk.4.t: "Consolidation of Underground Resistance"
+ dei_trunk.4.d: "Meeting in clandestine safehouses across Java, nationalist leaders and strike committees establish an emergency revolutionary council, uniting labor, youth, and military defectors under a coordinated command."
  dei_trunk.4.a: "Prepare the proclamation of national sovereignty"
 
- dei_trunk.5.t: "Ambang Revolusi Nasional"
- dei_trunk.5.d: "Radio stations in Bandung and Surabaya broadcast patriotic marches. Dutch administrative garrisons are cut off as red-and-white banners unfurl across city halls and village squares."
+ dei_trunk.5.t: "Threshold of National Revolution"
+ dei_trunk.5.d: "Colonial authority across the archipelago has dissolved. Clandestine radios broadcast revolutionary marches across the airwaves, and the Merah-Putih unfurls over civic squares as patriots prepare to declare sovereignty."
  dei_trunk.5.a: "The decisive hour has struck for all of Nusantara!"
 
- dei_trunk.6.t: "Momentum Kemerdekaan: Proklamasi Revolusi Nasional 1936"
- dei_trunk.6.d: "The old colonial order has fallen. Across the immense archipelago, millions stand vigilant. As emergency units assemble and warships raise new ensigns, what ideological path shall guide the destiny of Indonesia?"
- dei_trunk.6.a: "Path A: Democratic-Nationalist Republic (Sukarno)"
- dei_trunk.6.b: "Path B: Colonial / Federalist Commonwealth (Van Mook)"
- dei_trunk.6.c: "Path C: Communist People's Vanguard (Musso)"
- dei_trunk.6.d: "Path D: Authoritarian Military Regime (Soedirman)"
- dei_trunk.6.e: "Path E: Islamic State of Indonesia (Kartosoewirjo)"
- dei_trunk.6.f: "Path F: Imperial Resurgence of Majapahit (Wuryaningrat)"
+ dei_trunk.6.t: "The 1936 Indonesian National Revolution"
+ dei_trunk.6.d: "Across Java and Sumatra, the general strike has paralyzed colonial rule as dockers, railwaymen, and native KNIL soldiers join the national defiance. Over clandestine airwaves, the Proclamation of Independence rings out to the world as the Merah-Putih unfurls from Sabang to Merauke."
+ dei_trunk.6.a: "Merdeka! The destiny of Nusantara is in our hands."
+ dei_trunk.6.world: "A momentous revolution in Southeast Asia."
+
+ # Custom Tooltips for Clean Starter Army & Navy
+ dei_trunk_path_a_tt: "§YProclaim the Democratic Republic under Sukarno:§!\n • Transfers political power to Democratic nationalists\n • Unlocks the Path A National Focus Tree\n • Deploys 6 Republican divisions in West and Central Java\n • Commissions Republican starter naval flotilla in Surabaya"
+ dei_trunk_path_b_tt: "§YEstablish the Federalist Commonwealth under Van Mook:§!\n • Transfers political power to Federalist moderates\n • Unlocks the Path B National Focus Tree\n • Deploys 5 KNIL Federal divisions in Java\n • Commissions Royal colonial starter naval flotilla in Surabaya"
+ dei_trunk_path_c_tt: "§YProclaim the People's Republic under Musso:§!\n • Transfers political power to Communist Vanguard\n • Unlocks the Path C National Focus Tree\n • Deploys 5 Red People's Army brigades in Java\n • Commissions Socialist starter naval flotilla in Surabaya"
+ dei_trunk_path_d_tt: "§YEstablish the Military Revolutionary Council under General Soedirman:§!\n • Transfers political power to Military Junta\n • Unlocks the Path D National Focus Tree\n • Deploys 5 Revolutionary Guard & Armored divisions in Java\n • Commissions Armed Forces starter naval flotilla in Surabaya"
+ dei_trunk_path_e_tt: "§YProclaim the Negara Islam Indonesia under Kartosoewirjo:§!\n • Transfers political power to Islamist leadership\n • Unlocks the Path E National Focus Tree\n • Deploys 5 Mujahidin TII regiments in Java\n • Commissions Islamic starter naval flotilla in Surabaya"
+ dei_trunk_path_f_tt: "§YRestore the Kemaharajaan Majapahit under Wuryaningrat:§!\n • Transfers political power to Traditional Imperial House\n • Unlocks the Path F National Focus Tree\n • Deploys 5 Bhayangkara & Guard divisions in Java\n • Commissions Imperial Grand Fleet starter flotilla in Surabaya"
 
  #### EVENTS: Path A - Republic ####
- dei_path_a.1.t: "Proklamasi Kemerdekaan"
+ dei_path_a.1.t: "Proclamation of Independence"
  dei_path_a.1.d: "The text of the proclamation has been finalized. How shall we announce our sovereignty to a turbulent world?"
  dei_path_a.1.a: "Proclaim immediately, accept all risks"
  dei_path_a.1.b: "Secure diplomatic and military arrangements first"
@@ -218,17 +222,17 @@
  dei_path_a.3.a: "Approach India and newly independent Asian states"
  dei_path_a.3.b: "Rally international press sympathy"
 
- dei_path_a.4.t: "Agresi Militer Belanda I"
+ dei_path_a.4.t: "First Dutch Military Aggression"
  dei_path_a.4.d: "Dutch forces initiate large-scale military operations across Java and Sumatra to reconquer key economic sectors."
  dei_path_a.4.a: "Fight directly on the frontlines"
  dei_path_a.4.b: "Conduct an orderly retreat to conserve strength"
 
- dei_path_a.5.t: "Agresi Militer Belanda II"
+ dei_path_a.5.t: "Second Dutch Military Aggression"
  dei_path_a.5.d: "A second massive Dutch assault falls upon the republican capital of Yogyakarta. National survival hangs by a thread."
  dei_path_a.5.a: "Fight to the last breath"
  dei_path_a.5.b: "Open emergency diplomatic appeals through the UN"
 
- dei_path_a.6.t: "Perundingan Meja Bundar (KMB)"
+ dei_path_a.6.t: "The Round Table Conference (KMB)"
  dei_path_a.6.d: "Under immense international pressure, the Netherlands agrees to substantive negotiations on full sovereignty transfer."
  dei_path_a.6.a: "Ratify the treaty — full sovereignty recognized"
 
@@ -491,7 +495,7 @@
  #### TOTAL PEOPLE'S DEFENSE (SISHANRATA) & WARTIME MECHANICS ####
  dei_decisions_defense: "Total People's Defense & Wartime Logistics"
  dei_decisions_defense_desc: "Mobilization and wartime survival measures under the Sistem Pertahanan Rakyat Semesta doctrine."
- dei_mechanic_sishanrata: "Proclaim Sistem Pertahanan Rakyat Semesta (Sishanrata)"
+ dei_mechanic_sishanrata: "Proclaim the People's Universal Defense System (Sishanrata)"
  dei_mechanic_sishanrata_desc: "When faced with imperialist invasion, mobilize every kampung, village, and youth organization into active guerrilla defense."
  dei_mechanic_pinisi_logistics: "Mobilize the Pinisi Schooner Blockade Runners"
  dei_mechanic_pinisi_logistics_desc: "Deploy thousands of traditional motorized wooden Bugis and Makassar Pinisi schooners to slip through enemy naval blockades."
@@ -503,7 +507,7 @@
  #### MILITARY MECHANICS & MEGA-PROJECT NATIONAL SPIRITS ####
  dei_idea_trans_java_corridor: "Trans-Java Strategic Corridor"
  dei_idea_trans_java_corridor_desc: "Integrated rail and highway networks allow lightning-fast redeployment of motorized and infantry divisions across Java."
- dei_idea_sishanrata_active: "Sistem Pertahanan Rakyat Semesta"
+ dei_idea_sishanrata_active: "People's Universal Defense System"
  dei_idea_sishanrata_active_desc: "A doctrine of total defense where every citizen, village, and field contributes to grinding down the invader."
  dei_idea_pinisi_logistics: "Pinisi Blockade Runner Fleet"
  dei_idea_pinisi_logistics_desc: "Shallow-draft wooden schooners navigate coral reefs and narrow straits undetected, maintaining supply lines to isolated garrisons."
@@ -535,15 +539,15 @@
  dei_itb_bandung_desc: "Elite polytechnic institution spearheading national telecommunications, radar, and ballistics research."
 
  #### UNIQUE COMMANDER TRAITS & LEADERS ####
- trait_dei_sudirman: "Bapak TNI & Maestro Gerilya"
+ trait_dei_sudirman: "Father of TNI & Guerrilla Maestro"
  trait_dei_sudirman_desc: "A legendary leader who commands total loyalty from soldiers and peasants alike, masterminding protracted rural resistance."
- trait_dei_urip: "Arsitek Angkatan Bersenjata"
+ trait_dei_urip: "Architect of Armed Forces"
  trait_dei_urip_desc: "A seasoned staff officer who forged professional regular army structures out of scattered militia units."
  trait_dei_nasution: "Konseptor Perang Wilayah"
  trait_dei_nasution_desc: "Pioneer of territorial warfare and flexible defense doctrines designed for tropical archipelagoes."
  trait_dei_kawilarang: "Panglima Pasukan Khusus"
  trait_dei_kawilarang_desc: "Audacious field commander specializing in amphibious shock assaults and commando operations."
- trait_dei_yos_sudarso: "Macan Laut Kepulauan"
+ trait_dei_yos_sudarso: "Maritime Tiger of the Archipelago"
  trait_dei_yos_sudarso_desc: "Fearless naval officer renowned for daring night torpedo attacks in narrow coastal channels."
 
  #### HISTORICAL EQUIPMENT FLAVOR (ALUTSISTA) ####
@@ -553,14 +557,14 @@
  INS_infantry_equipment_1: "Arisaka Type 38 Rampasan"
  INS_infantry_equipment_1_short: "Arisaka Type 38"
  INS_infantry_equipment_1_desc: "Japanese rifles captured by youth militias and revolutionary volunteers during the confusion of the occupation's end."
- INS_infantry_equipment_2: "Senapan Gerilya Pindad"
+ INS_infantry_equipment_2: "Pindad Guerrilla Rifle"
  INS_infantry_equipment_2_short: "Karabin Pindad"
  INS_infantry_equipment_2_desc: "Indigenous carbines and submachine guns manufactured in clandestine mountain workshops and the Bandung armory."
  INS_infantry_equipment_3: "Senapan Serbu Pindad SP-1"
  INS_infantry_equipment_3_short: "Pindad SP-1"
  INS_infantry_equipment_3_desc: "Modern select-fire battle rifles produced in mass quantities for the modern regular divisions of the Republic."
  INS_artillery_equipment_1: "Meriam Lapangan Bandoeng 75mm"
- INS_motorized_equipment_1: "Truk Angkut Militer Braat"
+ INS_motorized_equipment_1: "Braat Military Transport Truck"
  INS_armored_car_equipment_1: "Panser Braat Overvalwagen"
  INS_light_tank_equipment_1: "Panser Marmon-Herrington CTLS"
  INS_light_tank_equipment_2: "Tank Ringan Stuart Rampasan"
@@ -620,8 +624,8 @@
  dei_flavor.17.d: "Youth congresses from Sumatra, Java, Celebes, and the Moluccas gather to reaffirm the sacred 1928 pledge: Satu Nusa, Satu Bangsa, Satu Bahasa Indonesia. Patriotic anthems echo through assembly halls."
  dei_flavor.17.a: "One Motherland, One Nation, One Language!"
 
- dei_flavor.18.t: "Memory of De Zeven Provinciën Mutiny"
- dei_flavor.18.d: "Sailors quietly remember the daring February 1933 mutiny aboard the ironclad De Zeven Provinciën off Sumatra, when native and European deckhands seized command together to protest colonial austerity."
+ dei_flavor.18.t: "Memory of De Zeven Provincien Mutiny"
+ dei_flavor.18.d: "Sailors quietly remember the daring February 1933 mutiny aboard the ironclad De Zeven Provincien off Sumatra, when native and European deckhands seized command together to protest colonial austerity."
  dei_flavor.18.a: "Enforce strict naval discipline across all decks."
  dei_flavor.18.b: "Address the legitimate grievances of our seamen."
 
@@ -667,17 +671,17 @@
 
   # Path A - Republik Demokratis Focuses
   dei_focus_a_kaa_bandung: "Konferensi Asia-Afrika Bandung"
-  dei_focus_a_kaa_bandung_desc: "Host the historic Bandung Asian-African Conference, assembling delegates from newly sovereign nations across Asia and Africa to forge the Ten Principles of Bandung (*Dasasila Bandung*) and lead the non-aligned world."
+ dei_focus_a_kaa_bandung_desc: "In April 1955, the eyes of the world turn to the mountain city of Bandung as leaders from twenty-nine sovereign Asian and African nations assemble under Sukarno's banner. Denouncing all forms of colonialism and imperialist domination, the conference adopts the historic Ten Principles of Bandung and gives birth to the global Non-Aligned Movement."
   dei_focus_a_trikora: "Komando Trikora"
-  dei_focus_a_trikora_desc: "Proclaim the Tri Komando Rakyat (*Trikora*) to liberate West Irian from foreign colonial rule, mobilizing regular armed forces, volunteer battalions, and diplomatic pressure to reclaim our national borders."
+ dei_focus_a_trikora_desc: "Standing before a crowd of hundreds of thousands at Alun-Alun Yogyakarta, Sukarno issues the historic Tri Komando Rakyat (Trikora): defeat the puppet state of West Papua, fly the Merah-Putih across Irian, and prepare total military mobilization. Air, sea, and commando units deploy for the final amphibious showdown."
   dei_focus_a_dekrit_presiden: "Dekrit Presiden & Demokrasi Terpimpin"
-  dei_focus_a_dekrit_presiden_desc: "Issue a decisive Presidential Decree to break parliamentary gridlock, reinstating the 1945 Constitution (*UUD 1945*) and establishing Guided Democracy (*Demokrasi Terpimpin*) to steer the revolutionary nation."
+ dei_focus_a_dekrit_presiden_desc: "Confronted by constitutional assembly deadlock and escalating regional rebellions, President Sukarno issues the historic Dekrit Presiden 5 Juli 1959. Dissolving the Konstituante and reinstating the revolutionary 1945 Constitution, executive power is consolidated to steer the Indonesian state through global anti-imperialist confrontation."
   dei_focus_a_dwikora: "Komando Dwikora"
-  dei_focus_a_dwikora_desc: "Announce the Dwi Komando Rakyat (*Dwikora*) to confront imperialist encirclement in the region, standing firm against neo-colonial designs across the archipelagic waters."
-  dei_focus_a_pancasila: "Kedaulatan Falsafah Pancasila"
-  dei_focus_a_pancasila_desc: "Cement Pancasila as the eternal, unifying philosophical foundation of the Republic, harmonizing belief in God, humanitarianism, national unity, deliberative democracy, and social justice."
+ dei_focus_a_dwikora_desc: "Viewing the British-backed Federation of Malaysia as an imperialist encirclement designed to strangle Southeast Asian independence, Sukarno announces the Dwi Komando Rakyat (Dwikora). Volunteer brigades deploy across the Borneo border for the policy of Ganyang Malaysia, asserting Indonesian regional leadership."
+  dei_focus_a_pancasila: "Sovereignty of the Pancasila Philosophy"
+ dei_focus_a_pancasila_desc: "Formulated by Sukarno during the historic BPUPKI debates, the five principles of Pancasila—Belief in God, Just Humanitarianism, Indonesian Unity, Deliberative Democracy, and Social Justice—serve as the immutable philosophical foundation safeguarding the Republic against ideological division, sectarianism, and extremism."
   dei_focus_a_trisakti: "Doktrin Trisakti"
-  dei_focus_a_trisakti_desc: "Proclaim the eternal doctrine of Trisakti: political sovereignty (*berdaulat dalam politik*), economic self-reliance (*berdikari dalam ekonomi*), and cultural dignity (*berkepribadian dalam kebudayaan*)."
+ dei_focus_a_trisakti_desc: "To safeguard Indonesian dignity on the world stage, Sukarno proclaims the sacred doctrine of Trisakti: Sovereign in Politics, Self-Reliant in Economy, and Dignified in Culture. Rejecting foreign economic bondage and imperialist interference, the nation marches forward on its own strength."
 
   # Path A Events
   dei_path_a.10.t: "The Asian-African Conference in Bandung"
@@ -688,9 +692,9 @@
   dei_path_a.11.a: "Irian Barat must return to the motherland!"
   dei_path_a.12.t: "The Presidential Decree of 1959"
   dei_path_a.12.d: "With the Constituent Assembly deadlocked after years of contentious debate, decisive executive action has become urgent. With the full backing of General Nasution and the military command, the President dissolves the Konstituante and reinstates the revolutionary 1945 Constitution (*UUD 1945*)."
-  dei_path_a.12.a: "Kembali ke UUD 1945!"
+  dei_path_a.12.a: "Return to the 1945 Constitution!"
   dei_path_a.13.t: "Komando Dwikora Mobilization"
-  dei_path_a.13.d: "Facing perceived neo-colonial encircling maneuvers on the northern frontier, the Republic issues the Dwi Komando Rakyat (*Dwikora*). Volunteers and commandos prepare along the maritime straits, determined to safeguard revolutionary sovereignty against imperialist encroachment."
+  dei_path_a.13.d: "Facing perceived neo-colonial encircling maneuvers on the northern frontier, the Republic issues the Dwi Komando Rakyat (Dwikora). Volunteers and commandos prepare along the maritime straits, determined to safeguard revolutionary sovereignty against imperialist encroachment."
   dei_path_a.13.a: "Crush the neo-colonial threat!"
   dei_path_a.14.t: "Pancasila as the Eternal Foundation"
   dei_path_a.14.d: "A grand national seminar in Jakarta formally codifies Pancasila as the immutable soul of the Indonesian nation. Bridging ethnic, religious, and political divides, the Five Principles are etched permanently into national education, civic law, and military oath."
@@ -700,18 +704,18 @@
   dei_path_a.15.a: "Berdikari! Stand on our own two feet!"
 
   # Path B - Kolonial / Federalis Focuses
-  dei_focus_b_sidang_bfo: "Sidang Raya BFO"
-  dei_focus_b_sidang_bfo_desc: "Convene the grand congress of the Bijeenkomst voor Federaal Overleg (*BFO*), ratifying equal constitutional partnership between the federal states (*Negara Bagian*) and guaranteeing regional autonomy."
-  dei_focus_b_angkatan_federal: "Angkatan Bersenjata Federalis"
-  dei_focus_b_angkatan_federal_desc: "Reorganize our armed forces into a professional federal defense corps, integrating experienced KNIL veterans with local state security regiments to defend the commonwealth."
+  dei_focus_b_sidang_bfo: "The Grand BFO Summit"
+ dei_focus_b_sidang_bfo_desc: "The Bijeenkomst voor Federaal Overleg (BFO) convenes the premiers, regents, and delegates of all federal states in Bandung. Ratifying a landmark federal charter, the assembly guarantees equitable tax distribution, regional police powers, and veto rights for minority territories."
+  dei_focus_b_angkatan_federal: "Federal Armed Forces"
+ dei_focus_b_angkatan_federal_desc: "We merge elite professional KNIL formations, federal state constabularies, and veteran indigenous regiments into the Royal Indonesian Federal Armed Forces, creating an immaculately trained, Western-equipped defense corps capable of repelling foreign aggression and maintaining domestic peace."
   dei_focus_b_pakta_anzac: "Perjanjian Keamanan ANZAC"
-  dei_focus_b_pakta_anzac_desc: "Sign mutual defense and naval patrol agreements with Australia and New Zealand, securing the Timor Sea, Torres Strait, and archipelagic maritime security."
+ dei_focus_b_pakta_anzac_desc: "Surrounded by vast southern oceans, our federal security is intimately tied to the British Commonwealth. We conclude a comprehensive mutual defense and intelligence-sharing treaty with Australia and New Zealand, coordinating naval task forces to patrol the vital Timor, Arafura, and Coral Seas."
   dei_focus_b_perkebunan_deli: "Modernisasi Perkebunan Deli"
-  dei_focus_b_perkebunan_deli_desc: "Expand the great agro-industrial estates of Deli, Sumatra, and Java through modern agronomic investment and Dutch-Indonesian commercial syndicates."
+ dei_focus_b_perkebunan_deli_desc: "The legendary Deli tobacco and rubber estates of East Sumatra are transformed through cutting-edge agronomic science, mechanical processing plants, and joint-stock Dutch-Indonesian commercial enterprises, generating unprecedented foreign export exchange for our federal treasury."
   dei_focus_b_otonomi_kerajaan: "Piagam Perlindungan Swapraja"
-  dei_focus_b_otonomi_kerajaan_desc: "Issue charters of royal protection and financial security to the traditional Kraton, Sultans, and Swapraja princes across the archipelago, preserving aristocratic heritage."
+ dei_focus_b_otonomi_kerajaan_desc: "To safeguard our deep historical heritage, the federal government signs binding Charters of Royal Protection with the historic Kratons of Yogyakarta and Surakarta, the Sultanates of Deli, Pontianak, and Kutai, and the customary Swapraja rulers, guaranteeing their hereditary rights, palaces, and regional judicial privileges."
   dei_focus_b_pelabuhan_bebas: "Jaringan Pelabuhan Bebas Nusantara"
-  dei_focus_b_pelabuhan_bebas_desc: "Designate Batavia, Surabaya, and Sabang as premier international free trade ports, abolishing burdensome tariffs to attract international maritime shipping."
+ dei_focus_b_pelabuhan_bebas_desc: "To capitalize on the world's most congested maritime trade routes, Batavia, Tanjung Perak, and Sabang are chartered as international Free Trade Ports. Eliminating stifling tariffs and expanding deepwater drydocks, we transform the archipelago into the uncontested maritime logistics hub of the Indian and Pacific Oceans."
 
   # Path B Events
   dei_path_b.9.t: "The Grand BFO Federal Summit"
@@ -734,28 +738,28 @@
   dei_path_b.14.a: "The crossroads of world commerce!"
 
   # Path C - Komunis Focuses
-  dei_focus_c_komune_tani: "Kolektivisasi Komune Tani"
-  dei_focus_c_komune_tani_desc: "Establish agricultural communes and rural Soviets across Java and Sumatra, redistributing landlord estates to landless sharecroppers and organizing collective farming."
-  dei_focus_c_sita_aset_asing: "Nasionalisasi Aset Imperialis"
-  dei_focus_c_sita_aset_asing_desc: "Expropriate and nationalize all foreign-owned colonial enterprises, plantations, mines, and banks without compensation, placing economic power firmly in workers' hands."
-  dei_focus_c_angkatan_kelima: "Pembentukan Angkatan Kelima"
-  dei_focus_c_angkatan_kelima_desc: "Arm workers and peasants into the Fifth Force (*Angkatan Kelima*), establishing a massive proletarian defense militia capable of protecting the revolution against reactionaries."
+  dei_focus_c_komune_tani: "Agrarian Commune Collectivization"
+ dei_focus_c_komune_tani_desc: "Transforming fragmented peasant subsistence into mechanized modern agriculture, we organize village Soviets and agrarian production cooperatives across Java and Sumatra, supplying collective grain silos, state tractors, and rural electrification to elevate the rural proletariat."
+  dei_focus_c_sita_aset_asing: "Nationalization of Imperial Assets"
+ dei_focus_c_sita_aset_asing_desc: "The blood and sweat of Indonesian labor shall no longer enrich foreign boardrooms in Amsterdam, London, and New York. By revolutionary state decree, all foreign petroleum concessions, private railways, banks, and tin dredges are expropriated into sovereign state monopolies."
+  dei_focus_c_angkatan_kelima: "Formation of the Fifth Army"
+ dei_focus_c_angkatan_kelima_desc: "True socialism demands that the proletariat possess the means of its own defense. We arm millions of factory workers and peasant collectives into the legendary Fifth Force (Angkatan Kelima), creating an armed mass vanguard capable of crushing counter-revolution anywhere in the archipelago."
   dei_focus_c_lekra: "Mobilisasi Budaya LEKRA"
-  dei_focus_c_lekra_desc: "Mobilize the Institute of People's Culture (*LEKRA*), directing arts, literature, music, and theater toward revolutionary mass education and socialist realism."
-  dei_focus_c_pakta_asia_merah: "Poros Anti-Imperialis Asia"
-  dei_focus_c_pakta_asia_merah_desc: "Forge an unbreakable revolutionary anti-imperialist axis with sister socialist republics across the globe, resisting Western capitalist hegemony."
-  dei_focus_c_pembangunan_semesta: "Pembangunan Semesta Berencana"
-  dei_focus_c_pembangunan_semesta_desc: "Enact the Universal Planned Development program (*Pembangunan Semesta*), channeling national resources into heavy state metallurgy, mechanization, and socialist industrialization."
+ dei_focus_c_lekra_desc: "Art belongs to the masses and must serve the revolution. We mobilize the Institute of People's Culture (LEKRA), directing artists, playwrights, novelists, and folk musicians to create vibrant socialist-realist works that educate the working class and inspire revolutionary struggle."
+  dei_focus_c_pakta_asia_merah: "Asian Anti-Imperialist Axis"
+ dei_focus_c_pakta_asia_merah_desc: "Standing shoulder-to-shoulder with fraternal revolutionary nations across Asia and Eurasia, we sign the Red Pacific Mutual Assistance Treaty, creating an impenetrable collective defense bloc committed to eradicating Western colonialism from the eastern hemisphere."
+  dei_focus_c_pembangunan_semesta: "Universal Planned Development"
+ dei_focus_c_pembangunan_semesta_desc: "Channeling total state economic planning through Gosplan-style central coordination, the Universal Planned Development program (Pembangunan Semesta) coordinates five-year targets for electrification, heavy machine engineering, and strategic mineral extraction to achieve autarkic socialist supremacy."
 
   # Path C Events
   dei_path_c.9.t: "The Agrarian Communes of Java"
-  dei_path_c.9.d: "Red banners wave over rice paddies and rubber estates as thousands of peasant families join together in socialist agrarian communes (*Komune Tani*). Landlord estates have been expropriated and redistributed to those who cultivate the soil."
-  dei_path_c.9.a: "Land to the tiller! Hidup Buruh dan Tani!"
+  dei_path_c.9.d: "Red banners wave over rice paddies and rubber estates as thousands of peasant families join together in socialist agrarian communes (Komune Tani). Landlord estates have been expropriated and redistributed to those who cultivate the soil."
+  dei_path_c.9.a: "Land to the tiller! Workers and Peasants Live!"
   dei_path_c.10.t: "Seizure of Foreign Monopolies"
   dei_path_c.10.d: "Worker committees have marched into the executive offices of Dutch trading companies, Anglo-Dutch oil facilities, and British plantations. All imperialist corporate assets are nationalized under state syndicates without compensation."
   dei_path_c.10.a: "The wealth of Indonesia belongs to its people!"
   dei_path_c.11.t: "The Arming of the Fifth Force"
-  dei_path_c.11.d: "Crates of rifles, submachine guns, and field radios are distributed to worker and peasant militias in industrial suburbs and rural villages. The newly inaugurated Angkatan Kelima stands ready to defend the revolution with blood and iron."
+  dei_path_c.11.d: "Crates of rifles, submachine guns, and field radios are distributed to worker and peasant militias in industrial suburbs and rural villages. The newly inaugurated Fifth Army stands ready to defend the revolution with blood and iron."
   dei_path_c.11.a: "Workers and peasants with rifles in hand!"
   dei_path_c.12.t: "The Cultural Congress of LEKRA"
   dei_path_c.12.d: "Authors, poets, and folk musicians pack the National Theater for the LEKRA plenary session. The doctrine of 'Politics as Commander' (*Politik adalah Panglima*) is cheered as artists pledge to create revolutionary literature accessible to the masses."
@@ -768,18 +772,18 @@
   dei_path_c.14.a: "Forward to socialist industrialization!"
 
   # Path D - Otoriter Militeristik Focuses
-  dei_focus_d_dewan_revolusi: "Dewan Revolusi Militer Tertinggi"
-  dei_focus_d_dewan_revolusi_desc: "Form the Supreme Military Revolutionary Council, dissolving corrupt party politics and subordinating civil government directly to the command of the Armed Forces."
-  dei_focus_d_karyawan_abri: "Doktrin Dwifungsi ABRI"
-  dei_focus_d_karyawan_abri_desc: "Institutionalize the Dual Function (*Dwifungsi*) doctrine, appointing disciplined military commanders to manage state-owned enterprises, civic infrastructure, and regional governorships."
-  dei_focus_d_benteng_samudra: "Benteng Samudra Nusantara"
-  dei_focus_d_benteng_samudra_desc: "Fortify our archipelagic straits with hardened coastal fortresses, heavy naval batteries, and air-defense perimeters, turning the Indonesian seas into an impregnable redoubt."
+  dei_focus_d_dewan_revolusi: "Supreme Military Revolutionary Council"
+ dei_focus_d_dewan_revolusi_desc: "Executive governance is permanently constitutionalized under the Supreme Military Revolutionary Council. Composed of frontline commanders, naval admirals, and air commodores, the council directs state policy with ruthless military efficiency and single-minded national focus."
+  dei_focus_d_karyawan_abri: "Dwifungsi ABRI Doctrine"
+ dei_focus_d_karyawan_abri_desc: "Under the groundbreaking Dwifungsi (Dual Function) doctrine, military officers are appointed to direct state enterprises, civic ministries, provincial governorships, and judicial bodies, ensuring that military discipline and national interest guide every facet of civilian life."
+  dei_focus_d_benteng_samudra: "Nusantara Ocean Fortress"
+ dei_focus_d_benteng_samudra_desc: "Turning the Indonesian archipelago into an impregnable maritime fortress, we construct fortified coastal artillery batteries, torpedo boat bunkers, and anti-aircraft rings guarding the Sunda, Lombok, and Makassar Straits, sealing our inner seas against any hostile fleet."
   dei_focus_d_wajib_militer: "Mobilisasi Bela Negara Menyeluruh"
-  dei_focus_d_wajib_militer_desc: "Implement universal conscription and mandatory national defense training (*Bela Negara*) for all youth, turning the whole nation into a disciplined, combat-ready force."
-  dei_focus_d_komando_selat: "Pusat Komando Strategis Selat Malaka"
-  dei_focus_d_komando_selat_desc: "Establish unified air and maritime strike wings guarding the Strait of Malacca, giving our command total surveillance and interdiction authority over all maritime traffic."
-  dei_focus_d_hegemoni_selatan: "Hegemoni Militer Samudra Hindia"
-  dei_focus_d_hegemoni_selatan_desc: "Expand our navy and strategic bomber squadrons to project decisive military dominance across the Indian Ocean and the South Seas."
+ dei_focus_d_wajib_militer_desc: "Under the doctrine of Sishanrata (Total People's Defense), every adult citizen is designated a combatant in the national defense apparatus. Universal conscription and mandatory territorial militia service ensure that any invading army faces tens of millions of armed, disciplined defenders."
+  dei_focus_d_komando_selat: "Strategic Strait of Malacca Command"
+ dei_focus_d_komando_selat_desc: "Commanding the most critical maritime chokepoint on Earth, we establish the Strategic Malacca Strait Command at Sabang and Belawan. Deploying naval patrol wings, minefield networks, and radar stations, no warship or merchant vessel traverses the strait without Indonesian permission."
+  dei_focus_d_hegemoni_selatan: "Indian Ocean Hegemony"
+ dei_focus_d_hegemoni_selatan_desc: "With an indomitable army, an expansive blue-water fleet, and a militarized industrial economy, Indonesia asserts undisputed regional hegemony across the Southern Seas. Colonial powers are driven from our waters, and Nusantara takes its rightful place as the supreme military superpower of the South."
 
   # Path D Events
   dei_path_d.9.t: "The Military Revolutionary Council Takes Control"
@@ -802,18 +806,18 @@
   dei_path_d.14.a: "Our supremacy is uncontested."
 
   # Path E - Islamis / NII Focuses
-  dei_focus_e_baitul_mal: "Pendirian Baitul Mal Pusat"
-  dei_focus_e_baitul_mal_desc: "Establish a central *Baitul Mal* treasury to administer public revenues, state assets, and compulsory zakat distribution, guaranteeing comprehensive welfare for all believers."
-  dei_focus_e_mahkamah_syariah: "Mahkamah Syariah Tertinggi"
-  dei_focus_e_mahkamah_syariah_desc: "Codify *Qanun* legislation and establish a Supreme Sharia Court, bringing civic, criminal, and commercial statutes into pure alignment with Islamic jurisprudence."
-  dei_focus_e_akademi_mujahidin: "Akademi Militer Mujahidin"
-  dei_focus_e_akademi_mujahidin_desc: "Reorganize military training academies into dedicated Mujahidin officer colleges, instilling tactical expertise and fiery spiritual conviction in every cadet."
-  dei_focus_e_hapus_riba: "Sistem Keuangan Muamalah Tanpa Riba"
-  dei_focus_e_hapus_riba_desc: "Abolish usury (*riba*) across the financial sector, replacing conventional interest with profit-and-loss sharing (*mudharabah*) and asset-backed Islamic banking."
-  dei_focus_e_liga_muslim: "Liga Perjuangan Muslim Sedunia"
-  dei_focus_e_liga_muslim_desc: "Dispatch religious envoys and military attaches to Muslim nations and anti-colonial resistance movements worldwide, building global Islamic brotherhood."
+  dei_focus_e_baitul_mal: "Central Baitul Mal Treasury"
+ dei_focus_e_baitul_mal_desc: "Reviving the classical Islamic treasury system, the Baitul Mal centralizes all state tax revenues, proceeds from nationalized natural resources, and compulsory religious zakat. Funds are systematically disbursed to eradicate poverty, care for widows and orphans, and finance national defense."
+  dei_focus_e_mahkamah_syariah: "Supreme Sharia Court"
+ dei_focus_e_mahkamah_syariah_desc: "We establish a nationwide network of Sharia Courts (*Mahkamah Syariah*) headed by learned Qadis. Administering both civil and criminal justice without bribery or colonial delay, the courts deliver swift, impartial justice in accordance with divine law."
+  dei_focus_e_akademi_mujahidin: "Mujahidin Military Academy"
+ dei_focus_e_akademi_mujahidin_desc: "We establish dedicated military academies designed to train officer-cadets who combine mastery of modern mechanized tactics, artillery ballistics, and combined-arms doctrine with unshakeable spiritual courage, molding commanders who know neither fear nor surrender."
+  dei_focus_e_hapus_riba: "Interest-Free Islamic Financial System"
+ dei_focus_e_hapus_riba_desc: "Usurious interest (*riba*) is a tool of capitalist exploitation strictly forbidden by scripture. We abolish all interest-bearing banking systems, establishing an asset-backed, profit-sharing financial system that fosters honest commerce, social solidarity, and ethical industrial growth."
+  dei_focus_e_liga_muslim: "World Muslim Solidarity League"
+ dei_focus_e_liga_muslim_desc: "Taking our place as the most populous Islamic power on Earth, we establish the World Muslim Solidarity League in Jakarta, uniting anti-colonial Islamic liberation movements across Africa, the Middle East, and Asia into a powerful diplomatic and military alliance."
   dei_focus_e_khilafah_nusantara: "Khilafah Islamiyah Nusantara"
-  dei_focus_e_khilafah_nusantara_desc: "Proclaim the sovereign Archipelagic Caliphate (*Khilafah Islamiyah Nusantara*), uniting all believers from Sabang to Merauke under the divine banner of righteousness."
+ dei_focus_e_khilafah_nusantara_desc: "The crowning achievement of our divine struggle: we officially proclaim the Archipelagic Caliphate (*Khilafah Islamiyah Nusantara*). Uniting millions of faithful souls under a single righteous commander, the new Caliphate stands as an unshakeable beacon of Islamic power, justice, and spiritual light."
 
   # Path E Events
   dei_path_e.9.t: "Inauguration of the Baitul Mal"
@@ -836,18 +840,18 @@
   dei_path_e.14.a: "Allahu Akbar! The Caliphate is established!"
 
   # Path F - Majapahit Focuses
-  dei_focus_f_sumpah_palapa_baru: "Pemenuhan Sumpah Palapa Baru"
-  dei_focus_f_sumpah_palapa_baru_desc: "Renew Mahapatih Gajah Mada's legendary Palapa Oath, declaring that no feast or rest shall be enjoyed until all archipelagic realms are united under the sacred imperial throne."
-  dei_focus_f_restorasi_trowulan: "Restorasi Ibu Kota Suci Trowulan"
-  dei_focus_f_restorasi_trowulan_desc: "Excavate and rebuild the ancient imperial city of Trowulan, raising stone temples (*candi*), royal pavilions, and sacred pools to honor the heritage of our emperors."
-  dei_focus_f_dharmaputra: "Pembentukan Resimen Dharmaputra"
-  dei_focus_f_dharmaputra_desc: "Resurrect the elite warrior order of the *Dharmaputra*, noble knights bound by eternal blood oaths to protect the Maharaja and crush treason."
-  dei_focus_f_jung_raksasa: "Armada Jung Samudera Majapahit"
-  dei_focus_f_jung_raksasa_desc: "Construct magnificent multi-decked archipelagic war junks and armored naval vessels, reviving the maritime supremacy that ruled the southern oceans in centuries past."
-  dei_focus_f_kitab_kutaramanawa: "Kodifikasi Hukum Kutaramanawa"
-  dei_focus_f_kitab_kutaramanawa_desc: "Reinstate the classical Majapahit legal codex *Kutaramanawa Dharmasastra*, establishing uncompromising imperial discipline, civic duties, and social harmony."
-  dei_focus_f_penobatan_maharaja: "Penobatan Maharaja Nusantara Raya"
-  dei_focus_f_penobatan_maharaja_desc: "Conduct the supreme coronation (*Abhiseka*) of the Emperor under the golden Surya Majapahit, heralding an eternal golden era of glory, righteousness, and maritime dominion."
+  dei_focus_f_sumpah_palapa_baru: "Fulfillment of the New Sumpah Palapa"
+ dei_focus_f_sumpah_palapa_baru_desc: "Before the assembled imperial army, the Mahapatih renews the legendary Palapa Oath of Gajah Mada: 'Lamun huwus kalah nusantara, isun amukti palapa.' No rest, no indulgence, and no compromise shall be permitted until every island and every shore of the Southern Seas is unified under the Imperial Sun."
+  dei_focus_f_restorasi_trowulan: "Restoration of the Sacred Capital Trowulan"
+ dei_focus_f_restorasi_trowulan_desc: "We launch a monumental architectural and civic restoration of the ancient imperial capital of Trowulan. Raising magnificent red-brick royal gates (*Candi Bajang Ratu*), expansive temple sanctuaries, and state chancelleries, Trowulan re-emerges as the grandest ceremonial capital in Asia."
+  dei_focus_f_dharmaputra: "Formation of the Dharmaputra Regiment"
+ dei_focus_f_dharmaputra_desc: "We resurrect the elite warrior brotherhood of the Dharmaputra: noble knights chosen from the most disciplined warrior lineages of the empire. Sworn to defend the person of the Maharaja with their lives, the Dharmaputra form an invincible mechanized guard regiment."
+  dei_focus_f_jung_raksasa: "Grand Ocean Jung Fleet of Majapahit"
+ dei_focus_f_jung_raksasa_desc: "Drawing inspiration from the monumental multi-decked ocean war junks described by ancient travelers, our naval architects design heavily armed, ocean-going battleships and cruisers. Reviving our legendary naval supremacy, the fleet sets sail to assert total dominion over the Indian and Pacific Oceans."
+  dei_focus_f_kitab_kutaramanawa: "Codification of Kutaramanawa Law"
+ dei_focus_f_kitab_kutaramanawa_desc: "The sacred legal codex of Majapahit, the Kutaramanawa Dharmasastra, is revived and modernized into the supreme imperial criminal and civic code. Enforcing unshakeable social duty, civic integrity, and public harmony, corruption and crime are eradicated from the realm."
+  dei_focus_f_penobatan_maharaja: "Coronation of the Supreme Maharaja"
+ dei_focus_f_penobatan_maharaja_desc: "The solemn culmination of the imperial renaissance: the grand coronation (*Abhiseka*) of the Supreme Maharaja under the golden Surya Majapahit. Crowning the sovereign before hundreds of thousands of rejoicing subjects, an eternal golden age of prosperity, glory, and righteous dominion begins."
 
   # Path F Events
   dei_path_f.10.t: "The Sacred Renewal of Sumpah Palapa"
@@ -863,11 +867,11 @@
   dei_path_f.13.d: "Massive four-masted war vessels, constructed from ironwood and reinforced with heavy naval cannons, slide into the waters off the dockyards of Gresik and Tuban. The naval majesty of Majapahit once again commands the seas."
   dei_path_f.13.a: "Rule the southern waves!"
   dei_path_f.14.t: "Promulgation of Kutaramanawa Dharmasastra"
-  dei_path_f.14.d: "Royal judges read the ancient eighteen chapters of Kutaramanawa law in court. Unjust corruption, banditry, and disloyalty are met with swift imperial justice, restoring harmony (*kertaraharja*) throughout the realm."
+  dei_path_f.14.d: "Royal judges read the ancient eighteen chapters of Kutaramanawa law in court. Unjust corruption, banditry, and disloyalty are met with swift imperial justice, restoring harmony (kertaraharja) throughout the realm."
   dei_path_f.14.a: "Righteous order reigns across the islands."
   dei_path_f.15.t: "The Coronation of the Supreme Maharaja"
   dei_path_f.15.d: "Trumpets, gongs, and sacred gamelan fanfare resound through the great throne hall of Trowulan. Crowned with the golden Makuta under the radiant Surya Majapahit emblem, the Maharaja is proclaimed Emperor of All Nusantara."
-  dei_path_f.15.a: "Jayalah Majapahit! Dirgahayu Maharaja!"
+  dei_path_f.15.a: "Long Live Majapahit! Long Live the Maharaja!"
 
   # Custom Ideas for Expanded Ideologies
   dei_idea_kaa_spirit: "Spirit of Bandung"
@@ -890,7 +894,7 @@
   dei_idea_royal_autonomy_desc: "Traditional sultans and royal houses maintain local loyalty, reducing unrest and strengthening regional administration."
   dei_idea_free_ports: "Nusantara Free Ports"
   dei_idea_free_ports_desc: "Tariff-free archipelagic ports attract bustling international trade and naval commerce."
-  dei_idea_agrarian_communes: "Kolektif Komune Tani"
+  dei_idea_agrarian_communes: "Agrarian Commune Collective"
   dei_idea_agrarian_communes_desc: "Peasant communes maximize agricultural yield and fuel rapid socialist industrialization."
   dei_idea_nationalized_assets: "Nationalized Imperialist Wealth"
   dei_idea_nationalized_assets_desc: "Expropriated foreign enterprises are reinvested directly into public development and workers' welfare."
@@ -943,27 +947,27 @@
   dei_decisions_research_doctrines_desc: "Establish sovereign military doctrines, technological development priorities, and domestic alutsista standardization across the armed forces."
 
   # Decisions
-  dei_decision_doktrin_gerilya_wilayah: "Doktrin Perang Wilayah & Gerilya Semesta"
+  dei_decision_doktrin_gerilya_wilayah: "Regional Warfare & Universal Guerrilla Doctrine"
   dei_decision_doktrin_gerilya_wilayah_desc: "Formulate a comprehensive territorial and guerrilla warfare doctrine (*Sishanrata*), training soldiers and popular militias to use archipelagic terrain, jungles, and mountain ridges to bog down any invading force."
-  dei_decision_doktrin_gerilya_laut: "Doktrin Pertahanan Selat Dangkal & Gerilya Laut"
+  dei_decision_doktrin_gerilya_laut: "Shallow Water & Maritime Guerrilla Doctrine"
   dei_decision_doktrin_gerilya_laut_desc: "Develop an archipelagic littoral defense doctrine emphasizing stealth torpedo attacks, submarine ambushes, and minefield barriers across our shallow straits."
-  dei_decision_doktrin_dirgantara_taktis: "Doktrin Superioritas Udara Taktis Khatulistiwa"
+  dei_decision_doktrin_dirgantara_taktis: "Tactical Air Superiority of the Equator"
   dei_decision_doktrin_dirgantara_taktis_desc: "Pioneer specialized tropical flight doctrines, optimizing close air support, interception readiness, and severe equatorial weather operations."
   dei_decision_riset_senjata_pindad: "Standardisasi Senjata Pindad & AI Bandung"
   dei_decision_riset_senjata_pindad_desc: "Standardize small arms and field artillery production at the Bandung arsenal facilities, accelerating domestic rifle development."
-  dei_decision_riset_mekanisasi_braat: "Pengembangan Panser Cepat Braat Surabaya"
+  dei_decision_riset_mekanisasi_braat: "Development of Braat Light Tanks"
   dei_decision_riset_mekanisasi_braat_desc: "Commission the Braat Machinefabriek in Surabaya to produce specialized tropical light armored vehicles and armored cars for rapid archipelagic response."
   dei_decision_riset_dirgantara_iptn: "Inovasi Dirgantara IPTN & Lanud Andir"
   dei_decision_riset_dirgantara_iptn_desc: "Invest in domestic aviation manufacturing at Andir and Kalijati, accelerating airframe engineering and fighter aircraft production."
   dei_decision_riset_industri_pertamina: "Eksplorasi Minyak & Kilang BPM/Pertamina"
   dei_decision_riset_industri_pertamina_desc: "Expand strategic refining and fuel synthesis operations at Plaju and Balikpapan to fuel our expanding war effort."
-  dei_decision_commission_armada_kri: "Modernisasi & Komisioning Armada Perang KRI"
+  dei_decision_commission_armada_kri: "Modernization & Commissioning of KRI War Fleet"
   dei_decision_commission_armada_kri_desc: "Commission the core fighting vessels of the national fleet, establishing standardized destroyer, submarine, and fast torpedo boat designs at Surabaya dockyards."
 
   # Ideas & Spirits
   dei_idea_doktrin_gerilya_wilayah: "Doktrin Perang Wilayah & Sishanrata"
   dei_idea_doktrin_gerilya_wilayah_desc: "Mastery of archipelagic guerrilla doctrine provides entrenched defensive power and resilience against supply cutoffs in tropical terrain."
-  dei_idea_doktrin_gerilya_laut: "Doktrin Gerilya Selat Dangkal"
+  dei_idea_doktrin_gerilya_laut: "Shallow Water Guerrilla Doctrine"
   dei_idea_doktrin_gerilya_laut_desc: "Specialized shallow-water naval tactics maximize torpedo lethality and convoy interdiction across narrow archipelagic straits."
   dei_idea_doktrin_dirgantara_taktis: "Doktrin Dirgantara Khatulistiwa"
   dei_idea_doktrin_dirgantara_taktis_desc: "Rigorous training in equatorial weather conditions ensures reliable close air support and air intercept efficiency."
@@ -983,62 +987,62 @@
   pertamina_bonus: "Strategic Petroleum & Refinery Research"
 
   # Division Names Groups
-  DEI_KOMANDO: "Resimen Komando & Pasukan Gerilya"
-  DEI_KAVALERI: "Resimen Kavaleri & Lapis Baja Nusantara"
+  DEI_KOMANDO: "Commando Regiment & Guerrilla Forces"
+  DEI_KAVALERI: "Nusantara Cavalry & Armored Regiment"
   DEI_GARNIZUN: "Garnizun Pertahanan Pangkalan & Pantai"
 # =====================================================================
  # TATA KELOLA & PENAMAAN RESMI NEGARA (DECISIONS & COSMETIC TAGS)
  # =====================================================================
- dei_decisions_proclamations: "Tata Kelola & Penamaan Resmi Negara"
- dei_decisions_proclamations_desc: "Sebagai pemegang mandat kepemimpinan bangsa, kita berhak menentukan tata kelola, struktur ketatanegaraan, serta nama proklamasi resmi yang merepresentasikan kedaulatan Indonesia di panggung internasional."
+dei_decisions_proclamations: "State Governance & Official Nomenclature"
+ dei_decisions_proclamations_desc: "Holding the sovereign mandate of national leadership, we possess the constitutional authority to establish state structures and determine the official proclamation that represents Indonesia on the world stage."
 
- # Keputusan Proklamasi Jalur A: Republik
- dei_proclaim_nkri: "Proklamasikan Negara Kesatuan Republik Indonesia (NKRI)"
- dei_proclaim_nkri_desc: "Tegakkan bentuk negara kesatuan yang berdaulat dan tidak terbagi, berlandaskan amanat Proklamasi Kemerdekaan 17 Agustus 1945 dan falsafah Pancasila."
- dei_proclaim_ris: "Bentuk Republik Indonesia Serikat (RIS)"
- dei_proclaim_ris_desc: "Adopsi struktur federal yang mengakomodasi kedaulatan negara-negara bagian dan swapraja di seluruh kepulauan Nusantara."
- dei_proclaim_sosialis: "Proklamasikan Republik Sosialis Demokratis Indonesia"
- dei_proclaim_sosialis_desc: "Deklarasikan republik sosialis demokratis yang berorientasi pada kemakmuran rakyat, kepemilikan komunal atas alat produksi, dan koperasi gotong royong."
+ # Proclamation Decisions - Path A: Republic
+ dei_proclaim_nkri: "Proclaim the Unitary Republic of Indonesia (NKRI)"
+ dei_proclaim_nkri_desc: "Establish a sovereign, indivisible unitary republic founded upon the historic Proclamation of Independence and the guiding philosophy of Pancasila."
+ dei_proclaim_ris: "Form the Republic of the United States of Indonesia (RIS)"
+ dei_proclaim_ris_desc: "Adopt a federal constitutional structure accommodating the regional sovereignty of member states and traditional realms across the archipelago."
+ dei_proclaim_sosialis: "Proclaim the Democratic Socialist Republic of Indonesia"
+ dei_proclaim_sosialis_desc: "Declare a democratic socialist republic dedicated to people's welfare, cooperative production, and the spirit of Gotong Royong."
 
- # Keputusan Proklamasi Jalur B: Kolonial / Federalis
- dei_proclaim_dei: "Pertahankan Hindia Belanda (Nederlandsch-IndiÃ«)"
- dei_proclaim_dei_desc: "Tegakkan kembali kelanjutan administrasi kolonial Hindia Belanda di bawah perlindungan Mahkota Kerajaan Belanda dan Gubernur Jenderal."
- dei_proclaim_bfo: "Deklarasikan Uni Negara-Negara Indonesia (BFO)"
- dei_proclaim_bfo_desc: "Satukan seluruh swapraja dan negara bagian dalam sebuah uni persemakmuran federal yang mandiri, tertib, dan berdaulat."
- dei_proclaim_dominion: "Bentuk Persemakmuran Mahkota Hindia"
- dei_proclaim_dominion_desc: "Integrasikan kepulauan Nusantara sebagai wilayah persemakmuran (Dominion) otonom yang setara di bawah Uni Belanda-Indonesia."
+ # Proclamation Decisions - Path B: Colonial / Federalist
+ dei_proclaim_dei: "Reassert the Netherlands East Indies (Nederlandsch-Indie)"
+ dei_proclaim_dei_desc: "Reaffirm the continuity of colonial administration under the protection of the Crown of the Netherlands and the Governor-General."
+ dei_proclaim_bfo: "Proclaim the United States of Indonesia (BFO)"
+ dei_proclaim_bfo_desc: "Unite all traditional autonomous realms and federal states into a sovereign, orderly federal commonwealth."
+ dei_proclaim_dominion: "Establish the Crown Dominion of the Indies"
+ dei_proclaim_dominion_desc: "Integrate the archipelago as an autonomous, equal Dominion within the Netherlands-Indonesia Union."
 
- # Keputusan Proklamasi Jalur C: Komunis
- dei_proclaim_rri: "Proklamasikan Republik Rakyat Indonesia (RRI)"
- dei_proclaim_rri_desc: "Kibarkan panji merah dan tegakkan kekuasaan kaum buruh dan tani, menghapus sisa-sisa feodalisme dan kapitalisme imperialis."
- dei_proclaim_soviet: "Dirikan Uni Republik Sosialis Soviet Indonesia (URSSI)"
- dei_proclaim_soviet_desc: "Transformasikan Indonesia menjadi dewan-dewan soviet proletariat yang tergabung erat dalam persaudaraan revolusi sosialis internasional."
- dei_proclaim_front: "Konsolidasikan Front Demokrasi Rakyat Nusantara"
- dei_proclaim_front_desc: "Satukan seluruh elemen massa revolusioner dan perserikatan buruh dalam kepemimpinan Front Demokrasi Rakyat."
+ # Proclamation Decisions - Path C: Communist
+ dei_proclaim_rri: "Proclaim the People's Republic of Indonesia (RRI)"
+ dei_proclaim_rri_desc: "Raise the red banner and establish the vanguard rule of workers and peasants, sweeping away all vestiges of feudalism and foreign imperialism."
+ dei_proclaim_soviet: "Found the Union of Soviet Socialist Republics of Indonesia (URSSI)"
+ dei_proclaim_soviet_desc: "Transform Indonesia into a workers' soviet democracy closely linked in fraternal alliance with the international socialist revolution."
+ dei_proclaim_front: "Consolidate the People's Democratic Front of Nusantara"
+ dei_proclaim_front_desc: "Unite all trade unions, agrarian leagues, and revolutionary mass organizations under the unified leadership of the Front Rakyat."
 
- # Keputusan Proklamasi Jalur D: Otoriter Militer
- dei_proclaim_otoriter_nkri: "Tegakkan Negara Kesatuan Revolusioner Indonesia"
- dei_proclaim_otoriter_nkri_desc: "Kukuhkan kepemimpinan revolusi terpusat di bawah komando baja tentara demi menyelamatkan persatuan tanah air dari anarki."
- dei_proclaim_junta: "Bentuk Komando Markas Besar Revolusi Militer"
- dei_proclaim_junta_desc: "Serahkan seluruh tampuk kekuasaan eksekutif dan legislatif kepada Presidium Dewan Panglima Perang Angkatan Bersenjata."
- dei_proclaim_raya: "Deklarasikan Imperium Militer Indonesia Raya"
- dei_proclaim_raya_desc: "Kobarkan doktrin geopolitik Indonesia Raya dengan supremasi militer terkuat di lingkar samudra Pasifik dan Hindia."
+ # Proclamation Decisions - Path D: Authoritarian Military
+ dei_proclaim_otoriter_nkri: "Proclaim the Revolutionary Unitary State of Indonesia"
+ dei_proclaim_otoriter_nkri_desc: "Establish a centralized revolutionary regime under the unbending command of the armed forces to preserve national unity."
+ dei_proclaim_junta: "Form the Supreme Military Revolutionary Command"
+ dei_proclaim_junta_desc: "Vest supreme executive and legislative authority in the Presidium of the Armed Forces Supreme War Council."
+ dei_proclaim_raya: "Proclaim the Military Imperium of Indonesia Raya"
+ dei_proclaim_raya_desc: "Proclaim the geopolitical doctrine of Indonesia Raya, forging supreme military hegemony across the Indian and Pacific Oceans."
 
- # Keputusan Proklamasi Jalur E: Islamis / NII
- dei_proclaim_nii: "Proklamasikan Negara Islam Indonesia (NII)"
- dei_proclaim_nii_desc: "Kukuhkan Syariat Islam secara kaffah sebagai hukum dasar tertinggi negara di bawah pimpinan Imam Negara Islam Indonesia."
- dei_proclaim_daulah: "Kukuhkan Daulah Islamiyah Nusantara"
- dei_proclaim_daulah_desc: "Tegakkan kedaulatan daulah Islamiah yang menyatukan seluruh bumi kepulauan Melayu dan Nusantara di bawah naungan kalimat Tauhid."
- dei_proclaim_khilafah: "Dirikan Khilafah Islamiyah Nusantara"
- dei_proclaim_khilafah_desc: "Bangkitkan kembali kemuliaan Khilafah Islamiyah yang mempersatukan umat dari ujung barat Sumatra hingga tanah timur Maluku."
+ # Proclamation Decisions - Path E: Islamist / NII
+ dei_proclaim_nii: "Proclaim the Negara Islam Indonesia (NII)"
+ dei_proclaim_nii_desc: "Implement Islamic Sharia as the supreme law of the state under the sacred leadership of the Imam of Negara Islam Indonesia."
+ dei_proclaim_daulah: "Establish the Daulah Islamiyah Nusantara"
+ dei_proclaim_daulah_desc: "Unite all Islamic domains and sultanates of the Malay archipelago under the supreme banner of Tawhid."
+ dei_proclaim_khilafah: "Proclaim the Khilafah Islamiyah Nusantara"
+ dei_proclaim_khilafah_desc: "Revive the glory of the Islamic Caliphate, uniting the Ummah from the shores of Sumatra to the islands of the Moluccas."
 
- # Keputusan Proklamasi Jalur F: Majapahit
- dei_proclaim_majapahit_empire: "Nobatkan Kemaharajaan Majapahit"
- dei_proclaim_majapahit_empire_desc: "Kembalikan takhta wangsa Rajasa di Wilwatikta dan hidupkan kembali kejayaan keemasan Nusantara."
- dei_proclaim_surya: "Tegakkan Imperium Surya Wilwatikta"
- dei_proclaim_surya_desc: "Kibarkan bendera Sang Saka Gula Kelapa dan panji Surya Majapahit sebagai simbol kedaulatan abadi kaisar diraja."
- dei_proclaim_nusantara: "Kibarkan Panji Maha-Imperium Nusantara Raya"
- dei_proclaim_nusantara_desc: "Tuntaskan Sumpah Palapa Patih Gadjah Mada dengan menyatukan seluruh dwipantara di bawah naungan takhta suci Kemaharajaan."
+ # Proclamation Decisions - Path F: Majapahit Empire
+ dei_proclaim_majapahit_empire: "Crown the Kemaharajaan Majapahit"
+ dei_proclaim_majapahit_empire_desc: "Restore the throne of the Rajasa dynasty in Wilwatikta and resurrect the golden age of maritime Nusantara."
+ dei_proclaim_surya: "Establish the Surya Wilwatikta Imperium"
+ dei_proclaim_surya_desc: "Unfurl the sacred Sang Saka banner and the radiant Sun of Majapahit as the eternal symbols of imperial suzerainty."
+ dei_proclaim_nusantara: "Unfurl the Standard of the Greater Nusantara Empire"
+ dei_proclaim_nusantara_desc: "Fulfill the sacred Sumpah Palapa of Mahapatih Gadjah Mada by uniting all islands under the imperial throne."
 
  # =====================================================================
  # DYNAMIC COUNTRY NAMES & ADJECTIVES (BASE TAG INS)
@@ -1073,15 +1077,15 @@
 
  # Base Parties
  INS_democratic_party: "PNI"
- INS_democratic_party_long: "Partai Nasional Indonesia"
+ INS_democratic_party_long: "National Democratic Party"
  INS_federalist_party: "BFO"
  INS_federalist_party_long: "Bijeenkomst voor Federaal Overleg"
  INS_communism_party: "PKI"
- INS_communism_party_long: "Partai Komunis Indonesia"
- INS_fascism_party: "Dewan Revolusi"
- INS_fascism_party_long: "Dewan Pimpinan Tertinggi Revolusi"
+ INS_communism_party_long: "Communist Party of Indonesia"
+ INS_fascism_party: "Revolutionary Council"
+ INS_fascism_party_long: "Supreme Revolutionary Leadership Council"
  INS_islamist_party: "Majelis Syuro NII"
- INS_islamist_party_long: "Dewan Imam & Majelis Syuro NII"
+ INS_islamist_party_long: "Council of Imams & Majlis Shuro NII"
  INS_majapahit_party: "Wilwatikta"
  INS_majapahit_party_long: "Keluarga Diraja & Rakryan Majapahit"
  INS_neutrality_party: "Volksraad"
@@ -1094,115 +1098,115 @@
  INS_REPUBLIK_NKRI: "Negara Kesatuan Republik Indonesia"
  INS_REPUBLIK_NKRI_DEF: "the Unitary State of the Republic of Indonesia"
  INS_REPUBLIK_NKRI_ADJ: "Indonesian"
- INS_REPUBLIK_NKRI_party: "PNI"
- INS_REPUBLIK_NKRI_party_long: "Partai Nasional Indonesia"
+ INS_REPUBLIK_NKRI_democratic_party: "PNI"
+ INS_REPUBLIK_NKRI_democratic_party_long: "National Democratic Party"
 
  INS_REPUBLIK_RIS: "Republik Indonesia Serikat"
  INS_REPUBLIK_RIS_DEF: "the United States of Indonesia"
  INS_REPUBLIK_RIS_ADJ: "Indonesian"
- INS_REPUBLIK_RIS_party: "RIS-Koalisi"
- INS_REPUBLIK_RIS_party_long: "Koalisi Federal Republik Indonesia Serikat"
+ INS_REPUBLIK_RIS_democratic_party: "RIS-Koalisi"
+ INS_REPUBLIK_RIS_democratic_party_long: "Koalisi Federal Republik Indonesia Serikat"
 
  INS_REPUBLIK_SOSIALIS: "Republik Sosialis Demokratis Indonesia"
  INS_REPUBLIK_SOSIALIS_DEF: "the Democratic Socialist Republic of Indonesia"
  INS_REPUBLIK_SOSIALIS_ADJ: "Indonesian"
- INS_REPUBLIK_SOSIALIS_party: "PSI"
- INS_REPUBLIK_SOSIALIS_party_long: "Partai Sosialis Indonesia"
+ INS_REPUBLIK_SOSIALIS_democratic_party: "PSI"
+ INS_REPUBLIK_SOSIALIS_democratic_party_long: "Socialist Party of Indonesia"
 
  # Jalur B
  INS_KOLONIAL_DEI: "Hindia Belanda"
  INS_KOLONIAL_DEI_DEF: "the Dutch East Indies"
  INS_KOLONIAL_DEI_ADJ: "Indies"
- INS_KOLONIAL_DEI_party: "Gouvernement"
- INS_KOLONIAL_DEI_party_long: "Koloniaal Gouvernement van Nederlandsch-IndiÃ«"
+ INS_KOLONIAL_DEI_democratic_party: "Gouvernement"
+ INS_KOLONIAL_DEI_democratic_party_long: "Koloniaal Gouvernement van Nederlandsch-IndiÃ«"
 
  INS_KOLONIAL_BFO: "Uni Negara-Negara Indonesia"
  INS_KOLONIAL_BFO_DEF: "the Union of Indonesian States"
  INS_KOLONIAL_BFO_ADJ: "Indonesian"
- INS_KOLONIAL_BFO_party: "BFO"
- INS_KOLONIAL_BFO_party_long: "Bijeenkomst voor Federaal Overleg"
+ INS_KOLONIAL_BFO_democratic_party: "BFO"
+ INS_KOLONIAL_BFO_democratic_party_long: "Bijeenkomst voor Federaal Overleg"
 
  INS_KOLONIAL_DOMINION: "Persemakmuran Mahkota Hindia"
  INS_KOLONIAL_DOMINION_DEF: "the Commonwealth of the Netherlands Indies"
  INS_KOLONIAL_DOMINION_ADJ: "Indies"
- INS_KOLONIAL_DOMINION_party: "Kroonraad"
- INS_KOLONIAL_DOMINION_party_long: "Raad van State Nederlandsch-IndiÃ«"
+ INS_KOLONIAL_DOMINION_democratic_party: "Kroonraad"
+ INS_KOLONIAL_DOMINION_democratic_party_long: "Raad van State Nederlandsch-IndiÃ«"
 
  # Jalur C
- INS_KOMUNIS_RRI: "Republik Rakyat Indonesia"
+ INS_KOMUNIS_RRI: "People's Republic of Indonesia"
  INS_KOMUNIS_RRI_DEF: "the People's Republic of Indonesia"
  INS_KOMUNIS_RRI_ADJ: "Indonesian"
- INS_KOMUNIS_RRI_party: "PKI"
- INS_KOMUNIS_RRI_party_long: "Partai Komunis Indonesia"
+ INS_KOMUNIS_RRI_communism_party: "PKI"
+ INS_KOMUNIS_RRI_communism_party_long: "Communist Party of Indonesia"
 
  INS_KOMUNIS_SOVIET: "Uni Republik Sosialis Soviet Indonesia"
  INS_KOMUNIS_SOVIET_DEF: "the Union of Indonesian Soviet Socialist Republics"
  INS_KOMUNIS_SOVIET_ADJ: "Soviet Indonesian"
- INS_KOMUNIS_SOVIET_party: "Komintern-PKI"
- INS_KOMUNIS_SOVIET_party_long: "Partai Komunis Indonesia - Seksi Komintern"
+ INS_KOMUNIS_SOVIET_communism_party: "Komintern-PKI"
+ INS_KOMUNIS_SOVIET_communism_party_long: "Communist Party of Indonesia - Comintern Section"
 
- INS_KOMUNIS_FRONT: "Front Demokrasi Rakyat Nusantara"
+ INS_KOMUNIS_FRONT: "Nusantara People's Democratic Front"
  INS_KOMUNIS_FRONT_DEF: "the Nusantara People's Democratic Front"
  INS_KOMUNIS_FRONT_ADJ: "Indonesian"
- INS_KOMUNIS_FRONT_party: "FDR"
- INS_KOMUNIS_FRONT_party_long: "Front Demokrasi Rakyat"
+ INS_KOMUNIS_FRONT_communism_party: "FDR"
+ INS_KOMUNIS_FRONT_communism_party_long: "People's Democratic Front"
 
  # Jalur D
  INS_OTORITER_NKRI: "Negara Kesatuan Revolusioner Indonesia"
  INS_OTORITER_NKRI_DEF: "the Revolutionary Unitary State of Indonesia"
  INS_OTORITER_NKRI_ADJ: "Indonesian"
- INS_OTORITER_NKRI_party: "Dewan Revolusi"
- INS_OTORITER_NKRI_party_long: "Dewan Pimpinan Tertinggi Revolusi"
+ INS_OTORITER_NKRI_fascism_party: "Revolutionary Council"
+ INS_OTORITER_NKRI_fascism_party_long: "Supreme Revolutionary Leadership Council"
 
- INS_OTORITER_JUNTA: "Komando Militer Revolusi Indonesia"
+ INS_OTORITER_JUNTA: "Indonesian Revolutionary Military Command"
  INS_OTORITER_JUNTA_DEF: "the Indonesian Revolutionary Military Command"
  INS_OTORITER_JUNTA_ADJ: "Indonesian"
- INS_OTORITER_JUNTA_party: "Junta ABRI"
- INS_OTORITER_JUNTA_party_long: "Presidium Markas Besar Revolusi Militer"
+ INS_OTORITER_JUNTA_fascism_party: "Junta ABRI"
+ INS_OTORITER_JUNTA_fascism_party_long: "Presidium of the Military Revolutionary HQ"
 
- INS_OTORITER_RAYA: "Imperium Militer Indonesia Raya"
+ INS_OTORITER_RAYA: "Indonesian Great Military Empire"
  INS_OTORITER_RAYA_DEF: "the Greater Indonesian Military Empire"
  INS_OTORITER_RAYA_ADJ: "Indonesian"
- INS_OTORITER_RAYA_party: "Bela Negara"
- INS_OTORITER_RAYA_party_long: "Front Pemuda Bela Negara Indonesia Raya"
+ INS_OTORITER_RAYA_fascism_party: "Bela Negara"
+ INS_OTORITER_RAYA_fascism_party_long: "Front Pemuda Bela Negara Indonesia Raya"
 
  # Jalur E
  INS_ISLAMIS_NII: "Negara Islam Indonesia"
  INS_ISLAMIS_NII_DEF: "the Islamic State of Indonesia"
  INS_ISLAMIS_NII_ADJ: "Indonesian"
- INS_ISLAMIS_NII_party: "Majelis Syuro"
- INS_ISLAMIS_NII_party_long: "Majelis Syuro Negara Islam Indonesia"
+ INS_ISLAMIS_NII_neutrality_party: "Majelis Syuro"
+ INS_ISLAMIS_NII_neutrality_party_long: "Majelis Syuro Negara Islam Indonesia"
 
  INS_ISLAMIS_DAULAH: "Daulah Islamiyah Nusantara"
  INS_ISLAMIS_DAULAH_DEF: "the Islamic State of the Archipelago"
  INS_ISLAMIS_DAULAH_ADJ: "Nusantara"
- INS_ISLAMIS_DAULAH_party: "Diwan Imam"
- INS_ISLAMIS_DAULAH_party_long: "Diwan Al-Imam Darul Islam"
+ INS_ISLAMIS_DAULAH_neutrality_party: "Diwan Imam"
+ INS_ISLAMIS_DAULAH_neutrality_party_long: "Diwan Al-Imam Darul Islam"
 
  INS_ISLAMIS_KHILAFAH: "Khilafah Islamiyah Nusantara"
  INS_ISLAMIS_KHILAFAH_DEF: "the Islamic Caliphate of Nusantara"
  INS_ISLAMIS_KHILAFAH_ADJ: "Islamic"
- INS_ISLAMIS_KHILAFAH_party: "Baitul Mal & Syuro"
- INS_ISLAMIS_KHILAFAH_party_long: "Majelis Khilafah Islamiyah Nusantara"
+ INS_ISLAMIS_KHILAFAH_neutrality_party: "Baitul Mal & Syuro"
+ INS_ISLAMIS_KHILAFAH_neutrality_party_long: "Council of Khilafah Islamiyah Nusantara"
 
  # Jalur F
  INS_MAJAPAHIT_EMPIRE: "Kemaharajaan Majapahit"
  INS_MAJAPAHIT_EMPIRE_DEF: "the Majapahit Empire"
  INS_MAJAPAHIT_EMPIRE_ADJ: "Majapahit"
- INS_MAJAPAHIT_EMPIRE_party: "Kraton Wilwatikta"
- INS_MAJAPAHIT_EMPIRE_party_long: "Keluarga Diraja & Rakryan Majapahit"
+ INS_MAJAPAHIT_EMPIRE_neutrality_party: "Kraton Wilwatikta"
+ INS_MAJAPAHIT_EMPIRE_neutrality_party_long: "Keluarga Diraja & Rakryan Majapahit"
 
  INS_MAJAPAHIT_SURYA: "Imperium Surya Wilwatikta"
  INS_MAJAPAHIT_SURYA_DEF: "the Solar Empire of Wilwatikta"
  INS_MAJAPAHIT_SURYA_ADJ: "Wilwatikta"
- INS_MAJAPAHIT_SURYA_party: "Surya Kencana"
- INS_MAJAPAHIT_SURYA_party_long: "Dewan Saptaprabu Surya Wilwatikta"
+ INS_MAJAPAHIT_SURYA_neutrality_party: "Surya Kencana"
+ INS_MAJAPAHIT_SURYA_neutrality_party_long: "Council of the Seven Princes of Surya Wilwatikta"
 
  INS_MAJAPAHIT_NUSANTARA: "Maha-Imperium Nusantara Raya"
  INS_MAJAPAHIT_NUSANTARA_DEF: "the Grand Empire of Greater Nusantara"
  INS_MAJAPAHIT_NUSANTARA_ADJ: "Nusantara"
- INS_MAJAPAHIT_NUSANTARA_party: "Bhayangkara Raya"
- INS_MAJAPAHIT_NUSANTARA_party_long: "Dewan Mahamenteri Nusantara Raya"
+ INS_MAJAPAHIT_NUSANTARA_neutrality_party: "Bhayangkara Raya"
+ INS_MAJAPAHIT_NUSANTARA_neutrality_party_long: "Council of the Grand Ministers of Nusantara Raya"
 
  # =====================================================================
  # SHIP & DIVISION NAMELISTS
@@ -1210,7 +1214,7 @@
  INS_CAPITAL_SHIPS_REPUBLIK: "KRI: Kapal Tempur & Penjelajah Republik"
  INS_DESTROYERS_REPUBLIK: "KRI: Perusak & Korvet Republik"
  INS_SUBMARINES_REPUBLIK: "KRI: Kapal Selam Senjata Pusaka"
- INS_ESCORT_REPUBLIK: "KRI: Armada Ronda & Angkut Selat"
+ INS_ESCORT_REPUBLIK: "KRI: Strait Patrol & Transport Fleet"
  INS_CAPITAL_SHIPS_KOLONIAL: "Hr.Ms.: Slagschepen en Kruisers van de Oost"
  INS_DESTROYERS_KOLONIAL: "Hr.Ms.: Torpedobootjagers Nederlandsch-IndiÃ«"
  INS_SUBMARINES_KOLONIAL: "Hr.Ms.: Onderzeeboten Indische Oceaan"
@@ -1218,38 +1222,38 @@
  INS_CAPITAL_SHIPS_KOMUNIS: "Kapal Tempur Proletar & Front Merah"
  INS_DESTROYERS_KOMUNIS: "Perusak & Korvet Martir Revolusi"
  INS_SUBMARINES_KOMUNIS: "Kapal Selam Hiu Merah"
- INS_ESCORT_KOMUNIS: "Ronda & Logistik Rakyat"
- INS_CAPITAL_SHIPS_OTORITER: "KRI: Kapal Tempur Komando Dewan Revolusi"
+ INS_ESCORT_KOMUNIS: "People's Patrol & Logistics Fleet"
+ INS_CAPITAL_SHIPS_OTORITER: "KRI: Revolutionary Council Battlefleet"
  INS_DESTROYERS_OTORITER: "KRI: Perusak & Pemburu Bela Negara"
  INS_SUBMARINES_OTORITER: "KRI: Kapal Selam Pasukan Khusus Bawah Air"
- INS_ESCORT_OTORITER: "KRI: Pengawal Garis Depan Samudra"
- INS_CAPITAL_SHIPS_ISLAMIS: "Kapal Tempur Mujahidin & Benteng Tauhid"
+ INS_ESCORT_OTORITER: "KRI: Ocean Frontline Escort"
+ INS_CAPITAL_SHIPS_ISLAMIS: "Mujahidin Battlefleet & Tauhid Fortress"
  INS_DESTROYERS_ISLAMIS: "Perusak & Korvet Pedang Tauhid"
  INS_SUBMARINES_ISLAMIS: "Kapal Selam Panah & Pusaka Islam"
  INS_ESCORT_ISLAMIS: "Ronda Syariat & Angkut Baitul Mal"
- INS_CAPITAL_SHIPS_MAJAPAHIT: "Armada Jung Tempur Segara Wilwatikta"
- INS_DESTROYERS_MAJAPAHIT: "Armada Pasukan & Warastra Jalayanapati"
- INS_SUBMARINES_MAJAPAHIT: "Armada Kapal Pusaka Siluman Segara"
- INS_ESCORT_MAJAPAHIT: "Armada Jung Layar & Niaga Upacara"
- DEI_OTORITER: "Resimen Pengawal Dewan Revolusi & Pelopor Bela Negara"
+ INS_CAPITAL_SHIPS_MAJAPAHIT: "Wilwatikta Sea Jung Battlefleet"
+ INS_DESTROYERS_MAJAPAHIT: "Jung Warship & Jalayanapati Escort Fleet"
+ INS_SUBMARINES_MAJAPAHIT: "Sea Treasure Submarine Fleet"
+ INS_ESCORT_MAJAPAHIT: "Jung Sail & Ceremony Trade Fleet"
+ DEI_OTORITER: "Revolutionary Council Guard Regiment & Bela Negara Pioneers"
 #### OVERRIDES: R56 Armed Forces & Industry Harmonization ####
- INS_koninklijk_nederlands_indisch_leger: "Modernisasi Angkatan Bersenjata"
+ INS_koninklijk_nederlands_indisch_leger: "Armed Forces Modernization"
  INS_koninklijk_nederlands_indisch_leger_desc: "Reorganizing the armed forces into a unified, disciplined military command capable of defending the territorial integrity of Nusantara."
  INS_naval_autonomy: "Komando Pertahanan Maritim"
  INS_naval_autonomy_desc: "Establishing autonomous naval defense squadrons and modernizing maritime dockyards to patrol key strategic straits."
  INS_KNIL_marines: "Korps Komando Marinir"
  INS_KNIL_marines_desc: "Training elite amphibious assault commandos capable of rapid island-hopping and coastal defense across the Indonesian archipelago."
- INS_the_flying_dutchmen: "Resimen Pasukan Payung Nusantara"
+ INS_the_flying_dutchmen: "Nusantara Paratrooper Regiment"
  INS_the_flying_dutchmen_desc: "Establishing an elite paratrooper regiment to deploy swiftly across distant islands and mountain strongholds."
- INS_ambonese_auxilaries: "Resimen Milisi Daerah Nusantara"
+ INS_ambonese_auxilaries: "Nusantara Regional Militia Regiment"
  INS_ambonese_auxilaries_desc: "Mobilizing disciplined local auxiliary regiments from across the archipelago to fortify territorial defense."
  INS_reform_the_knil: "Konsolidasi Komando Wilayah"
  INS_reform_the_knil_desc: "Restructuring regional military commands into unified fighting forces under central operational leadership."
  INS_koninklijk_paketvaart_maatschappij: "Pelayaran Nasional Indonesia (PELNI)"
  INS_koninklijk_paketvaart_maatschappij_desc: "Consolidating state-directed merchant shipping networks to guarantee domestic maritime supply routes."
- INS_the_royal_batavian_society: "Lembaga Ilmu Pengetahuan & Riset"
+ INS_the_royal_batavian_society: "Academy of Sciences and Research"
  INS_the_royal_batavian_society_desc: "Fostering indigenous scientific research, mapping geological wealth, and expanding technological academies."
- INS_royal_scientific_cooperation: "Kerjasama Riset & Teknologi"
+ INS_royal_scientific_cooperation: "Scientific and Technological Cooperation"
  INS_royal_scientific_cooperation_desc: "Establishing international research exchanges to advance domestic radio communications, radar, and heavy industries."
 
  # --- ROAD TO 56 INTEGRATED FOCUS LOCALISATION ---
@@ -1382,12 +1386,12 @@
  dei_leadership.4.c: "Soeharto - Supreme Commander of National Security!"
 
  dei_leadership.5.t: "The Grand Majelis Syura of the Islamic Ummah"
- dei_leadership.5.d: "Eminent ulama, mujahidin commanders, and Islamic scholars assemble in Tasikmalaya to establish an Islamic polity (*Daulah Islamiyah*). Delegates deliberate over supreme leadership: unyielding Imam Sekarmaji Marijan Kartosuwiryo, visionary democratic statesman Mohammad Natsir, or esteemed traditionalist cleric K.H. Wahid Hasyim."
+ dei_leadership.5.d: "Eminent ulama, mujahidin commanders, and Islamic scholars assemble in Tasikmalaya to establish an Islamic polity (Daulah Islamiyah). Delegates deliberate over supreme leadership: unyielding Imam Sekarmaji Marijan Kartosuwiryo, visionary democratic statesman Mohammad Natsir, or esteemed traditionalist cleric K.H. Wahid Hasyim."
  dei_leadership.5.a: "S.M. Kartosuwiryo - Imam of Darul Islam and Commander of TII!"
  dei_leadership.5.b: "Mohammad Natsir - Prime Minister and Masyumi Statesman!"
  dei_leadership.5.c: "K.H. Wahid Hasyim - Rais Aam of the National Ulama!"
 
- dei_leadership.6.t: "Pisowanan Agung di Keraton Trowulan"
+ dei_leadership.6.t: "Grand Ceremony at the Trowulan Palace"
  dei_leadership.6.d: "Amid fragrant sandalwood incense and the echoing chimes of heirloom gamelan, hereditary princes, royal courtiers, and Dharmaputra knights assemble at the restored sanctuary of Trowulan. They seek to anoint the supreme ruler of Nusantara: consecrated descendant Sri Maharaja Suryawikrama, revered reformist monarch Sri Sultan Hamengkubuwono IX, or senior aristocratic regent K.R.M.T. Wuryaningrat."
  dei_leadership.6.a: "Sri Maharaja Suryawikrama - Divine Sovereign of Wilwatikta!"
  dei_leadership.6.b: "Sri Sultan Hamengkubuwono IX - King of Mataram and Sovereign of Nusantara!"
@@ -1396,7 +1400,7 @@
  dei_syahrir_diplomacy_bonus: "Sjahrir Diplomatic Academy"
 
  # Unique Country Leader Traits
- trait_dei_sukarno: "Bung Karno - Penyambung Lidah Rakyat"
+ trait_dei_sukarno: "Bung Karno - Voice of the People"
  trait_dei_sukarno_desc: "A fiery and magnetic orator whose revolutionary speeches unite disparate archipelago peoples into an unstoppable anti-imperialist movement."
  trait_dei_hatta: "Bung Hatta - Bapak Koperasi & Rasionalis"
  trait_dei_hatta_desc: "A meticulous economist and statesman dedicated to cooperative economic theory, fiscal stability, and constitutional democracy."
@@ -1412,7 +1416,7 @@
 
  trait_dei_musso: "Kader Komintern Moskow"
  trait_dei_musso_desc: "A veteran of the Moscow International, championing unbending class struggle, rapid war industrialization, and proletarian mobilization."
- trait_dei_tan_malaka: "Bapak Republik & Gerilya Murba"
+ trait_dei_tan_malaka: "Father of the Republic & Murba Guerrilla"
  trait_dei_tan_malaka_desc: "Legendary revolutionary and author of Madilog, preaching total popular mass-action (*Aksi Massa*) and unwavering anti-colonial guerrilla warfare."
  trait_dei_amir_sjarifuddin: "Intelektual Marxis & Sayap Kiri"
  trait_dei_amir_sjarifuddin_desc: "A passionate anti-fascist resistance leader and defense organizer skilled at rallying urban labor unions and socialist cadres."
@@ -1421,7 +1425,7 @@
  trait_dei_sudirman_leader_desc: "The revered commander-in-chief whose indomitable spirit and personal moral authority inspire devotion among soldiers and guerrillas."
  trait_dei_nasution_leader: "Konseptor Sishanrata"
  trait_dei_nasution_leader_desc: "The mastermind of total territorial defense and modern staff organization, subordinating civil administration to strategic military planning."
- trait_dei_soeharto_leader: "Jenderal Pembangunan & Ketertiban"
+ trait_dei_soeharto_leader: "General of Development & Order"
  trait_dei_soeharto_leader_desc: "A stern pragmatist focused on ruthless anti-subversion measures, iron law and order, and rapid infrastructural development."
 
  trait_dei_kartosuwiryo: "Imam Darul Islam / TII"
@@ -1478,9 +1482,368 @@
  trait_dei_ahmad_yani_desc: "Hero of the Battle of Ambarawa, renowned for aggressive tactical assaults and inspiring frontline infantry resilience."
  trait_dei_ngurah_rai: "Panglima Ciung Wanara"
  trait_dei_ngurah_rai_desc: "Heroic commander of the Balinese resistance, inspiring unflinching valor in rugged mountain terrain even when isolated from supply lines."
- trait_dei_simatupang: "Kepala Staf Angkatan Perang"
+ trait_dei_simatupang: "Chief of Naval Staff"
  trait_dei_simatupang_desc: "Brilliant military intellectual and supreme staff organizer, mastering rapid operational planning and frugal logistics."
  trait_dei_bung_tomo: "Pengobar Semangat BPRI"
  trait_dei_bung_tomo_desc: "Electrifying orator of the Surabaya resistance, driving volunteer battalions and youth militias into fearless combat."
- trait_dei_john_lie: "Macan Selat Malaka"
+ trait_dei_john_lie: "Tiger of the Strait of Malacca"
  trait_dei_john_lie_desc: "Audacious naval captain known as 'The Outlaw', legendary for daringly breaching hostile blockades across the Malacca Straits."
+
+ # Custom Tooltips for Revolution Path Selection
+ dei_path_a_chosen_tt:0 "§YProclaimed the Democratic Republic§! in the 1936 National Revolution"
+ dei_path_b_chosen_tt:0 "§YRatified the Federal Commonwealth§! in the 1936 National Revolution"
+ dei_path_c_chosen_tt:0 "§YEstablished the People's Front (Komunis)§! in the 1936 National Revolution"
+ dei_path_d_chosen_tt:0 "§YEstablished the Revolutionary Military Council§! in the 1936 National Revolution"
+ dei_path_e_chosen_tt:0 "§YProclaimed the Islamic State (NII)§! in the 1936 National Revolution"
+ dei_path_f_chosen_tt:0 "§YRestored the Majapahit Empire§! in the 1936 National Revolution"
+ dei_militant_path_tt:0 "Requires a militant revolutionary path (Communist, Authoritarian, or Majapahit)"
+
+ # =====================================================================
+ # DEVELOPER DEBUGGING TOOLS LOCALISATION
+ # =====================================================================
+ dei_decisions_debug_tools: "§R[DEV DEBUG] Indonesia Raya Testing Tools§!"
+ dei_decisions_debug_tools_desc: "Developer and testing controls to instantly bypass focus delays, change ideologies, promote historical leaders, deploy starter divisions, and test event layouts without waiting."
+
+ dei_debug_instant_prologue: "🚀 [DEBUG] Instant Complete 1936 Revolution"
+ dei_debug_instant_prologue_desc: "Instantly completes the 3 prologue focuses, ends Dutch puppet status, proclaims the Republic of Indonesia, appoints Interim President Sukarno, and deploys starter army & air wings."
+
+ dei_debug_path_a: "🏛️ [DEBUG] Instant Path A - Republik Demokratis (Sukarno)"
+ dei_debug_path_a_desc: "Instantly adopts Democratic path, seats Ir. Sukarno, and commissions Republican divisions & navy."
+
+ dei_debug_path_b: "🦁 [DEBUG] Instant Path B - Kolonial Federalis BFO (Van Mook)"
+ dei_debug_path_b_desc: "Instantly adopts Federalist path, seats Hubertus van Mook, and commissions KNIL divisions & navy."
+
+ dei_debug_path_c: "🚩 [DEBUG] Instant Path C - Front Rakyat Komunis (Musso)"
+ dei_debug_path_c_desc: "Instantly adopts Communist path, seats Musso, and commissions Red Army & navy."
+
+ dei_debug_path_d: "🎖️ [DEBUG] Instant Path D - Dewan Revolusi Militer (Soedirman)"
+ dei_debug_path_d_desc: "Instantly adopts Military Authoritarian path, seats General Soedirman, and commissions Revolutionary Guard divisions & navy."
+
+ dei_debug_path_e: "🌙 [DEBUG] Instant Path E - Panji Islam NII (Kartosoewirjo)"
+ dei_debug_path_e_desc: "Instantly adopts Islamic State path, seats S.M. Kartosoewirjo, and commissions Hizbullah divisions & navy."
+
+ dei_debug_path_f: "👑 [DEBUG] Instant Path F - Kemaharajaan Majapahit (Wuryaningrat)"
+ dei_debug_path_f_desc: "Instantly adopts Majapahit Empire path, crowns Maharaja Wuryaningrat, and commissions Bhayangkara divisions & navy."
+
+ dei_debug_super_buff: "⚡ [DEBUG] Super Buff: +2000 PP, Max Stability & Huge Stockpile"
+ dei_debug_super_buff_desc: "Grants 2,000 political power, 50% stability, 50% war support, and 20,000 rifles to freely test all decisions and mechanics."
+
+ dei_debug_fire_events: "📰 [DEBUG] Fire 1936 Prologue News Events"
+ dei_debug_fire_events_desc: "Triggers the 1936 General Strike and Military Defiance newspaper events to inspect top-banner layout and formatting."
+
+ # =====================================================================
+ # LIBERATION OF OUTER ISLANDS DECISIONS
+ # =====================================================================
+ dei_decision_proklamasikan_nkri: "Proclaim Provisional Revolutionary Government (NKRI)"
+ dei_decision_proklamasikan_nkri_desc: "With colonial power dissolved across Java, formally inaugurate the Provisional Presidium under Sukarno and establish the Unitary State of the Republic of Indonesia."
+
+ dei_decision_liberate_sumatra: "Ekspedisi Pembebasan Sumatera"
+ dei_decision_liberate_sumatra_desc: "Launch revolutionary infiltrations across the Sunda Strait to rally local youth leagues and liberate Palembang, Padang, Medan, and Aceh from colonial garrisons."
+
+ dei_decision_liberate_kalimantan: "Ekspedisi Gerilya Rimba Kalimantan"
+ dei_decision_liberate_kalimantan_desc: "Organize Dayak tribes and coastal labor unions into active insurgent vanguards, seizing Banjarmasin and Pontianak."
+
+ dei_decision_liberate_east_indies: "Operasi Lintas Laut Sulawesi & Kepulauan Timur"
+ dei_decision_liberate_east_indies_desc: "Mobilize Bugis pinisi fleets and maritime commandos to secure the Makassar Strait, liberating Sulawesi, Maluku, and the Lesser Sunda Islands."
+
+ dei_decision_liberate_papua: "Operasi Pembebasan Papua Barat"
+ dei_decision_liberate_papua_desc: "Deploy airborne vanguards and naval infiltrators to establish sovereign control over Hollandia and Merauke."
+
+ dei_debug_liberate_all_islands: "🚀 [DEBUG] Instantly Liberate All Outer Islands"
+ dei_debug_liberate_all_islands_desc: "Developer cheat to instantly transfer all 16 outer island states to Indonesia for full-map testing."
+
+ # ---------------------------------------------------------------------
+ # PARTIES: STANDARD & SET_PARTY_NAME DIRECT KEYS
+ # ---------------------------------------------------------------------
+ INS_democratic_party: "PNI"
+ INS_democratic_party_long: "Partai Nasional Indonesia"
+ INS_communism_party: "PKI"
+ INS_communism_party_long: "Partai Komunis Indonesia"
+ INS_fascism_party: "Dewan Revolusi"
+ INS_fascism_party_long: "Dewan Revolusi Angkatan Bersenjata"
+ INS_neutrality_party: "Volksraad"
+ INS_neutrality_party_long: "Volksraad Hindia Belanda"
+
+ INS_PNI_party: "PNI"
+ INS_PNI_party_long: "Partai Nasional Indonesia"
+ INS_BFO_party: "BFO"
+ INS_BFO_party_long: "Bijeenkomst voor Federaal Overleg"
+ INS_PKI_party: "PKI"
+ INS_PKI_party_long: "Partai Komunis Indonesia"
+ INS_DEWAN_REVOLUSI_party: "Dewan Revolusi"
+ INS_DEWAN_REVOLUSI_party_long: "Dewan Revolusi Angkatan Bersenjata"
+ INS_NII_party: "Majelis Syuro"
+ INS_NII_party_long: "Majelis Syuro Negara Islam Indonesia"
+ INS_MAJAPAHIT_party: "Kraton Wilwatikta"
+ INS_MAJAPAHIT_party_long: "Keluarga Diraja & Rakryan Majapahit"
+
+ # ---------------------------------------------------------------------
+ # UNIVERSAL OUTER ISLANDS LIBERATION & INDEPENDENCE WAR
+ # ---------------------------------------------------------------------
+ dei_focus_liberate_sumatra: "Liberation of Sumatra"
+ dei_focus_liberate_sumatra_desc: "The vast island of Andalas—rich in rubber estates, Ombilin coal basins, and vital oil refineries—remains under the heavy thumb of isolated Dutch colonial garrisons. By linking clandestine Republican committees with local laskar fighters and defecting native police, we will orchestrate a sweeping island-wide liberation campaign to secure Sumatra for the Republic."
+ dei_focus_liberate_sumatra_tt: "Mobilizes revolutionary laskars and bolsters infantry weapons and logistical supply for the Sumatra expedition."
+
+ dei_focus_liberate_borneo: "Liberation of Borneo & Vital Refineries"
+ dei_focus_liberate_borneo_desc: "The deep jungles and strategic petroleum complexes of Balikpapan and Tarakan are among the most coveted strategic prizes in the Pacific. We must act decisively, dispatching maritime transport flotillas and mobilizing local Dayak and coastal militias to seize the refineries and airfields before colonial scorched-earth detachments can detonate the storage tanks."
+ dei_focus_liberate_borneo_tt: "Provides convoy transports, fuel reserves, and organizes guerrilla combat brigades across Borneo."
+
+ dei_focus_liberate_timur_raya: "Eastern Seas Amphibious Operation"
+ dei_focus_liberate_timur_raya_desc: "Spanning from the Makassar Straits and the Minahasa highlands to Bali, Timor, and the Moluccan Spice Islands, the Great East represents our archipelagic naval lifeline. By coordinating indigenous prahu fleets and coastal landing parties, we will sever colonial sea lanes and establish uncontested republican governance across the eastern seas."
+ dei_focus_liberate_timur_raya_tt: "Expanding maritime convoy capacity and deploying popular defense garrisons across the eastern islands."
+
+ dei_focus_liberate_papua: "West Papua Integration"
+ dei_focus_liberate_papua_desc: "The integrity of Indonesian national sovereignty admits no compromise and no partition: from Sabang at the western tip of Sumatra to Merauke at the eastern border of Papua, Nusantara is an indivisible homeland. We repudiate Dutch attempts to maintain a colonial rump state in New Guinea and integrate West Papua into the sovereign Republic."
+ dei_focus_liberate_papua_tt: "Integrates Western New Guinea (Papua Barat) as a legitimate core territory of Indonesia."
+
+ dei_focus_traktat_kedaulatan: "Treaty of Full Sovereignty"
+ dei_focus_traktat_kedaulatan_desc: "Through unyielding sacrifice in the field and disciplined solidarity across the islands, the Indonesian revolution has rendered colonial restoration impossible. Facing decisive military setbacks and overwhelming international diplomatic censure, the Kingdom of the Netherlands is compelled to the negotiating table to sign a formal treaty acknowledging our total and unconditional sovereignty."
+
+ dei_trunk.7.t: "War of National Independence"
+ dei_trunk.7.d: "With the collapse of Pax Neerlandica across Java and the proclamation of independence echoing throughout the archipelago, the colonial government in The Hague refuses to recognize our sovereignty. The Kingdom of the Netherlands redeploys KNIL garrisons and naval flotillas to reclaim the Dutch East Indies. Across every corner of the homeland, youth militias and people's brigades prepare to take up arms. Freedom or death!"
+ dei_trunk.7.a: "Merdeka or Death! To arms!"
+
+ dei_trunk.8.t: "Round Table Conference — Recognition of Sovereignty"
+ dei_trunk.8.d: "Confronted by the unbreakable guerrilla resistance of the Indonesian people across the archipelago and mounting international diplomatic pressure, the Kingdom of the Netherlands concedes at the negotiating table, agreeing to a total ceasefire. The Netherlands formally and unconditionally recognizes the full sovereignty of Indonesia over all former territories of the Dutch East Indies."
+ dei_trunk.8.a: "Full Sovereignty Recognized!"
+
+ dei_trunk.9.t: "The Netherlands Recognizes Full Indonesian Sovereignty"
+ dei_trunk.9.d: "A momentous historic milestone is forged on the world stage. Through a formal peace treaty, the Kingdom of the Netherlands de jure and de facto recognizes the independence and sovereignty of the Republic of Indonesia. Centuries of colonial dominion on the soil of Nusantara have come to an end."
+ dei_trunk.9.a: "Indonesia Raya — Free at Last!"
+ dei_trunk.9.b: "Dutch colonial rule over the Indies has ended."
+
+ dei_trunk.10.t: "Revolution in Andalas: Arms Smuggling & the People's Militia"
+ dei_trunk.10.d: "Under cover of darkness across the Sunda Strait, flotillas of Republic fishing prahus and swift sampans slip through the tight cordon of Dutch naval patrols. Thousands of rifles and ammunition crates land safely upon the shores of Lampung and Bengkulu. Deep in the Bukit Barisan highlands, Minangkabau youth laskars, Batak fighter brigades, and Ombilin coal miners answer the call of revolution with unified cries of Merdeka. KNIL outposts at Palembang and Medan find themselves increasingly isolated and besieged."
+ dei_trunk.10.a: "Andalas Rises Against Colonialism!"
+
+ dei_trunk.11.t: "Operation Borneo Jungle: The Oil Front & the Mandau Oath"
+ dei_trunk.11.d: "From the northern coast of Java, Republic motorized sailing convoys make landfall at the river mouths of West and South Kalimantan. Amidst the dense rainforests of Borneo, Republic officers forge sacred alliances with Dayak tribal chieftains and refinery labor syndicates. Before colonial troops can carry out scorched-earth demolitions of the vital installations in Balikpapan and Tarakan, guerrilla commandos secure the petroleum reserves to power the engine of the national struggle!"
+ dei_trunk.11.a: "Secure the Oil of Nusantara!"
+
+ dei_trunk.12.t: "Wave of the Eastern Seas: Pinisi Expeditions to Sulawesi & Maluku"
+ dei_trunk.12.d: "The ancient maritime glory of the ancestors surges anew across the eastern seas. Dozens of Bugis-Makassar Pinisi schooners, crewed by the intrepid mariners of the Spice Islands, brave the treacherous swells of the Makassar Strait and Flores Sea under the shadow of Dutch naval gunboats. Flying the Sang Saka Merah-Putih from their tallest masts, they smuggle vital military logistics into the hands of freedom fighters in Celebes, Bali, Lombok, and Ambon. The eastern ocean blazes with the fire of resistance!"
+ dei_trunk.12.a: "Our Ancestors Were Seafarers!"
+
+ dei_trunk.13.t: "Dawn of the Red-and-White in Papua: From Sabang to Merauke"
+ dei_trunk.13.d: "From the highland valleys of Baliem to the coastal settlements of Hollandia and Merauke, the call for the unity of one nation and one people breaches the final colonial redoubts. Pioneer freedom fighters and indigenous Papuan communities proclaim that the land of the Bird of Paradise is an inseparable part of the body of the Republic of Indonesia. The solemn pledge of the nation's founders is indelibly etched: national sovereignty spans unbroken, from western Sabang to the eastern horizon of Merauke!"
+ dei_trunk.13.a: "From Sabang to Merauke — Unite!"
+
+
+ # =====================================================================
+ # PATH NEWS EVENTS (Jalur A - F)
+ # =====================================================================
+
+ # PATH A: Republik Nasionalis-Demokratis
+ dei_news_a.1.t: "Proclamation Echoes Across Nusantara"
+ dei_news_a.1.d: "Radio Republik Indonesia broadcasts the Proclamation of Independence across the waves. Crowds in cities throughout the archipelago pour into the streets to celebrate."
+ dei_news_a.1.a: "Broadcast it to the world!"
+
+ dei_news_a.2.t: "KNIP Session: Foundations of the First Government"
+ dei_news_a.2.d: "The Central Indonesian National Committee convenes an emergency assembly in Jakarta, establishing the Republic's first cabinet and constitutional framework."
+ dei_news_a.2.a: "The Republic stands!"
+
+ dei_news_a.3.t: "Linggadjati Agreement: Hope and Controversy"
+ dei_news_a.3.d: "Indonesian and Dutch plenipotentiaries sign a provisional ceasefire accord. Staunch republican factions passionately denounce any compromise with colonial power."
+ dei_news_a.3.a: "The struggle continues."
+
+ dei_news_a.4.t: "Pancasila: The Five Pillars of the Nation"
+ dei_news_a.4.d: "Sukarno enshrines the Pancasila as the immutable philosophical foundation of the state, bridging the historic divide between Islamic scholars and secular nationalists."
+ dei_news_a.4.a: "Bhinneka Tunggal Ika — Unity in Diversity!"
+
+ # PATH B: Kolonial / Federalis
+ dei_news_b.1.t: "Van Mook Arrives in Batavia"
+ dei_news_b.1.d: "Lieutenant Governor-General Van Mook arrives in Batavia bearing a new mandate from The Hague to resolve the archipelagic crisis through a federal commonwealth framework."
+ dei_news_b.1.a: "The negotiating table opens."
+
+ dei_news_b.2.t: "Volksraad Dissolved, BFO Assembly Convenes"
+ dei_news_b.2.d: "Colonial authorities formally dissolve the Volksraad, convening traditional rulers and regional delegates into the Federal Consultative Assembly (BFO)."
+ dei_news_b.2.a: "A new era begins."
+
+ dei_news_b.3.t: "Union Treaty: Two Flags Side by Side"
+ dei_news_b.3.d: "The Netherlands-Indonesian Union Treaty is formally concluded. The United States of Indonesia emerges nominally sovereign, bound by mutual defense and economic pacts with the Crown."
+ dei_news_b.3.a: "The Federation is established."
+
+ dei_news_b.4.t: "European Capital Returns"
+ dei_news_b.4.d: "Dutch, British, and American syndicates resume extensive investment in tea, rubber, and petroleum operations under the firm security guarantees of the federal government."
+ dei_news_b.4.a: "The gears of commerce turn again."
+
+ # PATH C: Komunis (Front Rakyat)
+ dei_news_c.1.t: "Musso Returns: The East Wind from Moscow"
+ dei_news_c.1.d: "PKI Secretary-General Musso returns from long exile in Moscow. Massive crowds of workers and revolutionary cadres gather at Surabaya harbor to welcome him with revolutionary fervor."
+ dei_news_c.1.a: "The revolution begins!"
+
+ dei_news_c.2.t: "Agrarian Reform: Land to the Peasantry"
+ dei_news_c.2.d: "A sweeping radical land reform campaign commences. Feudal estates and colonial concessions are expropriated and transferred directly to landless peasant collectives."
+ dei_news_c.2.a: "Land to the tillers!"
+
+ dei_news_c.3.t: "Dockworkers Strike: Tanjung Priok Paralyzed"
+ dei_news_c.3.d: "The Red Maritime Labor Federation initiates a coordinated general strike. Maritime commerce grinds to a complete halt, striking a crippling blow to foreign monopoly capital."
+ dei_news_c.3.a: "Workers of Nusantara, unite!"
+
+ dei_news_c.4.t: "Revolutionary Youth Congress of Nusantara"
+ dei_news_c.4.d: "The first Pan-Archipelagic Revolutionary Youth Congress opens in Central Java. Fraternal delegates from Vietnam, Malaya, and the Philippines pledge internationalist solidarity."
+ dei_news_c.4.a: "The Red International!"
+
+ # PATH D: Otoriter Militeristik
+ dei_news_d.1.t: "State of Siege: Island-Wide Curfew Across Java"
+ dei_news_d.1.d: "The Supreme Revolutionary Command proclaims martial law across Java. Civilian political assemblies are suspended, curfews imposed, and total mobilization decreed to safeguard national defense."
+ dei_news_d.1.a: "Order shall prevail!"
+
+ dei_news_d.2.t: "Battle of Ambarawa: General Soedirman Takes Command"
+ dei_news_d.2.d: "Fierce combat at the mountain bastion of Ambarawa demonstrates the tactical prowess of the Republican military. General Soedirman directs operations directly from the frontline despite frail health."
+ dei_news_d.2.a: "Never surrender!"
+
+ dei_news_d.3.t: "Bung Tomo's Fiery Broadcast: Radio of the Resistance"
+ dei_news_d.3.d: "Bung Tomo delivers an electrifying radio address to the defenders of Surabaya. His rallying cry of 'Allahu Akbar! Merdeka atau Mati!' reverberates across every wireless receiver in Java."
+ dei_news_d.3.a: "Freedom or death!"
+
+ dei_news_d.4.t: "Republican Wings: Adisoetjipto Takes Flight"
+ dei_news_d.4.d: "Commodore Agustinus Adisoetjipto pilots the first combat aircraft bearing Republican insignia across the skies of Yogyakarta, christening the birth of modern Indonesian military aviation."
+ dei_news_d.4.a: "The skies belong to us!"
+
+ # PATH E: Islamis (Negara Islam Indonesia)
+ dei_news_e.1.t: "Proclamation of the Islamic State of Indonesia"
+ dei_news_e.1.d: "Imam S.M. Kartosoewirjo officially proclaims the Islamic State of Indonesia (NII). Regiments of the Tentara Islam Indonesia rapidly establish sovereign administrative control over the West Java highlands."
+ dei_news_e.1.a: "Allahu Akbar!"
+
+ dei_news_e.2.t: "Majelis Syuro: Supreme Council of Ulama"
+ dei_news_e.2.d: "Venerable Islamic scholars and jurists from every island gather to constitute the Majelis Syuro as the supreme deliberative body of state, codifying Islamic jurisprudence as the supreme law of the land."
+ dei_news_e.2.a: "Rule by mutual consultation."
+
+ dei_news_e.3.t: "Mission to the East: Outreach to Sulawesi and Maluku"
+ dei_news_e.3.d: "Religious envoys and educators journey east to Sulawesi, Kalimantan, and Maluku, forging staunch alliances with regional Islamic leaders and expanding the territorial sphere of the Islamic State."
+ dei_news_e.3.a: "A blessing for all creation."
+
+ dei_news_e.4.t: "Pan-Islamic Recognition: Cairo Welcomes the New Caliphate"
+ dei_news_e.4.d: "Diplomats from Cairo and the Arab League extend formal greetings to the Islamic State of Indonesia, opening direct trade missions and cementing pan-Islamic geopolitical ties."
+ dei_news_e.4.a: "Islamic brotherhood across borders!"
+
+ # PATH F: Kemaharajaan Majapahit
+ dei_news_f.1.t: "Imperial Coronation: Grand Ceremony at Trowulan"
+ dei_news_f.1.d: "Tens of thousands of subjects assemble at the historic capital of Majapahit to witness the solemn coronation of the first supreme Emperor in over five centuries amidst resonant gamelan fanfares."
+ dei_news_f.1.a: "Glory to Wilwatikta!"
+
+ dei_news_f.2.t: "Restoration of Trowulan: Ancestral Splendor Revived"
+ dei_news_f.2.d: "A monumental imperial architectural initiative undertakes the meticulous restoration of ancient Trowulan, rebuilding sacred royal gates, council pavillions, and ceremonial sanctuaries."
+ dei_news_f.2.a: "The heritage of our ancestors!"
+
+ dei_news_f.3.t: "Borobudur: Beacon of the Archipelagic Renaissance"
+ dei_news_f.3.d: "Extensive conservation and restoration of Candi Borobudur is officially concluded. The Maharaja personally presides over the ceremonial consecration of the great world monument."
+ dei_news_f.3.a: "The rebirth of Nusantara!"
+
+ dei_news_f.4.t: "Grand Jung Armada Sets Sail"
+ dei_news_f.4.d: "Shipwrights in Makassar and Tuban complete the first squadron of modern heavy ocean-going junks and armed gunboats, sailing forth to assert uncontested naval dominion over the equatorial oceans."
+ dei_news_f.4.a: "The seas belong to Nusantara!"
+
+ # =====================================================================
+ # PATH NEWS EVENTS (Jalur A - F)
+ # =====================================================================
+
+ # PATH A: Republik Nasionalis-Demokratis
+ dei_news_a.1.t: "Proclamation Echoes Across Nusantara"
+ dei_news_a.1.d: "Radio Republik Indonesia broadcasts the Proclamation of Independence across the waves. Crowds in cities throughout the archipelago pour into the streets to celebrate."
+ dei_news_a.1.a: "Broadcast it to the world!"
+
+ dei_news_a.2.t: "KNIP Session: Foundations of the First Government"
+ dei_news_a.2.d: "The Central Indonesian National Committee convenes an emergency assembly in Jakarta, establishing the Republic's first cabinet and constitutional framework."
+ dei_news_a.2.a: "The Republic stands!"
+
+ dei_news_a.3.t: "Linggadjati Agreement: Hope and Controversy"
+ dei_news_a.3.d: "Indonesian and Dutch plenipotentiaries sign a provisional ceasefire accord. Staunch republican factions passionately denounce any compromise with colonial power."
+ dei_news_a.3.a: "The struggle continues."
+
+ dei_news_a.4.t: "Pancasila: The Five Pillars of the Nation"
+ dei_news_a.4.d: "Sukarno enshrines the Pancasila as the immutable philosophical foundation of the state, bridging the historic divide between Islamic scholars and secular nationalists."
+ dei_news_a.4.a: "Bhinneka Tunggal Ika — Unity in Diversity!"
+
+ # PATH B: Kolonial / Federalis
+ dei_news_b.1.t: "Van Mook Arrives in Batavia"
+ dei_news_b.1.d: "Lieutenant Governor-General Van Mook arrives in Batavia bearing a new mandate from The Hague to resolve the archipelagic crisis through a federal commonwealth framework."
+ dei_news_b.1.a: "The negotiating table opens."
+
+ dei_news_b.2.t: "Volksraad Dissolved, BFO Assembly Convenes"
+ dei_news_b.2.d: "Colonial authorities formally dissolve the Volksraad, convening traditional rulers and regional delegates into the Federal Consultative Assembly (BFO)."
+ dei_news_b.2.a: "A new era begins."
+
+ dei_news_b.3.t: "Union Treaty: Two Flags Side by Side"
+ dei_news_b.3.d: "The Netherlands-Indonesian Union Treaty is formally concluded. The United States of Indonesia emerges nominally sovereign, bound by mutual defense and economic pacts with the Crown."
+ dei_news_b.3.a: "The Federation is established."
+
+ dei_news_b.4.t: "European Capital Returns"
+ dei_news_b.4.d: "Dutch, British, and American syndicates resume extensive investment in tea, rubber, and petroleum operations under the firm security guarantees of the federal government."
+ dei_news_b.4.a: "The gears of commerce turn again."
+
+ # PATH C: Komunis (Front Rakyat)
+ dei_news_c.1.t: "Musso Returns: The East Wind from Moscow"
+ dei_news_c.1.d: "PKI Secretary-General Musso returns from long exile in Moscow. Massive crowds of workers and revolutionary cadres gather at Surabaya harbor to welcome him with revolutionary fervor."
+ dei_news_c.1.a: "The revolution begins!"
+
+ dei_news_c.2.t: "Agrarian Reform: Land to the Peasantry"
+ dei_news_c.2.d: "A sweeping radical land reform campaign commences. Feudal estates and colonial concessions are expropriated and transferred directly to landless peasant collectives."
+ dei_news_c.2.a: "Land to the tillers!"
+
+ dei_news_c.3.t: "Dockworkers Strike: Tanjung Priok Paralyzed"
+ dei_news_c.3.d: "The Red Maritime Labor Federation initiates a coordinated general strike. Maritime commerce grinds to a complete halt, striking a crippling blow to foreign monopoly capital."
+ dei_news_c.3.a: "Workers of Nusantara, unite!"
+
+ dei_news_c.4.t: "Revolutionary Youth Congress of Nusantara"
+ dei_news_c.4.d: "The first Pan-Archipelagic Revolutionary Youth Congress opens in Central Java. Fraternal delegates from Vietnam, Malaya, and the Philippines pledge internationalist solidarity."
+ dei_news_c.4.a: "The Red International!"
+
+ # PATH D: Otoriter Militeristik
+ dei_news_d.1.t: "State of Siege: Island-Wide Curfew Across Java"
+ dei_news_d.1.d: "The Supreme Revolutionary Command proclaims martial law across Java. Civilian political assemblies are suspended, curfews imposed, and total mobilization decreed to safeguard national defense."
+ dei_news_d.1.a: "Order shall prevail!"
+
+ dei_news_d.2.t: "Battle of Ambarawa: General Soedirman Takes Command"
+ dei_news_d.2.d: "Fierce combat at the mountain bastion of Ambarawa demonstrates the tactical prowess of the Republican military. General Soedirman directs operations directly from the frontline despite frail health."
+ dei_news_d.2.a: "Never surrender!"
+
+ dei_news_d.3.t: "Bung Tomo's Fiery Broadcast: Radio of the Resistance"
+ dei_news_d.3.d: "Bung Tomo delivers an electrifying radio address to the defenders of Surabaya. His rallying cry of 'Allahu Akbar! Merdeka atau Mati!' reverberates across every wireless receiver in Java."
+ dei_news_d.3.a: "Freedom or death!"
+
+ dei_news_d.4.t: "Republican Wings: Adisoetjipto Takes Flight"
+ dei_news_d.4.d: "Commodore Agustinus Adisoetjipto pilots the first combat aircraft bearing Republican insignia across the skies of Yogyakarta, christening the birth of modern Indonesian military aviation."
+ dei_news_d.4.a: "The skies belong to us!"
+
+ # PATH E: Islamis (Negara Islam Indonesia)
+ dei_news_e.1.t: "Proclamation of the Islamic State of Indonesia"
+ dei_news_e.1.d: "Imam S.M. Kartosoewirjo officially proclaims the Islamic State of Indonesia (NII). Regiments of the Tentara Islam Indonesia rapidly establish sovereign administrative control over the West Java highlands."
+ dei_news_e.1.a: "Allahu Akbar!"
+
+ dei_news_e.2.t: "Majelis Syuro: Supreme Council of Ulama"
+ dei_news_e.2.d: "Venerable Islamic scholars and jurists from every island gather to constitute the Majelis Syuro as the supreme deliberative body of state, codifying Islamic jurisprudence as the supreme law of the land."
+ dei_news_e.2.a: "Rule by mutual consultation."
+
+ dei_news_e.3.t: "Mission to the East: Outreach to Sulawesi and Maluku"
+ dei_news_e.3.d: "Religious envoys and educators journey east to Sulawesi, Kalimantan, and Maluku, forging staunch alliances with regional Islamic leaders and expanding the territorial sphere of the Islamic State."
+ dei_news_e.3.a: "A blessing for all creation."
+
+ dei_news_e.4.t: "Pan-Islamic Recognition: Cairo Welcomes the New Caliphate"
+ dei_news_e.4.d: "Diplomats from Cairo and the Arab League extend formal greetings to the Islamic State of Indonesia, opening direct trade missions and cementing pan-Islamic geopolitical ties."
+ dei_news_e.4.a: "Islamic brotherhood across borders!"
+
+ # PATH F: Kemaharajaan Majapahit
+ dei_news_f.1.t: "Imperial Coronation: Grand Ceremony at Trowulan"
+ dei_news_f.1.d: "Tens of thousands of subjects assemble at the historic capital of Majapahit to witness the solemn coronation of the first supreme Emperor in over five centuries amidst resonant gamelan fanfares."
+ dei_news_f.1.a: "Glory to Wilwatikta!"
+
+ dei_news_f.2.t: "Restoration of Trowulan: Ancestral Splendor Revived"
+ dei_news_f.2.d: "A monumental imperial architectural initiative undertakes the meticulous restoration of ancient Trowulan, rebuilding sacred royal gates, council pavillions, and ceremonial sanctuaries."
+ dei_news_f.2.a: "The heritage of our ancestors!"
+
+ dei_news_f.3.t: "Borobudur: Beacon of the Archipelagic Renaissance"
+ dei_news_f.3.d: "Extensive conservation and restoration of Candi Borobudur is officially concluded. The Maharaja personally presides over the ceremonial consecration of the great world monument."
+ dei_news_f.3.a: "The rebirth of Nusantara!"
+
+ dei_news_f.4.t: "Grand Jung Armada Sets Sail"
+ dei_news_f.4.d: "Shipwrights in Makassar and Tuban complete the first squadron of modern heavy ocean-going junks and armed gunboats, sailing forth to assert uncontested naval dominion over the equatorial oceans."
+ dei_news_f.4.a: "The seas belong to Nusantara!"
+
+ dei_idea_pancasila_abadi: "Eternal Pancasila Foundation"
+ dei_idea_pancasila_abadi_desc: "The five immutable pillars of the state guarantee national unity, religious freedom, social justice, and resilience against ideological subversion."
+ dei_idea_doktrin_trisakti: "Trisakti Self-Reliance Doctrine"
+ dei_idea_doktrin_trisakti_desc: "Standing tall on our own feet: political sovereignty, economic self-reliance, and cultural integrity drive national industrial output."
+ dei_idea_pakta_anzac_spirit: "ANZAC Maritime Security Accord"
+ dei_idea_pakta_anzac_spirit_desc: "Joint naval coordination and intelligence sharing with Commonwealth allies secure the southern sea lanes and archipelagic straits."

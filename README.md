@@ -2,7 +2,7 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dirancang terintegrasi penuh di atas **The Road to 56 (R56)**.
 
-- **Status Versi:** `v1.0.0 (Canonical Release & Complete Visual Assets)`
+- **Status Versi:** `v1.0.1 (R56 Complete Compatibility & UX Polish)`
 - **Folder Mod Utama:** [IndonesiaRayaR56/](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/)
 - **Dokumentasi Lengkap:** [IndonesiaRayaR56/README.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/README.md)
 - **Instruksi Agent & Memori Kerja:** [AGENTS.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/AGENTS.md)

@@ -1,77 +1,177 @@
 # =====================================================================
 # INDONESIA RAYA (R56 SUBMOD) — Keputusan Nasional & Mekanik Khusus
-# 1. Kedaulatan & Diplomasi Wilayah Nusantara (Papua, Timor, Borneo, Malaya)
-# 2. Tata Kelola Kepulauan & Ekonomi Nasional (Transmigrasi, ORI, Maritim)
-# 3. Riset, Doktrin Militer & Mega Proyek Strategis
+# Kategori didefinisikan di common/decisions/categories/DEI_decision_categories.txt
 # =====================================================================
 
-decisions_category = {
-	id = dei_decisions_proclamations
-	icon = decision_category_political_effects
-	priority = 95
-	allowed = { tag = INS }
-	visible = {
-		tag = INS
-		has_country_flag = dei_jalur_dipilih
-	}
-}
+dei_decisions_nusantara = {
+		# Transisi Darurat Presidium Revolusi Kemerdekaan 1936 (Catch-up / Instant Transition)
+		dei_decision_proklamasikan_nkri = {
+			icon = generic_revolution
+			allowed = { tag = INS }
+			visible = {
+				has_completed_focus = dei_focus_momentum_kemerdekaan
+				NOT = { has_country_flag = dei_jalur_dipilih }
+				NOT = { has_cosmetic_tag = INS_REPUBLIK_NKRI }
+			}
+			available = { always = yes }
+			cost = 0
+			fire_only_once = yes
 
-decisions_category = {
-	id = dei_decisions_nusantara
-	icon = generic_propaganda
-	priority = 80
-	allowed = { tag = INS }
-	visible = {
-		tag = INS
-		has_country_flag = dei_jalur_dipilih
-	}
-}
+			complete_effect = {
+				retire_country_leader = yes
+				set_cosmetic_tag = INS_REPUBLIK_NKRI
+				recruit_character = DEI_sukarno
+				promote_character = DEI_sukarno
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+				}
+				set_popularities = {
+					democratic = 60.0
+					neutrality = 20.0
+					communism = 10.0
+					fascism = 10.0
+				}
+				set_party_name = {
+					ideology = democratic
+					name = INS_PNI_party
+					long_name = INS_PNI_party_long
+				}
+				set_capital = { state = 1126 }
+				set_province_name = { id = 7381 name = "Jakarta" }
+				set_province_name = { id = 10103 name = "Bogor" }
+				set_province_name = { id = 4361 name = "Bandar Lampung" }
+				set_province_name = { id = 12371 name = "Jayapura" }
+				set_province_name = { id = 1574 name = "Ambon" }
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
 
-decisions_category = {
-	id = dei_decisions_governance
-	icon = generic_civilian_economy
-	priority = 70
-	allowed = { tag = INS }
-	visible = {
-		tag = INS
-		has_country_flag = dei_jalur_dipilih
-	}
-}
+		# Ekspedisi Pembebasan Sumatera
+		dei_decision_liberate_sumatra = {
+			icon = generic_civil_war
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_sumatra_liberated }
+			}
+			available = {
+				has_political_power > 24
+			}
+			cost = 25
+			fire_only_once = yes
 
-decisions_category = {
-	id = dei_decisions_mega_projects
-	icon = generic_industry
-	priority = 75
-	allowed = { tag = INS }
-	visible = {
-		tag = INS
-		has_country_flag = dei_jalur_dipilih
-	}
-}
+			complete_effect = {
+				set_country_flag = dei_sumatra_liberated
+				672 = { set_state_owner_to = INS set_state_controller_to = INS }
+				1135 = { set_state_owner_to = INS set_state_controller_to = INS }
+				974 = { set_state_owner_to = INS set_state_controller_to = INS }
+				1128 = { set_state_owner_to = INS set_state_controller_to = INS }
+				909 = { set_state_owner_to = INS set_state_controller_to = INS }
+				add_stability = 0.05
+				add_war_support = 0.05
+				672 = {
+					create_unit = {
+						division_template = "Resimen Pelopor Rakyat"
+						start_experience_factor = 0.3
+					}
+				}
+				974 = {
+					create_unit = {
+						division_template = "Resimen Pelopor Rakyat"
+						start_experience_factor = 0.3
+					}
+				}
+			}
+		}
 
-decisions_category = {
-	id = dei_decisions_defense
-	icon = generic_crisis
-	priority = 85
-	allowed = { tag = INS }
-	visible = {
-		tag = INS
-		has_country_flag = dei_jalur_dipilih
-	}
-}
+		# Ekspedisi Pembebasan Kalimantan
+		dei_decision_liberate_kalimantan = {
+			icon = generic_operation
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_kalimantan_liberated }
+			}
+			available = {
+				has_political_power > 24
+			}
+			cost = 25
+			fire_only_once = yes
 
-decisions_category = {
-	id = dei_decisions_research_doctrines
-	icon = generic_research
-	priority = 88
-	allowed = { tag = INS }
-	visible = {
-		tag = INS
-	}
-}
+			complete_effect = {
+				set_country_flag = dei_kalimantan_liberated
+				334 = { set_state_owner_to = INS set_state_controller_to = INS }
+				977 = { set_state_owner_to = INS set_state_controller_to = INS }
+				978 = { set_state_owner_to = INS set_state_controller_to = INS }
+				add_stability = 0.05
+				add_war_support = 0.05
+				334 = {
+					create_unit = {
+						division_template = "Resimen Pelopor Rakyat"
+						start_experience_factor = 0.3
+					}
+				}
+			}
+		}
 
-decisions = {
-	dei_decisions_nusantara = {
+		# Operasi Lintas Laut Sulawesi, Maluku & Nusa Tenggara
+		dei_decision_liberate_east_indies = {
+			icon = generic_naval
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_east_indies_liberated }
+			}
+			available = {
+				has_political_power > 24
+			}
+			cost = 25
+			fire_only_once = yes
+
+			complete_effect = {
+				set_country_flag = dei_east_indies_liberated
+				673 = { set_state_owner_to = INS set_state_controller_to = INS }
+				975 = { set_state_owner_to = INS set_state_controller_to = INS }
+				668 = { set_state_owner_to = INS set_state_controller_to = INS }
+				738 = { set_state_owner_to = INS set_state_controller_to = INS }
+				1142 = { set_state_owner_to = INS set_state_controller_to = INS }
+				667 = { set_state_owner_to = INS set_state_controller_to = INS }
+				add_stability = 0.05
+				add_war_support = 0.05
+				673 = {
+					create_unit = {
+						division_template = "Divisi Marinir KKO"
+						start_experience_factor = 0.4
+					}
+				}
+			}
+		}
+
+		# Pembebasan Papua Barat
+		dei_decision_liberate_papua = {
+			icon = generic_national_unity
+			allowed = { tag = INS }
+			visible = {
+				has_country_flag = dei_jalur_dipilih
+				NOT = { has_country_flag = dei_papua_liberated }
+			}
+			available = {
+				has_political_power > 24
+			}
+			cost = 25
+			fire_only_once = yes
+
+			complete_effect = {
+				set_country_flag = dei_papua_liberated
+				669 = { set_state_owner_to = INS set_state_controller_to = INS }
+				1137 = { set_state_owner_to = INS set_state_controller_to = INS }
+				add_stability = 0.05
+				add_war_support = 0.05
+			}
+		}
+
 
 		# Integrasi Papua Barat
 		dei_decision_papua_integration = {
@@ -141,9 +241,18 @@ decisions = {
 			available = {
 				has_political_power > 49
 				OR = {
-					has_country_flag = dei_path_c_chosen
-					has_country_flag = dei_path_d_chosen
-					has_country_flag = dei_path_f_chosen
+					custom_trigger_tooltip = {
+						tooltip = dei_militant_path_tt
+						has_country_flag = dei_path_c_chosen
+					}
+					custom_trigger_tooltip = {
+						tooltip = dei_militant_path_tt
+						has_country_flag = dei_path_d_chosen
+					}
+					custom_trigger_tooltip = {
+						tooltip = dei_militant_path_tt
+						has_country_flag = dei_path_f_chosen
+					}
 					has_war = yes
 				}
 			}
@@ -171,8 +280,14 @@ decisions = {
 				has_country_flag = dei_jalur_dipilih
 				NOT = { has_country_flag = dei_malaya_claimed }
 				OR = {
-					has_country_flag = dei_path_d_chosen
-					has_country_flag = dei_path_f_chosen
+					custom_trigger_tooltip = {
+						tooltip = dei_militant_path_tt
+						has_country_flag = dei_path_d_chosen
+					}
+					custom_trigger_tooltip = {
+						tooltip = dei_militant_path_tt
+						has_country_flag = dei_path_f_chosen
+					}
 				}
 			}
 			available = {
@@ -232,7 +347,7 @@ decisions = {
 			visible = {
 				has_country_flag = dei_jalur_dipilih
 				NOT = { has_country_flag = dei_ori_terbit }
-				NOT = { has_country_flag = dei_path_b_chosen }
+				NOT = { custom_trigger_tooltip = { tooltip = dei_militant_path_tt has_country_flag = dei_path_b_chosen } }
 			}
 			available = {
 				has_political_power > 49
@@ -689,27 +804,7 @@ decisions = {
 						}
 					}
 				}
-				if = {
-					limit = { NOT = { has_dlc = "No Step Back" } }
-					create_equipment_variant = {
-						name = "Panser Braat Overvalwagen"
-						type = gw_tank_equipment
-						upgrades = {
-							tank_gun_upgrade = 2
-							tank_engine_upgrade = 3
-							tank_reliability_upgrade = 2
-						}
-					}
-					create_equipment_variant = {
-						name = "Marmon-Herrington CTLS-4TA"
-						type = light_tank_equipment_1
-						upgrades = {
-							tank_gun_upgrade = 1
-							tank_engine_upgrade = 2
-							tank_reliability_upgrade = 2
-						}
-					}
-				}
+				# Legacy variant creation removed - incompatible with current engine
 			}
 			ai_will_do = { factor = 20 }
 		}
@@ -756,25 +851,7 @@ decisions = {
 						icon = "GFX_USA_tactical_bomber1_medium"
 					}
 				}
-				if = {
-					limit = { NOT = { has_dlc = "By Blood Alone" } }
-					create_equipment_variant = {
-						name = "CW-21 Demon"
-						type = early_fighter
-						upgrades = {
-							fighter_gun_upgrade = 2
-							fighter_engine_upgrade = 3
-						}
-					}
-					create_equipment_variant = {
-						name = "B-25 Mitchell Si Djimat"
-						type = tactical_bomber_1
-						upgrades = {
-							tac_bomber_bomb_upgrade = 2
-							tac_bomber_range_upgrade = 2
-						}
-					}
-				}
+				# Legacy variant creation removed - incompatible with current engine
 				load_oob = DEI_air_starter
 			}
 			ai_will_do = { factor = 20 }
@@ -865,38 +942,11 @@ decisions = {
 						}
 					}
 				}
-				if = {
-					limit = { NOT = { has_dlc = "Man the Guns" } }
-					create_equipment_variant = {
-						name = "KRI Gadjah Mada"
-						type = destroyer_2
-						upgrades = {
-							ship_torpedo_upgrade = 2
-							ship_engine_upgrade = 2
-							ship_ASW_upgrade = 2
-						}
-					}
-					create_equipment_variant = {
-						name = "KRI Macan Tutul"
-						type = destroyer_1
-						upgrades = {
-							ship_torpedo_upgrade = 3
-						}
-					}
-					create_equipment_variant = {
-						name = "KRI Nanggala"
-						type = submarine_2
-						upgrades = {
-							sub_torpedo_upgrade = 2
-							sub_engine_upgrade = 2
-						}
-					}
-				}
+				# Legacy variant creation removed - incompatible with current engine
 			}
 			ai_will_do = { factor = 20 }
 		}
 	}
-}
 
 dei_decisions_proclamations = {
 

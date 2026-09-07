@@ -48,8 +48,8 @@ ideas = {
 			picture = generic_infantry_bonus
 			allowed = { tag = INS }
 			modifier = {
-				defense_factor = 0.05
-				org_loss_when_moving_factor = -0.10
+				defence = 0.05
+				org_loss_when_moving = -0.10
 			}
 		}
 
@@ -79,7 +79,7 @@ ideas = {
 			allowed = { tag = INS }
 			modifier = {
 				resistance_decay = 0.10
-				org_loss_when_moving_factor = -0.15
+				org_loss_when_moving = -0.15
 			}
 		}
 
@@ -182,13 +182,44 @@ ideas = {
 			}
 		}
 
+		dei_idea_pancasila_abadi = {
+			picture = generic_pp_unity_bonus
+			allowed = { tag = INS }
+			modifier = {
+				stability_factor = 0.15
+				political_power_factor = 0.10
+				drift_defence_factor = 0.50
+			}
+		}
+
+		dei_idea_doktrin_trisakti = {
+			picture = generic_economic_increase
+			allowed = { tag = INS }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		dei_idea_pakta_anzac_spirit = {
+			picture = generic_navy_bonus
+			allowed = { tag = INS }
+			modifier = {
+				navy_max_range_factor = 0.20
+				convoy_escort_efficiency = 0.25
+				naval_detection = 0.15
+			}
+		}
+
 		# --- Military Mechanics & Mega-Project Spirits ---
 		dei_idea_trans_java_corridor = {
 			picture = generic_goods_red_bonus
 			allowed = { tag = INS }
 			modifier = {
 				army_speed_factor = 0.15
-				supply_hub_dropoff_factor = 0.15
+				supply_consumption_factor = -0.10
 			}
 		}
 
@@ -196,7 +227,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			allowed = { tag = INS }
 			modifier = {
-				defense_factor = 0.20
+				defence = 0.20
 				resistance_target = 0.30
 				conscription_factor = 0.10
 			}
@@ -247,7 +278,7 @@ ideas = {
 			allowed = { tag = INS }
 			modifier = {
 				air_cas_present_factor = 0.15
-				air_mission_efficiency_factor = 0.10
+				air_mission_efficiency = 0.10
 				air_weather_penalty = -0.25
 			}
 		}

@@ -1,0 +1,7 @@
+add_namespace = INS_political_events
+
+# =====================================================================
+# OVERRIDDEN BY INDONESIA RAYA: ROAD TO MERDEKA (R56 SUBMOD)
+# Neutralizes old TAOG / R56 Indonesia political event chain.
+# All events are handled cleanly by DEI_* custom event chains.
+# =====================================================================

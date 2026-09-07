@@ -1,0 +1,22 @@
+# Indonesia Raya: Road to Merdeka — R56 Focus Tree Override
+# This file overrides R56's indonesia.txt to prevent INS from rendering
+# R56's vanilla INS focus tree (indonesia_focus), which causes ghost lines
+# when our custom tree (dei_focus_tree) takes priority.
+#
+# We set factor = 0 with no modifier for INS, so this tree never activates.
+# But shared_focus declarations are kept for other countries (HOL, AUS, UK, etc.)
+# that reference INSHOL_dutch_east_indies and ABDA_abdacom.
+focus_tree = {
+	id = indonesia_focus
+
+	country = {
+		factor = 0
+	}
+
+	default = no
+
+	shared_focus = INSHOL_dutch_east_indies
+	shared_focus = INSHOL_reasserting_control
+	shared_focus = INSHOL_reform_knil
+	shared_focus = ABDA_abdacom
+}

@@ -44,7 +44,7 @@ leader_traits = {
 	trait_dei_sukawati = {
 		random = no
 		local_resources_factor = 0.15
-		dockyard_speed_factor = 0.15
+		industrial_capacity_dockyard = 0.15
 		stability_factor = 0.05
 		ai_will_do = { factor = 1 }
 	}

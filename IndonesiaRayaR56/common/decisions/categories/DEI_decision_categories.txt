@@ -1,0 +1,62 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) — Decision Categories
+# =====================================================================
+
+dei_decisions_proclamations = {
+	icon = decision_category_political_effects
+	priority = 95
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+dei_decisions_nusantara = {
+	icon = generic_propaganda
+	priority = 80
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+dei_decisions_governance = {
+	icon = generic_civilian_economy
+	priority = 70
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+dei_decisions_mega_projects = {
+	icon = generic_industry
+	priority = 75
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+dei_decisions_defense = {
+	icon = generic_crisis
+	priority = 85
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+		has_country_flag = dei_jalur_dipilih
+	}
+}
+
+dei_decisions_research_doctrines = {
+	icon = generic_research
+	priority = 88
+	allowed = { tag = INS }
+	visible = {
+		tag = INS
+	}
+}

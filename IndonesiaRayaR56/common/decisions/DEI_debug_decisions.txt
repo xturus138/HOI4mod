@@ -1,0 +1,532 @@
+# =====================================================================
+# INDONESIA RAYA (R56 SUBMOD) - Developer Debugging Tools
+# =====================================================================
+
+dei_decisions_debug_tools = {
+	# 10. INSTANT LIBERATE ALL OUTER ISLANDS (TESTER)
+	dei_debug_liberate_all_islands = {
+		icon = generic_national_unity
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = dei_sumatra_liberated
+			set_country_flag = dei_kalimantan_liberated
+			set_country_flag = dei_east_indies_liberated
+			set_country_flag = dei_papua_liberated
+			672 = { set_state_owner_to = INS set_state_controller_to = INS }
+			1135 = { set_state_owner_to = INS set_state_controller_to = INS }
+			974 = { set_state_owner_to = INS set_state_controller_to = INS }
+			1128 = { set_state_owner_to = INS set_state_controller_to = INS }
+			909 = { set_state_owner_to = INS set_state_controller_to = INS }
+			334 = { set_state_owner_to = INS set_state_controller_to = INS }
+			977 = { set_state_owner_to = INS set_state_controller_to = INS }
+			978 = { set_state_owner_to = INS set_state_controller_to = INS }
+			673 = { set_state_owner_to = INS set_state_controller_to = INS }
+			975 = { set_state_owner_to = INS set_state_controller_to = INS }
+			668 = { set_state_owner_to = INS set_state_controller_to = INS }
+			738 = { set_state_owner_to = INS set_state_controller_to = INS }
+			1142 = { set_state_owner_to = INS set_state_controller_to = INS }
+			667 = { set_state_owner_to = INS set_state_controller_to = INS }
+			669 = { set_state_owner_to = INS set_state_controller_to = INS }
+			1137 = { set_state_owner_to = INS set_state_controller_to = INS }
+			add_stability = 0.10
+			add_war_support = 0.10
+		}
+	}
+
+
+	# 1. INSTANT COMPLETE 1936 PROLOGUE
+	dei_debug_instant_prologue = {
+		icon = generic_crisis
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			complete_national_focus = dei_focus_root
+			complete_national_focus = dei_focus_pembangkangan
+			complete_national_focus = dei_focus_momentum_kemerdekaan
+						if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			retire_country_leader = yes
+			set_cosmetic_tag = INS_REPUBLIK_NKRI
+			recruit_character = DEI_sukarno
+			promote_character = DEI_sukarno
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 60.0
+				neutrality = 20.0
+				communism = 10.0
+				fascism = 10.0
+			}
+			set_party_name = {
+				ideology = democratic
+				name = INS_PNI_party
+				long_name = INS_PNI_party_long
+			}
+			load_oob = DEI_templates
+			load_oob = DEI_air_starter
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 300 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 300 }
+			news_event = { id = dei_trunk.6 }
+		}
+	}
+
+	# 2. INSTANT PATH A - REPUBLIK DEMOKRATIS
+	dei_debug_path_a = {
+		icon = generic_democracy
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			clr_country_flag = dei_path_b_chosen
+			clr_country_flag = dei_path_c_chosen
+			clr_country_flag = dei_path_d_chosen
+			clr_country_flag = dei_path_e_chosen
+			clr_country_flag = dei_path_f_chosen
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_a_chosen
+			complete_national_focus = dei_focus_a_proklamasi
+			set_cosmetic_tag = INS_REPUBLIK_NKRI
+			recruit_character = DEI_sukarno
+			recruit_character = DEI_mohammad_hatta
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 70.0
+				neutrality = 10.0
+				fascism = 10.0
+				communism = 10.0
+			}
+			set_party_name = {
+				ideology = democratic
+				name = INS_PNI_party
+				long_name = INS_PNI_party_long
+			}
+			promote_character = DEI_sukarno
+			load_oob = DEI_navy_starter_a
+			335 = {
+				create_unit = {
+					division_template = "Divisi Infanteri TKR"
+					owner = ROOT
+					start_experience_factor = 0.3
+				}
+				create_unit = {
+					division_template = "Divisi Infanteri TKR"
+					owner = ROOT
+					start_experience_factor = 0.3
+				}
+			}
+		}
+	}
+
+	# 3. INSTANT PATH B - FEDERALIS BFO / VAN MOOK
+	dei_debug_path_b = {
+		icon = generic_national_unity
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			clr_country_flag = dei_path_a_chosen
+			clr_country_flag = dei_path_c_chosen
+			clr_country_flag = dei_path_d_chosen
+			clr_country_flag = dei_path_e_chosen
+			clr_country_flag = dei_path_f_chosen
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_b_chosen
+			complete_national_focus = dei_focus_b_root
+			set_cosmetic_tag = INS_KOLONIAL_BFO
+			recruit_character = DEI_hubertus_van_mook
+			recruit_character = DEI_sukawati
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				democratic = 65.0
+				neutrality = 15.0
+				fascism = 10.0
+				communism = 10.0
+			}
+			set_party_name = {
+				ideology = democratic
+				name = INS_BFO_party
+				long_name = INS_BFO_party_long
+			}
+			promote_character = DEI_hubertus_van_mook
+			load_oob = DEI_navy_starter_b
+			335 = {
+				create_unit = {
+					division_template = "KNIL Infanterie Divisie"
+					owner = ROOT
+					start_experience_factor = 0.4
+				}
+				create_unit = {
+					division_template = "KNIL Infanterie Divisie"
+					owner = ROOT
+					start_experience_factor = 0.4
+				}
+			}
+		}
+	}
+
+	# 4. INSTANT PATH C - KOMUNIS / MUSSO
+	dei_debug_path_c = {
+		icon = generic_communism
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			clr_country_flag = dei_path_a_chosen
+			clr_country_flag = dei_path_b_chosen
+			clr_country_flag = dei_path_d_chosen
+			clr_country_flag = dei_path_e_chosen
+			clr_country_flag = dei_path_f_chosen
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_c_chosen
+			complete_national_focus = dei_focus_c_root
+			set_cosmetic_tag = INS_KOMUNIS_RRI
+			recruit_character = DEI_musso
+			recruit_character = DEI_tan_malaka
+			recruit_character = DEI_amir_sjarifuddin
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			set_popularities = {
+				communism = 70.0
+				democratic = 10.0
+				fascism = 10.0
+				neutrality = 10.0
+			}
+			set_party_name = {
+				ideology = communism
+				name = INS_PKI_party
+				long_name = INS_PKI_party_long
+			}
+			promote_character = DEI_musso
+			load_oob = DEI_navy_starter_c
+			335 = {
+				create_unit = {
+					division_template = "Brigade Barisan Buruh"
+					owner = ROOT
+					start_experience_factor = 0.3
+				}
+				create_unit = {
+					division_template = "Brigade Barisan Buruh"
+					owner = ROOT
+					start_experience_factor = 0.3
+				}
+			}
+		}
+	}
+
+	# 5. INSTANT PATH D - MILITER / SOEDIRMAN
+	dei_debug_path_d = {
+		icon = generic_fascism
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			clr_country_flag = dei_path_a_chosen
+			clr_country_flag = dei_path_b_chosen
+			clr_country_flag = dei_path_c_chosen
+			clr_country_flag = dei_path_e_chosen
+			clr_country_flag = dei_path_f_chosen
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_d_chosen
+			complete_national_focus = dei_focus_d_root
+			set_cosmetic_tag = INS_OTORITER_NKRI
+			recruit_character = DEI_sudirman
+			recruit_character = DEI_nasution
+			recruit_character = DEI_kawilarang
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_popularities = {
+				fascism = 75.0
+				democratic = 10.0
+				communism = 10.0
+				neutrality = 5.0
+			}
+			set_party_name = {
+				ideology = fascism
+				name = INS_DEWAN_REVOLUSI_party
+				long_name = INS_DEWAN_REVOLUSI_party_long
+			}
+			promote_character = DEI_sudirman
+			load_oob = DEI_navy_starter_d
+			335 = {
+				create_unit = {
+					division_template = "Resimen Pengawal Revolusi"
+					owner = ROOT
+					start_experience_factor = 0.4
+				}
+				create_unit = {
+					division_template = "Resimen Pengawal Revolusi"
+					owner = ROOT
+					start_experience_factor = 0.4
+				}
+			}
+		}
+	}
+
+	# 6. INSTANT PATH E - ISLAMIS NII / KARTOSOEWIRJO
+	dei_debug_path_e = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			clr_country_flag = dei_path_a_chosen
+			clr_country_flag = dei_path_b_chosen
+			clr_country_flag = dei_path_c_chosen
+			clr_country_flag = dei_path_d_chosen
+			clr_country_flag = dei_path_f_chosen
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_e_chosen
+			complete_national_focus = dei_focus_e_root
+			set_cosmetic_tag = INS_ISLAMIS_NII
+			recruit_character = DEI_kartosuwiryo
+			recruit_character = DEI_wahid_hasyim
+			recruit_character = DEI_mohammad_natsir
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 70.0
+				democratic = 10.0
+				fascism = 10.0
+				communism = 10.0
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = INS_NII_party
+				long_name = INS_NII_party_long
+			}
+			promote_character = DEI_kartosuwiryo
+			load_oob = DEI_navy_starter_e
+			335 = {
+				create_unit = {
+					division_template = "Resimen Laskar Hizbullah"
+					owner = ROOT
+					start_experience_factor = 0.3
+				}
+				create_unit = {
+					division_template = "Resimen Laskar Hizbullah"
+					owner = ROOT
+					start_experience_factor = 0.3
+				}
+			}
+		}
+	}
+
+	# 7. INSTANT PATH F - MAJAPAHIT / WURYANINGRAT
+	dei_debug_path_f = {
+		icon = generic_civilian_economy
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			if = {
+				limit = { is_subject = yes }
+				OVERLORD = {
+					end_puppet = ROOT
+				}
+			}
+			HOL = {
+				remove_from_faction = INS
+			}
+			remove_ideas = INS_political_idea
+			remove_ideas = INS_army_idea
+			remove_ideas = INS_economy_idea
+			remove_ideas = INS_science_idea
+			clr_country_flag = dei_path_a_chosen
+			clr_country_flag = dei_path_b_chosen
+			clr_country_flag = dei_path_c_chosen
+			clr_country_flag = dei_path_d_chosen
+			clr_country_flag = dei_path_e_chosen
+			set_country_flag = dei_jalur_dipilih
+			set_country_flag = dei_path_f_chosen
+			complete_national_focus = dei_focus_f_root
+			set_cosmetic_tag = INS_MAJAPAHIT_EMPIRE
+			recruit_character = DEI_wuryaningrat
+			recruit_character = DEI_hamengkubuwono_ix
+			recruit_character = DEI_maharaja_suryawikrama
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_popularities = {
+				neutrality = 75.0
+				democratic = 10.0
+				fascism = 10.0
+				communism = 5.0
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = INS_MAJAPAHIT_party
+				long_name = INS_MAJAPAHIT_party_long
+			}
+			promote_character = DEI_wuryaningrat
+			load_oob = DEI_navy_starter_f
+			335 = {
+				create_unit = {
+					division_template = "Bhayangkara Praja Majapahit"
+					owner = ROOT
+					start_experience_factor = 0.4
+				}
+				create_unit = {
+					division_template = "Bhayangkara Praja Majapahit"
+					owner = ROOT
+					start_experience_factor = 0.4
+				}
+			}
+		}
+	}
+
+	# 8. SUPER GOD BUFF (PP + STABILITY + WAR SUPPORT + STOCKPILE)
+	dei_debug_super_buff = {
+		icon = generic_war_support
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			add_political_power = 2000
+			add_stability = 0.50
+			add_war_support = 0.50
+			add_command_power = 100
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 20000 }
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 2000 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 2000 }
+			add_equipment_to_stockpile = { type = light_tank_chassis amount = 500 }
+			add_equipment_to_stockpile = { type = small_plane_airframe amount = 300 }
+		}
+	}
+
+	# 9. FIRE PROLOGUE NEWS EVENTS (TESTER)
+	dei_debug_fire_events = {
+		icon = generic_propaganda
+		allowed = { tag = INS }
+		visible = { tag = INS }
+		available = { always = yes }
+		cost = 0
+		fire_only_once = no
+
+		complete_effect = {
+			country_event = { id = dei_trunk.1 }
+			country_event = { id = dei_trunk.2 }
+		}
+	}
+}
