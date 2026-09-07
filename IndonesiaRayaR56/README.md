@@ -2,11 +2,34 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dibangun terintegrasi di atas **The Road to 56 (R56)**.
 
-**Status Saat Ini:** `v1.0.1 (R56 Complete Compatibility & UX Polish)` — 134 Fokus Nasional, 124 Event Interaktif (98 Fokus + 26 Flavor Acak MTTH, 100% bergambar kustom), Batang Prolog Krisis 1936 (84 Hari), 6 Jalur Ideologi Mutual Exclusive, Total R56 Override (Decisions, Events, Bookmark, AI Plans), 36 Focus Goals Kustom (82x82 DDS), 24 Technologies & Equipment (120x50 DDS, 55 interface sprites), 19 Potret Komandan (156x210 DDS), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 156 Bendera TGA 32bpp RGBA, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik, 14 Varian Alutsista, 25 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris, 8 Desainer Industri MIO, dan 1.217 Kunci Lokalisasi Ber-BOM (0 missing keys, 0 errors).
+**Status Saat Ini:** `v1.0.1 (R56 Complete Compatibility, Mutual Exclusivity & UX Polish)` — 134 Fokus Nasional, 124 Event Interaktif (98 Fokus + 26 Flavor Acak MTTH, 100% bergambar kustom), Batang Prolog Krisis 1936 (84 Hari), 6 Jalur Ideologi Mutual Exclusive, 36 Focus Goals Kustom (82x82 DDS), 24 Technologies & Equipment (120x50 DDS, 55 interface sprites), 19 Potret Komandan (156x210 DDS), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 108 Bendera TGA Tersinkronisasi, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik, 14 Varian Alutsista, 25 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris, 8 Desainer Industri MIO, dan 1.217 Kunci Lokalisasi Ber-BOM (0 missing keys, 0 errors).
 
 ---
 
-## Ringkasan Fitur v1.0.0
+## Catatan Rilis v1.0.1 (Pembaruan & Perbaikan)
+
+1. **Penguncian Mutual Exclusivity 6 Jalur Politik:**
+   - Seluruh 6 akar cabang ideologi (A: Republik, B: Kolonial, C: Komunis, D: Otoriter, E: Islamis, F: Majapahit) kini saling mengunci secara eksklusif (`mutually_exclusive`).
+   - Dilengkapi proteksi trigger `available = { NOT = { has_country_flag = dei_jalur_dipilih } }`.
+   - Mengambil satu jalur menetapkan flag yang secara dinamis melipat (`allow_branch`) 5 jalur lainnya agar pohon fokus tetap rapi dan bebas glitch.
+
+2. **Pembersihan Konflik Event R56 (Anti-Colonial Glitch):**
+   - Event bawaan R56 `indonesia.100` ("Removing Colonialist Influence" / opsi penamaan dari Belanda) dinonaktifkan secara permanen (`always = no`) agar tidak menimpa narasi revolusi submod.
+   - Dependensi event internal R56 (seperti `indonesia.105` pada setup negara) tetap dipertahankan penuh tanpa merusak engine.
+
+3. **Banner World News Proklamasi 1936 Baru:**
+   - Mengganti ilustrasi kapal Belanda dengan arsip bersejarah Bung Karno membacakan teks Proklamasi Kemerdekaan Indonesia (`DEI_news_event_1936_revolution.dds`).
+
+4. **Koreksi Sintaks & Integritas Modifier:**
+   - Menyelaraskan modifier trait komandan ke standar Clausewitz modern (`army_infantry_attack_factor = 0.10`, `army_speed_factor = 0.10`, `naval_retreat_speed = 0.20`).
+   - Mengganti efek riset usang pada flavor event Observatorium Bosscha dengan `add_tech_bonus` kategori elektronika.
+
+5. **Stabilitas Tekstur Bendera (Crash-Proof):**
+   - Menggunakan format bendera 24bpp uncompressed standar guna memastikan kompatibilitas penuh dengan DirectX texture pipeline Clausewitz engine.
+
+---
+
+## Ringkasan Fitur Utama Mod
 
 ### 1. Pohon Fokus Hibrida Komprehensif (134 Fokus Nasional)
 Menggabungkan kebebasan 6 jalur politik submod yang diperdalam hingga era Perang Dingin dengan kedalaman riset militer dan industri khas Road to 56:

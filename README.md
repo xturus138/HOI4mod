@@ -2,7 +2,7 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dirancang terintegrasi penuh di atas **The Road to 56 (R56)**.
 
-- **Status Versi:** `v1.0.1 (R56 Complete Compatibility & UX Polish)`
+- **Status Versi:** `v1.0.1 (R56 Complete Compatibility, Mutual Exclusivity & UX Polish)`
 - **Folder Mod Utama:** [IndonesiaRayaR56/](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/)
 - **Dokumentasi Lengkap:** [IndonesiaRayaR56/README.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/README.md)
 - **Instruksi Agent & Memori Kerja:** [AGENTS.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/AGENTS.md)
@@ -10,7 +10,16 @@ Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1
 
 ---
 
-## Ringkasan Fitur Utama v1.0.0
+## Catatan Rilis v1.0.1 (Pembaruan & Perbaikan)
+1. **Penguncian Mutual Exclusivity 6 Jalur:** 6 akar ideologi saling mengunci dan melipat 5 jalur lainnya saat dipilih.
+2. **Pembersihan Konflik R56:** Event kolonial R56 `indonesia.100` dinonaktifkan (`always = no`) tanpa merusak dependensi event internal setup negara.
+3. **Banner World News 1936 Baru:** Ilustrasi Bung Karno membacakan teks proklamasi kemerdekaan.
+4. **Koreksi Trait & Event:** Sanitasi modifier trait komandan dan reward event Observatorium Bosscha.
+5. **Stabilitas Tekstur:** Memulihkan format bendera 24bpp uncompressed standar bebas crash.
+
+---
+
+## Ringkasan Fitur Utama Mod
 
 1. **134 Fokus Nasional Hibrida:**
    - Batang Prolog Krisis 1936 (3 Fokus)
