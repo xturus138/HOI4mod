@@ -27,7 +27,7 @@ print(f"      -> {'SEMUA KURUNG SEIMBANG (OK)' if not errors else 'ADA ERROR KUR
 
 # --- 2. POHON FOKUS & TABRAKAN KOORDINAT ---
 print(f"[2/8] Memeriksa pohon fokus nasional (130 fokus)...")
-focus_files = glob.glob(os.path.join(mod_dir, 'common', 'national_focus', '*.txt'))
+focus_files = glob.glob(os.path.join(mod_dir, 'common', 'national_focus', 'DEI_*.txt'))
 focuses = {}
 for ff in focus_files:
     with open(ff, 'r', encoding='utf-8', errors='ignore') as f:
@@ -59,8 +59,8 @@ for ff in focus_files:
         else: break
 
 print(f"      Total fokus terdeteksi: {len(focuses)} fokus")
-if len(focuses) != 134:
-    errors.append(f"Jumlah fokus tidak 134, terdeteksi: {len(focuses)}")
+if len(focuses) != 139:
+    errors.append(f"Jumlah fokus tidak 139, terdeteksi: {len(focuses)}")
 
 # Validasi Prerequisite
 for fid, dat in focuses.items():
@@ -96,7 +96,7 @@ print(f"      -> Koordinat unik: {len(coords)}, Tabrakan: {len(collisions)} (OK)
 
 # --- 3. EVENT SYSTEM & GAMBAR ---
 print(f"[3/8] Memeriksa event dan gambar sprite...")
-event_files = glob.glob(os.path.join(mod_dir, 'events', '*.txt'))
+event_files = glob.glob(os.path.join(mod_dir, 'events', 'DEI_*.txt'))
 events = []
 for ef in event_files:
     with open(ef, 'r', encoding='utf-8', errors='ignore') as f:

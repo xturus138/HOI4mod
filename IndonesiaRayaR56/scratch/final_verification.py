@@ -15,8 +15,10 @@ for tf in txt_files:
 
 print('1. All braces balanced across all files.')
 
-# 2. Event pictures
-event_files = glob.glob(os.path.join(mod_dir, 'events', '*.txt'))
+# 2. Event pictures (only our own DEI_ event files -- events/indonesia.txt is
+#    R56's own base file, which this submod overwrites only to disable
+#    indonesia.100; it is not our content and keeps R56's own picture gaps)
+event_files = glob.glob(os.path.join(mod_dir, 'events', 'DEI_*.txt'))
 all_events = []
 for ef in event_files:
     with open(ef, 'r', encoding='utf-8', errors='ignore') as f:

@@ -146,12 +146,12 @@ dei_decisions_debug_tools = {
 			load_oob = DEI_navy_starter_a
 			335 = {
 				create_unit = {
-					division_template = "Divisi Infanteri TKR"
+					division_template = "Divisi Infanteri Siliwangi"
 					owner = ROOT
 					start_experience_factor = 0.3
 				}
 				create_unit = {
-					division_template = "Divisi Infanteri TKR"
+					division_template = "Divisi Infanteri Siliwangi"
 					owner = ROOT
 					start_experience_factor = 0.3
 				}
@@ -279,12 +279,12 @@ dei_decisions_debug_tools = {
 			load_oob = DEI_navy_starter_c
 			335 = {
 				create_unit = {
-					division_template = "Brigade Barisan Buruh"
+					division_template = "Brigade Barisan Buruh Merah"
 					owner = ROOT
 					start_experience_factor = 0.3
 				}
 				create_unit = {
-					division_template = "Brigade Barisan Buruh"
+					division_template = "Brigade Barisan Buruh Merah"
 					owner = ROOT
 					start_experience_factor = 0.3
 				}
@@ -346,12 +346,12 @@ dei_decisions_debug_tools = {
 			load_oob = DEI_navy_starter_d
 			335 = {
 				create_unit = {
-					division_template = "Resimen Pengawal Revolusi"
+					division_template = "Resimen Pengawal Dewan Revolusi"
 					owner = ROOT
 					start_experience_factor = 0.4
 				}
 				create_unit = {
-					division_template = "Resimen Pengawal Revolusi"
+					division_template = "Resimen Pengawal Dewan Revolusi"
 					owner = ROOT
 					start_experience_factor = 0.4
 				}
@@ -413,12 +413,12 @@ dei_decisions_debug_tools = {
 			load_oob = DEI_navy_starter_e
 			335 = {
 				create_unit = {
-					division_template = "Resimen Laskar Hizbullah"
+					division_template = "Resimen Mujahidin TII"
 					owner = ROOT
 					start_experience_factor = 0.3
 				}
 				create_unit = {
-					division_template = "Resimen Laskar Hizbullah"
+					division_template = "Resimen Mujahidin TII"
 					owner = ROOT
 					start_experience_factor = 0.3
 				}
@@ -480,12 +480,12 @@ dei_decisions_debug_tools = {
 			load_oob = DEI_navy_starter_f
 			335 = {
 				create_unit = {
-					division_template = "Bhayangkara Praja Majapahit"
+					division_template = "Prajurit Utama Bhayangkara"
 					owner = ROOT
 					start_experience_factor = 0.4
 				}
 				create_unit = {
-					division_template = "Bhayangkara Praja Majapahit"
+					division_template = "Prajurit Utama Bhayangkara"
 					owner = ROOT
 					start_experience_factor = 0.4
 				}

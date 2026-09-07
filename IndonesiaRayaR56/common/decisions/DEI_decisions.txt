@@ -962,6 +962,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_REPUBLIK_NKRI
 			add_stability = 0.05
@@ -980,9 +981,10 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_REPUBLIK_RIS
-			add_political_power = 25
+			add_political_power = 15
 		}
 		ai_will_do = { factor = 0 }
 	}
@@ -998,6 +1000,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_REPUBLIK_SOSIALIS
 			add_war_support = 0.05
@@ -1017,6 +1020,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_KOLONIAL_DEI
 			add_stability = 0.05
@@ -1035,9 +1039,10 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_KOLONIAL_BFO
-			add_political_power = 25
+			add_political_power = 15
 		}
 		ai_will_do = { factor = 10 }
 	}
@@ -1053,6 +1058,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_KOLONIAL_DOMINION
 			add_war_support = 0.05
@@ -1072,6 +1078,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_KOMUNIS_RRI
 			add_stability = 0.05
@@ -1090,6 +1097,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_KOMUNIS_SOVIET
 			add_war_support = 0.05
@@ -1108,9 +1116,10 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_KOMUNIS_FRONT
-			add_political_power = 25
+			add_political_power = 15
 		}
 		ai_will_do = { factor = 0 }
 	}
@@ -1127,6 +1136,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_OTORITER_NKRI
 			add_stability = 0.05
@@ -1145,6 +1155,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_OTORITER_JUNTA
 			add_war_support = 0.05
@@ -1163,9 +1174,10 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_OTORITER_RAYA
-			add_political_power = 25
+			add_political_power = 15
 		}
 		ai_will_do = { factor = 0 }
 	}
@@ -1182,6 +1194,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_ISLAMIS_NII
 			add_stability = 0.05
@@ -1200,6 +1213,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_ISLAMIS_DAULAH
 			add_war_support = 0.05
@@ -1218,9 +1232,10 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_ISLAMIS_KHILAFAH
-			add_political_power = 25
+			add_political_power = 15
 		}
 		ai_will_do = { factor = 0 }
 	}
@@ -1237,6 +1252,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_MAJAPAHIT_EMPIRE
 			add_stability = 0.05
@@ -1255,6 +1271,7 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_MAJAPAHIT_SURYA
 			add_war_support = 0.05
@@ -1273,9 +1290,10 @@ dei_decisions_proclamations = {
 		}
 		cost = 15
 		fire_only_once = no
+		days_re_enable = 90
 		complete_effect = {
 			set_cosmetic_tag = INS_MAJAPAHIT_NUSANTARA
-			add_political_power = 25
+			add_political_power = 15
 		}
 		ai_will_do = { factor = 0 }
 	}

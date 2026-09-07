@@ -21,7 +21,6 @@ country_event = {
 		hidden_effect = {
 			INS = {
 				country_event = { id = indonesia.5 hours = 12 }
-	picture = GFX_report_event_generic_sign_treaty1
 			}
 		}
 	}
@@ -34,7 +33,6 @@ country_event = {
 		hidden_effect = {
 			INS = {
 				country_event = { id = indonesia.6 hours = 12 }
-	picture = GFX_report_event_generic_sign_treaty1
 			}
 		}
 	}
@@ -219,8 +217,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			INS = { country_event = { id = indonesia.9 hours = 12 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			INS = { country_event = { id = indonesia.9 hours = 12 } }
 		}
 	}
 	option = { #no u
@@ -234,8 +231,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			INS = { country_event = { id = indonesia.56 hours = 12 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			INS = { country_event = { id = indonesia.56 hours = 12 } }
 		}
 	}
 }
@@ -468,8 +464,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			INS = { country_event = { id = indonesia.34 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			INS = { country_event = { id = indonesia.34 } }
 		}
 	}
 	option = { #no
@@ -478,8 +473,7 @@ country_event = {
 			base = 60
 		}
 		hidden_effect = {
-			INS = { country_event = { id = indonesia.35 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			INS = { country_event = { id = indonesia.35 } }
 		}
 	}
 }
@@ -571,8 +565,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			INS = { country_event = { id = indonesia.37 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			INS = { country_event = { id = indonesia.37 } }
 		}
 	}
 	option = { #no
@@ -581,8 +574,7 @@ country_event = {
 			base = 20
 		}
 		hidden_effect = {
-			INS = { country_event = { id = indonesia.38 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			INS = { country_event = { id = indonesia.38 } }
 		}
 	}
 }
@@ -698,14 +690,12 @@ country_event = {
 				FROM = {
 					PREV = {
 						country_event = { id = indonesia.42 }
-	picture = GFX_report_event_generic_sign_treaty1
 					}
 				}
 			}
 		}
 		hidden_effect = {
-			FROM = { country_event = { id = indonesia.41 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			FROM = { country_event = { id = indonesia.41 } }
 		}
 	}
 
@@ -724,8 +714,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			FROM = { country_event = { id = indonesia.45 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+			FROM = { country_event = { id = indonesia.45 } }
 		}
 	}
 }
@@ -1002,7 +991,6 @@ country_event = { #46 - Dr. Sutomo's passing
 				}
 				country_event = {
 					id = indonesia.48
-	picture = GFX_report_event_generic_sign_treaty1
 					days = 365
 				}
 			}
@@ -1012,7 +1000,6 @@ country_event = { #46 - Dr. Sutomo's passing
 
 country_event = { #47 - Van Dulm Retiring
 	id = indonesia.47
-	picture = GFX_report_event_generic_sign_treaty1
 	title = indonesia.47.t
 	desc = indonesia.47.d
 
@@ -1042,7 +1029,6 @@ country_event = { #47 - Van Dulm Retiring
 			set_country_flag = INS_van_dulm_extended_flag
 			country_event = {
 				id = indonesia.47
-	picture = GFX_report_event_generic_sign_treaty1
 				days = 1096
 			}
 		}
@@ -1065,7 +1051,6 @@ country_event = { #47 - Van Dulm Retiring
 
 country_event = { #48 - Choosing royals
 	id = indonesia.48
-	picture = GFX_report_event_generic_sign_treaty1
 	title = indonesia.48.t
 	desc = indonesia.48.d
 
@@ -1342,7 +1327,6 @@ country_event = { #50 - Hamengkubuwono Eighth's passing
 
 country_event = { #510 - Hidden effect to setup the historical Japanese occupation
 	id = indonesia.510
-	picture = GFX_report_event_generic_sign_treaty1
 	hidden = yes
 	fire_only_once = yes
 
@@ -1387,7 +1371,6 @@ country_event = { #510 - Hidden effect to setup the historical Japanese occupati
 	immediate = {
 		country_event = {
 			id = indonesia.51
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 }
@@ -1434,8 +1417,7 @@ country_event = { #51 - Fall of the East Indies
 
 		set_global_flag = INS_fall_of_east_indies_flag
 		save_global_event_target_as = INS_east_indies_gie
-		JAP = { country_event = { id = indonesia.52 }
-	picture = GFX_report_event_generic_sign_treaty1 }
+		JAP = { country_event = { id = indonesia.52 } }
 
 		ai_chance = {
 			factor = 85
@@ -2062,7 +2044,6 @@ country_event = { #58 - Third Party Congress
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.59 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2086,7 +2067,6 @@ country_event = { #58 - Third Party Congress
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.59 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2102,7 +2082,6 @@ country_event = { #58 - Third Party Congress
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.59 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2189,7 +2168,6 @@ country_event = { #Commies 59 - 4th PKI National Congress - 1940-1945
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.60 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2224,7 +2202,6 @@ country_event = { #Commies 59 - 4th PKI National Congress - 1940-1945
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.60 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2279,7 +2256,6 @@ country_event = { #Commies 59 - 4th PKI National Congress - 1940-1945
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.60 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2323,7 +2299,6 @@ country_event = { #Commies 59 - 4th PKI National Congress - 1940-1945
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.60 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2361,7 +2336,6 @@ country_event = { #Commies 59 - 4th PKI National Congress - 1940-1945
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.60 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2398,7 +2372,6 @@ country_event = { #Commies 59 - 4th PKI National Congress - 1940-1945
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.60 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2424,7 +2397,6 @@ country_event = { #Commies 59 - 4th PKI National Congress - 1940-1945
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.60 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 }
@@ -2492,7 +2464,6 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.61 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2527,7 +2498,6 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.61 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2587,7 +2557,6 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.61 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2631,7 +2600,6 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.61 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2666,7 +2634,6 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.61 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2695,7 +2662,6 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.61 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2725,7 +2691,6 @@ country_event = { #Commies 36 - 5th PKI National Congress - 1945-1950
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.61 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 }
@@ -2793,7 +2758,6 @@ country_event = { #Commies 61 - 6th PKI National Congress - 1950-1955
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.62 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2828,7 +2792,6 @@ country_event = { #Commies 61 - 6th PKI National Congress - 1950-1955
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.62 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2888,7 +2851,6 @@ country_event = { #Commies 61 - 6th PKI National Congress - 1950-1955
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.62 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 
@@ -2932,7 +2894,6 @@ country_event = { #Commies 61 - 6th PKI National Congress - 1950-1955
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.62 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2967,7 +2928,6 @@ country_event = { #Commies 61 - 6th PKI National Congress - 1950-1955
 				set_character_flag = INS_first_term_flag
 			}
 			country_event = { id = indonesia.62 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 	
@@ -2996,7 +2956,6 @@ country_event = { #Commies 61 - 6th PKI National Congress - 1950-1955
 				set_character_flag = INS_second_term_flag
 			}
 			country_event = { id = indonesia.62 days = 1825 }
-	picture = GFX_report_event_generic_sign_treaty1
 		}
 	}
 }
@@ -3295,7 +3254,7 @@ country_event = {
 	}
 
 	trigger = {
-		always = no
+		always = no # DEI submod: disabled permanently to avoid overwriting INS's revolution narrative naming.
 	}
 
 	option = { #a great idea!

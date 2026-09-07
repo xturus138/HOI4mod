@@ -659,14 +659,19 @@ prerequisite = { focus = dei_focus_momentum_kemerdekaan }
 			add_political_power = 60
 			add_stability = 0.05
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = democratic
 				elections_allowed = no
 			}
 			set_popularities = {
-				neutrality = 55.0
-				democratic = 25.0
+				democratic = 55.0
+				neutrality = 25.0
 				fascism = 10.0
 				communism = 10.0
+			}
+			set_party_name = {
+				ideology = democratic
+				name = INS_BFO_party
+				long_name = INS_BFO_party_long
 			}
 			recruit_character = DEI_hubertus_van_mook
 			promote_character = DEI_hubertus_van_mook
@@ -1212,14 +1217,19 @@ prerequisite = { focus = dei_focus_momentum_kemerdekaan }
 			add_political_power = 60
 			add_war_support = 0.10
 			set_politics = {
-				ruling_party = neutrality
+				ruling_party = fascism
 				elections_allowed = no
 			}
 			set_popularities = {
-				neutrality = 65.0
-				fascism = 15.0
+				fascism = 65.0
+				neutrality = 15.0
 				democratic = 10.0
 				communism = 10.0
+			}
+			set_party_name = {
+				ideology = fascism
+				name = INS_DEWAN_REVOLUSI_party
+				long_name = INS_DEWAN_REVOLUSI_party_long
 			}
 			recruit_character = DEI_sudirman
 			promote_character = DEI_sudirman
@@ -1492,14 +1502,19 @@ prerequisite = { focus = dei_focus_momentum_kemerdekaan }
 			add_stability = 0.05
 			add_war_support = 0.10
 			set_politics = {
-				ruling_party = fascism
+				ruling_party = neutrality
 				elections_allowed = no
 			}
 			set_popularities = {
-				fascism = 60.0
-				neutrality = 20.0
+				neutrality = 60.0
+				fascism = 20.0
 				democratic = 10.0
 				communism = 10.0
+			}
+			set_party_name = {
+				ideology = neutrality
+				name = INS_NII_party
+				long_name = INS_NII_party_long
 			}
 			recruit_character = DEI_kartosuwiryo
 			promote_character = DEI_kartosuwiryo

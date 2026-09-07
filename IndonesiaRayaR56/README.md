@@ -2,7 +2,28 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dibangun terintegrasi di atas **The Road to 56 (R56)**.
 
-**Status Saat Ini:** `v1.0.1 (R56 Complete Compatibility, Mutual Exclusivity & UX Polish)` — 134 Fokus Nasional, 124 Event Interaktif (98 Fokus + 26 Flavor Acak MTTH, 100% bergambar kustom), Batang Prolog Krisis 1936 (84 Hari), 6 Jalur Ideologi Mutual Exclusive, 36 Focus Goals Kustom (82x82 DDS), 24 Technologies & Equipment (120x50 DDS, 55 interface sprites), 19 Potret Komandan (156x210 DDS), 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi), 18 Cosmetic Tags & Warna Peta Dinamis, 108 Bendera TGA Tersinkronisasi, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 14 Division Templates Doktrinal, 11 Namelist Divisi AD, 24 Namelist Kapal Autentik, 14 Varian Alutsista, 25 Keputusan Strategis & Proklamasi, 5 Komandan Legendaris, 8 Desainer Industri MIO, dan 1.217 Kunci Lokalisasi Ber-BOM (0 missing keys, 0 errors).
+**Status Saat Ini:** `v1.0.2 (Ideology/Party Consistency & Exploit Fixes)` — 139 Fokus Nasional, 155 Event Interaktif, 6 Jalur Ideologi Mutual Exclusive dengan `ruling_party`/pemimpin/nama partai kini konsisten per jalur, 18 Proklamasi Tata Kelola Negara (3 Opsi per Ideologi, kini dengan cooldown anti-exploit), 18 Cosmetic Tags & Warna Peta Dinamis, 14 Division Templates Doktrinal, 6 Dedicated Starter Naval OOBs di Pangkalan Surabaya, 8 Desainer Industri MIO (sprite lengkap, 0 gambar hilang), dan 1.385 Kunci Lokalisasi Ber-BOM (0 missing keys, 0 errors). Lulus 100% pada seluruh 4 script audit otomatis (`final_verification.py`, `verify_all_loc.py`, `master_audit.py`, `comprehensive_asset_audit.py`).
+
+---
+
+## Catatan Rilis v1.0.2 (Perbaikan Ideologi, Partai & Exploit)
+
+1. **Perbaikan Ketidakcocokan Ideologi/Partai/Pemimpin (Bug Kritis):**
+   - Jalur B (Kolonial), D (Otoriter), dan E (Islamis) sebelumnya men-set `ruling_party` ke grup ideologi yang TIDAK cocok dengan ideologi asli tokoh pemimpin yang direkrut (mis. Jalur D di-set `neutrality` padahal Sudirman/Nasution/Soeharto beridiologi `fascism_ideology`) — menyebabkan UI Volksraad/partai menampilkan nama partai yang salah (termasuk partai fasis Belanda "NSB" yang bocor akibat ketidakcocokan grup).
+   - Diperbaiki: Jalur B → `democratic`, Jalur D → `fascism`, Jalur E → `neutrality` (dan ideologi Mohammad Natsir disesuaikan ke `moderate_islamism`), masing-masing kini dilengkapi `set_party_name` yang sebelumnya hilang untuk jalur non-Republik.
+
+2. **Pemulihan `events/indonesia.txt` (File Dasar R56):**
+   - File ini (overwrite dari R56) sebelumnya rusak oleh 35 baris `picture = ...` yang tersisip salah tempat di dalam effect scope. Dipulihkan ke versi asli R56 ditambah hanya satu perubahan yang memang disengaja (menonaktifkan event `indonesia.100`).
+
+3. **Perbaikan Exploit Political Power:**
+   - 18 decision proklamasi identitas negara sebelumnya bisa di-spam tanpa batas untuk farming +10 PP net per siklus. Ditambahkan cooldown 90 hari dan hadiah PP dinetralkan.
+
+4. **Perbaikan Referensi & Sprite Hilang:**
+   - 5 dari 6 tombol debug decision memanggil nama `division_template` yang tidak terdaftar — diperbaiki ke nama template asli.
+   - 10 sprite `GFX_idea_INS_*` untuk national spirit designer industri (Pindad, ITB, Braat, PAL, IPTN, dll.) tidak pernah terdefinisi di file `.gfx` manapun — dipetakan ke sprite generic vanilla yang valid.
+
+5. **Perbaikan Scope Script Audit:**
+   - Script audit (`final_verification.py`, `verify_all_loc.py`, `master_audit.py`, `comprehensive_asset_audit.py`) sebelumnya ikut men-scan file dasar R56 (`events/indonesia.txt`, `common/national_focus/indonesia_joint.txt`) seolah konten submod ini, menghasilkan false-positive. Diperbaiki agar hanya men-scan file `DEI_*` milik submod.
 
 ---
 
@@ -31,7 +52,7 @@ Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1
 
 ## Ringkasan Fitur Utama Mod
 
-### 1. Pohon Fokus Hibrida Komprehensif (134 Fokus Nasional)
+### 1. Pohon Fokus Hibrida Komprehensif (139 Fokus Nasional)
 Menggabungkan kebebasan 6 jalur politik submod yang diperdalam hingga era Perang Dingin dengan kedalaman riset militer dan industri khas Road to 56:
 - **Batang Prolog Krisis 1936 (3 Fokus, 84 Hari, X=12, Y=0..8):** Mengisahkan retaknya Pax Neerlandica, gelombang pemogokan massal, dan pembangkangan barak KNIL pada Januari–Maret 1936 yang bermuara pada meletusnya *Momentum Revolusi Nasional 1936* (akhir Maret 1936) sebagai alur default tanpa memerlukan decision shortcut.
 - **Jalur A: Republik Nasionalis-Demokratis (16 Fokus, X=0..4):** Proklamasi 17 Agustus 1945, pembentukan TKR, diplomasi PBB, perang gerilya hadapi Agresi Militer Belanda I & II, KMB, demokrasi parlementer, Konferensi Asia-Afrika (KAA) Bandung 1955, Pembebasan Irian Barat (Trikora), Dekrit Presiden 1959, Konfrontasi Dwikora, Falsafah Pancasila, dan Doktrin Trisakti.
@@ -97,7 +118,7 @@ Saat pemain memilih ideologi pada event `dei_trunk.6`, armada laut starter di Pa
 - **11 Grup Namelist Divisi Darat (`common/units/names_divisions/INS_names_divisions.txt`):**
   - `DEI_INF_TNI`, `DEI_LASKAR`, `DEI_MARINIR`, `DEI_KNIL_COLONIAL`, `DEI_KOMUNIS`, `DEI_ISLAMIS`, `DEI_MAJAPAHIT`, `DEI_KOMANDO`, `DEI_KAVALERI`, `DEI_GARNIZUN`, `DEI_OTORITER`.
 
-### 6. Event Interaktif & Visual Penuh (119 Event, 100% Bergambar)
+### 6. Event Interaktif & Visual Penuh (155 Event, 100% Bergambar)
 - **93 Event Berpilihan Fokus:** Mengiringi setiap fokus penting dengan konsekuensi politik, stabilitas, dan hubungan internasional (14-16 event per cabang ideologi).
 - **26 Flavor Event Acak Berkala (Non-Focus MTTH):**
   - Pers bumiputera, panen komoditas, tambang batubara Ombilin & timah Bangka, Observatorium Bosscha, Institut Pasteur Bandung, Tamansiswa Ki Hadjar Dewantara, Kongres Perempuan Indonesia, perdebatan Sukarno-Natsir, bioskop Terang Boelan, Kongres Pemuda 1928, pemberontakan De Zeven Provinciën, pemugaran Borobudur, Karapan Sapi Madura, penyelundupan senjata Selat Malaka, ramalan Ratu Adil, armada Pinisi Dobo, penerbangan Adisucipto, Laskar Putri Surakarta, dan kilang Pangkalan Brandan.
@@ -114,73 +135,74 @@ Saat pemain memilih ideologi pada event `dei_trunk.6`, armada laut starter di Pa
 
 ## Struktur Berkas Mod
 
+> Catatan: struktur di bawah ini mencerminkan tata letak file yang SEBENARNYA ada di repo (diverifikasi Sept 2026). Seluruh pohon fokus 6 jalur ideologi disatukan dalam satu file `DEI_indonesia_focus_tree.txt`, bukan file terpisah per jalur.
+
 ```
 IndonesiaRayaR56/
 ├── common/
 │   ├── characters/
-│   │   └── DEI_characters.txt          # Komandan legendaris (Sudirman, Urip, Nasution, Kawilarang, Yos Sudarso)
+│   │   └── DEI_characters.txt              # 35 karakter: komandan & pemimpin per jalur ideologi
 │   ├── countries/
-│   │   └── cosmetic.txt                # 18 Cosmetic Tags & warna peta RGB dinamis
+│   │   └── cosmetic.txt                    # 18 Cosmetic Tags & warna peta RGB dinamis
+│   ├── country_leader/
+│   │   └── DEI_leader_traits.txt           # Trait unik pemimpin negara (country_leader)
 │   ├── decisions/
-│   │   └── DEI_decisions.txt           # 26 keputusan (Proklamasi Negara, Mega-Proyek, Sishanrata, Alutsista)
+│   │   ├── DEI_decisions.txt               # Keputusan utama (Proklamasi, Mega-Proyek, Sishanrata, Alutsista)
+│   │   ├── DEI_debug_decisions.txt         # Tombol debug/testing (instant path A-F, liberasi wilayah)
+│   │   └── categories/
+│   │       ├── DEI_decision_categories.txt
+│   │       └── DEI_debug_categories.txt
 │   ├── ideas/
-│   │   └── DEI_ideas.txt               # 41 gagasan nasional & spirit ideologi
-│   ├── ideologies/
-│   │   └── DEI_custom_ideologies.txt   # Definisi ideologi custom (federalist, islamist, majapahit)
+│   │   └── DEI_ideas.txt                   # National spirit & 8 desainer industri (MIO)
 │   ├── national_focus/
-│   │   ├── DEI_00_shared_trunk.txt     # Batang bersama pra-kemerdekaan 1936-1945 (11 fokus)
-│   │   ├── DEI_01_path_a_republik.txt  # Jalur A: Republik Nasionalis-Demokratis (16 fokus)
-│   │   ├── DEI_02_path_b_kolonial.txt  # Jalur B: Kolonial / Federalis BFO (14 fokus)
-│   │   ├── DEI_03_path_c_komunis.txt   # Jalur C: Komunis Front Rakyat (14 fokus)
-│   │   ├── DEI_04_path_d_otoriter.txt  # Jalur D: Otoriter Militeristik ABRI (14 fokus)
-│   │   ├── DEI_05_path_e_islamis.txt   # Jalur E: Islamis / NII Kartosoewirjo (14 fokus)
-│   │   ├── DEI_06_path_f_majapahit.txt # Jalur F: Kemaharajaan Majapahit (13 fokus)
-│   │   ├── DEI_r56_industry.txt        # Cabang industri & riset R56 (14 fokus)
-│   │   └── DEI_r56_armed_forces.txt    # Cabang militer AD/AU/AL R56 (28 fokus)
+│   │   ├── DEI_indonesia_focus_tree.txt    # SELURUH 139 fokus (batang bersama + 6 jalur A-F + R56 industri/militer)
+│   │   ├── indonesia.txt / indonesia_joint.txt / r56_indonesia.txt  # Milik R56 (HOL/joint tree), bukan konten submod
 │   ├── unit_leader/
-│   │   └── DEI_traits.txt              # Trait unik jenderal & laksamana
+│   │   └── DEI_traits.txt                  # Trait unik jenderal & laksamana
 │   └── units/
 │       ├── names_divisions/
-│       │   └── INS_names_divisions.txt # 11 grup namelist divisi darat
+│       │   └── INS_names_divisions.txt     # Grup namelist divisi darat
 │       └── names_ships/
-│           └── INS_names_ships.txt     # 24 grup namelist kapal (prefix autentik KRI & Hr.Ms.)
+│           └── INS_names_ships.txt         # Grup namelist kapal (prefix autentik KRI & Hr.Ms.)
 ├── events/
-│   ├── DEI_00_shared_trunk_events.txt  # Event awal & pemicu proklamasi ideologi dei_trunk.6
-│   ├── DEI_01_path_a_events.txt        # Event Jalur A (Republik)
-│   ├── DEI_02_path_b_events.txt        # Event Jalur B (Kolonial)
-│   ├── DEI_03_path_c_events.txt        # Event Jalur C (Komunis)
-│   ├── DEI_04_path_d_events.txt        # Event Jalur D (Otoriter)
-│   ├── DEI_05_path_e_events.txt        # Event Jalur E (Islamis)
-│   ├── DEI_06_path_f_events.txt        # Event Jalur F (Majapahit)
-│   └── DEI_flavor_events.txt           # 26 event flavor berkala (non-focus MTTH)
+│   ├── DEI_00_shared_trunk_events.txt      # Event batang bersama & pemicu proklamasi ideologi dei_trunk.6
+│   ├── DEI_01_path_news_events.txt         # Banner world news per jalur
+│   ├── DEI_02_path_a_events.txt .. DEI_07_path_f_events.txt  # Event per jalur A-F
+│   ├── DEI_leadership_events.txt           # Event pemilihan pemimpin/partai (dei_leadership.1-6)
+│   ├── DEI_flavor_events.txt               # Event flavor berkala (non-focus MTTH)
+│   └── indonesia.txt                       # Overwrite file dasar R56 (HANYA 1 baris diubah: indonesia.100 dinonaktifkan)
 ├── gfx/
-│   ├── event_pictures/                 # Sprite gambar event
-│   └── flags/                          # Bendera TGA (108 file: standard, medium, small)
+│   ├── event_pictures/                     # Sprite gambar event (.dds)
+│   ├── flags/                              # Bendera TGA (standard, medium, small)
+│   ├── interface/goals/                    # Ikon focus kustom
+│   ├── interface/technologies/             # Ikon teknologi kustom
+│   └── leaders/INS/                        # Potret komandan & pemimpin
 ├── history/
 │   └── units/
-│       ├── DEI_templates.txt           # 14 templat divisi doktrinal
-│       ├── DEI_air_starter.txt         # Skadron udara awal Lanud Andir & Iswahyudi
-│       ├── DEI_navy_starter_a.txt      # Starter fleet Surabaya: ALRI (Republik)
-│       ├── DEI_navy_starter_b.txt      # Starter fleet Surabaya: KM-NI (Kolonial)
-│       ├── DEI_navy_starter_c.txt      # Starter fleet Surabaya: ALRP (Komunis)
-│       ├── DEI_navy_starter_d.txt      # Starter fleet Surabaya: KAPS (Otoriter)
-│       ├── DEI_navy_starter_e.txt      # Starter fleet Surabaya: ALMS (Islamis)
-│       └── DEI_navy_starter_f.txt      # Starter fleet Surabaya: Jung Segara (Majapahit)
-├── interface/                          # Berkas GFX descriptor
-└── localisation/
-    └── english/
-        └── DEI_indonesia_l_english.yml # 1.217 entri teks lokalisasi (UTF-8 with BOM)
+│       ├── DEI_templates.txt               # 14 templat divisi doktrinal
+│       ├── DEI_air_starter.txt             # Skadron udara awal
+│       └── DEI_navy_starter_a.txt .. _f.txt  # Starter fleet per jalur A-F
+├── interface/                              # Berkas GFX descriptor (.gfx)
+├── portraits/
+│   └── DEI_portraits.txt                   # Definisi portrait karakter
+├── localisation/
+│   └── english/
+│       ├── DEI_indonesia_l_english.yml     # 1.385 entri teks lokalisasi (UTF-8 with BOM)
+│       └── replace/DEI_parties_l_english.yml  # Nama partai per cosmetic tag & grup ideologi
+└── scratch/                                # Script Python audit & tooling development (tidak di-deploy ke game)
 ```
 
 ---
 
 ## Prosedur Verifikasi Integritas
 
-Submod dilengkapi skrip audit otomatis yang dapat dijalankan melalui terminal:
-- `python scratch/final_verification.py` -> Memastikan 134 fokus, 124 event, koordinat utuh, kurung kurawal seimbang, dan UTF-8 BOM aktif.
-- `python scratch/verify_all_loc.py` -> Memastikan seluruh 1.217 kunci lokalisasi terdefinisi lengkap (0 missing).
+Submod dilengkapi skrip audit otomatis yang dapat dijalankan melalui terminal (keempatnya hanya men-scan file `DEI_*` milik submod ini, tidak menyentuh file dasar R56 seperti `events/indonesia.txt`/`indonesia_joint.txt`):
+- `python scratch/final_verification.py` -> Memastikan 139 fokus, 155 event, koordinat utuh, kurung kurawal seimbang, dan UTF-8 BOM aktif.
+- `python scratch/verify_all_loc.py` -> Memastikan seluruh 1.385 kunci lokalisasi terdefinisi lengkap (0 missing).
 - `python scratch/comprehensive_asset_audit.py` -> Memastikan 0 missing sprites, 0 missing portraits, dan 0 missing flags.
 - `python scratch/master_audit.py` -> Master audit 8 dimensi submod (100% Lulus).
+
+Status per Sept 2026: seluruh 4 script di atas **lulus 100% tanpa error**, termasuk perbaikan ketidakcocokan ideologi/partai/pemimpin pada Jalur B/D/E (lihat Catatan Rilis v1.0.2 di atas).
 
 
 ---

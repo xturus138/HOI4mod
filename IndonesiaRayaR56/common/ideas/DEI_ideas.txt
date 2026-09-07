@@ -328,7 +328,7 @@ ideas = {
 		designer = yes
 
 		dei_pindad_weapons = {
-			picture = GFX_idea_INS_pindad
+			picture = generic_infantry_equipment_manufacturer_1
 			allowed = { original_tag = INS }
 			research_bonus = {
 				infantry_weapons = 0.15
@@ -338,7 +338,7 @@ ideas = {
 		}
 
 		dei_ai_bandung = {
-			picture = GFX_idea_INS_ai_bandung
+			picture = generic_infantry_equipment_manufacturer_2
 			allowed = { original_tag = INS }
 			research_bonus = {
 				infantry_weapons = 0.10
@@ -352,7 +352,7 @@ ideas = {
 		designer = yes
 
 		dei_braat_tanks = {
-			picture = GFX_idea_INS_braat
+			picture = generic_tank_manufacturer_1
 			allowed = { original_tag = INS }
 			research_bonus = {
 				armor = 0.15
@@ -366,7 +366,7 @@ ideas = {
 		designer = yes
 
 		dei_pal_naval = {
-			picture = GFX_idea_INS_pal
+			picture = generic_naval_manufacturer_1
 			allowed = { original_tag = INS }
 			research_bonus = {
 				naval_equipment = 0.15
@@ -375,7 +375,7 @@ ideas = {
 		}
 
 		dei_surabaya_dm = {
-			picture = GFX_idea_INS_surabaya_dm
+			picture = generic_naval_manufacturer_2
 			allowed = { original_tag = INS }
 			research_bonus = {
 				naval_equipment = 0.10
@@ -388,7 +388,7 @@ ideas = {
 		designer = yes
 
 		dei_iptn_aircraft = {
-			picture = GFX_idea_INS_iptn
+			picture = generic_air_manufacturer_2
 			allowed = { original_tag = INS }
 			research_bonus = {
 				air_equipment = 0.15
@@ -397,7 +397,7 @@ ideas = {
 		}
 
 		dei_knilm_aircraft = {
-			picture = GFX_idea_INS_knilm
+			picture = generic_air_manufacturer_3
 			allowed = { original_tag = INS }
 			research_bonus = {
 				air_equipment = 0.10
@@ -408,7 +408,7 @@ ideas = {
 
 	industrial_concern = {
 		dei_bpm_pertamina = {
-			picture = GFX_idea_INS_shell
+			picture = generic_refining_concern_1
 			allowed = { original_tag = INS }
 			research_bonus = {
 				synth_resources = 0.15
@@ -418,7 +418,7 @@ ideas = {
 		}
 
 		dei_staatsspoorwegen = {
-			picture = GFX_idea_INS_sstw
+			picture = generic_industrial_concern_1
 			allowed = { original_tag = INS }
 			research_bonus = {
 				industry = 0.15
@@ -427,7 +427,7 @@ ideas = {
 		}
 
 		dei_bank_indonesia = {
-			picture = GFX_idea_INS_bank_indonesia
+			picture = generic_industrial_concern_2
 			allowed = { original_tag = INS }
 			modifier = {
 				consumer_goods_factor = -0.05
@@ -437,7 +437,7 @@ ideas = {
 		}
 
 		dei_itb_bandung = {
-			picture = GFX_idea_INS_ai_bandung
+			picture = generic_electronics_concern_1
 			allowed = { original_tag = INS }
 			research_bonus = {
 				electronics = 0.15

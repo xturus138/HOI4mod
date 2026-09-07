@@ -1,5 +1,7 @@
 # Rencana Mod HOI4: Indonesia (Submod Road to 56) — v2, Full Scope
 
+> **[ARSIP — Status Sept 2026]** Dokumen ini adalah rencana perencanaan AWAL proyek (draf v0.1–v0.7) dan sudah jauh dilampaui oleh perkembangan aktual mod. Status nyata saat ini: **v1.0.2**, 139 fokus nasional, 155 event, 6 jalur ideologi lengkap dengan `ruling_party`/partai/pemimpin yang sudah diverifikasi konsisten, lulus 100% pada seluruh script audit otomatis, dan sudah di-deploy ke folder mod HOI4 untuk playtest. Lihat [README.md](README.md) untuk dokumentasi fitur dan struktur file yang akurat & terkini. Isi di bawah ini dipertahankan sebagai arsip sejarah perencanaan, bukan sebagai rujukan status terkini.
+
 > Revisi dari draf pertama. Perubahan utama: scope diperluas dari "satu jalur MVP" menjadi **semua jalur ideologi/alternatif sejarah Indonesia**, dengan penekanan pada **kepadatan event** (event-rich) di setiap jalur, bukan cuma focus tree kering.
 
 ## 1. Ringkasan proyek

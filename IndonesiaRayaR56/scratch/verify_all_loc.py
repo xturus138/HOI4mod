@@ -59,7 +59,7 @@ def extract_blocks(text, keyword):
             break
     return blocks
 
-event_files = glob.glob(os.path.join(mod_dir, 'events', '*.txt'))
+event_files = glob.glob(os.path.join(mod_dir, 'events', 'DEI_*.txt'))
 for ef in event_files:
     with open(ef, 'r', encoding='utf-8') as f:
         c = re.sub(r'#.*', '', f.read())

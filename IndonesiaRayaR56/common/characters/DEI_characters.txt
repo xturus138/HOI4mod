@@ -340,7 +340,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = conservatism
+			ideology = moderate_islamism
 			traits = { trait_dei_natsir }
 			expire = "1993.2.6"
 			id = -1

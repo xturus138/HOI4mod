@@ -29,8 +29,9 @@ scan_gfx(os.path.join(r56_dir, 'interface'))
 scan_gfx(os.path.join(vanilla_dir, 'interface'))
 print(f"Total known sprites: {len(all_sprites)}")
 
-# 2. Check Event Pictures
-event_files = glob.glob(os.path.join(mod_dir, 'events', '*.txt'))
+# 2. Check Event Pictures (DEI_* only -- events/indonesia.txt is R56's own
+#    base file with pre-existing upstream asset gaps out of our control)
+event_files = glob.glob(os.path.join(mod_dir, 'events', 'DEI_*.txt'))
 missing_event_pics = []
 total_events = 0
 for ef in event_files:

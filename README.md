@@ -2,13 +2,20 @@
 
 Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1956) yang dirancang terintegrasi penuh di atas **The Road to 56 (R56)**.
 
-- **Status Versi:** `v1.0.1 (R56 Complete Compatibility, Mutual Exclusivity & UX Polish)`
+- **Status Versi:** `v1.0.2 (Ideology/Party Consistency & Exploit Fixes)` — sudah di-deploy ke folder mod HOI4 untuk playtest.
 - **Folder Mod Utama:** [IndonesiaRayaR56/](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/)
 - **Dokumentasi Lengkap:** [IndonesiaRayaR56/README.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56/README.md)
 - **Instruksi Agent & Memori Kerja:** [AGENTS.md](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/AGENTS.md)
 - **Berkas Launcher HOI4:** [IndonesiaRayaR56.mod](file:///c:/Users/radit/Project/VisualStudioProject/Personal/HOI4MODS/Indonesia%20Sub%20Mod%2056/HOI4mod/IndonesiaRayaR56.mod)
 
 ---
+
+## Catatan Rilis v1.0.2 (Perbaikan Ideologi, Partai & Exploit)
+1. **Perbaikan Ketidakcocokan Ideologi/Partai/Pemimpin:** Jalur B (Kolonial), D (Otoriter), E (Islamis) sebelumnya men-set `ruling_party` ke grup yang tidak cocok dengan ideologi tokoh pemimpinnya (mis. Jalur D `neutrality` padahal pemimpinnya `fascism_ideology`), menyebabkan UI partai menampilkan nama salah (termasuk "NSB" yang bocor dari fallback partai fasis Belanda). Diperbaiki: B→`democratic`, D→`fascism`, E→`neutrality`, semua kini punya `set_party_name` sendiri.
+2. **Pemulihan `events/indonesia.txt`:** File overwrite R56 ini sebelumnya rusak oleh 35 baris `picture=` tersisip salah tempat. Dipulihkan ke asli R56 + 1 perubahan sengaja (nonaktifkan `indonesia.100`).
+3. **Perbaikan Exploit Political Power:** 18 decision proklamasi identitas negara bisa di-farming PP tanpa batas — ditambahkan cooldown 90 hari & hadiah PP dinetralkan.
+4. **Perbaikan Referensi & Sprite Hilang:** 5/6 template unit debug decision salah nama; 10 sprite `GFX_idea_INS_*` designer industri tidak pernah terdefinisi — dipetakan ke sprite generic vanilla yang valid.
+5. **Perbaikan Scope Script Audit:** Script audit sendiri ikut men-scan file dasar R56 seolah konten submod — diperbaiki agar hanya scan file `DEI_*`.
 
 ## Catatan Rilis v1.0.1 (Pembaruan & Perbaikan)
 1. **Penguncian Mutual Exclusivity 6 Jalur:** 6 akar ideologi saling mengunci dan melipat 5 jalur lainnya saat dipilih.
@@ -21,7 +28,7 @@ Submod Hearts of Iron IV komprehensif untuk Hindia Belanda / Indonesia (1936–1
 
 ## Ringkasan Fitur Utama Mod
 
-1. **134 Fokus Nasional Hibrida:**
+1. **139 Fokus Nasional Hibrida:**
    - Batang Prolog Krisis 1936 (3 Fokus)
    - Jalur A: Republik Nasionalis-Demokratis (16 Fokus)
    - Jalur B: Kolonial / Federalis BFO (14 Fokus)

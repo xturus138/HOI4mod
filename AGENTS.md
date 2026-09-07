@@ -32,7 +32,7 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ## 2. Struktur Konten v1.0.0 (Canonical Release & Complete Visual Assets)
 
-1. **Pohon Fokus Hibrida Terpadu (134 Fokus Total dalam 1 Master File):**
+1. **Pohon Fokus Hibrida Terpadu (139 Fokus Total dalam 1 Master File):**
    - Disatukan dalam `common/national_focus/DEI_indonesia_focus_tree.txt` (mencegah bug Clausewitz yang mengabaikan deklarasi focus_tree duplikat di file terpisah).
    - **Batang Prolog Krisis 1936 (3 Fokus, 84 Hari, X=12, Y=0..8):**
      1. *Fracture of the Pax Neerlandica* (28 hari, Jan 1936 — krisis ekonomi & pemogokan umum).
@@ -101,7 +101,21 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 ---
 
-## 3. Catatan Pembaruan v1.0.1 (R56 Full Compatibility, UX Polish & Zero-Error Clean)
+## 3. Catatan Pembaruan v1.0.2 (Ideology/Party Consistency & Exploit Fixes)
+
+> **PENTING untuk agen berikutnya:** Sebelum v1.0.2, tepat 3 dari 6 jalur ideologi (B/Kolonial, D/Otoriter, E/Islamis) memiliki `ruling_party` di root focus yang **tidak cocok** dengan grup ideologi tokoh yang direkrut/dipromosikan sebagai `country_leader` di event `dei_leadership.N`. Root cause: R56 mendefinisikan ulang grup ideologi vanilla (`common/ideologies/00_ideologies.txt` milik R56 — BUKAN vanilla HOI4) sehingga `conservatism`/`liberalism`/`socialism` masuk grup `democratic`, `stalinism` masuk `communism`, `fascism_ideology`/`islamism` masuk `fascism`, dan `despotism`/`oligarchism` masuk `neutrality`. **WAJIB selalu cross-check `country_leader.ideology` setiap karakter di `DEI_characters.txt` terhadap tabel grup R56 ini sebelum mengubah/menambah `set_politics.ruling_party` di focus manapun** — jangan asumsikan dari nama vanilla HOI4, R56 sudah me-remap total.
+
+1. **Perbaikan `ruling_party` per jalur (di `DEI_indonesia_focus_tree.txt`):** B → `democratic` (van Mook/Sultan Hamid II/Sukawati = `conservatism`), D → `fascism` (Sudirman/Nasution/Soeharto = `fascism_ideology`), E → `neutrality` (Kartosuwiryo/Wahid Hasyim = `despotism`/`oligarchism`; Natsir diubah dari `conservatism` ke `moderate_islamism` di `DEI_characters.txt` agar sejalan). Semua 5 jalur non-Republik kini juga punya `set_party_name` sendiri (sebelumnya hanya Jalur A yang punya).
+2. **`events/indonesia.txt` dipulihkan bersih dari R56 asli** + hanya 1 baris sengaja diubah (trigger `indonesia.100` → `always = no`). File ini sempat rusak oleh 35 baris `picture=` yang tersisip salah tempat di dalam effect scope dari percobaan otomatis sebelumnya — JANGAN ulangi pola "tambah field ke event scope via regex tanpa validasi struktur blok".
+3. **18 decision `dei_proclaim_*` di `DEI_decisions.txt`** kini punya `days_re_enable = 90` dan hadiah PP dinetralkan (`add_political_power = 15` menyamai `cost = 15`) — sebelumnya bisa di-farming tanpa batas.
+4. **5/6 `division_template` di `DEI_debug_decisions.txt`** diperbaiki ke nama asli di `DEI_templates.txt` (sebelumnya salah ketik/nama lama, hanya Jalur B yang benar).
+5. **10 sprite `GFX_idea_INS_*`** (Pindad, ITB, Braat, PAL, IPTN, KNILM, Shell, SSTW, Bank Indonesia) di `DEI_ideas.txt` tidak pernah terdaftar di file `.gfx` manapun — dipetakan ke sprite `generic_*_manufacturer_N`/`generic_*_concern_N` vanilla yang valid.
+6. **4 script audit** (`final_verification.py`, `verify_all_loc.py`, `master_audit.py`, `comprehensive_asset_audit.py`) diperbaiki agar hanya glob file `events/DEI_*.txt` dan `common/national_focus/DEI_*.txt` — sebelumnya ikut men-scan `events/indonesia.txt` dan `indonesia_joint.txt` milik R56 sebagai false-positive, yang kemungkinan menjadi pemicu perbaikan salah sasaran pada poin #2 di atas.
+7. **Mod sudah di-deploy** ke `Documents\Paradox Interactive\Hearts of Iron IV\mod\` via `scratch/deploy_mod.py` dan di-push ke `origin/main` — lihat bagian 4 di bawah untuk status aturan instalasi terkini.
+
+---
+
+## 3a. Catatan Pembaruan v1.0.1 (R56 Full Compatibility, UX Polish & Zero-Error Clean)
 
 1. **Penguncian Mutual Exclusivity 6 Jalur Politik:**
    - Semua akar cabang ideologi (A, B, C, D, E, F) di `common/national_focus/DEI_indonesia_focus_tree.txt` kini memiliki cross `mutually_exclusive = { ... }` satu sama lain.
@@ -129,6 +143,7 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 1. **Aturan Instalasi ("JANGAN PASANG DULU"):**
    - Jangan menyalin/memasang file mod ke `C:\Users\<User>\Documents\Paradox Interactive\Hearts of Iron IV\mod` secara sepihak.
    - Pemasangan ke game HANYA dilakukan jika pengguna memberikan perintah eksplisit: "pasang", "deploy", atau "install ke game".
+   - **Status per v1.0.2:** mod SUDAH di-deploy ke folder tersebut atas perintah eksplisit pengguna (`python scratch/deploy_mod.py`). Redeploy ulang setiap kali ada perubahan yang perlu di-playtest, tapi tetap HANYA setelah pengguna minta eksplisit lagi untuk perubahan berikutnya — jangan asumsikan izin deploy berlaku otomatis untuk sesi/perubahan selanjutnya.
 
 2. **Aturan Bahasa Lokalisasi:**
    - Semua teks narasi cerita event, opsi tombol respon, deskripsi fokus, dan decisions ditulis dalam **Bahasa Inggris**.
@@ -156,7 +171,7 @@ Dokumen memori kerja dan aturan preferensi permanen untuk semua sesi agen Antigr
 
 Sebelum menyatakan pekerjaan selesai, jalankan skrip verifikasi otomatis:
 - Master Audit 8 Dimensi: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\master_audit.py"` (100% Lulus).
-- Cek sintaks, event & fokus: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\final_verification.py"` (134 fokus, 124 event, 0 collision).
-- Cek kunci lokalisasi: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\verify_all_loc.py"` (1.217 keys, 0 missing).
+- Cek sintaks, event & fokus: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\final_verification.py"` (139 fokus, 155 event, 0 collision).
+- Cek kunci lokalisasi: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\verify_all_loc.py"` (1.385 keys, 0 missing).
 - Cek aset & gambar: `python "c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\scratch\comprehensive_asset_audit.py"` (0 missing sprites/flags).
 - Cek UTF-8 BOM: `python -c "assert open(r'c:\Users\radit\Project\VisualStudioProject\Personal\HOI4MODS\Indonesia Sub Mod 56\HOI4mod\IndonesiaRayaR56\localisation\english\DEI_indonesia_l_english.yml', 'rb').read().startswith(b'\xef\xbb\xbf')"`
